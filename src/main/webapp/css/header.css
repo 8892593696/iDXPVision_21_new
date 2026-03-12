@@ -1,0 +1,327 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 Dec, 2021, 12:14:56 PM
+    Author     : Santhosh.K
+*/
+
+.dxpHeader, .dxpLoginHeader{
+   position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;  
+    z-index: 999; 
+}
+.dxpHeader .navbar-wrapper{
+    width: 100%;
+}
+
+.icon-chevron-down:before{
+    color: #0b4a99;
+}
+
+.DXPlLanguageSelectionClass select{
+    width: inherit;
+
+    border-radius: 6px;
+    /*border-color: #0b4a99;*/
+
+}
+.dxpHeader .settingheaderImage{
+    display: none; 
+}
+.dxpHeader .languageSelectionBox{
+    display: none;   
+}
+.visionHomeKanbanViewClass{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;  
+}
+
+.dxpLoginHeader .navbar {
+    padding: 6px 16px;
+}
+.dxpLoginHeader .leftNavList {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    width: 40%;
+}
+.dxpLoginHeader .navbar-brand img {
+    width: 60px;  
+}
+.dxpLoginHeader .navbar-brand {
+    margin-left: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dxpLoginHeader .navbar-nav{
+    gap:18px;
+    align-items: center;					
+}
+
+.dxpLoginHeader .navbar-collapse .userProfileIcon .userMainProfile {
+    border: 1px solid #0b4a99;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;  
+}
+
+
+
+
+/*.searchMainWrap .has-search .searchResultsDiv{
+    width: 92%;
+}*/
+
+.dxpPageWrapper .firstDxpSplitter  .jqx-splitter-splitbar-vertical, 
+.dxpPageWrapper .firstDxpSplitter .jqx-splitter-collapse-button-vertical{
+    width: 3px !important;
+
+
+}
+.dxpPageWrapper .jqx-scrollbar-mobile .jqx-scrollbar-thumb-state-normal,
+.dxpPageWrapper .jqx-scrollbar-mobile .jqx-scrollbar-thumb-state-normal-horizontal{
+    background: #c7e0f4 !important;
+    border-color: #c4c1c1 !important;
+
+}
+.dxpLoginHeader .clearicon{
+    position: absolute;
+    right: 20%;
+    top: 45%;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
+/*.dxpLoginHeader .searchMainWrap{
+    margin-left: inherit !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: inherit !important;
+}*/
+.dxpLoginHeader .voiceNavigator{
+    color:#688fc0;
+}
+
+.dxpLoginHeader .showHeaderpopUpBox{
+    display: none;
+    width: 200px;
+    border: solid #ddd 1px;
+    position: absolute;
+    left: -165px;
+    top: 46px;
+    /*    z-index: 9999;*/
+    background-color: #f6f7ff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+.showHeaderpopUpBox .media .media-body{
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+}
+.showHeaderpopUpBox .media .media-body h4{
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom:3px !important;
+}
+/*.dxpLoginHeader .navbar-nav li:hover .showHeaderpopUpBox{ 
+    display: block;
+
+
+}*/
+.dxpLoginHeader .navbar-nav li{
+    position: relative;
+    cursor: pointer;
+}
+.dxpLoginHeader .showHeaderpopUpBox::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #2196F3;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #2196F3;
+    border-bottom: 5px solid transparent;
+    top: -7%;
+    right: 15px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.dxpLoginHeader #collapsibleNavbar {
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.dxpLoginHeader .searchMainWrap{
+   border: 1px solid #ddd;
+    border-radius: 20px !important;
+    background: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: inherit !important;
+}
+.searchMainWrap .has-search .searchResultsDiv{
+    width: 100%;
+}
+
+/*PRK mss search changes
+.massSearchToggleClass{
+    position: absolute !important;
+    top: 51px;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0,0,0,.02);
+    height: calc(100vh - 0px);
+}
+.massSearchToggleClass .searchMainWrap {
+    width: 80%;
+    margin: 5px auto !important;
+    border: 1px solid #0b4a99;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.massSearchToggleClass .searchMainWrap .has-search input.form-control{
+    border: inherit !important;
+    border-radius: 4px;
+    height: 36px;
+}
+.massSearchToggleClass .searchMainWrap .selectDropDown #selectFilter ,.massSearchToggleClass .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions{
+    height: 35px !important;
+}
+.massSearchToggleClass .searchMainWrap .filterDownArrowIcon {
+    right: 4% !important;
+    z-index: 9;
+}
+.massSearchToggleClass .searchMainWrap .has-search {
+    width: 100%;
+    border-radius: inherit;
+    margin-bottom: inherit;
+    margin: 0 auto;
+    position: relative;
+    border-left: 1px solid #0b4a99;
+    border-radius: 6px;
+}
+.massSearchToggleClass .searchMainWrap .replacedSearchButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    background: #f1f1f1;
+    padding: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.massSearchToggleClass .searchMainWrap .searchbutton {
+    position: absolute;
+    left: 11%;
+}
+.massSearchToggleClass .searchMainWrap .has-search .searchResultsDiv{
+    width: 100%;
+}
+.massSearchToggleClass .searchMainWrap{
+    position: relative;
+
+}
+
+#collapsibleNavbar .navbar-nav .showMassSearch{
+    position: absolute;
+    left: 42%;
+    top: 12px;
+    border: 1px solid #0b4a99;
+    background: #f1f1f1;
+    color: #c4c1c1;
+    border-radius: 40px;
+    padding: 4px 16px;
+}
+#collapsibleNavbar .navbar-nav .showMassSearch .searchImgToggle , #collapsibleNavbar .navbar-nav .showMassSearch .closeImgToggle{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+PRK mss search changes*/
+
+.dxpLoginHeader .showHeaderpopUpBox{
+    display: none;
+    width: 200px;
+    border: solid #ddd 1px;
+    position: absolute;
+    left: -165px;
+    top: 36px;
+/*    z-index: 9999;*/
+    background-color: #f6f7ff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.showHeaderpopUpBox .media .media-body{
+    text-align: left !important;
+}
+.showHeaderpopUpBox .media .media-body h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: inherit;
+}
+.dxpLoginHeader .navbar-nav li{
+    position: relative;
+    cursor: pointer;
+}
+.dxpLoginHeader .showHeaderpopUpBox::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #2196F3;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #2196F3;
+    border-bottom: 5px solid transparent;
+    top: -7%;
+    right: 15px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+/*new style starts here 18-10-23*/
+
+.dxpLoginHeader .showHeaderpopUpBox small{
+    display: inline-block;
+    line-height: 1;
+    font-size:11px;
+}
+.showHeaderpopUpBox .media img{
+    width:26px !important;
+}
+
+/*new style end here 18-10-23*/
+/*new style start here 26-03-25*/
+.massSearchListItem {
+    display: none;
+    width:0;
+    transition: all 0.3s ease-in-out;
+}
+.dxpLoginHeader #collapsibleNavbar .globalSearchBar .headerSearchIcon img{
+    width:22px;
+}
+/*new style end here 26-03-25*/
+
+
+
+
+

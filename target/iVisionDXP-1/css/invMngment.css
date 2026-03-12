@@ -1,0 +1,189 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 11, 2021, 12:03:06 PM
+    Author     : Devint01
+*/
+.slide-item {
+    height: 450px;
+    overflow: hidden;
+    /* margin-top: 40px; */
+}
+
+.slide-item img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.slide-item .screenshot {
+    max-width: 100%;
+    margin: inherit;
+}
+
+.slide-item ul {
+    list-style: disc;
+}
+
+/* Slider arrows */
+.slick-arrow {
+    z-index: 9;
+}
+
+.slick-prev {
+    right: 50px;
+    top: 0;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.slick-next {
+    right: 0;
+    position: absolute;
+    width: 30px;
+    top: 0;
+    height: 30px;
+    cursor: pointer;
+}
+
+.slick-dots {
+    position: absolute;
+    top: 8px;
+    left: 35%;
+}
+
+.slick-dots li {
+    display: inline;
+    margin-right: 8px;
+    background: #40875e;
+    padding: 2px 6px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #40875e;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active {
+    display: inline;
+    margin-right: 8px;
+    background: #a8a240;
+    padding: 2px 6px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    border: 1px solid #a8a240;
+    border-radius: 4px;
+}
+
+/* END: Slider arrows */
+
+.scm-content-mainwrap {
+    height: 450px;
+}
+
+.scm-content-innerwrap {
+    height: 100%;
+    overflow-y: auto;
+}
+/*XML VIEWER START*/
+.genericXmlsheetCLass{
+    position: relative;
+    height: 100%;
+}
+.xmlHeader{ 
+    background-color: #fff;
+    width: 100%;
+    padding: 4px;
+    border-bottom: 1px solid #f2f1f1;
+    text-align: right;
+}
+.xmlHeader img{ 
+    width: 100px;
+}
+.xmlFooter {
+    position: sticky;
+    bottom: -0.5em;
+    padding: 4px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+    background: #fff; 
+}
+.xmlFooter p{
+    color: #0b4a99;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.genericXmlReportClass {
+    word-wrap: break-word;
+    white-space: break-spaces;
+    line-height: 1.8;
+    height: calc(100vh - 295px);
+    overflow-y: auto;
+}
+
+.idxpxmlviewxtb { display: table; font-family: monospace; }
+.idxpxmlviewxtc { display: table-cell; }
+.idxpxmlviewxmt { color: #0000CC; display: inline; }
+.idxpxmlviewxel { color: #990000; display: inline; }
+.idxpxmlviewxdt { color: #000000; display: inline; }
+.idxpxmlviewxat { color: #FF0000; display: inline; }  
+/*XML VIEWER STOP*/
+
+
+/*XML JSON VIEWER START*/
+.genericXMLJSONsheetCLass{
+    position: relative;
+    height: 100%;
+}
+.XMLJSONHeader{ 
+    background-color: #fff;
+    width: 100%;
+    padding: 4px;
+    border-bottom: 1px solid #f2f1f1;
+    text-align: right;
+}
+.XMLJSONHeader img{ 
+    width: 100px;
+}
+.XMLJSONFooter {
+    position: sticky;
+    bottom: -0.5em;
+    padding: 4px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+    background: #fff; 
+}
+.XMLJSONFooter p{
+    color: #0b4a99;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.genericXMLJSONReportClass {
+    word-wrap: break-word;
+    white-space: break-spaces;
+    line-height: 1.8;
+    height: calc(100vh - 295px);
+    overflow-y: auto;
+}
+
+.genericXMLJSONReportClass pre{
+    outline: 1px solid #ccc; 
+    padding: 5px; 
+    margin: 5px; }
+
+.idxpjsonviewstring { color: green; }
+.idxpjsonviewnumber { color: darkorange; }
+.idxpjsonviewboolean { color: blue; }
+.idxpjsonviewnull { color: magenta; }
+.idxpjsonviewkey { color: red; }
+
+
+

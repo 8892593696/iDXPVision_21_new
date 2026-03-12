@@ -1,0 +1,2579 @@
+
+:root {
+    --main-background: #121212; /* Very dark gray for the main background */
+    --overlay1-dark: #1E1E1E; /* Slightly lighter dark gray for overlays */
+    --overlay2-dark: #242424; /* Another shade of dark gray for additional contrast */
+    --overlay3-dark: #2C2C2C; /* Even lighter gray for overlays */
+    --overlay4-dark: #333333; /* Lightest dark gray for overlays */
+    --dark-border-color: #444444; /* Medium gray for borders */
+    --text-color-primary: #FFFFFF; /* White for primary text */
+    --text-color-secondary: #BBBBBB; /* Light gray for secondary text */
+    --accent-color: #00BCD4; /* Cyan for accent elements */
+    --highlight-color: #FF9800; /* Orange for highlights */
+    --error-color: #FF5722; /* Red for error messages */
+    --success-color: #4CAF50; /* Green for success messages */  
+}  
+ 
+
+
+
+/* PiLog Cloud CSS Start   */
+.dark-mode .dxpLoginHeader{
+    /* background: #252830; */
+    background-color:var(--overlay1-dark);
+    border-bottom: 1px solid var(--dark-border-color);
+
+}
+.dark-mode .searchMainWrap .has-search input.form-control{
+    background-color:var(--overlay1-dark);
+    border: 1px solid var(--dark-border-color) !important;  
+    color:var(--text-color-primary);
+}
+.dark-mode .icon-maximize:before {
+    content: "\e908";
+    color:var(--text-color-primary);
+} 
+.dark-mode .mobileHeader .navbar-toggler-icon{
+    background-image: url(../../darkimages/mobileMenuIcon.png) !important;
+}
+.dark-mode .mobileHeader .navbar-toggler{
+    border: 1px solid #5f5f64 !important;
+}
+
+.dark-mode{background-color: var(--main-background);color:var(--text-color-primary);}
+.dark-mode img{
+    /*filter: brightness(0) invert(1);*/
+    /*filter: brightness(0.5) invert(100%) contrast(100%) grayscale(100%);*/
+    /*filter: invert(100%) brightness(150%) contrast(100%) grayscale(100%);*/
+}
+/*.dark-mode .searchbutton img{
+    filter: inherit;
+}*/
+.dark-mode a {
+    color: var(--text-color-primary); 
+}
+.dark-mode .badge-info {
+    background-color: #252830;
+}
+
+.header-navbar .navbar-wrapper .navbar-container .nav-right>.header-notification:nth-child(1) .show-notification li:first-child:hover,
+.header-navbar .navbar-wrapper .navbar-container .nav-right>.header-notification:nth-child(1) .profile-notification li:first-child:hover {
+    background-color: #fff
+}
+.dark-mode .header-navbar .navbar-wrapper .navbar-container .header-notification .show-notification,
+.dark-mode .header-navbar .navbar-wrapper .navbar-container .header-notification .profile-notification {
+    background: #040404;
+}
+.dark-mode .header-navbar .navbar-wrapper .navbar-container .header-notification .show-notification.show:before,
+.dark-mode .header-navbar .navbar-wrapper .navbar-container .header-notification .show.profile-notification:before {
+    border-left-color: #040404;
+    border-top-color: #040404;
+}
+.dark-mode .header-navbar .navbar-wrapper .navbar-container .header-notification .show-notification a,
+.dark-mode .header-navbar .navbar-wrapper .navbar-container .header-notification .profile-notification a {
+    color:var(--text-color-primary);
+}
+.dark-mode .header-navbar .navbar-wrapper .navbar-container .header-notification .show-notification li:hover,
+.dark-mode .header-navbar .navbar-wrapper .navbar-container .header-notification .profile-notification li:hover {
+    background-color: #3e3e42;
+}
+.header-navbar .navbar-wrapper .navbar-container .header-notification .show-notification.row li:hover,
+.header-navbar .navbar-wrapper .navbar-container .header-notification .row.profile-notification li:hover {
+    background-color: transparent
+}
+.header-navbar .navbar-wrapper .navbar-container .header-notification .show-notification .notification-time,
+.header-navbar .navbar-wrapper .navbar-container .header-notification .profile-notification .notification-time {
+    font-size: 12px;
+    color: #919aa3;
+}
+.header-navbar .navbar-wrapper .navbar-container .header-notification .profile-notification a:hover {
+    background-color: transparent
+}
+.header-navbar .navbar-wrapper .navbar-container .badge {   
+    color: var(--text-color-primary);   
+}
+.header-navbar .navbar-wrapper .header-search .main-search .input-group {   
+    background-color: transparent;   
+}
+.header-navbar .navbar-wrapper .header-search .main-search .input-group .form-control {    
+    background-color: transparent
+}
+.header-navbar .navbar-wrapper .header-search .main-search .input-group .input-group-append,
+.header-navbar .navbar-wrapper .header-search .main-search .input-group .input-group-prepend {
+    background-color: transparent;   
+}
+.header-navbar .navbar-wrapper .header-search .main-search .input-group .input-group-append .input-group-text,
+.header-navbar .navbar-wrapper .header-search .main-search .input-group .input-group-prepend .input-group-text {
+    background-color: transparent;   
+}
+.header-navbar .navbar-wrapper .header-search .main-search.open {
+    color: #000;   
+}
+.header-navbar .navbar-wrapper .header-search .main-search.open .input-group {
+    background-color: #fff
+}
+.header-navbar .navbar-wrapper .header-search .main-search.open .input-group .input-group-append .input-group-text,
+.header-navbar .navbar-wrapper .header-search .main-search.open .input-group .input-group-prepend .input-group-text {
+    color: #000
+}
+.btn-default .badge {
+    background-color: var(--text-color-primary);
+    color: #e0e0e0
+}
+.btn-info {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+}
+.btn-info:hover {
+    background-color: #08e3ff;
+    border-color: #08e3ff
+}
+.btn-info:active {
+    background-color: #008697;
+    border-color: #008697;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff
+}
+.btn-info:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: var(--text-color-primary);
+    background-color: #08e3ff;
+}
+.btn-info.disabled {
+    background-color: rgba(0, 188, 212, 0.5);
+    border-color: rgba(0, 188, 212, 0.5)
+}
+.dark-mode .jqx-widget-header-ui-redmond{
+    background: var(--overlay2-dark) !important;
+}
+.textclearButton { 
+    display: inline;
+    margin: 0 3px;
+    background-color:var(--text-color-primary);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    cursor: pointer;
+    height: 25px;
+    width: auto;
+    text-align: center;
+    outline: 0 none;
+    border: none;
+    padding: 4px 4px 4px 25px;
+}
+.dark-mode .searchMainWrap .dxpAdavanceSearchClass  .dxpAdavanceSearchOptions {
+    border-left: 1px solid var(--dark-border-color);
+    background: var(--overlay1-dark);
+    color: var(--text-color-primary); 
+}
+.dark-mode .searchMainWrap .has-search input.form-control{
+    /* border:1px solid #5f5f64; */
+    background-color: var(--overlay2-dark);
+    color:var(--text-color-primary);
+}
+.dark-mode .searchMainWrap .selectDropDown .form-control{ 
+    color: var(--text-color-primary);
+    background: var(--overlay2-dark); 
+    border-color:var(--dark-border-color); 
+}
+.dark-mode .searchMainWrap .has-search input.form-control::placeholder{
+    color:var(--text-color-primary);
+}
+.dark-mode .searchMainWrap .form-group .form-control::placeholder{
+    color:var(--text-color-primary);
+}
+.dark-mode  .searchResultsDiv{
+    background: var(--overlay1-dark);
+    border: 1px solid var(--dark-border-color) ;
+}
+.dark-mode .searchResultsDiv .ac-items:hover{
+    background-color: var(--overlay4-dark);
+}
+.dark-mode .searchResultsDiv .ac-items{
+    border-bottom:1px solid var(--dark-border-color);
+}
+.searchResultsDiv .ac-items b{
+    color: var(--highlight-color) !important;
+}
+.dark-mode .languageSelectionBox{
+    height: 29px;
+    border: 1px solid #5f5f64;
+    background:var(--overlay2-dark);
+    color: var(--text-color-primary);
+}
+/* Splitter Css Starts Here by SANK */
+.firstDxpSplitterData button{
+    margin-bottom: 4px;
+    width: 80px;
+    padding: 0;
+    background-color: #0b4a99;
+}
+.firstDxpSplitterData button:hover, .firstDxpSplitterData button:focus{
+    margin-bottom: 4px;
+    width: 80px;
+    padding: 0;
+    background-color: var(--text-color-primary);
+    border: 1px solid #0b4a99;
+    color: #0b4a99;
+    box-shadow: inherit;
+}
+.dark-mode .secondDxpSplitterData button{
+    background-color: #252830;
+}
+.secondDxpSplitterData button:hover, .secondDxpSplitterData button:focus{
+    margin-bottom: 4px;
+    background-color: var(--text-color-primary);
+    border: 1px solid #0b4a99;
+    color: #0b4a99;
+    box-shadow: inherit;
+}
+.dark-mode .visionDxpTreeDropDown .treeDxpSelectBoxMain select {
+    background: #252830;
+    color:var(--text-color-primary);
+    border-color:var(--dark-border-color);
+}
+/*menu tool tip css starts by SAN.K*/
+.tooltip-inner {
+    background-color: #fff !important;
+    color: #0b4a99 !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.tooltip.bs-tooltip-right .arrow:before,
+.tooltip.bs-tooltip-left .arrow:before,
+.tooltip.bs-tooltip-bottom .arrow:before,
+.tooltip.bs-tooltip-top .arrow:before {
+    border-right-color: #fff !important;
+    border-width: 9px;
+}
+/*menu tool tip css ends by SAN.K*/
+.dark-mode .ac-items {
+    border:1px solid var(--dark-border-color);
+    color:var(--text-color-secondary);
+
+}
+.dark-mode .ac-items b{
+    color:var(--highlight-color);
+}
+.ac-items b.fuzzyItem {
+    color: #0071c5;
+}
+/* end of css for smart search */
+/*main search new css starts*/
+.dark-mode  .searchedDxpSearchResults .searchResultsList:hover {
+    background-color: #3e3e42;
+    color:var(--text-color-primary); 
+
+}
+.dark-mode  .searchedDxpFirstSearchResults .searchFirstResultsList:hover {
+    /* background-color: #3e3e42; */
+    color:var(--text-color-primary);
+}
+.dark-mode .searchedDxpSearchResults .badge{
+    color:var(--text-color-primary);
+}
+.dark-mode .searchedDxpFirstSearchResults .badge{
+    color:var(--text-color-primary);
+}
+.dark-mode .searchResultMaterialResults {
+    color: var(--text-color-primary);
+}
+.dark-mode .searchIconsList{
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .searchIconsFirstSplitterList{
+    background-color:var(--overlay2-dark);
+    border: 1px solid var(--dark-border-color);
+}
+.dark-mode .visionRegisterAccrodiansClass .ui-state-default,.dark-mode .visionRegisterMaterialAccordians .ui-state-default
+{
+    border:1px solid var(--dark-border-color);
+    background:var(--overlay2-dark);
+    color: var(--text-color-primary);
+}
+.dark-mode .visionRegisterAccrodiansClass .ui-state-active,.dark-mode .visionRegisterMaterialAccordians .ui-state-active,.dark-mode .visionRegisterAccrodiansClass .ui-state-hover,.dark-mode .visionRegisterMaterialAccordians .ui-state-hover
+{
+    border:1px solid var(--dark-border-color);
+    background:var(--overlay1-dark);
+    color: var(--text-color-primary);
+}
+.dark-mode .searchIconsList .searchIconMainInput .secondSplitterSearchClass{
+    border: 1px solid var(--dark-border-color);
+    background: var(--overlay1-dark);
+    color:var(--text-color-primary);
+}
+/*main search new css ends*/
+/*panel css*/
+.visionRegisterAccrodiansClass .ui-state-active .ui-icon,.visionRegisterMaterialAccordians .ui-state-active .ui-icon,.visionRegisterAccrodiansClass .ui-state-hover .ui-icon,.visionRegisterMaterialAccordians .ui-state-hover .ui-icon  
+{
+    background-image: url(../images/jquery-ui-theme/ui-icons_ffffff_256x240.png);
+}
+.dark-mode .visionRegisterAccrodiansClass .ui-state-default,.dark-mode .visionRegisterMaterialAccordians .ui-state-default
+{
+    border:1px solid var(--dark-border-color);
+    background:var(--overlay3-dark);
+    color: var(--text-color-primary);
+}
+.dark-mode .visionRegisterAccrodiansClass .ui-state-active,.dark-mode .visionRegisterMaterialAccordians .ui-state-active,.dark-mode .visionRegisterAccrodiansClass .ui-state-hover,.dark-mode .visionRegisterMaterialAccordians .ui-state-hover
+{
+    border:1px solid #5f5f64;
+    background:#4e4e4e;
+    color: var(--text-color-primary);
+} 
+/*panel css*/
+/* Login Popup CSS Button */
+
+.dark-mode .savedsearchddw {
+    background: #252830;
+    color:var(--text-color-primary);
+    border:1px solid #5f5f64;
+}
+.dark-mode .personaliseoption .search_settings_panel 
+{
+    background: var(--overlay4-dark);
+    border: 1px solid var(--dark-border-color);
+    box-shadow: #3e3e42 0px 20px 30px -10px;
+}
+.dark-mode .plansList li {
+    background-color: #3e3e42 !important;
+    background-image: none !important;
+}
+.dark-mode .personalize_tbl{
+    background:var(--overlay2-dark);
+    border-color:var(--dark-border-color)
+}
+/* end of  css for the personalise */
+/* personalization kiran css end*/
+/* parametric search by kiran css start*/
+/* css for the parametric search */
+.visionFilterGrid th{
+    background:#ddd;
+    color:var(--text-color-primary);
+    vertical-align:middle; 
+}
+.tg-wrap .tg th 
+{
+    border-color: #ddd;
+}
+.classsificationicons{
+    background: #f1f1f1;
+}
+.classsificationreset{
+    background: #f1f1f1;
+}
+.dark-mode .sticky-wrap th {
+    color:var(--text-color-primary);
+    border-color:var(--dark-border-color);
+    background:#3e3e42;
+}
+.dark-mode .icon-chevron-down:before{
+    color:var(--text-color-primary);
+}
+.dark-mode .visionSearchExport select
+{
+    background-color: #252830;
+    color:var(--text-color-primary);
+    border-color:var(--dark-border-color);
+}
+.dark-mode .dxpNextPageClassificationTree .card-header {
+    background-color: #3e3e42;
+    color:var(--text-color-primary);
+    border-color:var(--dark-border-color);
+}
+.visionSearchImportmain p{
+    color:#0b4a99 !important;
+}
+.dark-mode .formLevelValidations {
+    background: var(--overlay1-dark);
+    border: 1px solid var(--text-color-primary);
+    color:var(--text-color-primary);
+}
+.dark-mode .dxpShowExtendDuplicateformView img{
+    border-color:var(--dark-border-color);
+}
+.tg-wrap .tg tr:hover{
+    color:var(--text-color-primary) !important;
+}
+/*.dark-mode .visionRegistartionGeneric .expandAll, .collapseAll {
+    background: #4e4e4e;
+    border: 1px solid #5f5f64;
+    color:var(--text-color-primary);
+}*/
+.header-navbar .navbar-wrapper .navbar-container .navbar-collapse ul{
+    margin-top:-35px;
+}
+.dark-mode .showExtendPdfTableData .modal-dialog .modal-content{
+    background-color: var(--overlay2-dark); 
+}
+.dark-mode .showExtendPdfTableData .modal-dialog .modal-content .modal-footer{
+   border-top: 1px solid var(--dark-border-color);  
+}
+.dark-mode .showExtendPdfTableData .modal-dialog .modal-content .modal-header {
+     border-bottom: 1px solid var(--dark-border-color);
+}
+.dark-mode .showExtendPdfTableData .modal-dialog .modal-content .close{
+    color: var(--text-color-primary);
+}
+.dark-mode .dxpNextPageClassificationTree .card {
+    background-color: var(--overlay2-dark);
+    color:var(--text-color-primary);
+    border-color:var(--dark-border-color);
+}
+.dark-mode .dxpNextPageClassificationTree .card-header {
+    background-color: var(--overlay2-dark);
+    color:var(--text-color-primary);
+    border-color:var(--dark-border-color);
+}
+.dark-mode .tg-wrap .tg .tg-vro8 {
+     background-color: var(--overlay1-dark-dark);
+}
+.dark-mode .tg tbody tr {
+    background: #252830;
+}
+.dark-mode .tg-wrap .tg td:hover {
+    background-color: #3e3e42;
+}
+.dark-mode .tg-wrap .tg td {
+     color: var(--text-color-primary);
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .tg-wrap .tg td input {
+    border: 1px solid var(--dark-border-color) !important;
+    background: var(--overlay3-dark);
+    color:var(--text-color-primary);
+}
+.dark-mode #dxpDictionarySearchButton {
+    background: #3e3e42;
+    border: 1px solid #5f5f64;
+    color:var(--text-color-primary);
+    background-image: url(../../images/iDXPUI5Search.svg);
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+.dark-mode #DicttextclearButton {
+    background: #3e3e42;
+    border: 1px solid #5f5f64;
+    color:var(--text-color-primary);
+     background-image: url(../../images/reset_icon3.png);
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+.dark-mode .tg-wrap .tg .tg-vro8 {
+    border: 1px solid #5f5f64;
+}
+.dark-mode .visionSearchExportButton {
+    border: 1px solid #5f5f64;
+    color:var(--text-color-primary);
+    background: #3e3e42;
+}
+
+.dark-mode .visionParamSearchCover th {
+    background: var(--overlay3-dark-dark);
+}
+.dark-mode .paramSearchbtn input[type="button"] {
+    background-color: var(--overlay1-dark);
+    color:var(--text-color-primary);
+
+}
+.dark-mode .visionParamSearchCover select {
+    color:var(--text-color-primary);
+    border: 1px solid var(--dark-border-color);
+    background: var(--overlay1-dark);
+}
+.dark-mode .modal-content {
+    background-color: #3e3e42;
+    border: 1px solid #5f5f64;
+}
+.dark-mode .modal-content .modal-header .close span {
+    color:var(--text-color-primary);
+    background-color: #3e3e42;
+}
+.dark-mode .modal-content .modal-footer .btn-primary {
+    background-color: #3e3e42 !important;
+    border-color:var(--dark-border-color) !important;
+    color: #fff !important;
+}
+.dark-mode .modal-content .modal-footer .btn-primary:hover {
+    background-color: #3e3e42 !important;
+    border-color:var(--dark-border-color) !important; 
+    color: #f1f1f1 !important;
+}
+.dark-mode .ui-autocomplete{ 
+    background-color: #525252 !important;
+    border-color:var(--dark-border-color) !important;
+    color: var(--text-color-primary);
+}
+.dark-mode .ui-autocomplete .ui-menu-item .ui-state-active{
+    border:1px solid #5f5f64;
+    background-color: var(--overlay2-dark);
+    color: var(--text-color-primary);
+}
+.dark-mode .badge-info{ 
+    background-color: var(--text-color-primary); 
+    color:#000;
+}
+.dark-mode .dxpDictionaryMainClass .media-body h4 .recordText{
+    color:var(--text-color-primary) !important;
+}
+.dark-mode .dxpDictionaryMainClass .media-body h4,
+.dark-mode .dxpDictionaryFormData .media-body h4{
+    border-bottom: 1px solid #5f5f64;
+}
+.dark-mode .ui-autocomplete .ui-menu-item .ui-menu-item-wrapper{
+    border-bottom: 1px solid #5f5f64 !important;
+}
+.dark-mode ::-webkit-scrollbar-track{   
+    background: #3e3e42; 
+    border: 1px solid #5f5f64 !important;
+}
+.dark-mode ::-webkit-scrollbar-thumb {   
+    background: #252830 !important;
+    border: 1px solid #5f5f64 !important;
+}
+.dark-mode .dictionarySplitterDotsClass{
+    background: #525252;  
+}
+.dark-mode .dxpDictionaryFormClassData .border{
+    border: 1px solid #5f5f64 !important; 
+}
+.dark-mode .dxpIndustryDetailClass {
+    color: #ed8e8e;
+}
+.dark-mode .ui-dialog-buttonpane button{
+    background: #3e3e42;
+    border-color:var(--dark-border-color);
+}
+.dark-mode .dxpDictPropetyDetailsClass .card {
+    background: #3e3e42;
+    color:var(--text-color-primary);
+    border-color:var(--dark-border-color);
+}
+.dark-mode .btn-info {
+    background-color: #3e3e42 !important;
+    border-color:var(--dark-border-color) !important;
+}
+.dark-mode .btn-info:hover {
+    background-color: #3e3e42 !important;
+    border-color:var(--dark-border-color) !important;
+}
+.dark-mode .dxpDictPropetyDetailsClass .card .card-body p{
+    border-bottom: 1px solid #5f5f64;
+}
+.dark-mode .visionDictionaryTable .coloredActive{
+    background-color: #252830;
+}
+.dark-mode .DxpParamSplitterDotsClass{
+    background-color: #3e3e42;
+}
+.dark-mode .visionParamSearchCover,
+.dark-mode .paramSearchbtn input[type="button"]{
+    border: 1px solid #5f5f64;
+}
+.dark-mode .textclearButton{
+    background-image: url(../../images/reset_icon3.png);
+    background-repeat: no-repeat;
+    background-position-x: 4px;
+    background-position-y: 4px;
+}
+.dark-mode .textsearchbutton{
+    background-image: url(../../images/iDXPUI5Search.svg);
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+    background-position-y: 2px;
+    background-size: 20px !important;
+}
+.dark-mode .visionSearchImport {
+    background-image: url(../../images/export_as_xls_icon_blue.png);
+    background-repeat: no-repeat;
+    background-position-x: 4px;
+    background-position-y: 4px;
+}
+.dark-mode .visionSearchImportSelect #browsecolsddw,
+.dark-mode .visionSearchImportButton .visionFileUpload{
+    border: 1px solid var(--dark-border-color);
+    background:var(--overlay3-dark);
+    color: var(--text-color-primary);
+}
+.dark-mode .visionSearchImportmain p{
+    color:var(--text-color-primary) !important;
+}
+.dark-mode .dxpTreesearchbutton {
+    border: solid 1px #5f5f64;
+    background: #252830;
+    background: #f1f1f1 url(../../images/search_icon_color_2.png);
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+}
+.dark-mode .dxpCategorySearchRadioButtonsClass{
+    border: solid 1px #5f5f64;
+}
+.dark-mode .repositorySearchIconsList{
+    background-color: #3e3e42;
+}
+.dark-mode .repositorySplitterSearchClass{
+    background-color: #252830;
+    border: solid 1px #5f5f64;
+}
+.dark-mode .repSearchResultsList{
+    border-bottom: 1px solid #5f5f64;
+}
+.dark-mode .firstDxpSplitterData .materialResultsList:hover {
+    color:var(--text-color-primary);
+    background: #3e3e42;
+    border-bottom: 1px solid #5f5f64;
+
+}
+.dark-mode .secondDxpSplitterData .materialComponentResultsList:hover {
+    color:var(--text-color-primary);
+    background: #3e3e42;
+    border-bottom: 1px solid #5f5f64;
+}
+.dark-mode .dataSheetButtons input[type="button"] {    
+    background: #3e3e42;
+    border-color:var(--dark-border-color);
+    color:var(--text-color-primary);
+}
+.dark-mode .openMoreItemsDxpPopupClass{
+    background-color: #3e3e42;  
+}
+.dark-mode .dxpMoreButtonsPopupUlList li{
+    border-bottom: 1px solid #5f5f64;
+}
+.dark-mode .dxpToolBarCustomize .modal-content{
+    background-color: #252830;  
+}
+.dark-mode .dxpToolBarCustomize .modal-header{
+    background-color: #3e3e42; 
+    border-bottom: 1px solid #5f5f64;
+}
+.dark-mode .dxpToolBarCustomize .modal-footer{
+    border-top: 1px solid #5f5f64;
+}
+.dark-mode .dxpToolBarCustomize .card-body{
+    background-color: #3e3e42; 
+}
+.dark-mode  .buttonsPopUps .modalToolbar{
+    border: 1px solid #5f5f64; 
+}
+.dark-mode  .buttonsPopUps .closeicon,
+.dark-mode  .buttonsPopUps .custom-control-label::before{
+    background-color: #252830;  
+}
+.dark-mode .showExtendPdfTableData .card {
+    background-color: #252830;  
+}
+.dark-mode .showExtendPdfTableData .modal-body .dxpIndustryDefinition{
+    border: 1px solid #5f5f64; 
+}
+.dark-mode .mainDxpSplitter .jqx-checkbox-hover {
+    border-color: inherit;    
+}
+.dark-mode .ui-state-default, .dark-mode .ui-widget-content .ui-state-default, 
+.dark-mode .ui-widget-header .ui-state-default{   
+    color:var(--text-color-primary);
+}
+.dark-mode .footer{
+    background-color: var(--overlay1-dark);
+}
+.dark-mode .dashboardFilterColumnClass {
+    background-color: #252830;
+}
+.dark-mode .surveyAnalyticChartQuestionClass {
+    border: 1px solid #5f5f64;
+    background-color: #0e1012;
+    color:var(--text-color-primary);
+}
+.dark-mode .footer-social-icons li a{
+    border: 1px solid var(--dark-border-color);
+    background: var(--main-background);
+}
+.dark-mode .ti-linkedin:before { 
+    content: "\e735";
+    color: var(--text-color-primary);
+}
+.dark-mode .ti-facebook:before {
+    content: "\e741";
+    color: var(--text-color-primary);
+} 
+.dark-mode .ti-instagram:before {
+    content: "\e73d";
+    color: var(--text-color-primary);  
+}
+.dark-mode .ti-twitter-alt:before {
+    content: "\e74b";
+    color: var(--text-color-primary);
+}
+.dark-mode .ti-youtube:before {
+    content: "\e728";
+    color: var(--text-color-primary);
+}
+.dark-mode .svg-container svg:first-child{
+    background: #252830 !important;
+}
+.dark-mode .homeChartParentDiv .chartMain .g-gtitle .gtitle {
+    fill: rgb(255, 255, 255) !important;
+}
+.dark-mode .form-control {
+    border: 1px solid var(--dark-border-color);
+    color:var(--text-color-secondary);
+}
+.dark-mode .decompositionBoxTreeSection .settingsSidePanel {
+    background-color:var(--overlay1-dark);
+}
+.dark-mode .decompositionBoxTreeSection .card-header {
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .colorAdder {
+    background: #333;
+}
+.dark-mode card-body {
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .pvtRenderer {
+    background: #3e3e42;
+    color:var(--text-color-primary);
+}
+.dark-mode .pvtAggregator {
+    background:#3e3e42;
+    color: var(--text-color-primary);
+}
+.dark-mode pvtAxisContainer pvtUnused pvtUiCell pvtVertList ui-sortable {
+    background:#252830;
+}
+.dark-mode .visionKanbanHeaderClass {
+    background:#252832;
+}
+.dark-mode .columnFilterationClass {
+    background:#3e3e42;
+}
+.dark-mode .visionHomeVisualizeCardDivClass {
+    background:#666;
+}
+.dark-mode .visionHomeVisualizeCardSpanClass {
+    color: var(--text-color-primary);
+}
+.dark-mode .visionCardViewClass .visionHomeCardViewClass {
+   background:var(--overlay1-dark); 
+}
+.dark-mode .searchedDxpSearchResults .searchResultsList, .dark-mode .dxpMaterialListClass .searchResultsListDgm, .dark-mode .secondDxpSplitterData .searchResultsListDgs{
+    border-bottom: 1px solid var(--dark-border-color);
+    background-color: var(--overlay4-dark);
+    background-image: inherit; 
+    color: var(--text-color-primary) !important;
+}
+.dark-mode .searchedDxpSearchResults .searchResultsList:after, .dark-mode .dxpMaterialListClass .searchResultsListDgm:after, .dark-mode .secondDxpSplitterData .searchResultsListDgs:after{
+    background-image: inherit;
+}
+.dark-mode .mainBookMark .flex-container .defaultDiv p, .dark-mode .mainBookMark .flex-container .viewGridDiv p {
+    border:1px solid var(--dark-border-color);
+}
+.dark-mode .btn-primary {
+    background: var(--main-background) !important;
+    border:1px solid var(--dark-border-color) !important;
+    border-radius:4px !important;
+    color:var(--text-color-primary) !important;
+}
+.dark-mode .chartSelectionsDropDown .visionVisualizeHomePageDropdown select{
+    border: 1px solid var(--dark-border-color);
+    background-color: var(--overlay1-dark);
+    color: var(--text-color-primary);
+}
+.dark-mode .rightPannelSettings {
+    background-color:var(--overlay1-dark); 
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-left: 4px solid var(--dark-border-color);
+}
+.dark-mode .rightPannelSettings .pannelTitle {
+    background-color: var(--overlay4-dark);
+}
+.dark-mode .rightPannelSettings .userAccountDetails .closeSettings {
+    border: 1px solid var(--dark-border-color);
+    background: var(--overlay2-dark);
+    color: #e9e9e9;
+    right: 5px !important;
+    top: 5px !important; 
+}
+.dark-mode  .rightPannelSettings .userAccountDetails .closeSettings{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    background: #000;
+    color: var(--text-color-primary);
+    right: -8px;
+    top: 0;
+    cursor: pointer;
+}
+.dark-mode .searchResultCardViewMainSection {
+    color: var(--text-color-primary);
+    background-color: var(--overlay2-dark);  
+}
+.dark-mode .searchResultCardViewMainSection .filterButtonrow .listFiltersul li {
+    border: 1px solid #5f5f64;
+    color: var(--text-color-primary);
+}
+.dark-mode .searchResultCardViewMainSection .filterButtonrow .listFiltersul li{ 
+    background-color: #000 !important;
+}
+.dark-mode .searchResultCardViewMainSection .allAssesstRow .outerWidthcol .cardInnerImage .showMaterialpopUpBox {
+    background: #252830;
+}
+
+.dark-mode .searchResultCardViewMainSection .allAssesstRow .outerWidthcol .cardInnerImage .showMaterialpopUpBox .media {
+    border: none !important;
+}
+.dark-mode .settingPannelInnerWrapper .listofSettingDiv .fontChangeIcon .dropdown-menu.show {
+    background: #252830 !important;
+    color:var(--text-color-primary);
+}
+.dark-mode .settingPannelInnerWrapper .listofSettingDiv .fontChangeIcon .dropdown-menu .dropdown-toggle:after {
+    color:var(--text-color-primary);
+}
+.dark-mode .fontChangeIcon .dropdown-menu>li:hover {
+    background-color: #252830;
+}
+.dark-mode .dropdown-menu>li:hover>.submenu {
+    background: #252830 !important;
+    color:var(--text-color-primary);
+}
+.dark-mode .settingPannelInnerWrapper .listofSettingDiv .fontSizeIcon .dropdown-menu.show {
+    background: #252830;
+    color:var(--text-color-primary);
+}
+.dark-mode .fontSizeIcon .dropdown-menu>li:hover {
+    background-color: #252830;
+}
+.dark-mode .dropdown-item:focus, .dark-mode .dropdown-item:hover {
+    background-color: #252830 !important;
+}
+.dark-mode .settingPannelInnerWrapper .listofSettingDiv .fontSizeIcon .dropdown-menu .dropdown-toggle:after {
+    color:var(--text-color-primary);
+}
+.dark-mode .visionFormTitleName {  
+    background: var(--overlay3-dark);
+}
+.dark-mode .formDxpDuplicates .form-tab thead th {
+    background: #252830;
+}
+.dark-mode .visionRegisterMaterialFormTable th input[type="text"],
+.dark-mode .responsiveTable th input[type="text"],
+.dark-mode .visionRegisterMaterialFormTable th select, 
+.dark-mode .responsiveTable th select, 
+.dark-mode .visionRegisterMaterialFormTable th textarea,
+.dark-mode .responsiveTable th textarea {
+    background:var(--overlay3-dark);
+    color: var(--text-color-primary);
+}
+.dark-mode .fa-linkedin:before,
+.dark-mode .fa-facebook:before,
+.dark-mode .fa-instagram:before,
+.dark-mode .fa-twitter:before,
+.dark-mode .fa-youtube-play:before {
+    color:var(--text-color-primary);
+}
+.dark-mode a:focus,
+.dark-mode a:hover {
+    color:var(--text-color-primary);
+}
+.dark-mode .menuListDetails .card .card-body{
+    background-color: #252830;
+}
+.dark-mode .page-body .hintImage {
+    background: #3e3e42;
+    border-color:var(--dark-border-color);
+}
+.dark-mode .filterButtonrow .listFiltersul .menutabclass .fa-check {
+    color: #fff !important;
+}
+.dark-mode .customTooltip {
+    background: #3e3e42 !important;
+    border: 2px solid #fff;
+}
+.dark-mode .customTooltip .introjs-tooltip-title .HomeimageText {
+    color: #fff !important;
+}
+.dark-mode .customTooltip .introjs-tooltip-title .imageText {
+    color: #fff !important;
+}
+.dark-mode .customTooltip .introjs-tooltip-title .mainCardsText {
+    color: #fff !important;
+}
+.dark-mode .customTooltip .introjs-tooltiptext {
+    background: #000;
+}
+.dark-mode .customTooltip .introjs-skipbutton {
+    color: #fff !important;
+}
+.dark-mode .customTooltip .introjs-tooltip-header {
+    background: #6e6e6e !important;
+}
+.dark-mode .visionTabMenuFormData .tg-wrap .tg .sticky-header tr:nth-child(odd) {
+    background-color: #3e3e42;
+} 
+.dark-mode .scheduledCalendarMainWrapper .calendar-header,
+.dark-mode .scheduledCalendarMainWrapper .calendar-wrapper .calendar-content #table-header {
+    background-color: #1a1c22;
+}
+.dark-mode .scheduledCalendarMainWrapper #month-name,
+.dark-mode .scheduledCalendarMainWrapper #todayDayName,
+.dark-mode .scheduledCalendarMainWrapper .currentdate .prev-button,
+.dark-mode .scheduledCalendarMainWrapper .currentdate .next-button {
+    color: var(--text-color-primary);
+}
+.dark-mode .scheduledCalendarMainWrapper .blue.lighten-3 {
+    background-color: #3e3e42 !important;
+    color: var(--text-color-primary);
+}
+.dark-mode .dxpTheme .sidebar-wrapper {
+    background: #000;
+    border-right: 1px solid #000;
+}
+.dark-mode .scheduledCalendarMainWrapper .sidebar-title h5 {
+    background: #1a1c22;
+    border: 1px solid #3e3e42;
+    color: var(--text-color-primary);
+}
+.dark-mode .scheduledCalendarMainWrapper .sidebar-events {
+    background: #1a1c22;
+    border: 1px solid #3e3e42;
+}
+.dark-mode .scheduledCalendarMainWrapper .empty-message {
+    color: var(--text-color-primary);
+}  
+dark-mode .dxpLoginHeader .navbar-collapse .userProfileIcon .userMainProfile {
+    border: 1px solid #fff;
+}
+.dark-mode .subscriptionMesgPop .modal-header {
+    background-color: #3e3e42;    
+    align-items: center;
+}
+.dark-mode .modal-content .modal-header .close span :hover{
+    color:var(--text-color-primary);
+    background-color: #3e3e42 !important; 
+}
+.dark-mode .defaultShowCards .dridHomePageCards .card-header{
+    color: var(--text-color-primary);
+    background:#242424;
+    border-color:var(--dark-border-color);
+}
+.dark-mode .defaultShowCards .card{
+    border-color:var(--dark-border-color);
+}
+.dark-mode .expendInOutDivClass i{
+    color: var(--text-color-primary);
+} 
+.dark-mode .menutabClass{
+    border-color:var(--dark-border-color);
+    color: var(--text-color-primary); 
+}
+.dark-mode .dxpPageWrapper #sidebar.toggled .sidebar-content{
+    background-color: var(--overlay1-dark);
+}
+.dark-mode .sidebar-wrapper .sidebar-content{
+    background-color:var(--overlay1-dark);
+}
+.dark-mode .page-body{
+    background-color:var(--overlay2-dark);
+}
+.dark-mode .searchResultCardViewMainSection .cardInnerImage:hover .showMaterialpopUpBox{
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .level3Domainsubmenu{
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .searchMainWrap .selectDropDown #selectFilter{
+    background-color: var(--overlay1-dark);
+}
+.dark-mode .personaliseoption .layoutoptions.ui-accordion{
+    background-color: var(--overlay2-dark) !important;
+}
+.dark-mode .visionRegistartionGeneric .visionRegisterMaterialAccordians .charAccordianMaindiv .charAccordionsContainer .charAccordions .card .card-header, .visionRegistartionGeneric .visionRegisterMaterialAccordians .charAccordianMaindiv .charAccordionsContainer .charAccordions .collapse.show{
+    background-color: var(--overlay2-dark) !important; 
+    border: 1px solid var(--dark-border-color);
+}
+.dark-mode .fromMainAdditionalInfoClass .formAdditionalInfoClass{
+    color: var(--text-color-primary);
+}
+.dark-mode .visionRegistartionGeneric .visionRegisterMaterialAccordians .charAccordianMaindiv{
+    background-color: var(--overlay2-dark); 
+}
+.dark-mode .dxpTaskListDivClass .visionTask{
+    background-color: var(--overlay1-dark); 
+}
+.dark-mode .visionTaskActionItemsMainInner .visionTaskActionItemsTable{
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .visionTask .visionTaskPagination{
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .dxpSplitterTabsContent #dxp1Firstdiv .search_style {
+    background-color: var(--overlay2-dark);
+    color:var(--text-color-primary);
+    border: 1px solid var(--dark-border-color);
+}
+.dark-mode .dxpSplitterTabsContent #dxp1Firstdiv .reset_style{
+    background-color: #252830;
+    color:var(--text-color-primary);
+    border: 1px solid #5f5f64;
+}
+.dark-mode .layoutoptions .ui-accordion-header1{
+    background-color: var(--overlay1-dark) !important;
+    border: 2px solid var(--dark-border-color) !important;
+}
+.dark-mode .layoutoptions .ui-accordion-header1 .personalizetestclass{
+    color: #f1f1f1 !important;
+}
+.dark-mode .dxpSplitterTabsContent .visionFilterGrid th{
+    background-color: var(--overlay2-dark);
+    color:var(--text-color-primary);
+}
+.dark-mode .charAccordianMaindiv .charAccordionsContainer .row .card{
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .visionGenericTabsOpeartions select, .dark-mode .visionReportandDashboardExport select, .dark-mode .visionSearchExport select, .dark-mode .visionGenericClusterOpeartions select{
+    background-color: var(--overlay2-dark);
+    color:var(--text-color-primary);
+    border-color:var(--dark-border-color);
+}
+.dark-mode .menutabClass{
+    background-color: #252830;
+}
+.dark-mode .dxpLoginHeader .showHeaderpopUpBox{
+    background-color: #252830;
+}
+.dark-mode .searchMainWrap .has-search input.form-control{
+    background-color: #252830;
+}
+.dark-mode .searchMainWrap .has-search input.form-control{
+    background-color:var(--overlay1-dark) !important;
+}
+.dark-mode .searchMainWrap .backbutton{
+    background-color: var(--overlay1-dark);
+}
+.dark-mode .dxpLoginHeader #collapsibleNavbar{
+    background-color: #252830;
+}
+.dark-mode .dxpLoginHeader .navbar-collapse ul li{
+    color:var(--text-color-primary);
+}
+.dark-mode .pprMultiDomainSearchClass{
+    background-color: #252830;
+    color:var(--text-color-primary);
+}
+.dark-mode .searchMainWrap .replacedSearchButton{
+    background-color:var(--overlay2-dark);
+}
+.dark-mode .tg-vro81 #classificationtype{
+    color:var(--text-color-primary);
+    background-color:var(--overlay2-dark);
+}
+.dark-mode .classsificationicons{
+    background-image: url(../darkimages/iDXPUI5Search.svg);
+}
+.dark-mode .clicktoToggleProductDescription{
+    margin-top: 3px;
+    color:var(--text-color-primary);
+    background-color: #252830;
+}
+
+.dark-mode .intelliSenseSelectBoxClass .dashBoardType select{
+    background-color: #252830;
+}
+.dark-mode .iVisionHomeSelectBox{
+    background-color: #252830;
+    color:var(--text-color-primary);
+} 
+.dark-mode .visionTaskWel span b, .visionTaskActions span, .visionTaskActionContent span{
+    color:var(--text-color-primary);
+}
+.dark-mode .visionFilterGrid select{
+    color:var(--text-color-primary);
+    background-color: #252830;
+    border-color:var(--dark-border-color);
+}
+.dark-mode .visionFlterGridColumn {
+    width: 80%;
+    background-color: #252830;
+}
+.dark-mode .searchedDxpSearchResults .searchResultsList:hover, 
+.dxpMaterialListClass .searchResultsListDgm:hover,
+.secondDxpSplitterData .searchResultsListDgs:hover{
+    color: #252830;
+}
+.dark-mode .popoverMenuItem:hover{
+    color:#252830;
+}
+.dark-mode .introCloseAndOn .toggle-slot{
+    box-shadow: none;
+    background-color: #767676;
+}
+.dark-mode .introCloseAndOn .toggle-checkbox:checked ~ .toggle-slot {
+    background-color: var(--overlay4-dark);
+}
+.dark-mode .searchResultCardViewMainSection .filterButtonrow .iconMenuNavPrev i, .dark-mode .searchResultCardViewMainSection .filterButtonrow .iconMenuNavNext i {
+    color: var(--accent-color);
+}
+.dark-mode .searchResultCardViewMainSection .filterButtonrow .iconMenuNavPrev, .dark-mode .searchResultCardViewMainSection .filterButtonrow .iconMenuNavNext{
+    background: var(--main-background);
+}
+.dark-mode .innerThemes ul li img, .dark-mode .moreThemes ul li img{
+    filter: inherit;
+}
+.dark-mode .homeChartWrapDiv .homeChartParentDiv{
+    border: 1px solid var(--dark-border-color);
+}
+.dark-mode .chatIcon img, .dark-mode .chatBotHeaderTop .leftBotIcon img{
+    filter: inherit;
+}
+.dark-mode .ui-dialog .ui-dialog-titlebar{
+    background-color: var(--overlay1-dark);
+    border: 1px solid var(--dark-border-color);
+}
+.dark-mode .expendInOutDivClass{
+    background-color: var(--main-background);
+}
+.dark-mode .expendInOutDivClass:hover{
+    border-color:var(--dark-border-color);
+}
+.dark-mode .expendInOutDivClass i{
+    color: var(--accent-color);
+}
+.dark-mode div#expendFooterInOutDivClass{
+    background-color: var(--overlay3-dark);
+    color:var(--accent-color);
+}
+.dark-mode div#expendFooterInOutDivClass:hover{
+    background-color:var(--main-background);
+    transition:300ms;
+    border:1px solid var(--dark-border-color);
+}
+.dark-mode .modal .modal-header{
+    background-color: #5f5f64;
+    border: 1px solid #5f5f64;
+}
+.dark-mode .signOutpopUp .modal-header h5 {
+    color:var(--text-color-primary);
+}
+.dxpPageWrapper .dxpSideMenuClass .dxpMenuImageClass img{
+    width: 25px;
+}
+.dxpTheme .sidebar-wrapper {
+    background: #fff;
+    border-right: 1px solid #f1f1f1;
+}
+.dxpPageWrapper #sidebar.toggled .sidebar-content{
+    min-width: 60px;
+    max-width: 60px;
+}
+.dxpPageWrapper #sidebar.toggled .menuTitle{
+    display: none;
+}
+.dxpPageWrapper #sidebar.toggled .sidebar-dropdown .sidebar-submenu, .dxpPageWrapper #sidebar.toggled .sidebar-dropdown .active .sidebar-submenu{
+    display: none !important;
+}
+.dark-mode .sidebar-wrapper .sidebar-content{
+    width: 270px;
+    border-right: 1px solid var(--dark-border-color);
+}
+.dark-mode .sidebar-content {
+    height: calc(100vh - 20px - 20px);
+    overflow-y: hidden;
+    position: fixed;
+    z-index: 999;
+}
+.dark-mode .sidebar-wrapper .sidebar-menu ul li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    padding: 12px 0;
+    text-align: inherit;
+    color: var(--text-color-primary);
+    border-bottom: 1px solid var(--dark-border-color);
+}
+.dark-mode .sidebar-wrapper .sidebar-menu ul li.active>a{
+    background-color: #040404;
+}
+.dark-mode .sidebar-wrapper .sidebar-menu .sidebar-dropdown>a:after, .dark-mode .sidebar-wrapper .sidebar-menu .level2dropdown>a:after{
+    content: '\f054';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    color:var(--text-color-primary);
+    font-size: 10px;
+}
+.dark-mode .sidebar-wrapper .sidebar-menu .level3dropdown>a:after, .dark-mode .sidebar-wrapper .sidebar-menu .level4dropdown>a:after{
+    content: '\f054';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    color:var(--text-color-primary);
+    font-size: 10px;
+}
+
+/*genericForm Page dark css*/
+.dark-mode .registrationgeneric{
+    /*    background-color: #5f5f64;*/
+    background-color: var(--overlay2-dark);
+    color:var(--text-color-primary);
+}
+.dark-mode .visionRegisterMaterialFormTable th input[type="text"], .dark-mode .responsiveTable th input[type="text"], .dark-mode .visionRegisterMaterialFormTable th select, .dark-mode .responsiveTable th select,.dark-mode .visionRegisterMaterialFormTable th textarea, .dark-mode .responsiveTable th textarea{
+    border-left: 2px solid var(--dark-border-color) !important;
+    border-top: 2px solid  var(--dark-border-color) !important;
+    border-bottom: 2px solid var(--dark-border-color) !important;
+}
+.dark-mode .visionFormDataButtons b input{
+    border-color:var(--dark-border-color);
+    background-color: var(--overlay2-dark);
+    color: #f1f1f1 !important;  
+    border: 1px solid transparent;
+}
+.dark-mode .visionRegistartionGeneric .visionRegisterMaterialAccordians .accordian h3{
+    border-color:var(--dark-border-color) !important;
+}
+.dark-mode .visionRegisterMaterialAccordians{
+    border-color:var(--dark-border-color) !important;  
+}
+.dark-mode .visionRegistartionGeneric .visionRegisterMaterialAccordians .charAccordianbtnMainDiv{
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .visionRegistartionGeneric .expandAll{
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .visionRegisterMaterialAccordians .accordian .ui-accordion-content, .dark-mode .visionRegisterMaterialSubAccordians .accordian .ui-accordion-content{
+    border-color:var(--dark-border-color) !important;  
+}
+/*.dark-mode .visionRegisterMaterialAccordians table input{
+    border-color:var(--dark-border-color) !important;  
+}*/
+.dark-mode .materialBasketClass{
+    color: #f1f1f1 !important;  
+}
+.dark-mode .introCloseAndOn .toggle-slot{
+    box-shadow: inherit;
+}
+.dark-mode .jqx-fill-state-pressed {
+    border-color:var(--dark-border-color) !important;
+    color:var(--text-color-primary);
+}
+.dark-mode #activeMainTabId{
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .activeTabMainDiv #activeMainTabId .activeTabMainDiv-nav__item .activeFirstTabMainImgSpan{
+    background-color: #5a5a5a;
+}
+.dark-mode .activeTabMainDiv .pre_nextButtonClass span{
+    background-color:#3e3e42;
+    border:2px solid #fff;
+}
+.dark-mode .subscription-right-info .sub-header-title{
+    background-color: #606060;
+}
+.dark-mode .activeTabMainDiv-nav__item{
+    background-color: #3e3e42;
+}
+.dark-mode .activeTabMainDiv #activeMainTabId .activeTabMainDiv-nav__item .activeFirstTabMainTextSpan{
+    color:var(--text-color-primary);
+}
+.dark-mode .main-info-form-Div .subscription-right-info input{
+    background-color:#3e3e42;
+}
+.dark-mode .visionGridDataAlignInfo{
+    color:var(--text-color-primary);
+}
+.dark-mode #inneractiveTabMainDiv .activeTabMainDiv-nav.activeTabInnerBtnDiv{
+    border-top-color:var(--text-color-primary) !important;
+}
+.dark-mode .activeTabMainDiv #activeMainTabId .activeTabMainDiv-nav__item.current .activeFirstTabMainTextSpan:after{
+    background-color:var(--text-color-primary);
+}
+.dark-mode .showTimerWithImage{
+    box-shadow:0 0 2px 1px #fff;
+}
+.dark-mode .showConfigTimer{
+    color:var(--text-color-primary);
+}
+.dark-mode .iconNavPrev,.dark-mode .iconNavNext{
+    color:var(--text-color-primary);
+}
+/*.dark-mode .mainBookMark .flex-container .defaultDiv p,
+.dark-mode .mainBookMark .flex-container .dxpTabBlue p,
+.dark-mode .mainBookMark .flex-container .active p{
+    border: 2px solid #5f5f64;
+    color:var(--text-color-primary);
+    background-image: linear-gradient(#252830,#252830);
+}*/
+.dark-mode .activeClass{
+    background-color: black ;
+}
+.dark-mode .bubble-container{
+    background-color: #252830;
+    border: 1px solid #525354;
+}
+.dark-mode .bubble-container .mainHeader{
+    background-color:#525252;
+    border-bottom: 1px solid #525252;
+}
+.dark-mode .bubble.say:not(.reply){
+    background-color:#525252;
+    border:1px solid #525252;
+}
+.dark-mode .bubble-container .input-wrap textarea{
+    background-color:#525252;
+    color:var(--text-color-primary);
+    box-shadow: none;
+}
+.dark-mode .chatBotHeaderTop .leftBotIcon p{
+    color:var(--text-color-primary);
+}
+.dark-mode .chatIcon .howmayhelp{
+    color:var(--text-color-primary);
+}
+.dark-mode .chatIcon{
+    background-color: #525252;
+    border: 1px solid #525252;
+    color:var(--text-color-primary);
+}
+.dark-mode .bubble.reply .bubble-content .bubble-button{
+    background: #525252;
+    border: 1px solid #525252;
+}
+.dark-mode .bubble.reply .bubble-content .bubble-button:hover{
+    background: inherit;
+    border: 1px solid #3e3e42;
+}
+.dark-mode .chatBotHeaderTop .chatbotClose img {
+    filter: brightness(0.5) invert(100%) sepia(66%) contrast(100%) grayscale(100%);
+}
+.dark-mode .bubble-container{
+    box-shadow: none;
+}
+.dark-mode .bubble.reply .bubble-content .bubble-button.bubble-pick{
+    background: #525252;
+}
+
+.dark-mode .visionRegisterAccrodiansClass .ui-state-default .ui-icon, .dark-mode .visionRegisterMaterialAccordians .ui-state-default .ui-icon {
+    background-image: url(../../images/jquery-ui-theme/ui-icons_ffffff_256x240.png) !important;
+}
+.dark-mode .dxpLoginHeader .showHeaderpopUpBox::after {
+    border-left: 10px solid #525252;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #525252;
+    border-bottom: 5px solid transparent;
+}
+.dark-mode .dxpLoginHeader .showHeaderpopUpBox {
+    background-color: #525252;
+    border: 1px solid #525252;
+}
+.dark-mode .dxpLoginHeader .showHeaderpopUpBox .border{
+    border: 1px solid #626262 !important;
+}
+@media(max-width:1024px){
+    .dark-mode .dxpLoginHeader .navbar-light .navbar-toggler-icon {
+        background-image: url(../../darkimages/mobileMenuIcon.png);
+    }
+}
+@media(max-width:768px){
+    .dark-mode .dxpLoginHeader .navbar-light .navbar-toggler-icon {
+        background-image: url(../../darkimages/mobileMenuIcon.png);
+    }
+}
+@media(min-width:769px){
+    .dark-mode .dxpLoginHeader #collapsibleNavbar {
+        background-color: inherit;
+    }
+}
+.dark-mode .visualizeChartHomeSlicerClass ul .homefilterColumnsDiv li{
+    background: #4e4e4e;
+}
+.dark-mode .rightPannelSettings .listofSettingDiv ul li ul li ul li a{
+    color:var(--text-color-primary) !important;
+}
+.dark-mode .rightPannelSettings {
+    position: fixed;
+    top: 51px;
+    right:0;
+} 
+.dark-mode ::placeholder{
+    color:var(--text-color-secondary) !important;
+}
+.dark-mode .rightPannelSettings .settingPannelInnerWrapper .listofSettingDiv  ul li:hover{
+    background-color:var(--overlay4-dark);
+    transition: all .3s ease-in-out;
+}
+.dark-mode .rightPannelSettings .settingPannelInnerWrapper .listofSettingDiv  ul li:hover a .mobileTitle{
+    transform: scale(0.99);
+    /*padding-left:4px;*/
+    transition: all 0.3s ease-in-out;
+}
+.dark-mode .scheduledCalendarMainWrapper .empty-day:hover{
+    background-color: transparent;
+}
+.dark-mode hr {
+    background-color: var(--text-color-primary);
+}
+.dark-mode .colorPallatteMainDiv .colorblockTitle h5 {
+    color: #000;
+}
+.dark-mode input{
+    color:var(--text-color-primary);
+    background: var(--overlay3-dark);
+    border: 1px solid var(--dark-border-color);
+}
+.dark-mode input:focus{
+    color:var(--text-color-primary) !important;  
+    box-shadow: none;
+    outline: none;
+}
+.dark-mode .menutabClass{
+    background-color:var(--overlay2-dark) !important;
+}
+.dark-mode .listofSettingDiv.userAccountDetails .userDataClass ul li img{
+    filter: brightness(0.5) invert(100%) sepia(66%) contrast(100%) grayscale(100%) !important;
+}
+.dark-mode .planSection .plansAccordian {
+    background-color: #5f5f5f;
+}
+.dark-mode .planSection .plansAccordian{
+    border:0;
+}
+.dark-mode .main-info-form-Div .plansList li i {
+    color:var(--text-color-primary);
+    border: 2px solid #ffffff;
+}   
+.dark-mode #tabPrevId:hover, .dark-mode #tabNextId:hover {
+    background-color: #5a5a5a;
+}
+.dark-mode .jqx-menu-wrapper .jqx-menu-vertical .jqx-menu-ul{
+    background-color:#252831 !important;
+}
+.dark-mode .jqx-menu li, .jqx-menu-dropdown li{
+    color:var(--text-color-primary) !important;
+}
+.dark-mode .jqx-grid-cell-sort-alt-energyblue, .dark-mode .jqx-grid-cell-filter-alt-energyblue,
+.dark-mode .jqx-grid-cell-pinned-energyblue,
+.dark-mode .jqx-grid-cell-alt-energyblue,
+.dark-mode .jqx-grid-cell-sort-energyblue{
+    background-color:var(--overlay1-dark) !important; 
+}
+.dark-mode .searchDiv input{
+    background:var(--overlay2-dark-dark);
+    color:var(--text-color-primary);
+}
+.dark-mode .fa-microphone,.dark-mode .fa-close{
+    color:var(--text-color-primary);
+}
+.dark-mode .searchDiv input:focus{
+    border:none;
+}
+.dark-mode .searchbarDivClass .searchDiv{
+    border-color:var(--dark-border-color);
+}
+.dark-mode .btn-primary:hover{
+    /*    background-color:inherit !important;
+        color:var(--text-color-primary) !important;
+        border-color:var(--text-color-primary) !important;*/
+    background-color:inherit !important;
+    color:var(--text-color-primary) !important;
+    border-color:var(--dark-border-color)!important;
+}
+.dark-mode .pannelAIwrapper{
+    border: 1px solid var(--dark-border-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--overlay1-dark);
+}
+.dark-mode .closeAibutton{
+    background-color: var(--overlay4-dark);
+    border-bottom: 1px solid var(--dark-border-color);
+}
+.dark-mode .userAIInputText input:focus{
+    background-color: var(--overlay2-dark);
+}
+.dark-mode .closeAibutton a{
+    color: var(--text-color-primary);
+    border: 1px solid var(--dark-border-color);
+} 
+.dark-mode .aiWelcometext ul{
+    color: var(--text-color-primary);
+}
+.dark-mode .overlay-content .introGuiderAi p{
+    color: var(--text-color-primary);
+}
+.dark-mode .aiLensMainResultBoxClass{
+    border: 1px solid var(--dark-border-color);
+}
+.dark-mode .dxpLoginHeader .navbar-collapse .userProfileIcon img.userMainProfile{
+    filter: inherit;
+}
+.dark-mode .searchedDxpSearchResults .badge, .dark-mode .dxpMaterialListClass .badgeDgm, .dark-mode .secondDxpSplitterData .badgeDgs{
+    color: var(--text-color-primary);
+}
+.dark-mode #genericPdfDataSheetExport img{
+    filter: inherit;
+}
+.dark-mode .aiButtongroup button{
+    border: 1px solid var(--dark-border-color);
+    color: var(--text-color-primary);
+}
+.dark-mode .listItemsViews li .textContent{
+    color: var(--text-color-primary);
+}
+.dark-mode .listItemsViews li .viewData .viewButton, .dark-mode .listItemsViews li .viewData .viewAnalyticsbutton{
+    color: var(--text-color-primary); 
+}
+.dark-mode .aiChatgptResponseContainer .aiAppendSenderDataClass{
+    border: 1px solid var(--dark-border-color);
+    background-color: var(--overlay4-dark);
+}
+.dark-mode .listItemsViews li{
+    color: var(--text-color-primary);
+    border-bottom: 1px solid var(--dark-border-color); 
+}
+.dark-mode .listItemsViews li .viewButton:hover, .dark-mode .listItemsViews li .viewAnalyticsbutton:hover{
+    color: var(--text-color-primary);
+}
+/*.dark-mode .aiLensMainResultBoxClass::before{
+    background-color: #252830;
+}*/
+
+.dark-mode .navbar-clientbrand img{
+    filter: inherit;
+}
+.dark-mode .rightPannelSettings .listofSettingDiv ul li.fontChangeIcon.show ul.dropdown-menu.show li a,
+.dark-mode .rightPannelSettings .listofSettingDiv ul li.fontSizeIcon.show ul.dropdown-menu.show li a{
+    color:var(--text-color-primary);
+}
+.dark-mode .rightPannelSettings .listofSettingDiv ul li.fontChangeIcon.show ul.dropdown-menu.show li:hover,
+.dark-mode .rightPannelSettings .listofSettingDiv ul li.fontSizeIcon.show ul.dropdown-menu.show li:hover{
+    background-color: #5f5f64 !important;
+}
+.dark-mode .settingPannelInnerWrapper .listofSettingDiv .fontSizeIcon .dropdown-menu.show{
+    background: #252830 !important; 
+}
+.dark-mode .visionFormDataButtons b input{
+    font-weight: 600;
+}
+.dark-mode .footer-social-icons li.twitterxicon a svg{
+    fill: #fff;
+}
+.dark-mode .visionRegisterMaterialImage .visionRegisterMaterialImagePanel .carousel.slide .form-check-label img,
+.dark-mode .PilogresearchSearch #templetesearchresult #templateResults #wrappertemplateResults #contenttemplateResults #contenttabletemplateResults div img,
+.dark-mode .dictonary-search-dropdown .ui-menu-item .dxpDictionaryMainClass .media img,
+.dark-mode #visionTempleteHoverImage span img{
+    filter: inherit;
+}
+.dark-mode #dxpSearchSeconddiv .searchbarDivClass .searchDiv .clear-icon i.fa-close{
+    color:var(--text-color-primary);
+}
+.dark-mode .visionFormDataButtons b input:hover{
+    border-color:var(--dark-border-color);
+}
+.dark-mode .saveSrchButton {
+    background-image: url(../../images/saveSearch.png);
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+    background-position-y: 5px;
+    background-size: 16px;
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .dxpTaskListDivClass .visionTask {
+    box-shadow: 0px 0px 2px #7b7b7b, 0px 0px 0px #4e4e4e;
+}
+.dark-mode .visionTaskWel span b, .dark-mode .visionTaskActions span, .dark-mode .visionTaskActionContent span {
+    color:var(--text-color-primary);
+}
+.dark-mode .visionTaskActionItemsTable {
+    border: 1px solid #ffffff;
+}
+.dark-mode .js-plotly-plot .plotly .modebar.vertical .modebar-group a.modebar-btn svg {
+    background: transparent !important;
+}
+.dark-mode .searchDiv .dxpAdavanceSearchClass .floatingdxpAdavanceSearchOptions {
+    background: var(--overlay2-dark);
+    color: var(--text-color-primary);
+}
+.dark-mode .aibottomMessageContainer .userAIInputBottomWidget .userAIInputText .form-control {
+    background-color: var(--overlay2-dark);
+    border: none;
+}
+.dark-mode .aiButtongroup .btn.active {
+    background-image: linear-gradient(to right, #272727, #7d7d7d);
+    border: 1px solid var(--dark-border-color);
+    color: var(--text-color-primary);
+}
+.dark-mode .OpenAisection .overlay {
+    right: 0px;
+    border-radius: 10px 0 0 10px;
+}
+
+.dark-mode  .aiUserNotif {
+    color:var(--text-color-primary);
+}
+.dark-mode .dataDxpSplitterValue .modal-dialog .modal-content .modal-footer .btn{
+    margin:0;
+}
+.dark-mode .dataDxpSplitterValue .modal-dialog .modal-content .modal-footer .btn:not(:last-child){
+    margin-right: 5px;
+}
+.dark-mode .dataDxpSplitterValue .modal-dialog .modal-content .modal-header .close span{
+    background:transparent;
+}
+.dark-mode .searchResultsCount {
+    border-radius: 0px 0 2px 2px;
+    background: var(--overlay3-dark);
+    color:var(--text-color-primary);
+    border: 1px solid var(--dark-border-color);
+}
+.dark-mode .ui-menu.dictonary-home-dropdown .ui-menu-item .dxpDictionaryMainClass .media img{
+    filter: inherit;
+}
+.dark-mode .ui-widget-content {
+    background: var(--overlay2-dark);
+    color: var(--text-color-primary);
+}
+.dark-mode .visionMasterDetailPanelBottom .jqx-tabs-title-container .jqx-tabs-title-selected-top {
+    background-color: #3e3e42 !important;
+    font-weight: 500;
+}
+
+.dark-mode #dxpTabsMenus .sidebar-content::-webkit-scrollbar-thumb {
+    background: #252830 !important;
+}
+.dark-mode #dxpTabsMenus .sidebar-content::-webkit-scrollbar-track {
+    border:inherit !important; 
+}
+.dark-mode::-webkit-scrollbar-thumb {
+    background: #252830 !important;
+    border: 1px solid #5f5f64 !important;
+}
+.dark-mode::-webkit-scrollbar-track {
+    background: #3e3e42;
+    border: 1px solid #5f5f64 !important;
+    border-radius: 0;
+}
+.dark-mode .extendedChartView .js-plotly-plot .plotly .modebar.vertical {
+    background: #3e3e42 !important;
+    border: 1px solid #555;
+}
+.dark-mode .svg-container svg:first-child{
+    background: var(--main-background) !important; 
+}
+.dark-mode .modal-content .modal-header .close span {
+    background-color: transparent;
+}
+.dark-mode .visualizationDashboardView .js-plotly-plot .plotly .modebar.vertical {
+    background: var(--overlay1-dark) !important;
+}
+.dark-mode .popover-body {
+    border: 1px solid var(--dark-border-color);  
+    background: var(--main-background);
+    color:var(--text-color-primary);
+    border-radius: 0 0px 5px 5px;
+}
+.dark-mode .popover-header {
+    background-color: #5d5c5c;
+    border-bottom: 0px solid #ebebeb;
+}
+.dark-mode .bs-popover-bottom>.arrow::after { 
+    border-bottom-color: #5d5c5c;
+}
+/*.dark-mode .visionSearchExportButton:hover{
+    background-color: #6e6e6e !important;
+}*/
+
+.dark-mode .paramSearchbtn input[type="button"]:hover {
+    border: 1px solid var(--dark-border-color);
+    background-color:var(--main-background);
+    border-radius:inherit;
+}
+.dark-mode .visionRegistartionGeneric .extended_Records {
+     background-color: var(--overlay2-dark);
+    border-color:var(--dark-border-color);
+}
+.dark-mode .visionRegistartionGeneric .sortGerericDxpFormMianDiv {
+    background-color: #3e3e42;
+    box-shadow: 0 3px 5px -3px #a4a4a4;
+}
+.dark-mode .visionRegistartionGeneric .expandAll,
+.dark-mode .visionRegistartionGeneric .collapseAll {
+    color: var(--accent-color) !important;
+    background-color: var(--overlay4-dark) !important;
+    border: 1px solid var(--dark-border-color) !important;
+}
+.dark-mode .visionRegistartionGeneric .extended_Records .collapseview i{
+    color:var(--accent-color)
+}
+.dark-mode .userProfileImgDiv .avatar-upload .avatar-edit input + label {
+    background: #c2c2c2;
+    border: 1px solid #f1f1f1;
+}
+.dark-mode .userProfileImgDiv .avatar-upload .avatar-edit input + label:after {
+    color: #000000;
+}
+.dark-mode .userProfileImgDiv .avatar-upload .avatar-preview {
+    border: 6px solid #5f5f64;
+}
+.dark-mode .dxpLoginHeader .navbar-collapse .userProfileIcon .userMainProfile {
+    border: 1px solid var(--dark-border-color);
+}
+.dark-mode .stopresponding .btn-primary {
+    border: 1px solid #ffffff !important;
+}
+.dark-mode .stopresponding .stopIcon i,
+.dark-mode .stopresponding .stopText{
+    color:var(--text-color-primary);
+}
+.dark-mode .dialogFactsAndStatsDiv .ui-dialog-titlebar-close {
+    background-color: #4e4e4e;
+    border: #4e4e4e;
+    border-radius: 2px;
+}
+.dark-mode .dialogFactsAndStatsDiv .ui-dialog-titlebar-close:focus{
+    outline:0;
+    box-shadow: none;
+}
+.dark-mode .dxpSplitterTabsContent .searchResultCardViewMainSection #allContentMainDiv .filterButtonrow .col-12::-webkit-scrollbar-track {
+    background: var(--overlay2-dark) !important;
+}
+.dark-mode .dxpSplitterTabsContent .searchResultCardViewMainSection #allContentMainDiv .filterButtonrow .col-12::-webkit-scrollbar-thumb{
+    background: #bbbbbb !important;
+}
+.dark-mode .dxpSplitterTabsContent .searchResultCardViewMainSection {
+    border-bottom: 2px solid var(--dark-border-color);
+}
+.dark-mode .homeChartParentDiv .chartMain .xaxislayer-above .xtick text, .dark-mode .homeChartParentDiv .chartMain .yaxislayer-above .ytick text {
+    fill: #fff !important;
+}
+.dark-mode #dxp1Firstdiv .visionCategorySearch .visionCategorySubmit .textsearchbutton, 
+.dark-mode #dxp1Firstdiv .visionCategorySearch .visionCategorySubmit .textclearButton {
+    background-color: transparent;
+    color:var(--text-color-primary);
+    border: 2px solid #c2c2c3;
+}
+.dark-mode .folder {
+    background-color: #3e3e42;
+    border-color:var(--dark-border-color);
+}
+.dark-mode .folder-tip {
+    background-color: #3e3e42;
+    border-left: 1px solid #aeaeaf;
+    border-right: 1px solid #aeaeaf; 
+    border-top: 1px solid #aeaeaf;
+}
+.dark-mode #categorysrchnvgn.visionBreadcrumMenu ul li a {
+    color: var(--text-color-primary);
+}
+.dark-mode .navigateRecords {
+    background-color: #3e3e42;
+}
+.dark-mode .folder-image {
+    background-color: #3e3e42;
+    border-color: #c4c4c5;
+}
+.dark-mode #categorySearchpanel.visionCategorySearchPanel .imagesearch-groups.visionImageSearchGroups .folder-cover .folder-image .discipline-count-image img{
+    filter: invert(0);
+}
+/*---------------Pranjay-----------------*/
+.dark-mode .visionRegisterMaterialAccordians input[type="button"], 
+.dark-mode .visionSearchImport , 
+.dark-mode .searchedDxpFirstSearchResults .searchFirstResultsList , 
+.dark-mode .tg-wrap .tg,
+.dark-mode .dxpTabsMenus li , 
+.dark-mode .dxpTaskListDivClass .visionTask , 
+.dark-mode .visionTaskActionItemsTable , 
+.dark-mode .visionTaskActions , 
+.dark-mode .visionTask .visionTaskPagination , 
+.dark-mode .rightPannelSettings .listofSettingDiv ul li , 
+.dark-mode .tg-wrap .tg tr , 
+.dark-mode .scheduledCalendarMainWrapper #table-body .row{
+    border-color:var(--dark-border-color);
+} 
+/*.visionRegisterMaterialAccordians input[type="button"], .visionSearchImport{
+    
+}*/
+.dark-mode hr{
+    background-color: #5f5f64 !important;
+}
+/*---------------Pranjay-----------------*/
+/*---------------Pranjay changes 03-06-2024-----------------*/
+.dark-mode .smartsearchinnerclass{
+    background-color: var(--overlay1-dark);
+}
+.dark-mode .searchbarDivClass .searchResultsValue{
+    color: var(--text-color-primary); 
+}
+.dark-mode .changepassword .titlepasswordClass.row .col-md-8.form-group .user-wrapper input , .dark-mode .form-control[readonly]{
+    background-color: var(--overlay1-dark); 
+}
+.dark-mode .aiLensMainResultBoxClass::before , .dark-mode .aiAppendSenderDataClass::before {
+     background-color: inherit;
+    border-color:var(--dark-border-color);
+}
+.dark-mode .aiAppendSenderDataClass::before{
+    background-color:var(--overlay4-dark);
+}
+.dark-mode .updatepasswordClass .col-md-8.form-group.eye_icon i{
+    color: var(--text-color-primary);
+    background-color: var(--overlay2-dark);  
+}
+.dark-mode .customMenupopover .menuPopoverContent .popup-text h6{
+    color: var(--text-color-primary);
+}
+.dark-mode .visionFormCharactristicsInput input , .dark-mode .pvtRenderer , .dark-mode .pvtAggregator{ 
+    border-color:var(--dark-border-color);
+}
+.dark-mode .aicontentArea::-webkit-scrollbar-thumb {
+    background-color: #5f5f64 !important;
+    border: 1px solid #5f5f64 !important; 
+}
+.dark-mode .templatehoverdImagexpand img{
+    filter: inherit;
+}
+
+
+.dark-mode .pvtAxisContainer, .dark-mode .pvtVals{
+    background-color: #3e3e42 !important;
+    border-color: #252830;   
+}
+.dark-mode table.pvtTable tbody tr th , .dark-mode table.pvtTable tbody tr td{
+    background-color: #3e3e42 !important;
+    color: var(--text-color-primary);  
+}
+.dark-mode .pvtAxisContainer li span.pvtAttr{
+    background-color: inherit;
+    color: var(--text-color-primary);
+}  
+
+.dark-mode .aiLensImageDataClass{
+    border-color:var(--dark-border-color);  
+}
+.dark-mode .jqx-grid-cell-filter {
+    background-color: inherit !important; 
+}
+
+.dark-mode input.exportClass
+{
+    background-image:url("../../images/export_icon_white.png");   
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-size: 16px; 
+    background-color: transparent;
+}
+
+.dark-mode .visionInputDisable{
+    background-color: #53616a !important;
+    /*color: #7e7e7e !important;*/
+}
+.dark-mode .visionDDWFilter {
+    background-image: url("../../images/clear_filter_icon_blue_new.png") !important;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+}
+
+.dark-mode .visionPDRTableData , .dark-mode .visionConsolidationSubTable tr td ,  .dark-mode #duplicateCheckForm .visionRegisterMaterialTableTab .visionPDRFormTable table{
+    border-color: var(--dark-border-color);
+}
+.dark-mode .ui-dialog .visionRegisterMaterialTableTab .updateActionButton, .dark-mode .ui-dialog .visionRegisterMaterialTableTab .visionConsolidationResetButton, .dark-mode .ui-dialog .visionRegisterMaterialTableTab .visionConsolidationExportButton{
+    background-color:var(--overlay1-dark);
+    color: var(--text-color-primary);
+    border-color: var(--dark-border-color);
+}
+
+.dark-mode .updateActionButton{
+    background-image: url(../../images/SaveIcon.svg) ;
+}
+.dark-mode .visionConsolidationExportButton{
+    background-image: url(../../images/export_icon_blue.png);
+}
+.dark-mode .visionConsolidationResetButton{ 
+    background-image: url('../../images/reset_icon3.png');   
+}
+.dark-mode .visionConsolidationSubTable tr th{
+    background-color: var(--overlay1-dark);
+}
+.dark-mode .VisionPDRMatrixTdImgDiv img{ 
+    filter:inherit;
+}
+.dark-mode .visionPaginationPage{
+    color: #000;
+}
+.dark-mode .searchDiv .clear-icon{
+    background-color: inherit;
+}
+.dark-mode .dxpPdfFormShowClass img{
+    filter: inherit;
+}
+/*new styles*/
+.dark-mode .newCalendarEventClass .modal-content .modal-body .addForm .titleLabelSpanClass span input,
+.dark-mode .newCalendarEventClass .modal-content .modal-body .addForm .timeLabelSpanClass span input{
+    border-color: #848488;
+    color:var(--text-color-primary);
+}
+.dark-mode .newCalendarEventClass .modal-content .modal-body .addForm .titleLabelSpanClass span .mainTitle,
+.dark-mode .newCalendarEventClass .modal-content .modal-body .addForm .timeLabelSpanClass span label{
+    color:var(--text-color-primary);
+}
+.dark-mode .newCalendarEventClass .modal-content .modal-footer .btn-primary {
+    color: #ffffff !important;
+    background-color: #3e3e42 !important;
+    border: 1px solid #848488 !important;
+}
+.dark-mode .OpenAisection .overlay-content .searchAiBarDiv input:focus{
+    background: #181a1f;
+    border-color: #919191;
+}
+.dark-mode .newCalendarEventClass .modal-content .modal-body .addForm .timeLabelSpanClass span input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(1) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+
+/*new style 24-06-24*/
+.dark-mode .button_Register {
+    background-image: url(../../images/register_icon_white.png);
+    background-position-x: 8px;
+    padding: 0 8px 0 30px !important;
+}
+.dark-mode .visionRegisterMaterialFormTable .button_Extend:hover, 
+.dark-mode .visionRegisterMaterialFormTable .button_Extend {
+    background-image: url(../../images/iDXPExtend_white.png);
+}
+.dark-mode .aiLensImageDataClass{
+    border:0;
+}
+.dark-mode .aiLensResultDataClass {
+    color: var(--text-color-primary);
+    border-bottom: 1px solid #5f5f64;
+}
+.dark-mode .show_detail {
+    background: #252830 url(../../images/pdficon.png) no-repeat center !important;
+    background-size: 15px !important;
+}
+.dark-mode .dxpSplitterTabsContent .visionGenericTabContainer .visionGenericTabsOpeartions .visionGenericTabExport input.exportClass {
+    background-image: url(../../images/export_icon_white.png);
+    background-size: 20%;
+}
+/* new changes for the day 25-06-24 pilogCloudDark.css  */
+.dark-mode .visionDDWFilter {
+    border: 1px solid #878787 !important;
+}
+.dark-mode .pieLegends{
+    background: var(--main-background); 
+}
+.dark-mode .dxpLoginHeader .searchMainWrap{
+    border-color: var(--dark-border-color);
+} 
+.dark-mode .searchMainWrap .has-search input.form-control{
+    border-left: 1px solid var(--dark-border-color);
+}
+
+.dark-mode .visionCharMandColor{
+    color:var(--error-color);
+}
+.dark-mode .visionDuplicateMatch{
+    color: var(--success-color);
+}
+.dark-mode .searchedDxpFirstSearchResults .searchFirstResultsList:hover{
+    background-color: var(--overlay4-dark);
+}
+
+/*Pilog repository search darktheme css starts here*/
+.dark-mode .mainWrapperContainer{
+    background-color:var(--overlay1-dark); 
+}
+.dark-mode .mainWrapperContainer .leftContentdataMainWrapper{
+    border-color:var(--dark-border-color);
+}
+.dark-mode .dxphmlTreeDiv{
+    background-color:var(--overlay1-dark);
+}
+.dark-mode .mainWrapperContainer .leftContentdataMainWrapper .leftInnerContentdiv .visionDxpTreeDropDown select{
+    border-color:var(--dark-border-color);
+    background-color:var(--overlay2-dark);
+    color:var(--text-color-secondary);
+}
+.dark-mode .mainWrapperContainer .leftContentdataMainWrapper .leftHeaderMaindiv, .dark-mode .mainWrapperContainer .rightContentdataMainWrapper .rightHeaderMaindiv  {
+    background-color:var(--overlay2-dark);
+    border-color:var(--dark-border-color);
+    color:var(--text-color-primary);
+}
+.dark-mode .mainWrapperContainer .leftContentdataMainWrapper .leftHeaderMaindiv .dropdown select{
+    background: var(--main-background) !important;
+    color:var(--text-color-primary);
+    border-color: var(--dark-border-color);
+}
+.dark-mode .mainWrapperContainer .leftContentdataMainWrapper .leftHeaderMaindiv .leftContentBtn.viewButton , .dark-mode .mainWrapperContainer .rightContentdataMainWrapper .rightContentBtn.viewButton{
+    background:var(--main-background) !important;
+    color:var(--text-color-primary);
+    border-color: var(--dark-border-color);
+}
+.dark-mode .dxphmlTree  {
+    background-color:var(--overlay1-dark);
+}
+.dark-mode .htmltreeproductname{
+    background-color:var(--overlay2-dark) !important;
+    color:var(--text-color-secondary);
+}
+.dark-mode .mainWrapperContainer .leftContentdataMainWrapper .dxphmlTreeDiv .htmltreeproductname:before{
+    background:var(--overlay1-dark);
+    border-color:var(--dark-border-color);
+} 
+
+
+.dark-mode .jqx-grid .jqx-grid-content div>[role="row"]:nth-child(odd){
+    background-color:var(--overlay1-dark);
+}
+.dark-mode .jqx-grid .jqx-grid-content div>[role="row"]:nth-child(even){
+    background-color: var(--overlay3-dark);
+}
+.dark-mode .floatingdxpAdavanceSearchOptions {
+    border-color:var(--dark-border-color);   
+}
+.dark-mode .visionParamSearchCover td{
+    border-color: var(--dark-border-color);
+}     
+.dark-mode .searchFirstResultsList{
+    border-color:var(--dark-border-color);
+} 
+
+
+
+.dark-mode .jqx-grid .jqx-grid-content div > [role="row"]:nth-child(odd) .visionGridDataAlignInput .visionGridDataAlignInputField input {
+    background-color: var(--overlay1-dark);
+}  
+.dark-mode .jqx-grid .jqx-grid-content div > [role="row"]:nth-child(even) .visionGridDataAlignInput .visionGridDataAlignInputField input{
+    background-color: var(--overlay3-dark); 
+} 
+
+.dark-mode .customecheckmark ,.dark-mode .customcontainer input:checked ~ .customecheckmark{
+    border-color: var(--dark-border-color) !important;
+    background: var(--overlay2-dark); 
+}
+.dark-mode .customcontainer .customecheckmark:after{
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 11px;
+    border: solid var(--text-color-primary);
+    border-width: 0px 2px 2px 0px;
+    -ms-transform: rotate(45deg) !important;
+    transform: rotate(45deg);
+}   
+
+
+.dark-mode .jqx-grid .jqx-grid-content div > [role="row"]:nth-child(odd) .visionGridDataAlignInput .visionGridDataAlignInputField input:hover,
+.dark-mode .jqx-grid .jqx-grid-content div > [role="row"]:nth-child(even) .visionGridDataAlignInput .visionGridDataAlignInputField input:hover
+{
+     background: #3e3e42;
+}
+
+.dark-mode .jqx-widget-content-ui-redmond{
+    background: inherit !important; 
+}
+
+
+.dark-mode .visionCardViewClass .visionHomeCardViewClass .visionVisualizeNormalCardHomeClass {
+    border: 1px solid var(--dark-border-color)!important;
+    width: 250px;
+    height: 70px;
+    color: var(--text-color-primary);
+}
+.dark-mode .showHideDivClass{
+  background:var(--overlay1-dark);
+  border:1px solid var(--dark-border-color) !important;
+}
+
+.dark-mode .idxpTypeView{
+    background-color: #252830;
+}
+.dark-mode .visionTaskInnerAlign div#prev , .dark-mode .visionTaskInnerAlign div#next{
+    border-color: #fff; 
+}
+.dark-mode .ui-dialog-buttonset button:hover{
+    background-color: #5f5f64 !important;  
+    border-color: #fff !important;
+}
+.dark-mode #importfiltergridcriteria .visionImportErrorMsg{
+    color: var(--text-color-secondary) !important;
+}
+.dark-mode .firsthtmlDxpSplitterTree .firstDxpSplitterData #jqxExpander .dxphmlTree{
+    background-color:var(--overlay2-dark) !important;
+    color: var(--text-color-secondary) !important;
+} 
+.dark-mode .firstDxpSplitterData button{
+    background-color: transparent !important; 
+    color: var(--text-color-primary) !important;
+}
+.dark-mode .htmltreeproductname:before {
+    content: '\002B';
+    color: var(--accent-color) !important;
+}
+dark-mode .htmltreeproductname.active:before {
+    content: "\2212";
+    color: var(--accent-color) !important;
+}
+.dark-mode .dxphtmlTreeDescription{
+    background-color: #3e3e42;
+}
+.dark-mode .visionGridDataAlign{
+    color:#fff !important;
+}
+.dark-mode .dxphtmlTreeCompDiv .accordion-trigger{
+    background-color: var(--overlay1-dark) !important;
+    border-color: var(--dark-border-color);
+}    
+.dark-mode .visionRegistartionGeneric .extended_Records:hover{
+    background-color: var(--main-background);
+     border-color:var(--dark-border-color);
+}
+
+.dark-mode .modal-body{
+    background-color: var(--overlay2-dark) !important;
+    color: var(--text-color-primary) !important;
+     border-color: var(--dark-border-color) !important;
+    
+}
+.dark-mode .modal-header, .dark-mode .modal-footer{
+    background-color: var(--overlay1-dark) !important;
+    color: var(--text-color-primary) !important;
+     border-color: var(--dark-border-color) !important;
+}
+
+.dark-mode .attachHeader th , .dark-mode .visionRegisterMaterialAccordians .visionEnclosureTable td, .visionRegisterMaterialAccordians .visionEnclosureVMTable td{
+    border-color:var(--dark-border-color);
+}
+.dark-mode .visionEnclosureTable .visionFileUpload{
+    background-color:inherit;
+}
+.dark-mode .showExtendPdfTableData #genericPdfDataSheetExport{
+    color:#000; 
+}
+.dark-mode .aiSearchTypeEnterResults{
+    border-color:var(--dark-border-color);   
+}   
+.dark-mode .aiSearchTypeEnterResults ul li{
+    border-color:var(--dark-border-color);
+    background-color: var(--overlay1-dark);  
+      
+}
+.dark-mode .aiSearchTypeEnterResults ul li .text-description{
+     color: var(--text-color-primary);   
+}
+.dark-mode div#idxpDictionayFormHeaderName{
+    background-color:var(--overlay2-dark) !important;
+}
+.dark-mode .aibottomMessageContainer .newChatDivs{
+    background:var(--overlay1-dark-dark);
+    border-color:var(--dark-border-color);
+}
+.dark-mode .aibottomMessageContainer .userAIInputBottomWidget{
+   border-color:var(--dark-border-color); 
+}
+.dark-mode .moreaiOptions{
+    background-color:var(--overlay2-dark);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.dark-mode .aiLensAttachedmentFileNameDiv{
+     background-color:var(--overlay2-dark);
+     color: var(--text-color-primary);
+      border-color:var(--dark-border-color); 
+}
+.dark-mode .aiChatgptResponseContainer .aiAppendSenderDataClass.aiAppendImageUploadDataClass{
+    border-color:var(--dark-border-color); 
+}
+.dark-mode .stopresponding .btn-primary:hover{
+    background-color:var(--overlay1-dark);
+    border-color:var(--dark-border-color); 
+}
+.dark-mode .messageSendElement{
+      border-color:var(--dark-border-color);   
+}
+.dark-mode .visionMasterDetailForm{
+    background-color:var(--overlay2-dark);
+    color:var(--text-color-primary);
+}
+.dark-mode .visionMasterDetailForm td input, .dark-mode .visionMasterDetailForm td select{
+    border-color:var(--dark-border-color) !important;
+    color: var(--text-color-primaer);
+    background: var(--overlay2-dark);
+}
+.dark-mode .ui-datepicker .ui-datepicker-header{
+    background:var(--overlay1-dark) !important;
+    border-color:var(--dark-border-color);
+    color:var(--text-color-primary);
+}
+
+.dark-mode .insightsSurveyCompareChartsDateFiltersTableClass .ui-state-default, 
+.dark-mode .ui-widget-content .ui-state-default,
+.dark-mode .ui-widget-header .ui-state-default{
+    background:var(--overlay2-dark);
+    border-color:var(--dark-border-color);
+    color:var(--text-color-primary);
+}
+.dark-mode .visionFilterGrid ,.dark-mode .visionFilterGrid th , .dark-mode .visionFilterGrid td{
+    border-color:var(--dark-border-color) !important;
+}
+.dark-mode .visionSearchImportSelect select{
+    background-color:var(--overlay3-dark);
+    border-color:var(--dark-border-color);
+    color:var(--text-color-primary);
+}
+
+.dark-mode .visionDDWClear{
+    background-image: url('../../images/clear_select_icon.png'); 
+    background-repeat: no-repeat !important;
+    background-position: 5px center !important;
+    background-size: 16px 16px !important;
+}
+.dark-mode .visionDDWSelect
+{
+    background-image: url('../../images/select_icon.png');
+    background-repeat: no-repeat !important;
+    background-position: 5px center !important;
+    background-size: 16px 16px !important;
+}
+
+.dark-mode .visionDataView{
+    background-image: url('../../images/GridDB.png');
+}
+.dark-mode .visionDataView{
+    background-image: url('../../images/GridDB.png');
+}
+.dark-mode .button_register,.button_Register,.button_Create,.dark-mode .button_create,.dark-mode .createPDRGroup
+{
+    background-image: url('../../images/register_icon_blue.png'); 
+    background-repeat: no-repeat !important;
+    background-size: 18px !important;
+    background-position-y: center !important;
+    padding-left: 5px;
+    text-align: right;
+}
+.dark-mode .processPDRGroup{
+        background-image: url(../../images/process_icon_blue.png);
+}
+.dark-mode .button_Delete {
+    background-image: url(../../images/delete_icon.svg);
+}
+.dark-mode .jqx-grid-cell-selected.jqx-grid-cell-edit input{
+ background-color: var(--overlay1-dark);   
+}
+.dark-mode .visionFormExtendDropdown .chosen-container-single .chosen-drop{
+     background-color:var(--overlay2-dark);
+    border-color:var(--dark-border-color);
+    color:var(--text-color-primary);
+   
+}
+.dark-mode .visionVisualizeChartTableClass img:first-child {
+    filter:invert(1);
+} 
+.dark-mode .personaliseoption .ui-accordion .ui-accordion-header1 .ui-icon1{
+    filter:inherit;
+}
+.dark-mode .tg-wrap .tg td:not([style*="color"]){
+    color:var(--text-color-primary);
+}
+
+.dark-mode .jqx-calendar-cell-today {
+    background-color: var(--overlay4-dark);
+    border-color: var(--dark-border-color);
+}
+
+.dark-mode .extendedChartView  .modebar-btn .icon path {
+    fill: #FFF !important;
+}
+.dark-mode .mainBookMark .flex-container .active p{
+    border: 2px solid #5f5f64;
+    color:var(--text-color-primary);
+    background-color:var(--overlay4-dark);
+    background-image:inherit;
+}
+/*current changes*/
+
+.dark-mode .formDxpDuplicates{
+    background-color:var(--overlay3-dark);
+    color:var(--text-color-primary);
+    border-color:var(--dark-border-color);
+}
+
+.dark-mode .formDxpDuplicates .inner_section .records_table thead{
+    background-image:inherit;
+    background-color:var(--overlay1-dark);
+    color:var(--text-color-primary);
+}
+.dark-mode .formDxpDuplicates table, .dark-mode .formDxpDuplicates td , .dark-mode .table>thead>tr>th{
+    border-color:var(--dark-border-color);
+}
+
+
+.dark-mode #visionChartsAutoSuggestionUserId{
+    background:var(--overlay2-dark);
+}
+
+.dark-mode .chartViewAreaClass .visionSmartBIDesignTabHeadingsDiv {
+    background-color:VAR(--overlay1-dark);    
+}
+
+.dark-mode .chartViewAreaClass .visionSmartBIDesignTabHeadingsDiv .visionSmartBiDesignTab{
+    background-color:VAR(--overlay4-dark);  
+    border-color:var(--dark-border-color);
+    color:var(--text-color-primary);
+}
+
+.dark-mode .visionChartsAutoSuggestionUserExamplesClass{
+    background-color:VAR(--overlay2-dark);
+}
+
+.dark-mode .visionVisualizeQueryBodyParentClass , .dark-mode .visionVisualizeShowTablesDataClass , .dark-mode .visionVisualizeQueryHeaderClass{
+    border-color:var(--dark-border-color);
+}
+
+.dark-mode .visionVisualizeQueryClass{
+    background-color:VAR(--overlay1-dark)!important;    
+}
+
+.dark-mode .chosen-container-single .chosen-single , .dark-mode .chosen-container-single .chosen-default ,.dark-mode .chosen-container .chosen-results{
+    color:var(--text-color-primary);  
+}
+
+/*New css 25-07-2024*/
+
+.dark-mode .rightPannelSettings .listofSettingDiv ul li.fontChangeIcon.dropdown ul li,
+.dark-mode .rightPannelSettings .listofSettingDiv ul li.fontSizeIcon.dropdown ul li {
+    border-bottom: 1px solid var(--dark-border-color) !important;
+}
+    
+
+.dark-mode #dxpTabs .dxpSplitterTabs span.dxpSplitterTabsCrossSpan {
+    filter: invert(100%) brightness(150%) contrast(100%) grayscale(100%);
+}
+
+.dark-mode .row.dxpDictPropetyDetailsClass .card .card-header {
+    background-color: var(--overlay4-dark);
+}
+
+.dark-mode .row.dxpDictPropetyDetailsClass .card .card-body { 
+    border-color: var(--dark-border-color)
+}
+.dark-mode .visionTabMenuCharacteristicsFormData .visionFormCharactristicsInputUOM .visionDrpDownUomClose{
+    filter: sepia(1) saturate(10) hue-rotate(180deg) brightness(0.9) contrast(1.2) invert(1);
+}
+.dark-mode .dxpParamsDotsButton .visionParamSearchCover thead , .dark-mode table.visionParamSearchCover thead{
+   background-color:#d0e1f9;
+    color:#000;
+} 
+.dark-mode .ai-panel-flowchart .flowchart-operator {
+    border: 1px solid var(--dark-border-color);
+    background: var(--overlay3-dark);
+}
+
+.dark-mode .ai-panel-flowchart .flowchart-operator .flowchart-operator-title {
+    border-bottom: 1px solid var(--dark-border-color);
+    background: var(--overlay2-dark);
+}
+.dark-mode .visionFilterGrid th {
+    background-color:#d0e1f9 !important;
+    color:#000 !important
+}
+.dark-mode .visionRegisterMaterialAccordians table, .dark-mode .visionRegisterMaterialSubAccordians table{
+    border-color:var(--dark-border-color);
+    margin:4px;
+}
+/*===================================== Fiori Theme ==========================================*/
+
+
+
+:root{
+    --fioriThemeMainBackground:#12171C; 
+    --fioriThemeDarkOverlay1:#1D232A;
+    --fioriThemeDarkOverlay2:#1D2D3E;
+    --fioriThemeDarkBorder:#2e3742; 
+    --fioriThemeDarkText:#FAFAFA;
+    --fioriThemeDarkTitle:#4DB1FF;
+    --fioriThemeDarkSubTitle:#8396A8;             
+}
+/*FIORI THEME DARK MODE CSS STARTS HERE BY PRK */   
+
+.dark-mode.fiorithemeClass .page-body {
+    background-color: var(--fioriThemeMainBackground); 
+}
+.dark-mode.fiorithemeClass .sapfioriMainwrappsubmenu , .dark-mode.fiorithemeClass .sapfioriwrappsubmenu{
+    background-color: var(--fioriThemeMainBackground); 
+}
+.dark-mode.fiorithemeClass .fioriMenuSingleItem{
+    background-color: var(--fioriThemeDarkOverlay1);   
+}
+.dark-mode.fiorithemeClass .fioriMenuSingleItem .submenuText p , .dark-mode.fiorithemeClass .fioriMenuSingleItem .mediaCard .submenudescription{
+    color: var(--fioriThemeDarkText);     
+}
+.dark-mode.fiorithemeClass .dxp2FioriTabsWithGridContent{
+    background-color: var(--fioriThemeMainBackground); 
+}
+.dark-mode.fiorithemeClass .fioriPendingContainer .card , .dark-mode.fiorithemeClass .gridareaContainer-section .card{
+    background-color: var(--fioriThemeDarkOverlay1); 
+}
+.dark-mode.fiorithemeClass .fioriPendingContainer .card .card-header , .dark-mode.fiorithemeClass .gridareaContainer-section .card-header{
+    background-color: var(--fioriThemeDarkOverlay1);
+}
+.dark-mode.fiorithemeClass .firstLevelMenuSection .nav-pills .nav-link , .dark-mode.fiorithemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem{
+    color: var(--fioriThemeDarkText);
+}
+.dark-mode.fiorithemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem .count{
+    color: var(--fioriThemeDarkTitle);
+}
+.dark-mode.fiorithemeClass .gridareaSection .card-header h4{
+    color: var(--fioriThemeDarkText);
+}
+.dark-mode.fiorithemeClass .firstLevelMenuSection .nav-pills .nav-link.active{   
+    color: var(--fioriThemeDarkTitle);   
+}
+.dark-mode.fiorithemeClass .visionRegisterAccrodiansClass .ui-state-default, .dark-mode.fiorithemeClass .visionRegisterMaterialAccordians .ui-state-default{
+    background-color: var(--fioriThemeMainBackground);
+    border-color:var(--fioriThemeDarkBorder) !important;
+}
+.dark-mode.fiorithemeClass .registrationgeneric , .dark-mode.fiorithemeClass .visionRegisterMaterialAccordians{
+     background-color: var(--fioriThemeDarkOverlay1);
+}
+.dark-mode.fiorithemeClass input{
+    background-color: var(--fioriThemeDarkOverlay2);  
+}
+/*========= jqx-widget ============*/
+
+.dark-mode.fiorithemeClass .jqx-widget-content{
+    background-color: var(--fioriThemeDarkOverlay1); 
+} 
+.dark-mode.fiorithemeClass .jqx-widget-header{
+    background-color: var(--fioriThemeMainBackground) !important;
+    border-color: var(--fioriThemeDarkBorder) !important;
+}
+.dark-mode.fiorithemeClass .jqx-scrollbar-state-normal-energyblue, .dark-mode.fiorithemeClass .jqx-grid-bottomright-energyblue, .dark-mode.fiorithemeClass .jqx-panel-bottomright-energyblue, .dark-mode.fiorithemeClass .jqx-listbox-bottomright-energyblue{
+    background-color: var(--fioriThemeMainBackground);
+}
+.dark-mode.fiorithemeClass .jqx-widget-energyblue .jqx-grid-column-header-energyblue, .dark-mode.fiorithemeClass .jqx-grid-cell-energyblue, .dark-mode.fiorithemeClass .jqx-widget-energyblue .jqx-grid-cell-energyblue, .dark-mode.fiorithemeClass .jqx-widget-energyblue .jqx-grid-group-cell-energyblue, .dark-mode.fiorithemeClass .jqx-grid-group-cell-energyblue{
+    border-color: var(--fioriThemeDarkBorder);
+}
+.dark-mode.fiorithemeClass .jqx-grid-cell-selected-energyblue{
+    background-color:var(--fioriThemeMainBackground) !important;
+}
+.dark-mode.fiorithemeClass .jqx-grid-cell-hover-energyblue{
+    background-color:var(--fioriThemeMainBackground)!important;
+}
+.dark-mode.fiorithemeClass .jqx-fill-state-normal-energyblue{
+    background-color: var(--fioriThemeDarkOverlay2);
+}
+.dark-mode.fiorithemeClass .jqx-grid-cell-sort-alt-energyblue, .dark-mode.fiorithemeClass .jqx-grid-cell-filter-alt-energyblue, .dark-mode.fiorithemeClass .jqx-grid-cell-pinned-energyblue, .dark-mode.fiorithemeClass .jqx-grid-cell-alt-energyblue, .dark-mode.fiorithemeClass .jqx-grid-cell-sort-energyblue{
+    background-color: var(--fioriThemeMainBackground) !important;       
+}
+.dark-mode.fiorithemeClass .jqx-widget-content{
+    color: var(--fioriThemeDarkText) !important;  
+}
+.dark-mode.fiorithemeClass .jqx-widget-energyblue .jqx-grid-column-header-energyblue, .dark-mode.fiorithemeClass .jqx-grid-cell-energyblue, .dark-mode.fiorithemeClass .jqx-widget-energyblue .jqx-grid-cell-energyblue, .dark-mode.fiorithemeClass .jqx-widget-energyblue .jqx-grid-group-cell-energyblue, .dark-mode.fiorithemeClass .jqx-grid-group-cell-energyblue{
+    border-color: var(--fioriThemeDarkBorder) !important;
+}
+.dark-mode.fiorithemeClass .sapfioriMainwrappsubmenu img , .dark-mode.fiorithemeClass .dxp2FioriTabsWithGridContent img{
+    filter: hue-rotate(350deg) saturate(10) brightness(1) contrast(2.0);
+}  
+.dark-mode.fiorithemeClass img{
+    filter: hue-rotate(350deg) saturate(10) brightness(.9) contrast(1.5) !important;
+}
+.dark-mode.fiorithemeClass .listFiltersul .highlightCard .menutabClass{
+    border-color:var(--fioriThemeDarkTitle);
+}
+.dark-mode.fiorithemeClass .firstLevelMenuSection .nav-pills .nav-link.active, .dark-mode.fiorithemeClass .firstLevelMenuSection .nav-pills .nav-link.active:focus, .dark-mode.fiorithemeClass .firstLevelMenuSection .nav-pills .nav-link.active.active:hover{
+    border-color:var(--fioriThemeDarkTitle) !important;   
+}
+.dark-mode.fiorithemeClass .jqx-tabs-headerWrapper .jqx-tabs-title-selected-top-ui-redmond{ 
+    color: var(--fioriThemeDarkTitle);
+}
+.dark-mode.fiorithemeClass .dxpLoginHeader .navbar-collapse .userProfileIcon img.userMainProfile , .dark-mode.fiorithemeClass .visionRegisterMaterialFormTable img, .dark-mode.fiorithemeClass .visionRegisterMaterialImagePanel img , .dark-mode.fiorithemeClass .templatehoverdImagexpand img{
+    filter:inherit !important;
+}
+.dark-mode.fiorithemeClass .searchResultCardViewMainSection , .dark-mode.fiorithemeClass .menutabClass{
+    background-color: var(--fioriThemeMainBackground) !important;
+}
+.dark-mode.fiorithemeClass .jqx-widget-content, .dark-mode.fiorithemeClass .jqx-splitter-splitbar-vertical ,.dark-mode.fiorithemeClass .formLevelValidations{
+    border-color:var(--fioriThemeDarkBorder) !important;
+}
+.dark-mode.fiorithemeClass .searchResultCardViewMainSection .outerWidthcol .menutabClass .filterButtonTitle{
+    color:var(--fioriThemeDarkTitle);
+}  
+.dark-mode.fiorithemeClass .ui-widget-content , .dark-mode.fiorithemeClass .visionFormTitleName{ 
+    background-color: var(--fioriThemeMainBackground);
+}
+.dark-mode.fiorithemeClass .visionFormDataButtons b input{
+    background: var(--fioriThemeDarkOverlay1);
+    border: 1px solid var(--fioriThemeDarkBorder);
+}
+.dark-mode.fiorithemeClass .tg-wrap .tg td {
+    background-color: var(--fioriThemeMainBackground); 
+}
+.dark-mode.fiorithemeClass .visionTabMenuFormData .tg-wrap .tg .sticky-header tr:nth-child(odd) , .dark-mode.fiorithemeClass .visionTabMenuFormData .tg-wrap .tg .sticky-header tr:nth-child(even){
+    background-color: var(--fioriThemeMainBackground); 
+}
+.dark-mode.fiorithemeClass .tg-wrap .tg td input{
+    background-color: var(--fioriThemeDarkOverlay1); 
+    color: var(--fioriThemeDarkSubTitle);
+}
+.dark-mode.fiorithemeClass .visionRegisterMaterialFormTable th input[type="text"], .dark-mode.fiorithemeClass .responsiveTable th input[type="text"], .dark-mode.fiorithemeClass .visionRegisterMaterialFormTable th select, .dark-mode.fiorithemeClass .responsiveTable th select, .dark-mode.fiorithemeClass .visionRegisterMaterialFormTable th textarea, .dark-mode.fiorithemeClass .responsiveTable th textarea{
+    background-color: var(--fioriThemeDarkOverlay1); 
+    color: var(--fioriThemeDarkSubTitle);    
+}
+
+/*=============20-12-2024 changes PRK===================*/
+
+
+.dark-mode.fiorithemeClass .jqx-tabs-headerWrapper .jqx-item , .dark-mode.fiorithemeClass .sidebarContentWrapper .dataprofilesideMainMenu li{
+    color: var(--fioriThemeDarkText) !important;
+}
+.dark-mode.fiorithemeClass .jqx-tabs-headerWrapper .jqx-item.jqx-tabs-title-selected-top , .dark-mode.fiorithemeClass .jqx-tabs-headerWrapper .jqx-item.jqx-tabs-title-selected-top{
+    color: var(--fioriThemeDarkTitle)!important;;
+    border-color: var(--fioriThemeDarkTitle) !important;
+}
+.dark-mode.fiorithemeClass .dataProfilingMainWrapper .sidebarContentWrapper , .dark-mode.fiorithemeClass .dataProfilingMainWrapper .dhDataParentView{
+    background-color: var(--fioriThemeDarkOverlay1);   
+}
+.dark-mode.fiorithemeClass .sidebarContentWrapper .dataprofilesideMainMenu .dataprofilesideMainMenuItems:has(.dataProfileMenuItem.active){
+    background-color: var(--fioriThemeDarkOverlay1); 
+}
+.dark-mode.fiorithemeClass .sidebarContentWrapper .dataprofilesideMainMenu li .dataprofilesidesubMenu.opened{
+    background-color: var(--fioriThemeDarkOverlay2);   
+}
+.dark-mode.fiorithemeClass .sidebarContentWrapper .dataprofilesideMainMenu .dataprofilesideMainMenuItems{
+    border-color: var(--fioriThemeDarkBorder);
+}
+.dark-mode.fiorithemeClass .sidebarContentWrapper .dataprofilesideMainMenu .dataprofilesideMainMenuItems:hover{
+    background-color: var(--fioriThemeMainBackground); 
+}
+.dark-mode.fiorithemeClass .dataProfilingMainWrapper .innerMainLeftWrapper{
+    border-color: var(--fioriThemeDarkBorder);
+}
+.dark-mode.fiorithemeClass .dataProfileMenuItem.nestedSubMenu:has(.dataprofilesidesubMenu.opened) > ul.dataprofilesidesubMenu{
+    border-color: var(--fioriThemeDarkBorder);
+}
+.dark-mode.fiorithemeClass .colExpBtnClass{
+    background-color: var(--fioriThemeMainBackground); 
+    border-color: var(--fioriThemeDarkBorder);                      
+}
+.dark-mode.fiorithemeClass .firstLevelMenuSection .nav-pills .nav-link .titleIcon img{
+    filter:inherit !important;
+     
+}
+.dark-mode.fiorithemeClass .searchResultCardViewMainSection .filterButtonrow{
+    background-color: var(--fioriThemeMainBackground);
+    border-color: var(--fioriThemeDarkBorder) !important;
+}
+.dark-mode.fiorithemeClass .sapfioriwrappsubmenu .fioriMenuSingleItem:hover{
+    background-color: var(--fioriThemeMainBackground) !important;
+}
+
+/*FIORI THEME DARK MODE CSS ENDS HERE BY PRK */  
+

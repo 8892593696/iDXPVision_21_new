@@ -1,0 +1,133 @@
+
+
+.guidedFormModule.StaticGuideModule {
+    background: transparent;
+    height: auto; 
+    width: auto;
+}
+
+.guidedFormModuleInnerStatic .guidedFormFooterBtn ,
+.guidedFormModuleInnerStatic .guidedFormFooterBtn:hover,
+.guidedFormModuleInnerStatic .guidedFormFooterBtn:focus{
+    padding: 0px 5px !important;
+}
+.StaticGuideModule{
+    min-width: 200px !important;
+}
+.guidedFormModule.StaticGuideModule textarea.guidedFormInputText{
+    min-height: 70px !important;
+}
+.guidedFormModule.StaticGuideModule .guidedFormFooter {
+    padding: 0px 10px !important;
+}
+.guidedFormModule.StaticGuideModule  input.guidedFormInputText,.guidedFormModule.StaticGuideModule textarea.guidedFormInputText {
+    padding: 4px 10px !important;
+}
+.staticGuideFormBackdrop {
+    position: fixed;
+    background: rgba(0,0,0,.2);
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left:0px;
+    z-index:9999;
+    display:none;
+}
+.guidedFormQuestion.StaticQuestion .guidedFormQues {
+    font-size: 12px;
+    font-weight: 600;
+    max-width: calc(100% - 30px);
+    line-height: 15px;
+    margin-bottom: 0px !important;
+    margin-top: 2px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+.guidedFormQuestion.StaticQuestion{
+    padding: 5px 10px !important
+}
+.guidedFormQuestion.StaticQuestion .guidedFormDesc {
+    display: none;
+}
+.StaticQuestion .guidedFormClose {
+    padding: 0px !important;
+    margin: 0px !important;
+    height: 15px;
+}
+.staticswitch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.staticswitch .staticswitchCheckbox { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.staticswitchslider  {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.staticswitchslider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.staticswitchCheckbox:checked + .staticswitchslider {
+  background-color: #2196F3;
+}
+
+.staticswitchCheckbox:focus + .staticswitchslider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.staticswitchCheckbox:checked + .staticswitchslider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.staticswitchslider.staticswitchround {
+  border-radius: 34px;
+}
+
+.staticswitchslider.staticswitchround:before {
+  border-radius: 50%;
+}
+.staticFormSwitch.attachSwitchAction {
+     margin-top: 5px;
+    /* float: right; */
+    margin-left: auto;
+    margin-right: 42px;
+}
+
+.visionFormEvolutionDialog .visionFormEvaluationTitle {
+    font-size: 14px;
+    color: #0b4a99;
+    padding: 4px;
+}
+.visionFormEvolutionDialog .visionFormEvaluationTextarea textarea{
+    width: 100%;
+    height: 100px !important;
+}

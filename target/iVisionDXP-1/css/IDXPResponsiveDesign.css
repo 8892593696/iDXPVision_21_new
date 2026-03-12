@@ -1,0 +1,772 @@
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2023, 5:14:59 PM
+    Author     : PiLog
+*/
+
+
+@media (max-width: 1920px) and (resolution: 1.25dppx){
+    .main-info-form-Div{
+        height:100%;
+    }
+    .main-info-form-Div .subscription-right-info{
+        overflow-y:auto; 
+    }
+    .searchResultCardViewMainSection .showGridHeight{
+        height: calc(100vh - 182px);
+    }
+}
+@media screen and (max-width: 1920px){
+    .wrapper {
+        max-width: 400px;
+        min-height: 460px; 					
+        margin: 100px auto;
+        padding: 20px 30px 30px 30px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .smartBILoginMain{
+        height: calc(100vh - 50rem);
+    } 
+
+}
+
+
+@media screen and (max-width:768px){
+
+    .smartBILoginMain .smartBIrow .wrapper{
+        margin: 10px auto;
+        padding: 10px 20px;
+    }
+    .smartBILoginMain .smartBIrow #carouselExampleIndicators{
+        margin-top: inherit !important;
+    }
+    .smartBILoginMain .smartBIrow #carouselExampleIndicators .carousel-inner img{
+        height: inherit !important;
+    }
+    .defaultShowCards .dridHomePageCards{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,48%) !important;
+        gap: 5px 10px;
+    }
+    .searchResultCardViewMainSection .createText{
+        margin-top: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .visualizationDashboardView .plot-container .modebar-container{
+        width: 100%
+    }
+    .expendInOutDivClass {
+        position: fixed !important;
+        left: 51.8% !important;
+        top: 60px !important;
+    }
+    .menutabClass {
+        display: flex;
+        align-items: center;
+        padding: 4px 2px;
+        border: 1px solid #0b4a99;
+        color: #0b4a99;
+        border-radius: 20px;
+        margin-top: -6px;
+        position: relative;  
+        top: -6px;
+    }
+    .defaultShowCards {
+        height: 85% !important;
+        overflow-y: auto !important;
+    }  
+    .searchDiv{
+        margin-left:5px !important;
+    } 
+    .visualizationMainDivwrapper , .leftFileUploads{
+        width: 30% !important;
+    }
+    .footer{
+        z-index: 9999;
+    }
+
+    /*    .dxpLoginHeader .navbar-collapse .navbar-nav .searchSettingIcon{
+            position: absolute !important;
+            right: 110px;
+            top: 48px;
+            border-bottom: inherit !important;
+        }
+        .dxpLoginHeader .navbar-collapse .navbar-nav .DXPlLanguageSelectionClass{
+            position: absolute !important;
+            right: 25px;
+            top:42px;
+            border-bottom: inherit !important;
+        }*/
+
+
+    /*    .dxpPageWrapper{
+            margin-top:50px !important;
+        }*/
+/*    .dxpLoginHeader .navbar-light .navbar-toggler-icon{
+        background-image: url(../images/mobileMenuIcon.png);
+    }*/
+    .dxpLoginHeader button:hover{
+        background-color: transparent !important;
+        border: none !important;
+    } 
+    .searchResultCardViewMainSection .filterButtonrow .iconMenuNavNext{
+        z-index: 1010;
+    }
+    .dxpLoginHeader .defultSearchBar{
+        position: relative;
+        display: block !important;
+    }
+    .dxpLoginHeader .defultSearchBar .has-search{
+        position: absolute;
+        width: 300px;
+        top: -15px;
+        left: 60px;
+    }
+    .dxpLoginHeader .defultSearchBar .has-search input{
+        border: 1px solid #0b4a99;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+
+    .searchMainWrap .has-search .searchResultsDiv {
+        width: -webkit-fill-available;                              
+    }
+
+    .searchResultCardViewMainSection .outerWidthcol {
+        max-width: 17% !important;
+    }
+
+    .dxpTaskListIcons , .dxpTaskListDivClass .visionTask , .signOutpopUp.show , .visionSearchImportDialog {
+        z-index: 99999;
+    }
+    .searchtempleteClass{
+        align-items: flex-start;
+        /*flex-direction: column;*/
+    }
+    .searchMainWrap .selectDropDown #selectFilter {
+        width: 65px !important;
+        height: 27px !important;
+    }
+
+
+    .chatBox {
+        bottom: 0;
+        max-width: 98%;
+    }
+    .bubble-container {
+        height: 400px;
+    }
+    .dxpLoginHeader .navbar {
+        padding: 6px 5px;
+    }
+
+    .jqx-splitter-splitbar-vertical.jqx-fill-state-normal{
+        width: 5px !important;
+    }
+    .jqx-splitter-collapse-button-vertical.jqx-fill-state-pressed{
+        width: 5px !important;
+    }
+    .notificationIcon:after {
+        margin: 0 21px;
+    }
+    .searchbarDivClass {
+        width: 95%;
+    }
+
+
+}
+
+@media screen and (max-width:575px){ 
+    .footer .row .text-right{
+        display: flex;
+        justify-content: center !important;
+        gap: 10px;						
+        margin-left: 0px;
+        margin-top: 0px !important;
+    }
+    .searchResultCardViewMainSection .outerWidthcol {
+        max-width: 40% !important;
+    }
+    #menupopoverid {
+        width: 30%;
+    }
+    .dxpLoginHeader .searchMainWrap .has-search {
+        width: 100% !important;
+    }
+    .searchMainWrap .has-search .searchResultsDiv {
+        width: -webkit-fill-available;                              
+    }
+    div#expendFooterInOutDivClass{
+        right: inherit;
+        left: 10px;
+    }
+    .defaultShowCards .dridHomePageCards{
+        display: flex;
+        flex-direction: column;
+    }
+    .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions{
+        width: 100px;  
+    }
+    .searchDiv{
+        width: 100%;
+        position: absolute !important;
+        top: 60px;
+        left: -5px;				
+    }
+    .footer{
+        width: revert;
+    } 
+    .personaliseoption .search_settings_panel{
+        position: fixed;
+        margin: 2px 15px;
+        z-index: 9999;
+    }
+    .dxpTaskListDivClass .visionTask{
+        border: 2px solid #1a73e8;
+    }
+}
+/*screen size 1024px */
+
+@media screen and (min-width: 1300px) and (max-width:1365px){
+    .expendInOutDivClass {
+        position: fixed;
+        left: 54.8%;
+        top: 60px;
+    }
+    .menutabClass{
+        margin-top: 0;
+    }
+    .defaultShowCards{
+        height:100%;
+        overflow-y:auto;
+    }
+
+    .formDxpDuplicates {
+        z-index: 99;
+    }
+    .charAccordianMaindiv .card .card-body label{
+        display: contents;
+    }
+/*    .searchtempleteClass .searchDiv{
+        margin-left: 175px; 
+    }*/
+    .searchtempleteClass .searchSetting{
+        margin-right: 35px !important;
+    }
+    .searchResultCardViewMainSection .createText{
+        margin-top: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .searchResultCardViewMainSection .createText:hover{
+        white-space: inherit;
+    }
+
+    body:has(.signInpopUp).dxpPageWrapper{
+        display: none ! important;
+    }
+    .searchLanguage{ 
+        margin-right:5.5%;    
+    }
+    .searchSetting{
+        position: absolute;
+        right: 26.9%;
+        top: 40px;
+    }  
+    .visualizationDashboardView .plot-container .modebar-container{
+        width: 100%
+    }
+
+}
+@media screen and (min-width: 1367px) and (max-width:1440px){
+    .showTimerWithImage {
+        position: absolute;
+        top: 28px;
+        right: 12%;
+    }
+    #tabPrevId{
+        left: 10.5%;
+    }
+}
+
+@media(max-width:1420px){
+    .searchMainWrap .selectDropDown #selectFilter {
+        width: 90px !important;
+    }
+    /*need to change in pilogCloud.css*/
+    .searchMainWrap .has-search input.form-control:focus{
+        padding-left:10px !important;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .searchMainWrap .has-search{
+        width:125px !important;
+    }
+    .searchMainWrap .has-search.expand-search{
+        width:450px !important;
+    }
+    .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions{
+        width:140px;
+    }
+}
+@media(max-width:1366px){
+    .searchMainWrap .has-search.expand-search {
+        width: 370px !important;
+    }
+    .searchMainWrap .selectDropDown #selectFilter {
+        width: 120px;
+    }
+    .dxpLoginHeader .navbar-nav {
+        gap: 18px
+    }
+    .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions {
+        width: 157px;
+    }
+
+}
+@media(max-width:1199px){
+    .searchMainWrap .has-search.expand-search {
+        width: 300px !important;
+    }
+    .dxpLoginHeader .navbar-nav {
+        gap: 14px;
+    }
+    .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions, .searchMainWrap .selectDropDown #selectFilter {
+        width: 100px;
+    }
+    .dxpLoginHeader .massSearchListItem {
+        width: 540px !important;
+    }
+}
+@media(max-width:1024px){
+/*    .navbar-expand-md .navbar-toggler {
+        display: block !important;
+        outline: 0;
+        box-shadow: none;
+    }   
+    .collapse:not(.show) {
+        display: none !important;
+    }
+    .dxpLoginHeader .navbar {
+        justify-content: space-between;
+        flex-flow: wrap;
+        align-items: flex-start; 
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%;
+    }
+    .dxpLoginHeader .navbar-light .navbar-toggler-icon {
+        background-image: url(../images/mobileMenuIcon.png);
+    }
+    .dxpLoginHeader .navbar-collapse ul li{
+        position:inherit !important;
+        border-bottom: 1px solid #ddd;
+        padding: 6px;
+        display: flex;
+        gap: 10px;
+        font-weight: 600;
+        color: #0b4a99;
+        width: 100%;
+    }
+    .dxpLoginHeader #collapsibleNavbar {
+        margin-top: 0px;
+        background: #fff;
+        border-bottom: 1px solid #0b4a99;
+        justify-content: flex-start;
+        position: absolute;
+        width: 100%;
+        top: 52px;
+        left:0;
+    }
+    .dxpLoginHeader .navbar-nav {
+        gap: inherit; 
+        align-items: flex-start; 
+    } 
+    .dxpLoginHeader .searchMainWrap{
+        width: 100%;
+        border:0;
+    }
+    .dxpLoginHeader .searchMainWrap .has-search{
+        width: 100% !important;
+        border:1px solid #0b4a99;
+    }
+    .searchMainWrap .has-search input.form-control{
+        border:0;
+    }
+    .DXPlLanguageSelectionClass select{
+        width: 100%;
+    }
+    .dxpLoginHeader .headerOptionTitle{
+        display:block !important;
+    }
+    .dxpLoginHeader .navbar-nav{
+        flex-direction: column;
+        width:100%;
+    }*/
+    .introCloseAndOn label{
+        margin:0;
+    }
+    .introCloseAndOn .toggle-slot,
+    .introCloseAndOn label{
+        top:0;
+    }
+    .dxpLoginHeader .navbar-collapse ul li .introCloseAndOn{
+        line-height: 1;
+    }
+    .introCloseAndOn .toggle-slot {
+        height: 1.7em;
+    }
+    .introCloseAndOn .toggle-button,
+    .introCloseAndOn .moon-icon{
+        top: -2px;
+    }
+    .introCloseAndOn .toggle-checkbox:checked ~ .toggle-slot .toggle-button::after {
+        top: 7px;
+        left: 4px;
+    }
+    .introCloseAndOn .toggle-button::after {
+        top: 6px;
+    }
+    .introCloseAndOn .sun-icon {
+        top: -3px;
+    }
+    .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions, .searchMainWrap .selectDropDown #selectFilter {
+        width: 145px;
+    }
+    .dxpLoginHeader .searchMainWrap .selectDropDown{
+        /*border: 1px solid #ddd;*/
+        padding: 1px;
+    }
+/*    .searchMainWrap .replacedSearchButton {
+        top: 3px;
+    }*/
+}
+@media(max-width:992px){
+    .navbar-expand-md .navbar-toggler {   
+        display: block !important;
+        outline: 0;
+        box-shadow: none;
+    }   
+    .collapse:not(.show) {
+        display: none !important;
+    }
+    .dxpLoginHeader .navbar {
+        justify-content: space-between;
+        flex-flow: wrap;
+        align-items: center; 
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%;
+    }
+    .dxpLoginHeader .navbar-light .navbar-toggler-icon {
+        background-image: url(../images/mobileMenuIcon.png);
+        filter: brightness(0) invert(1);
+    }
+    .dxpLoginHeader .navbar-collapse ul li{
+        position:inherit !important;
+        border-bottom: 1px solid #ddd;
+        padding: 6px;
+        display: flex;
+        gap: 10px;
+        font-weight: 600;
+        color: #0b4a99;
+        width: 100%;
+    }
+    .dxpLoginHeader #collapsibleNavbar {
+        margin-top: 0px;
+        background: #fff;
+        border-bottom: 1px solid #0b4a99;
+        justify-content: flex-start;
+        position: absolute;
+        width: 100%;
+        top: 52px;
+        left:0;
+    }
+    .dxpLoginHeader #collapsibleNavbar.show {
+        display: block !important;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .dxpLoginHeader .navbar-nav {
+        gap: inherit; 
+        align-items: flex-start; 
+    } 
+    .dxpLoginHeader .searchMainWrap{
+        width: 100%;
+    }
+
+    .searchMainWrap .has-search input.form-control{
+        border:0;
+    }
+    .DXPlLanguageSelectionClass select{
+        width: 100%;
+    }
+    .dxpLoginHeader .headerOptionTitle{
+        display:block !important;
+    }
+    .dxpLoginHeader .navbar-nav{
+        flex-direction: column;
+        width:100%;
+    }
+    .globalSearchBar.makeCenterSearchBar {
+        position: static;
+    }
+    .dxpLoginHeader .massSearchListItem {
+        margin-right: inherit !important;
+        width: 100% !important;
+    }
+    .dxpLoginHeader .navbar-collapse .globalSearchBar {
+        padding: 6px;
+        border-bottom: 1px solid #ddd;
+    }
+    .fiorithemeClass.fiorithemeClassDark .dxpLoginHeader #collapsibleNavbar {
+        background: #12171c;
+    }
+    .fiorithemeClass.fiorithemeClassDark .dxpLoginHeader .navbar-light .navbar-toggler-icon {
+        filter: brightness(0) invert(1);
+    }
+
+}
+@media(max-width:575px){
+    .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions, .searchMainWrap .selectDropDown #selectFilter {
+        width: 80px;
+    }
+    .searchMainWrap .has-search input.form-control:focus,
+    .searchMainWrap .has-search.expand-search input.form-control{
+        padding-left:10px;
+    }
+    .chartPallettePopup {
+        width: 64% !important;
+        height: 177px !important;
+        left: 35% !important;
+    }
+    .chartSelectionsDropDown{
+        overflow-x: scroll;
+        padding: 5px;
+        margin-top: 3px;
+    }
+
+    .rightPanelClickOPenLeftPanel{
+        width: 340px !important;
+        left: 5px !important;
+        border-radius: 6px;
+    }
+
+    .visionSearchDDDWDialog{
+        z-index: 99999;
+    }
+
+    .loaderWait{
+        left: 10% !important;
+    }
+
+    .iVisionHomeSelectBox{
+        padding: 0 !important;
+    }
+    .ui-dialog{
+        z-index: 99999;
+    }
+
+    .visionRegistartionGeneric .extended_Records{
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .visionRegisterMaterialImage{
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+    }
+
+    .visionRegisterMaterialFormTable tr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visionRegisterMaterialFormTable th{
+        width: 100% !important;
+    }
+
+    .sortGerericDxpFormMianDiv .sortGerericDxpFormParentDiv .sortGerericDxpFormChildDiv{
+        overflow-x: hidden;
+    }
+
+    .registrationgeneric .visionRegisterGenericForm{
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+    .gridResizeClass .responsiveTable tr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridResizeClass .responsiveTable th{
+        width: 350px !important;
+    }
+
+    .gridResizeClass{
+        height: 415px;
+        overflow-y: scroll;
+    } 
+
+    .formDxpDuplicates{
+        top: 40px;
+
+    }
+
+    .visionRegisterMaterialTabsTable tr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visionRegisterMaterialAccordians .accordian .ui-accordion-content, .visionRegisterMaterialSubAccordians .accordian .ui-accordion-content{
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+    .dxpSplitterTabsContent .formDxpDuplicates{
+        left: 0 !important;
+        width: 100% !important;
+    }
+
+    .accordianExtend .visionRegistartionGenericAccordionSpan{
+        display: block;
+    } 
+
+    .charAccordianMaindiv .charAccordionsContainer .collapse.show .card-header{
+        height: 39px !important;
+    } 
+
+    .visionTabMenuFormData .jqx-widget-header-ui-redmond .jqx-tabs-arrow-right-ui-redmond {
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .visionTabMenuFormData .jqx-widget-header-ui-redmond .jqx-tabs-arrow-left-ui-redmond{
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+
+
+    }
+}
+@media(max-width:480px){
+    .searchMainWrap .has-search.expand-search {
+        width: 145px !important;
+    }
+}
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) 
+and (orientation: portrait){
+    .visionRegistartionGeneric .visionRegisterGenericTable tbody tr td:first-child{
+        height:100%;
+    }
+    .visionRegistartionGeneric .visionRegisterGenericTable tbody tr{
+        display:flex;
+        flex-direction: column-reverse;
+
+    }
+    .visionRegisterGenericForm .visionRegisterGenericTable .visionRegisterMaterialFormTable tbody tr{
+        display:flex;
+        flex-direction:column
+    }
+
+    .visionRegisterGenericForm .visionRegisterGenericTable .visionRegisterMaterialFormTable th{
+        width:100%;
+    }
+    .visionRegistartionGeneric .extended_Records{
+        display:none;
+    }
+    .applyBtndiv button{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        gap:6px;
+    }
+    /*5Steps responsive*/
+    .showTimerWithImage{
+        top: 15.5%;
+        right: 25%;
+         z-index: 9999;
+    }
+    .activeTabMainDiv .pre_nextButtonClass #preButtonsId{
+        top: 15%;
+        left: 18%;
+        z-index: 999;
+    }
+    .activeTabMainDiv .pre_nextButtonClass #nextButtonId{
+        top: 15%;
+         z-index: 999;
+    }
+    #activeMainTabId{
+        z-index: 99;
+        text-wrap: nowrap;
+
+    }
+    .activeTabMainDiv .pre_nextButtonClass .proceedToConfigureBTN{
+        right: 30px;
+        top: 15%;
+        z-index: 999;
+    }
+    .activeTabMainDiv #activeMainTabId .activeTabMainDiv-nav__item{
+        height: 140px;
+    }
+    .activeTabMainDiv #activeMainTabId .activeTabMainDiv-nav__item .activeFirstTabMainTextSpan{
+        width: 110px;
+    }
+    #tabPrevId {
+    left: 17.5%;
+    }
+    .activeTabMainDiv #activeMainTabId .activeTabMainDiv-nav__item.current .activeFirstTabMainTextSpan:after{
+        width: 0px;
+    }
+}
+
+@media(max-width:1680px){
+  .visionNavigationIcons {
+        width: 40%;
+    }
+}
+@media(max-width:1480px){
+  .visionNavigationIcons {
+      width: 38%;
+  }
+}
+
+@media(max-width:1380px){
+    #categorytextautocompleteBox #categorytextautocomplete input:first-child{
+        width:220px !important;
+        max-width:100% !important;
+    }
+}
+
+

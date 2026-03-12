@@ -1,0 +1,1191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Jun, 2025, 11:10:31 AM
+    Author     : Jagadish.R
+*/
+.dxpAssetTreeContainerViewDataClass
+{
+    width:100%;
+    height:100%;
+}
+.dxpAssetTreeIndivizualwrap
+{
+    width:100%;
+    height:100%;
+}
+.assetTreeGeneralDataDiv{
+    height: 17% !important; 
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 2px 0 #000s;
+    padding: 0.75rem;
+}
+/*.dxpSplitterTabsContent .jqx-splitter{
+    width: 100%;
+    height: 83% !important;
+}*/
+.dxpAssetTreeContainerViewDataClass .dxpAssetTreeClass{
+    height:calc(100vh - 289px) !important; 
+    overflow-y: auto;
+}
+/*.dxpAssetTreeContainerViewDataClass .copyAssetTreeHierButtonClass  button:hover {
+    outline: 1px solid #007bff;
+}
+.dxpAssetTreeContainerViewDataClass .copyAssetTreeHierButtonClass:nth-child(1) button{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border:0;
+}
+.dxpAssetTreeContainerViewDataClass .copyAssetTreeHierButtonClass button{
+    font-size: 13px !important;
+    font-weight: bold !important;
+    border-radius: 0.5rem !important;
+}*/
+
+.dxpMOCRSearchButtonsDivClass .assetMOCRSearchButtonsDivClass .copyAssetTreeHierButtonClass button{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border:0;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    border-radius: 0.5rem !important;
+    text-wrap:nowrap;
+}
+.dxpAssetTreeContainerViewDataClass .assetTreeButtonsClass{
+    overflow-x: auto;
+    display: flex;
+    padding: 8px 4px;
+    gap: 4px;
+    scrollbar-width: none;
+}
+
+.dxpAssetTreeContainerViewDataClass .assetTreeButtonsClass{
+    overflow-x: auto;
+    display: flex;
+    padding: 0 8px;
+    gap: 8px;
+    padding: 8px;
+    scrollbar-width: none;
+}
+
+
+.dxpAssetTreeClass .jqx-checkbox .jqx-checkbox-default {
+    border: 1px solid #000000 !important;
+}
+.dxpAssetTreeClass .jqx-tree-item,
+.copyHierAssetTreeDivClass .jqx-tree-item{
+    color:#060606 !important;
+    font-weight: 500;
+}
+.dxpAssetTreeClass .jqx-tree-item-arrow-expand,
+.dxpAssetTreeClass .jqx-icon-arrow-right,
+.copyHierAssetTreeDivClass .jqx-icon-arrow-right,
+.copyHierAssetTreeDivClass .jqx-tree-item-arrow-expand{
+    filter: invert(1) brightness(0.5);
+}
+.assetTreeHierGridClass .materialBasketClass {
+    font-weight:500;
+}
+.fiorithemeClass .assetTreeHierGridClass .jqx-grid .jqx-widget-header > div span{
+    font-weight:500 !important;
+    font-size:13px !important;
+}
+.dxpAssetTreeIndivizualwrap  .assetTreeButtonsClass .copyAssetTreeHierButtonClass button {
+    display:flex;
+    align-items:center;
+    gap:4px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin: 0px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.dxpAssetTreeIndivizualwrap  .assetTreeButtonsClass .copyAssetTreeHierButtonClass button img {
+    width:18px;
+}
+/*.assetTreeHierGridClass div[role="row"] div[role="gridcell"]:nth-child(1){
+    padding-left: 18px  !Important;
+}*/
+.assetTreeHierGridClass .jqx-grid {
+    border:1px solid#e5e5e5;
+}
+.copyHierAssetTreeDivClass {
+    border:0;
+}
+.copyHierAssetTreeGridDivClass .visionGenericTabContainer{
+    display: none;
+}
+.assetTreeHierGridClass
+{
+    width:100% !important;
+    /*    height:100% !important;*/
+    padding: 3px;
+}
+.copyHierAssetTreeDivClass h4{
+    font-size:14px;
+    background:#f7f7f7;
+    padding:10.5px;
+    border-bottom:1px solid #dddddd;  
+}
+/*.copyHierAssetTreeDivClass .jqx-tree-item{
+    padding:8.2px 0;
+}
+.copyHierAssetTreeDivClass  .jqx-icon-arrow-down{
+    margin-top: 6px !important;
+}*/
+
+
+/* new styles here  */
+
+.dxpAssetTreeClass .jqx-tree-dropdown .jqx-tree-item-li .jqx-tree-item-arrow-expand,
+.dxpMOCRPendingTreeBodyDivClass .jqx-tree-dropdown .jqx-tree-item-li .jqx-tree-item-arrow-expand {
+    margin-top: 3px !important;
+}
+.dxpAssetTreeClass .jqx-tree-dropdown .jqx-tree-item-li .chkbox,
+.dxpMOCRPendingTreeBodyDivClass  .jqx-tree-dropdown .jqx-tree-item-li .chkbox{
+    margin-top: 3px !important;
+}
+.dxpMOCRPendingTreeBodyDivClass  .jqx-tree-dropdown-root .jqx-tree-item-li .jqx-checkbox{
+    margin-top: 0px !important;
+}
+.dxpAssetTreeClass .jqx-tree-dropdown .jqx-tree-item-li .chkbox .jqx-fill-state-normal div{
+    /* border:1px solid */
+}
+.dxpAssetTreeClass .jqx-tree-dropdown .jqx-tree-item-li .jqx-tree-item , 
+.dxpMOCRPendingTreeBodyDivClass .jqx-tree-dropdown .jqx-tree-item-li .jqx-tree-item {
+    font-weight:500;
+}
+.dxpAssetTreeClass .jqx-tree-dropdown .jqxAssetTreeImgWithLabelClass .jqxAssetTreeImgageClass,
+.dxpMOCRPendingTreeBodyDivClass .jqx-tree-dropdown .jqxAssetTreeImgWithLabelClass .jqxAssetTreeImgageClass  {
+    width:18px;
+    margin-right: 4px;
+}
+.copyHierAssetTreeMainDivClass .jqx-tree-dropdown .jqxAssetTreeImgWithLabelClass img,
+.copyHierAssetTreeMainDivClass .copyHierAssetTreeDivClass .jqxAssetTreeImgWithLabelClass .jqxAssetTreeImgageClass{
+    width:18px;
+    margin-right: 4px;
+}
+/*.dxpAssetTreeClass .jqx-tree-dropdown .jqxAssetTreeImgWithLabelClass .jqxAssetTreeImgWithSpanClass {
+     display: inline-block; 
+     max-width: 350px; 
+     white-space: nowrap; 
+     overflow: hidden; 
+     text-overflow: ellipsis; 
+}*/
+
+
+
+.assetMOCRChangeReqDialogClass .AssetMOCRChangeRequestButtonClass,
+.fiorithemeClass .ui-dialog .ui-dialog-content #checkCopyFlocButtonId{
+    background-color: #0064d9 !important;
+    color:#fff !important;  
+    border-radius: 0.5rem;
+    padding: 4px 8px !important;
+    font-size: 13px !important;
+    border:none;
+    margin:4px 2px;
+    font-weight: bold;
+}
+.assetMOCRChangeReqDialogClass .AssetMOCRChangeRequestGeraralDataClass {
+    border-radius:6px;
+    background: #fff;
+    border-radius: .75rem;
+    margin:15px 8px;
+    width: 100%;  
+    padding: 8px;
+}
+.assetMOCRChangeReqDialogClass .AssetMOCRChangeRequestGeraralDataClass h6{
+    padding: 5px;
+    margin: 0; 
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom:2px solid #0064d9;
+    width:fit-content;
+    color:#0064d9;
+}
+.assetMOCRChangeReqDialogClass .AssetMOCRChangeRequestGeraralDataClass ul{
+    padding: 18px;
+    margin:0;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 13px;
+}
+.assetMOCRChangeReqDialogClass .AssetMOCRChangeRequestGeraralDataClass ul li{
+    width:48%;
+}
+.assetMOCRChangeReqDialogClass .AssetMOCRChangeRequestGeraralDataClass ul li span:first-child{
+    width:150px;
+    display: inline-block;
+    font-weight: 500;
+}
+.fiorithemeClass .ui-dialog .ui-dialog-content #showFlocMsgId {
+    color:green;
+    margin-bottom:5px;
+    font-weight:500;
+}
+#assetChageRequestDivId .AssetMOCRChangeRequestRadioWrapper  {
+    display:flex;
+}
+#assetChageRequestDivId .AssetMOCRChangeRequestRadioWrapper label {
+    margin:0;
+}
+#assetMOCRChangeReqDialogId .assetMOCRChangeRequestClusterDivClass .visionMasterDetailPanelTop .jqx-tabs{
+    border-color:#b4b4b4 ;
+}
+
+
+#assetTreeHierarchyFiltersDIvId {
+    display:flex;
+    gap:15px;
+    padding:8px;
+    background: #fff;
+}
+#assetTreeHierarchyFiltersDIvId div label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #556b82;
+    position: inherit;
+    top: inherit;
+}
+#assetTreeHierarchyFiltersDIvId div input {
+    padding:4px;
+    border-radius:4px;
+    width: 100%;
+    height: 27px;
+    border: 1px solid #aaa;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.copyHierAssetTreeGridDivClass img {
+    background-color:transparent;
+    width:18px;
+    margin:0 auto;
+}
+.assetTreeHierGridClass img {
+    background-color:transparent;
+    width:18px;
+    margin:0 auto;
+}
+.copyHierAssetTreeGridDivClass div[role="row"]{
+    text-align:center;
+}
+
+
+.dxpSplitterTabsContent:has(.assetMOCRChangeReqDialogClass) {
+    background:#fff;
+}
+.assetMOCRChangeRequestClusterDivClass .visionMasterDetailPanelTop  {
+    background: #fff;
+    border-radius: .75rem;
+    margin: 0 auto 15px;
+    width: 100%;
+    padding: 8px;
+}
+.assetMOCRChangeRequestClusterDivClass {
+    padding:8px;
+}
+
+.RdsMoveCopyDialog .treeJqxDialogClass .jqxRDSTreeDragAndDropItemTextClass .jqxAssetTreeImgWithLabelClass img {
+    width: 22px;
+    margin-right: 8px;
+}
+.RDSTreeMoveCpopyModel .ui-dialog-content{
+    scrollbar-width:none !important; 
+}
+#copyHierAssetTreeDivId_Copy_Id {
+    height: calc(100vh - 315px);
+    /*overflow-y: auto;*/
+}
+/*Pranjay css start*/
+.dxpSplitterTabsContent .assetMOCRChangeReqDialogClass {
+    background: #eff1f2;
+    overflow: auto;
+}
+
+.assetMOCRChangeRequestClusterDivClass .visionMasterDetailPanelBottom{
+    background: #fff;
+    border-radius: .75rem;
+    margin: 0 auto 15px;
+    width: 100%;  
+    padding: 8px;
+}
+
+.copyHierAssetTreeMainDivClass {
+    height:92% !important;
+    width:99%;
+    margin:0 auto;
+}
+/*pranjay css end*/
+
+
+.fiorithemeClass .dxpSplitterTabsContent{
+    /*height: calc(100vh - 55px);*/
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: inherit;  
+}
+
+#copyHierAssetTreeDivId_Copy_Id,
+#panelcopyHierAssetTreeDivId_Copy_Id{
+    width:100% !important;
+}
+
+.dxpMOCRCopyTreeWithGridSplitterClass .jqx-splitter {
+    height: 90% !important;
+}
+
+
+.dxpMOCRTreeWithGridSplitterClass ,
+.dxpMOCRSearchButtonsDivClass .assetMOCRChangeReqDialogClass {
+    display:flex;
+}
+.dxpMOCRSearchButtonsDivClass .assetMOCRSearchButtonsDivClass .copyAssetTreeHierButtonClass  button{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin: 0px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.dxpMOCRSearchButtonsDivClass .assetMOCRSearchButtonsDivClass .copyAssetTreeHierButtonClass  button img{
+    width:20px;
+    height:20px;
+}
+.assetTreeGeneralDataDiv .ui5gridfilter-container-form .ui5gridbutton-row {
+    margin-top: 3px;
+}
+.assetMOCRSearchButtonsDivClass{
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-bottom: 1px solid #a2a8b9;
+    justify-content: flex-end;
+}
+.dxpMOCRTreeWithGridSplitterClass  {
+    height: calc(100vh - 205px) !important;
+}
+#paneldxpAssetTreeverticalScrollBar #jqxScrollWrappaneldxpAssetTreeverticalScrollBar {
+    left: 2px !important;
+}
+
+.dxpMOCRTreeWithGridSplitterClass .visionRegisterGenericForm {
+    padding:10px !important;
+    width:100% !important;
+}
+
+/*.dxpMOCRTreeWithGridSplitterClass .sortGerericDxpFormMianDiv .sortGerericDxpFormParentDiv {
+    padding:30px;
+}*/
+.dxpMOCRTreeWithGridSplitterClass .sortGerericDxpFormMianDiv .sortGerericDxpFormParentDiv lable{
+    text-wrap:nowrap;
+}
+.dxpMOCRTreeWithGridSplitterClass .visionRegisterMaterialFormTable th{
+    padding:8px;
+}
+.dxpMOCRTreeWithGridSplitterClass .visionRegisterMaterialFormTable th input,
+.dxpMOCRTreeWithGridSplitterClass .visionRegisterMaterialFormTable th select{
+    padding:4px !important;
+}
+
+.assetTreeGeneralDataDiv .ui5gridfilter-container-form {
+    border-radius:0
+}
+.dxpAssetTreeClass .jqx-tree-dropdown-root .jqxAssetTreeImgWithLabelClass .jqxAssetTreeImgageClass  {
+    width:18px;
+    margin-right: 4px;
+}
+
+
+.dxpMOCRCopyValidateButtonsDivClass button {
+    font-size: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+}
+.dxpMOCRCopyValidateButtonsDivClass{
+    /*padding:18px 8px;*/
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+    background-color:#fff;
+}
+.dxpMOCRCopyValidateButtonsDivClass #showFlocMsgDivId{
+    position:absolute;
+    top:0;
+    left:8px;
+}
+
+.visionTreeMOCRDMFileUploadclass {
+    /* width: 96%; */
+    height: 260px;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 3px;
+    text-align: center;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.VisionMOCRDMUploadFileContent , .fileuploadErr , #assetErrorDialogId
+{
+    color: #1d2d3e;
+    font-weight: 600;
+    font-size: 13px;
+}  
+.jqxAssetTreeImgageClass {
+    width: 18px;
+    height: 18px;
+}
+.ui-dialog .visionMasterDetailForm tbody td span{
+    font-size: 13px;
+    font-weight: 600; 
+}
+.visionMasterDetailForm.visionMOCRAddHierarchyForm , .visionMasterDetailForm.visionMOCRSaveAsModelForm , .visionMasterDetailForm.visionMOCRCopyHierarchyForm{
+    box-shadow: inherit;
+}
+.ui-dialog .visionMasterDetailForm tbody td span sup{
+    top:inherit;
+    padding:4px;
+    font-size:14px;
+    color:red;
+}
+.visionMasterDetailForm .visionMasterDetailForm_err{
+    color:red;
+} 
+
+.fiorithemeClass .visionRegisterMaterialFormTable th textarea.noUppercaseValueClass  , 
+.fiorithemeClass .responsiveTable th textarea.noUppercaseValueClass  {
+    text-transform:none;
+    width: 99% !important;
+}
+.dxpMOCRSearchButtonsDivClass .btn{
+    text-transform: inherit;
+}
+
+/*.fiorithemeClass .AddAssetMOCRDialogClass .ui-dialog-content {
+    padding:0 !important;
+    overflow:hidden;
+}*/
+
+.changeAllFLocValidateDialog .changeAllFLocCopyClass .changeAllFLocCopyValidateDivId .errorValidateCopyFLocsClass {
+    display: block;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.changeAllFLocValidateDialog .changeAllFLocCopyClass .changeAllFLocCopyValidateDivId .changeAllFLocCopyValidateWrapper{
+    display:flex;
+    align-items:center;
+    gap:8px
+}
+
+.changeAllFLocValidateDialog .changeAllFLocCopyClass .changeAllFLocCopyValidateDivId .changeAllFLocCopyValidateWrapper button {
+    background-color: #006BB8 !important;
+    border: 1px solid #006BB8 !important;
+    color: white !important;
+    border-radius: 0.5rem;
+    padding: 2px 8px !important;
+    font-size: 12px !important;
+}
+
+.changeAllFLocValidateDialog .changeAllFLocCopyClass .changeAllFLocCopyContentDivClass {
+    padding: 4px 0
+}
+.changeAllFLocValidateDialog .changeAllFLocCopyClass .changeAllFLocCopyContentDivClass table {
+    width:100%;
+    border:1px solid #bfbfbf
+}
+.changeAllFLocValidateDialog .changeAllFLocCopyClass .changeAllFLocCopyContentDivClass table tr td{
+    padding:4px
+}
+
+
+
+
+
+
+
+/*mocr notification css start*/
+#notificationDot {
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 133px;
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.notification-popup {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 30px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1050;
+}
+
+.notification-bar {
+    display: none;
+    position: absolute;
+    top: 41px;
+    right: 130px;
+    width: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1060;
+}
+
+.notification-bar h4 {
+    margin: 0;
+    padding: 8px 12px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.notification-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 8px 12px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.notification-bar li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 13px;
+}
+
+
+.notification-bar li .close-btn {
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.notification-bar li .close-btn:hover {
+    color: red;
+}
+
+.notification-bar li {
+    position: relative;
+    padding: 6px 20px 6px 6px;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*mocr notification css end*/
+.dxpMOCRPendingTreeWithGridSplitterClass .dxpMOCRTreeWithSearchSplitterClass .jqx-tree .jqx-widget-content {
+    padding:8px 0 !important;
+}
+.dxpMOCRPendingTreeWithGridSplitterClass .dxpMOCRTreeWithSearchSplitterClass .jqx-tree .jqx-widget-content .chkbox {
+    margin-top: 0px !important;
+}
+
+
+.notification-bar #notificationList{
+    max-height:143px;
+    overflow-y:auto;
+}
+
+.notification-bar ul li {
+    border: 0px solid #000;
+    position:relative;
+    box-shadow: 0 0 4px 0 #d9d9d9;
+    border-radius: 0.5rem;
+    margin-bottom:8px
+}
+.notification-bar ul li span{
+    border:0px solid #000;
+    display:flex;
+    flex-direction:row-reverse;
+    align-items:center
+}
+.notification-bar ul li span.close-btn:hover{
+   color:#000
+}
+.notification-bar ul li span table {
+    width:100%;
+    border:0
+}
+.notification-bar ul li span table tr th {
+   background-color:#fff !important;
+    color:#000 !important;
+}
+.notification-bar ul li span table tr th,
+.notification-bar ul li span table tr td{
+   border:0;
+   padding: 3px 7px;
+   text-align:left !important
+}
+.notification-bar ul li span table tr td {
+   text-wrap:nowrap
+}
+
+
+
+
+
+
+.mocrvalidatecount{
+    background: #fff;
+    border-radius: .75rem;
+    margin: 0 auto 15px;
+    width: 97%;
+    padding: 1rem;
+    height:calc(100vh - 350px);
+    overflow-y:auto;
+    scrollbar-width:thin;
+}
+.mocrvalidatecount table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px auto;
+}
+.mocrvalidatecount th, 
+.mocrvalidatecount td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+}
+.mocrvalidatecount th {
+    background-color: #f2f2f2;
+}
+
+/* Summary Table Styling */
+.mocrvalidatecount #summaryTable {
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.mocrvalidatecount #summaryTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+.mocrvalidatecount #summaryTable td {
+    font-weight: bold;
+}
+
+/* Details Table Styling */
+.mocrvalidatecount #detailsTable {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.mocrvalidatecount #detailsTable th {
+    background-color: #2196F3;
+    color: white;
+}
+.mocrvalidatecount #detailsTable tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+.mocrvalidatecount #detailsTable tr:hover td {
+    background-color: #f1f1f1;
+}
+
+
+	
+.ui5gridfilter-container-form.comparesearchForm .ui5gridfilter-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    text-wrap:nowrap;
+    /*width:inherit !important;*/
+}
+.ui5gridfilter-container-form.comparesearchForm .ui5gridfilter-row{
+    /*display:grid;*/
+    grid-gap:2rem;
+    /*grid-template-columns:repeat(2, 1fr);*/
+    justify-content:space-between;
+    padding: 0px 4rem;
+}
+/*.ui5gridfilter-container-form.comparesearchForm .ui5gridbutton-row{
+    justify-content:center;
+    margin-top:1rem !important;
+}*/
+.ui5gridfilter-container-form.comparesearchForm .ui5gridgo-btn.reset-btn{
+    display:none;
+}
+/* Normal state */
+.comparesearchForm .ui5gridgo-btn.go-btn,
+#dxpcompareTreeButton button {
+      background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 12px !important;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-weight: 500;
+}
+
+.comparesearchForm .ui5gridgo-btn.go-btn:hover,
+#dxpcompareTreeButton button:hover {
+    background: #1d4ed8;
+}
+
+
+/*#dxpcompareTreeButton button{
+    display:flex;
+    align-items:center;
+    gap:4px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin: 0px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}*/
+.dxpMOCRTreeWithGridSplitterClass.dxpcompareTree{
+    display: flex;
+    /*    display: grid;
+        grid-template-columns: 45% 5% 45%;*/
+    gap: 0.2rem;
+    /*align-items: center;*/    
+    justify-content: center;
+}
+/*.ui5gridfilter-container-form.comparesearchForm #compare-search-form-title{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #777;
+    padding-bottom: 4px;
+}*/
+ .ui5gridfilter-container-form.comparesearchForm #compare-search-form-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #777;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.ui5gridfilter-column  .ui5gridfilter-item{
+    display:grid;
+    grid-template-columns:repeat(3, 250px);
+    width: 100%;
+    margin:6px;
+    grid-gap:12px;
+}
+.ui5gridfilter-column{
+    width:100%
+}
+/*.ui5gridfilter-column  .ui5gridfilter-item input , .ui5gridfilter-column  .ui5gridfilter-item select{
+    border: 1px solid #ddd;
+}*/
+
+
+
+.assetTreeGeneralDataDiv{
+    width: 97%;
+    background-color: #fff;
+    margin: 0.5rem 1.25rem 0 1.25rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 2px 0 #000s;
+    padding: 0.75rem;
+}
+.assetTreeGeneralDataDiv .ui5gridfilter-table {
+    width:100%;
+}
+.assetTreeGeneralDataDiv .ui5gridfilter-table tbody input , .assetTreeGeneralDataDiv .ui5gridfilter-table tbody select{
+    width:96%;
+    height:28px;
+    border-radius:4px;
+    margin-bottom:4px;
+    padding:0 8px;
+}
+.ui5gridbutton-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.ui5gridbutton-row button:first-child{
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+.ui5gridbutton-row button{
+    border: none;
+    background-color:transparent;
+    color:#007bff;     
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 0.5rem;
+}
+.ui5gridfilter-container-form.crossSearchFormTemp .ui5gridbutton-row{
+    margin-top: 8px !important;     
+}
+.ui5gridfilter-container-form.crossSearchFormTemp  .ui5gridfilter-item:first-child{
+    width:200px !important;
+}
+.fiorithemeClass .dxpcompareTree .jqx-widget-content-energyblue{
+    border-radius: 0.25rem;
+    /*box-shadow: 0 0 2px 0 #c2c2c2;*/
+    padding:0;
+    margin:0.25rem;
+}
+
+/*cpmpare list css*/
+
+.compare-search-data .compare-wrapper {
+    /*    display: grid;
+        grid-template-columns: repeat(2, 650px);
+        justify-content:space-around;
+        padding: 0.25rem; 
+        width: 100%;*/
+    padding: 0.5rem 1.25rem 0 1.25rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.compare-search-data .compare-wrapper .compare-row {
+    min-height: 50px;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 .125rem 0 rgba(34, 53, 72, 0.2), 0 .125rem .25rem 0 rgba(34, 53, 72, 0.2);
+    border-radius: 0.5rem;
+}
+.compare-search-data .compare-wrapper .compare-row  .compare-ul li{
+    margin: 12px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    color:#1d2d3e;
+}
+
+/*.compare-row {
+    background: #fff;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;  makes equal width columns 
+}*/
+
+.compare-table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 14px; 
+}
+
+.compare-key {
+    text-align: left;
+    padding: 4px 8px;
+    font-weight: normal;
+    color: #444;
+    white-space: nowrap;
+}
+
+.compare-colon {
+    text-align: center;
+    width: 10px;
+}
+
+.compare-value {
+    text-align: right;
+    padding: 4px 8px;
+    font-weight: bold;
+    color: #000;
+}
+.jqxAssetTreeImgageClass{
+    width: 18px;
+    margin-right: 4px;
+}
+
+/*barcode generation form dilog css ends here*/
+
+.ui5gridfilter-container-form.comparesearchForm .ui5gridfilter-inputFeildDiv .ui5gridinputFeildSpanselect{
+    width: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+/*.ui5gridform-control.jqx-combobox-state-normal{
+    width:300px !important;
+    height:22px !important;  
+    
+    border:none;
+}*/
+
+
+.comparesearchForm.jqx-popup {
+    overflow-x: hidden !important;
+}
+
+.compare-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 97%;
+    background-color: #fff;
+    margin-bottom:0.5rem;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    box-shadow: 0 0 2px 0 #000;
+}
+
+
+.compare-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.compare-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.compare-key {
+    padding: 4px 8px;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.compare-colon {
+    padding: 4px;
+    font-weight: bold;
+}
+
+.compare-value {
+    padding: 4px 8px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.assetTreeGeneralDataDiv .ui5gridfilter-container-form.comparesearchForm{
+    padding:0;   
+}
+.assetTreeGeneralDataDiv .ui5gridfilter-container-form.comparesearchForm #compare-search-form-title{
+    padding: 6px 0;  
+}
+.assetTreeGeneralDataDiv .ui5gridfilter-container-form.comparesearchForm .ui5gridfilter-item {
+    width: 405px; 
+}
+.dxpMOCRTreeWithGridSplitterClass.dxpcompareTree  {
+    height: calc(100vh - 360px) !important;
+}
+
+.dxpMOCRTreeWithGridSplitterClass.dxpcompareTree .dxpAssetTreeCampare {
+    box-shadow: 0 0 2px 0 #000;
+    padding: 10px 0px;
+}
+
+#dxpEAMCompareSearchTrees {    
+    margin: 0px 20px;
+}
+#dxpcompareTreeButton {
+    margin-top: 10px;
+}
+
+
+#dxpEAMSearchDiv .assetTreeGeneralDataDiv{
+    box-shadow: 0 0 2px 0 #000;
+}
+
+.comparesearchForm .ui5gridbutton-row{
+    justify-content:flex-end;
+}
+.comparesearchForm .ui5gridfilter-container-form .ui5gridfilter-row {
+    justify-content: space-around;
+}
+.comparesearchForm .ui5gridfilter-container-form .ui5gridbutton-row {
+
+    justify-content: center;
+     
+} 
+.assetTreeGeneralDataDiv.crossSearchUI5Form{
+    background-color: #fff;
+    padding: 0.75rem;
+    width: 100%;
+    margin: inherit;
+    border-radius: inherit;
+    box-shadow:none !important;
+}
+.mocrValidateCardsContainer {
+    display: flex ;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.mocrValidateCards {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #ddd;
+    border-radius: .75rem;
+    padding: 1rem;
+    backdrop-filter: blur(12px);
+    transition: transform 0.4s 
+        ease, box-shadow 0.4s 
+        ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 13px -7px #a8a8a8;
+    /*width: 19%;*/
+}
+
+.mocrValidateCards h2 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    background: #006BB8;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.mocrValidateCards p {
+    font-size: 1.5rem;
+    opacity: 0.85;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.mocrValidateNotFound {
+    text-align:center;
+    padding:15px;
+    font-weight:500;
+    font-size:16px;
+    display:none;
+}
+#dxpMOCRSearchTreeWithGridContent .assetTreeGeneralDataDiv {
+    width:100%;
+    margin:0;
+}
+#dxpMOCRSearchTreeWithGridContent .assetTreeGeneralDataDiv .ui5gridfilter-container-form {
+    padding:0;
+}
+.mocrValidateCardsContainer .mocrValidateCards div {
+    display: flex;
+    gap:15px;
+}
+.mocrValidateCardsContainer .mocrValidateCards div:not(:last-child) {
+    margin-bottom:6px;
+}
+.mocrValidateCardsContainer .mocrValidateCards div span:first-child {
+    font-size: 14px;
+    font-weight: 500;
+}
+.mocrValidateCardsContainer .mocrValidateCards div span:last-child {
+    font-size: 14px !important;
+    font-weight: 400;
+}
+
+.mocrValidateCards .mocrResultsItem:hover {
+    color:#0000ff;
+    cursor: pointer;
+}
+#RdsMOCRTreeData .dxpRDSTreeWithGridSplitterClass .dxpAssetRDSTreeSplitterClass .dxpAssetTreeClass {
+    height: calc(100vh - 210px) !important;
+}
+
+.dxpAssetRDSTreeButtonsClass {
+    padding: 8px;
+}
+
+.dxpAssetRDSTreeButtonsClass button {
+    color: #fff;
+    font-size: 14px !important;
+    border-radius: 0.5rem !important;
+    padding: 4px 8px !important;
+    background: #007bff !important;
+    border: 1px solid #007bff !important;
+}
+
+/*EAM Workbench MOCR AIAgent Creation Start*/
+.aiMocrTableContainer {
+    padding: 16px 20px;
+    width: fit-content;
+    font-family: "Segoe UI", Arial, sans-serif;
+    border-radius: 8px;
+}
+
+.aiMocrTableHeader {
+    display: inline-block;
+    font-size: 15px;
+    color: #0b56d0;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.aiMocrValidationTable {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.aiMocrValidationTable td {
+    border: 1px solid #d4e1fa;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #0b56d0;
+}
+
+.aiMocrValidationTable tr:nth-child(odd) {
+    background-color: #eef4ff;
+}
+
+.aiMocrValidationTable tr:hover {
+    background-color: #dceaff;
+    transition: 0.3s;
+}
+
+.aiMocrValidationTable td:first-child {
+    font-weight: 600;
+    color: #0b56d0;
+}
+/*EAM Workbench MOCR AIAgent Creation end*/

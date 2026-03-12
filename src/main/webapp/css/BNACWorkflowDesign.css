@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 May, 2025, 3:05:51 PM
+    Author     : Jagadish.R
+*/
+
+#BNAC_Operator1 { top: 250px; left: 5%; }
+#BNAC_Return1 { top: 550px; left: 40%; }
+#BNAC_Rework1 { top: 50px; left: 40%;}
+#BNAC_Delete1 { top: 500px; left: 65%; }
+#BNAC_OEM1 { top: 250px; left: 25%; }
+#BNAC_CONTENT_MANAGER1 { top: 250px; left: 48%; }
+#BNAC_SAP_BNAC1 { top: 100px; left: 78%; }
+#BNAC_SAP_H4HANA1 { top: 250px; left: 78%; }
+#BNAC_NON_SAP1 { top: 400px; left: 78%; }
+
+#Copy_BNAC_Operator1 { top: 250px; left: 5%; }
+#Copy_BNAC_Return1 { top: 550px; left: 40%; }
+#Copy_BNAC_Rework1 { top: 50px; left: 40%;}
+#Copy_BNAC_Delete1 { top: 500px; left: 65%; }
+#Copy_BNAC_OEM1 { top: 250px; left: 25%; }
+#Copy_BNAC_CONTENT_MANAGER1 { top: 250px; left: 48%; }
+#Copy_BNAC_SAP_BNAC1 { top: 100px; left: 78%; }
+#Copy_BNAC_SAP_H4HANA1 { top: 250px; left: 78%; }
+#Copy_BNAC_NON_SAP1 { top: 400px; left: 78%; }
+
+
+#BNAC_OEM2 { top: 250px; left: 5%; }
+#BNAC_Return2 { top: 550px; left: 20%; }
+#BNAC_Rework2 { top: 50px; left: 20%;}
+#BNAC_Delete2 { top: 550px; left: 65%; }
+#BNAC_CONTENT_MANAGER2 { top: 250px; left: 25%; }
+#BNAC_Operator2 { top: 250px; left: 48%; }
+#BNAC_SAP_BNAC2 { top: 100px; left: 78%; }
+#BNAC_SAP_H4HANA2 { top: 250px; left: 78%; } 
+#BNAC_NON_SAP2 { top: 400px; left: 78%; }
+
+#Copy_BNAC_OEM2 { top: 250px; left: 5%; }
+#Copy_BNAC_Return2 { top: 550px; left: 20%; }
+#Copy_BNAC_Rework2 { top: 50px; left: 20%;}
+#Copy_BNAC_Delete2 { top: 550px; left: 65%; }
+#Copy_BNAC_CONTENT_MANAGER2 { top: 250px; left: 25%; }
+#Copy_BNAC_Operator2 { top: 250px; left: 48%; }
+#Copy_BNAC_SAP_BNAC2 { top: 100px; left: 78%; }
+#Copy_BNAC_SAP_H4HANA2 { top: 250px; left: 78%; }
+#Copy_BNAC_NON_SAP2 { top: 400px; left: 78%; }
+
+
+#workflowDesignLineId {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* Center the dot */
+    pointer-events: none; /* Prevent interference with mouse events */
+}
+
+
+.workflowLineDot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: green;
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* Center the dot */
+    pointer-events: none; /* Prevent interference with mouse events */
+}
+
+.workflowLineReturnDot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* Center the dot */
+    pointer-events: none; /* Prevent interference with mouse events */
+}
+.worflowDesignOperationsClass .label-branch.hidelebelLink {
+    background-color: #d0f0ff;
+    color: #0277bd;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    display:none;
+}

@@ -1,0 +1,63 @@
+:root {
+       --main-background: #121212; /* Very dark gray for the main background */
+       --overlay1-dark: #1E1E1E; /* Slightly lighter dark gray for overlays */
+       --overlay2-dark: #242424; /* Another shade of dark gray for additional contrast */
+       --overlay3-dark: #2C2C2C; /* Even lighter gray for overlays */
+       --overlay4-dark: #333333; /* Lightest dark gray for overlays */
+       --dark-border-color: #444444; /* Medium gray for borders */
+       --text-color-primary: #FFFFFF; /* White for primary text */
+       --text-color-secondary: #BBBBBB; /* Light gray for secondary text */
+       --accent-color: #00BCD4; /* Cyan for accent elements */
+       --highlight-color: #FF9800; /* Orange for highlights */
+       --error-color: #FF5722; /* Red for error messages */
+       --success-color: #4CAF50; /* Green for success messages */  
+} ﻿
+ 
+.jqx-widget-content-energyblue{border-color: #c4c1c1;}
+.jqx-fill-state-normal-energyblue, .jqx-widget-header-energyblue{border-color: #c4c1c1;
+    background-color: #c7e0f4;}
+.jqx-fill-state-hover-energyblue{border-color:#ddd;  background-color:#f1f1f1}
+.dark-mode .jqx-fill-state-pressed-energyblue{border-color:var(--dark-border-color); background-color:#3e3e42;color: #f1f1f1;}
+.jqx-fill-state-focus-energyblue { border-color: #477396; }
+/*.jqx-scrollbar-state-normal-energyblue, .jqx-grid-bottomright-energyblue, .jqx-panel-bottomright-energyblue, .jqx-listbox-bottomright-energyblue{background-color:#e0e9f5}*/
+.dark-mode .jqx-widget-energyblue .jqx-grid-column-header-energyblue, .jqx-grid-cell-energyblue, .jqx-widget-energyblue .jqx-grid-cell-energyblue, .jqx-widget-energyblue .jqx-grid-group-cell-energyblue, .jqx-grid-group-cell-energyblue{border-color:#5f5f64}
+.jqx-tabs-title-selected-bottom-energyblue, .jqx-tabs-selection-tracker-bottom-energyblue, .jqx-tabs-title-selected-top-energyblue, .jqx-tabs-selection-tracker-top-energyblue{border-color:#a4bed4; border-bottom:1px solid #fff; background:#fff}
+.jqx-grid-cell-sort-alt-energyblue, .jqx-grid-cell-filter-alt-energyblue, .dark-mode .jqx-grid-cell-pinned-energyblue, .jqx-grid-cell-alt-energyblue, .jqx-grid-cell-sort-energyblue{ background-color:#4e4e4e;}
+.dark-mode .jqx-grid-cell-selected-energyblue{ background-color: #040404;
+    color: var(--text-color-primary) !important; }
+.jqx-grid-cell-hover-energyblue{ background-color: #E1F5FE;
+    color: #0077BE;}
+.jqx-menu-vertical-energyblue{background: #EAF4FD;}
+.jqx-layout-energyblue
+{
+    background-color: #a4bed4;
+}
+/* grid color css chnages by pavani Starts here*/
+.jqx-grid .jqx-widget-header > div span{
+    font-size:12px;
+}
+.jqx-grid .jqx-widget-header .dxpRendorToolbarClass,.jqx-grid .dxpRendorToolbarClass .visionSearchExport table select{
+    font-size: 12px;
+}
+.jqx-grid .jqx-widget-header .visionSearchExportDiv select,input{
+     font-size: 12px;
+}
+.jqx-grid .jqx-grid-content div>[role="row"]:nth-child(odd){
+        background-color: rgba(234,244,253,1);
+}
+.jqx-grid .jqx-grid-content div>[role="row"]:nth-child(even){
+        background-color: rgba(234,244,253,0.5);
+}
+/*.dark-mode .jqx-grid .jqx-grid-content div>[role="row"]:nth-child(odd){
+        background-color:var(--overlay1-dark);
+}
+.dark-mode .jqx-grid .jqx-grid-content div>[role="row"]:nth-child(even){
+        background-color: var(--overlay3-dark);
+}*/
+.jqx-grid-content .vend_style {
+    margin: 9px;
+}
+/*.jqx-widget-content-energyblue{
+    position: fixed;
+}  */
+/* grid color css chnages by pavani Ends here*/

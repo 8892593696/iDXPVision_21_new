@@ -1,0 +1,1180 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 Dec, 2025, 10:27:20 AM
+    Author     : KiranRaj
+*/
+
+
+/* KDS Work Bench DAL access Validation Start*/
+
+/* Wrapper */
+.kdsDalAccessValWrapper {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+/* Header */
+/*.kdsDalAccessValHeader {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #ffffff;
+}*/
+
+.kdsDalAccessValBackBtn {
+    background: none;
+    border: none;
+    color: #0A6ED1;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.kdsDalAccessValBackBtn:hover {
+    text-decoration: underline;
+}
+
+/* Split container */
+.kdsDalAccessValSplitContainer {
+    display: flex;
+    height: calc(100vh - 95px);
+}
+
+/* Left panel (30%) */
+.kdsDalAccessValLeftPanel {
+    width: 20%;
+    border-right: 1px solid #e5e5e5;
+    background: #f9fbfd;
+    /*overflow: auto;*/
+    scrollbar-width: thin;
+    height: calc(100vh - 106px);
+    position: relative;
+} 
+.kdsDalAccessValLeftPanel .kds-toggleMenu{
+    position: absolute;
+    right: -10px;
+    top:-9px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 3px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+/* Right panel (70%) */
+.kdsDalAccessValRightPanel {
+    background-color: #f5f5f5;
+    width: 100%;
+    overflow-y: auto;
+    height: calc(100vh - 95px);
+    scrollbar-width: thin;
+}
+
+/* Main item */
+.kdsDalAccessValMainItem {
+     padding: 7px 12px;
+    background-color: #f5f6f7;
+    cursor: pointer;
+    font-weight: 600;
+    color: #0A6ED1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border-bottom: 1px solid #ddd;*/
+    position: sticky;
+    top: 0;
+}
+
+.kdsDalAccessValMainItem:hover {
+    background: #eef4fb;
+}
+
+/* Sub list */
+.kdsDalAccessValSubList {
+    display: none;
+}
+
+.kdsDalAccessValSubItem {
+    padding: 12px 24px;
+    cursor: pointer;
+    color: #1d2d3e;
+}
+
+.kdsDalAccessValSubItem:hover {
+    background: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .kdsDalAccessValSplitContainer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .kdsDalAccessValLeftPanel,
+    .kdsDalAccessValRightPanel {
+        width: 100%;
+    }
+}
+
+
+/* KDS Work Bench DAL access Validation end*/
+
+/* KDS - toggle button and it styles in aiLens.css start */
+.kdsx-menu label {
+    margin:0;
+}
+.kds-headingWraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f5f6f7;
+    position: relative; 
+}
+.kds-headingWraper .kds-toggleMenu {
+    position: absolute;
+    right: -10px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 3px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:-9px;
+}
+.kds-headingWraper .kds-toggleMenu:hover {
+    box-shadow: 0px 8px 16px 0px #0057d233,0px 0px 2px 0px #0057d233;
+}
+.kds-headingWraper .kds-toggleMenu svg {
+    width:100%;
+    height:100%;
+}
+.kds-headingWraper h6 {
+    margin: 0;
+    padding: 0 !important;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 12px !important;
+    line-height:1;
+}
+.kds-headingWraper h6 span{
+    font-size:14px;
+}
+.kdsx-content {
+    transition: 0.3s all ease-in-out;
+}
+.KDSmenuToggle .kdsx-content {
+    margin-left: 60px;
+}
+
+.kds-headingWraper .kds-toggleMenu svg {
+    transition: 0.3s all ease-in-out;
+}
+.kds-headingWraper .kds-toggleMenu svg{
+    transform:rotateY(180deg);
+}
+.KDSmenuToggle .kds-headingWraper .kds-toggleMenu svg{
+    transform:rotateY(0deg);
+}
+.KDSmenuToggle .kdsx-menu-item .kdsx-menu-submenu .kdsx-menu-link{
+    padding:4px
+}
+.KDSmenuToggle .kdsx-menu-submenu .kdsx-menu-item .kdsx-menu-submenu .kdsx-menu-link {
+    padding-left: 6px;
+}
+
+.KDSmenuToggle .kdsx-sidebar {
+    width: 60px;
+    z-index:999
+}
+.KDSmenuToggle .kdsx-sidebar .kds-headingWraper h6 span,
+.KDSmenuToggle .kdsx-sidebar label{
+    display: none;
+    text-wrap:nowrap;
+}
+.KDSmenuToggle .kdsx-sidebar .kdsx-menu-item .kdsx-menu-submenu .kdsx-menu-link{
+    padding-left: 8px;
+}
+.KDSmenuToggle .kdsx-sidebar .kdsx-menu-submenu .kdsx-menu-item .kdsx-menu-submenu .kdsx-menu-link {
+    padding-left: 8px;
+}
+
+/* KDS - toggle button and it styles in aiLens.css end */
+
+
+/* chnages in aiLens.css  */
+
+
+/*kds configration WB custom accordian css changes starts here*/
+
+
+.kdsAppSettingAccMainContainer {                                 
+    width: 100%;         
+}   
+
+.kdsAppSettingAccMainContainer .kdsAppSettingAccContent {
+    background-color: #f5f5f5;
+    color: #1d2d3e;
+    width: 100%;           
+}
+
+/* Accordion Styles */
+.kdsAppSettingAccMainContainer .accordion:last-child {
+    border-bottom: none;
+}
+
+.kdsAppSettingAccMainContainer .accordion-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    gap: 12px;
+}
+
+.kdsAppSettingAccMainContainer .accordion-header:hover {
+    background-color: #eff1f2;
+}
+
+.kdsAppSettingAccMainContainer .accordion-header:focus {
+    outline: none;
+    outline-offset: -2px;
+}
+
+.kdsAppSettingAccContent .accordion-arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.kdsAppSettingAccContent .accordion-arrow svg {
+    width: 100%;
+    height: 100%;
+    fill: #1d2d3e;
+}
+
+.kdsAppSettingAccContent .accordion.expanded .accordion-arrow {
+    transform: rotate(90deg);
+}
+
+.kdsAppSettingAccContent .accordion-title {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d2d3e;
+}
+
+.kdsAppSettingAccContent .accordion-actions {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+/* Button Styles */
+.kdsAppSettingAccContent .btn {
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    background-color: transparent !important;
+    border-radius: 0.5rem;
+    color: #007bff !important;
+    font-weight: bold;
+    padding: 0px;
+    border: none;
+    width: auto;
+    line-height: 1;
+}
+
+.kdsAppSettingAccContent .btn-edit {
+    background-color: transparent;
+    color: #007bff;
+}
+
+.kdsAppSettingAccContent .btn-edit:hover {
+    background-color: #eff1f2;
+}
+
+.kdsAppSettingAccContent .btn-save {
+    color: #007bff;
+}
+
+.kdsAppSettingAccContent .btn-cancel {
+    background-color: transparent;
+    color: #1d2d3e;
+}
+
+/* Accordion Content */
+.kdsAppSettingAccContent .accordion-content {
+    max-height: 0;
+    overflow: hidden;   
+    transition: max-height 0.3s ease;
+    background:transparent;
+    padding:inherit;
+}
+
+.kdsAppSettingAccContent .accordion.expanded .accordion-content {
+    max-height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    background: transparent;  
+    padding: inherit;  
+}   
+
+.kdsAppSettingAccContent .accordion-content-inner {
+    background: transparent;    
+    border-radius: 0.75rem;  
+    margin: 0 auto 15px;           
+    width: 94%;       
+}  
+.kdsDalAccessValMainItemHeader{
+    display: flex;
+    align-items: center;
+    gap:2px;
+}
+
+/*.kdsDalAccessValUserInfo , kdsDalAccessValSearch{
+    background-color: #fff;
+    width: 30px;
+    height: 30px; 
+    padding: 4px;
+}
+.kdsDalAccessValUserInfo img , kdsDalAccessValSearch img{
+    transform: translate(3px, 2px);
+}  */
+
+.kdsDalAccessValSubList .kdsDalAccessValSubItem{
+    padding: 8px 0px 8px 24px;
+    text-decoration: none;
+    color: #1c2d45;
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s;
+    border-radius: .375rem;
+}
+
+.kdsAppSettingAccCurrentTitle{
+    padding: 12.1px 8px;
+    text-decoration: none;
+    color: #1c2d45;
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 600;
+    background: #f5f5f5;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+/* Sub-Accordion Styles */
+.kdsAppSettingAccContent .sub-accordion {
+    margin-bottom: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.kdsAppSettingAccContent .sub-accordion:last-child {
+    margin-bottom: 0;
+}
+
+.kdsAppSettingAccContent .sub-accordion-header {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    gap: 8px;
+    /* border-radius: 4px; */
+    border-bottom: 1px solid #ddd;
+    padding-left: 40px !important;
+}
+.kdsAppSettingAccContent .sub-accordion-header .accordion-arrow {
+    width: 14px;
+    height: 14px;
+}
+.kdsAppSettingAccContent .universal-accordion-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 1rem;
+    width: 98%;
+    display: none !important;
+}
+.kdsAppSettingAccContent .universal-accordion-arrow .defult-up,
+.kdsAppSettingAccContent .universal-accordion-arrow .defult-down {
+    width: 14px;
+    height: 14px;
+    transform: rotate(-90deg);
+    color: #89919a;
+}
+.kdsAppSettingAccContent .universal-accordion-arrow .defult-down {
+    transform: rotate(90deg);
+}
+
+.kdsAppSettingAccContent .sub-accordion.expanded .accordion-arrow {
+    transform: rotate(90deg);
+}
+
+.kdsAppSettingAccContent .sub-accordion-title {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d2d3e;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.kdsAppSettingAccContent .sub-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.kdsAppSettingAccContent .sub-accordion.expanded .sub-accordion-content {
+    height:400px;
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+/*.kdsAppSettingAccContent .sub-accordion .settings-list {
+    padding: 8px 0;
+}*/
+
+.kdsAppSettingAccContent .sub-accordion .settings-item {
+    padding: 6px 6px 6px 90px;
+}
+
+/* List Styles */
+.kdsAppSettingAccContent .settings-list {
+    list-style: none;
+    margin: 0;
+}
+
+.kdsAppSettingAccContent .settings-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e5e5;
+    transition: background-color 0.2s;
+}
+
+.kdsAppSettingAccContent .settings-item:last-child {
+    border-bottom: none;
+}
+
+.kdsAppSettingAccContent .settings-item:hover {
+    background-color: #eff1f2;
+}
+
+.kdsAppSettingAccContent .settings-checkbox {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    cursor: pointer;
+    /*transform: translate(0px, 3px);*/
+}
+
+.kdsAppSettingAccContent .settings-checkbox:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.kdsAppSettingAccContent .settings-label {
+    font-size: 14px;
+    color: #1d2d3e;
+    cursor: pointer;
+    user-select: none;  
+    margin: inherit !important;
+}
+
+.kdsAppSettingAccContent .settings-item.disabled .settings-label {
+    cursor: not-allowed;
+    color: #89919a;
+}
+
+/* Scrollbar Styles */
+.kdsAppSettingAccContent .accordion-content::-webkit-scrollbar,
+.kdsAppSettingAccContent .sub-accordion-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.kdsAppSettingAccContent .accordion-content::-webkit-scrollbar-track,
+.kdsAppSettingAccContent .sub-accordion-content::-webkit-scrollbar-track {
+    background: #eff1f2;
+}
+
+.kdsAppSettingAccContent .accordion-content::-webkit-scrollbar-thumb,
+.kdsAppSettingAccContent .sub-accordion-content::-webkit-scrollbar-thumb {
+    background: #89919a;
+    border-radius: 4px;
+}
+
+.kdsAppSettingAccContent .accordion-content::-webkit-scrollbar-thumb:hover,
+.kdsAppSettingAccContent .sub-accordion-content::-webkit-scrollbar-thumb:hover {
+    background: #6a6d70;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .kdsAppSettingAccContent .accordion-header {
+        padding: 12px 16px;
+    }
+
+    .kdsAppSettingAccContent .accordion-content-inner {
+        padding: 0 16px 12px 44px;
+    }
+
+    .kdsAppSettingAccContent .settings-item {
+        padding: 10px 12px;
+    }
+
+    .kdsAppSettingAccContent .sub-accordion-header {
+        padding: 8px 10px;
+    }
+
+    .kdsAppSettingAccContent .sub-accordion .settings-item {
+        padding: 6px 10px;
+    }
+}       
+
+
+/*kds configration WB custom accordian css changes ends here*/    
+
+.kdsDalAccessValMainItemListDropdown {
+    padding: 8px;
+/*    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    color: #0057d9;
+    font-weight: 600;
+    background: 0 100% / 0.188rem 100% no-repeat linear-gradient(0deg, #0064d9, #0064d9), #ebf8ff;
+    border-radius: .375rem; */
+} 
+.kdsDalAccessValMainItemListwrapper {
+    padding: 5px 10px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    color: #0057d9;
+    font-weight: 600;
+    background: 0 100% / 0.188rem 100% no-repeat linear-gradient(0deg, #0064d9, #0064d9), #ebf8ff;
+    border-radius: .375rem;
+}
+.kdsDalAccessValMainItemListDropdown span#kdsDalAccessValArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    color:#666;
+    font-size: 12px;
+}
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsDalAccessValMainItemListwrapper {
+    gap:6px;
+} 
+.kdsDalAccessValMainItemListDropdown span{ 
+    font-size: 14px;
+}
+.rotate-down {
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+.kdsDalAccessValMenuOpt{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.kdsDalAccessValBackBtn:focus{
+    outline: none;
+    border: none;
+}
+
+.kdsSearchbar {
+    position: relative;
+    max-width: 260px;
+    margin: 10px 0;
+}
+
+.kdsSearchbar .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+}
+
+.kdsSearchbar input {
+    width: 93%;
+    padding: 8px 12px 8px 32px; /* space for icon */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.kdsSearchbar input:focus {
+    border-color: #007bff;
+}
+
+/*ai lens KDS Checkbox look and feel start*/
+/* ===== AI Lens Global Checkbox Styles (Scoped) ===== */
+ .aiLensKDSDataTypes {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #0056b3;
+  font-size: 14px;
+}
+
+.aiLensKDSDataTypes .container {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 2px 18px;
+  margin-top: 10px;
+}
+
+.aiLensKDSDataTypes .header {
+  font-weight: 600;
+  font-size: 14px;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.aiLensKDSDataTypes .textarea {
+  width: 100%;
+  border: 1.5px solid #0056b3;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+  color: #003a75;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.aiLensKDSDataTypes .textarea:focus {
+  border-color: #004494;
+  box-shadow: 0 0 4px rgba(0, 86, 179, 0.25);
+}
+
+.aiLensKDSDataTypes .error {
+  color: red;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.aiLensKDSDataTypes .btn {
+  background: #0056b3;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 12px !important;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 86, 179, 0.2);
+        margin-left: 0rem;
+}
+
+.aiLensKDSDataTypes .btn:hover {
+  background: #004494;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.aiLensKDSDataTypes .btn:active {
+  background: #003a85;
+  transform: translateY(0);
+}
+
+.aiLensKDSDataTypes .table-container {
+  border: 1px solid #c7dbf2;
+  border-radius: 8px;
+  background: #ffffff;
+  margin-top: 12px;
+  padding: 12px 16px;
+}
+
+.aiLensKDSDataTypes .table-container h4 {
+  color: #0056b3;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.aiLensKDSDataTypes .table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #004085;
+}
+
+.aiLensKDSDataTypes .table th {
+  background: #eaf3ff;
+  color: #0056b3;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-bottom: 1px solid #d2e3f5;
+  text-align: left;
+}
+
+.aiLensKDSDataTypes .table td {
+  padding: 5px 8px;
+  border-bottom: 1px solid #edf3ff;
+}
+
+.aiLensKDSDataTypes .followup {
+  padding: 12px 16px;
+}
+
+.aiLensKDSDataTypes .followup p {
+  color: #0056b3;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.aiLensKDSDataTypes .followup button {
+  border: 1px solid #c7dbf2;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-weight: 500;
+  color: #0056b3;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.aiLensKDSDataTypes .followup button:first-child {
+  background: #0056b3;
+  color: #fff;
+  border: none;
+}
+
+.aiLensKDSDataTypes .followup button:first-child:hover {
+  background: #004494;
+}
+
+.aiLensKDSDataTypes .followup button:last-child:hover {
+  background: #eaf3ff;
+}
+.kds-ai-global .kds-checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.kds-ai-global .kds-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+}
+.kds-ai-global .kds-checkbox-item:hover {
+    background-color: #f5f7fa;
+}
+.kds-ai-global .kds-checkbox-input {
+    margin-top: 3px;
+    cursor: pointer;
+}
+.kds-ai-global .kds-checkbox-text {
+    display: flex;
+    flex-direction: column;
+}
+.kds-ai-global .kds-checkbox-label {
+    font-weight: 600;
+    min-width: 100px;
+}
+.kds-ai-global .kds-checkbox-desc {
+    font-size: 13px;
+    color: #555;
+}
+.kds-ai-global .kds-checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.kds-ai-global .kds-checkbox-info {
+    font-size: 14px;
+    cursor: pointer;
+    color: #007bff;
+    user-select: none;
+}
+
+.kds-ai-global .kds-checkbox-info:hover {
+    color: #0056b3;
+}
+.kds-ai-global .kds-info-icon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+/*ai lens KDS Checkbox look and feel end*/
+
+
+
+/*kds configration WB custom righ panel start*/ 
+.kdsAppSettingAccContent .sub-accordion.expanded .sub-accordion-content div[role="grid"]{
+    height:100% !important;
+    max-height:100% !important;
+}
+
+.kdsDalAccessValRightPanel .kdsAppSettingAccMainContainer .kdsAppSettingAccContent .accordion.expanded .accordion-content .sub-accordion .sub-accordion-header .accordion-arrow {
+    transform: rotate(0deg);
+    display: flex;
+}
+
+.kdsDalAccessValRightPanel .kdsAppSettingAccMainContainer .kdsAppSettingAccContent .accordion.expanded .accordion-content .sub-accordion.expanded .sub-accordion-header .accordion-arrow {
+    transform: rotate(90deg);
+}
+.kdsDalAccessValRightPanel .kdsAppSettingAccMainContainer .kdsAppSettingAccContent .sub-accordion:first-child  .sub-accordion-header{
+    padding-left:45px
+}
+.kdsAppSettingAccContent .sub-accordion .settings-item,
+.kdsDalAccessValRightPanel .kdsAppSettingAccMainContainer .kdsAppSettingAccContent .accordion .sub-accordion-header {
+    position:relative;
+}
+.kdsAppSettingAccContent .sub-accordion .settings-item:before,
+.kdsDalAccessValRightPanel .kdsAppSettingAccMainContainer .kdsAppSettingAccContent .sub-accordion:first-child  .sub-accordion-header:before{
+    content:"";
+    height:100%;
+    width:0.5px;
+    position:absolute;
+    left: 30px;
+    background-color: #dddddd;
+}
+.kdsAppSettingAccMainContainer
+.kdsAppSettingAccContent
+.accordion {
+    border-bottom: 1px solid #ddd;
+}
+
+.kdsAppSettingAccContent .sub-accordion .settings-item input[type="checkbox"],
+.kdsAppSettingAccContent .sub-accordion-title input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #ddd; 
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #6c6c6c;
+}
+
+.kdsAppSettingAccContent .sub-accordion .settings-item input[type="checkbox"]:checked,
+.kdsAppSettingAccContent .sub-accordion-title input[type="checkbox"]:checked{
+    background-color: #ffffff; 
+    border: 1px solid #6c6c6c;
+    border-radius: 3px !important;
+}
+
+.kdsAppSettingAccContent .sub-accordion .settings-item input[type="checkbox"]:checked::after,
+.kdsAppSettingAccContent .sub-accordion-title input[type="checkbox"]:checked::after{
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #0a6ed1; 
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.fiorithemeClass .searchResultCardViewMainSection .kdsx-content .showGridHeight {
+    min-height: calc(100vh - 95px);
+}
+.kdsDalAccessValLeftPanel {
+    background: #ffffff;
+    width: 20%;
+    border-right: 2px solid #e2e6ef;
+    transition: 0.3s all ease-in-out;
+    height: calc(100vh - 95px);
+    border-right: 2px solid #e5e5e5;
+    position: relative;
+    scrollbar-width: thin;
+}
+.kdsDalAccessValLeftPanel.KDSmenuToggle {
+    width:4%;
+    min-width:60px;
+}
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsDalAccessValSubList .kdsDalAccessValSubItem,
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsDalAccessValUserInfo,
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsDalAccessValMainItemHeader span:nth-child(2),
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsDalAccessValSearch,
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsDalAccessValMainItemListDropdown span:nth-child(1),
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsDalAccessValMainItemListDropdown .kdsAccessMenuLabel .kdsAccessMenuLabelTxt,
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsSearchbar{
+    display: none;
+}
+.kdsDalAccessValLeftPanel .kds-toggleMenu svg{
+    transform: rotateY(180deg) !important;
+}
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kds-toggleMenu svg {
+    transform: rotateY(0deg) !important;
+}
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsDalAccessValMainItem {
+    justify-content:center;
+}
+.kdsDalAccessValLeftPanel .kdsDalAccessValMainItemListDropdown .fa-chevron-right {
+    font-size: 9px;
+    font-weight: 400;
+}
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsDalAccessValMainItemListDropdown {
+    gap: 6px;
+}
+.kdsDalAccessValLeftPanel.KDSmenuToggle .kdsDalAccessValMainItemListDropdown span img {
+    width: 14px;
+    height: 14px;
+}
+.kdsFormGridWrapperClass {
+    height: calc(100vh - 95px);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.kdsDalAccessValHeader button img, 
+.kdsDalAccessValMenuOpt img {
+    width: 16px;
+    height: 16px;
+}
+/*kds configration WB custom righ panel end*/  
+
+/* ===== FORM WRAPPER ===== */
+.kdsDynamicForm {
+    background: #eaecee;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* ===== TABLE TITLE ===== */
+.kds-table-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 12px;
+}
+
+/* ===== AUTO COLUMN GRID ===== */
+.kds-table-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 14px 28px;
+    align-items: start;
+}
+
+/* ===== FIELD GROUP ===== */
+.kds-form-group {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+/* ===== LABEL ===== */
+.kds-label {
+     font-weight: 500;
+    color: #556b82;
+}
+
+/* REQUIRED */
+.kds-req {
+    color: red;
+    margin-left: 3px;
+}
+
+/* ===== INPUTS ===== */
+.kdsDynamicForm input[type="text"], .kdsDynamicForm input[type="number"], .kdsDynamicForm input[type="date"], .kdsDynamicForm textarea {
+    width: 100%;
+    box-shadow: 0 0 0 .0625rem rgba(85, 107, 129, .25);
+    border: .0625rem none #556b81;
+    background: 0 100% / 100% .0625rem no-repeat linear-gradient(0deg, #556b81, #556b81) border-box;
+    border-radius: .25rem;
+    font-size: .875rem;
+    font-weight: 400;
+    height: auto !important;
+    padding: 4.5px;
+}
+
+
+/* TEXTAREA */
+.kdsDynamicForm textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+/* CHECKBOX */
+.kdsDynamicForm input[type="checkbox"] {
+    width: auto;
+    margin-top: 2px;
+}
+
+/* ===== VALIDATION ===== */
+.kds-error-msg {
+    grid-column: 1 / -1;
+    color: red;
+    font-size: 11px;
+    display: none;
+}
+
+/* ===== SEPARATOR ===== */
+.kds-form-separator {
+    border-top: 0px solid #ddd;
+    margin: 28px 0;
+}
+
+/* ===== SUBMIT ===== */
+.kds-submit-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.kds-submit-section button {
+    padding: 7px 22px;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* ===== SAP STYLE PRIMARY BUTTON ===== */
+.kdsDynamicForm .kds-submit-section button {
+    background-color: #0a6ed1;           /* SAP Fiori Blue */
+    color: #ffffff;
+    border: 1px solid #0a6ed1;
+    border-radius: 4px;
+    padding: 6px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 100px;
+    transition: background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+/* Hover */
+.kdsDynamicForm .kds-submit-section button:hover {
+    background-color: #0854a0;           /* SAP hover */
+    border-color: #0854a0;
+}
+
+/* Active / Click */
+.kdsDynamicForm .kds-submit-section button:active {
+    background-color: #0854a0;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Focus (Accessibility) */
+.kdsDynamicForm .kds-submit-section button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(10,110,209,0.4);
+}
+
+/* Disabled */
+.kdsDynamicForm .kds-submit-section button:disabled {
+    background-color: #d1e4f6;
+    border-color: #d1e4f6;
+    color: #6a6d70;
+    cursor: not-allowed;
+}
+.kdsDynamicForm .kds-table-title{
+    padding: 15px 25px 8px;
+    border-radius:12px 12px 0 0;
+    border-bottom: 1px solid #a8b3bd;
+    color: #007bff !important;
+}
+.kdsDynamicForm .kds-table-section {
+     padding: 25px 25px 25px;
+     border-radius:0 0 12px 12px;
+}
+
+.kdsDynamicForm .kds-table-title,
+.kdsDynamicForm .kds-table-section {
+    background-color:#fff;
+    margin:0;
+}     
+/*KDS new Organization creation start 12 to 13-01-26*/
+.kdsx-form-wrapper {
+    padding-top:0;
+}
+.kdsx-form-wrapper .kds-footer-buttons  {
+    display:flex;
+    gap:8px;
+    justify-content: end;
+}
+.kdsx-form-wrapper .row {
+    margin-bottom: 25px !important;
+    gap: 12px;
+}
+.kdsx-form-wrapper .row .col-md-3{
+    padding:0
+}
+.kdsx-form-wrapper .row .col-md-3 label {
+    color: #a4a4a4;
+    font-weight:400
+}
+.kdsx-form-wrapper h5 {
+    font-size:16px;
+    color: #004990;
+}
+.kdsx-form-wrapper .row .col-md-3 input:focus {
+    border: 0;
+}
+.showKDSNewOrgnCreationClass .ui-dialog-content .kdsx-form-wrapper .kdsx-Organization-form .row .col-md-3 {
+    max-width: 48% !important;
+    flex: 0 0 48% !important;
+}
+.kdsAppendColBasedNameCls,
+.kdsAppendColBasedNameCls #dropdownlistWrapperkdsAppendqNameId{
+    padding-left: 0 !important;
+}
+.kdsAppendColBasedNameCls {
+    box-shadow: 0 0 0 .0625rem rgba(85, 107, 129, .25);
+    border: .0625rem none #556b81 !important;
+    background: 0 100% / 100% .0625rem no-repeat linear-gradient(0deg, #556b81, #556b81) border-box !important;
+}
+.fiorithemeClass .showKDSNewOrgnCreationClass.ui-dialog .ui-dialog-content {
+    height:auto !important;
+}
+.showKDSNewOrgnCreationClass .ui-dialog-content .kdsx-form-wrapper .kdsx-Organization-form h5 {
+    font-size:14px;
+}
+.showKDSNewOrgnCreationClass .ui-dialog-content .kdsx-form-wrapper .kdsx-Organization-form .kds-footer-buttons {
+    padding-right: 12px !important;
+}
+.showKDSNewOrgnCreationClass .ui-dialog-content .kdsx-form-wrapper {
+    padding:10px 0 0 10px;
+}
+.showKDSNewOrgnCreationClass .ui-dialog-content .kdsx-form-wrapper .kdsx-Organization-form .row {
+    margin-bottom: 15px !important;
+}
+.showKDSNewOrgnCreationClass .ui-dialog-content .kdsx-form-wrapper .kdsx-Organization-form .row .col-md-3 label {
+    margin-bottom:4px;
+}
+.showKDSNewOrgnCreationClass .ui-dialog-content .kdsx-form-wrapper .kdsx-Organization-form .row .col-md-3 label sup,
+.showKDSNewOrgnCreationClass .ui-dialog-content .kdsx-form-wrapper .kdsx-Organization-form .row .col-md-3 .errorMsgContainer{
+    color:#f00;
+}
+/*KDS new Organization creation end 12 to 13-01-26*/

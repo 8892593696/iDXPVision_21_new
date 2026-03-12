@@ -1,0 +1,270 @@
+
+/* 
+    Created on : 1 Aug, 2024, 10:55:59 AM
+    Author     : PiLog
+    Created By : Sami
+*/
+
+/*
+ * jquery.flowchart - CSS definitions
+ * This css is only for ai panel flowchart
+ */
+
+
+
+.ai-panel-flowchart .flowchart-container { 
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-panel-flowchart .flowchart-links-layer, .flowchart-operators-layer, .flowchart-temporary-link-layer {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.ai-panel-flowchart .flowchart-operators-layer, .flowchart-temporary-link-layer {
+    pointer-events: none;
+}
+
+.ai-panel-flowchart .flowchart-temporary-link-layer {
+    display: none;
+}
+
+.ai-panel-flowchart .flowchart-link, .flowchart-operator {
+    cursor: default;
+}
+
+.ai-panel-flowchart .flowchart-operator-connector {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ai-panel-flowchart .flowchart-operator-connector-label {
+    font-size: small;
+}
+
+.ai-panel-flowchart .flowchart-operator-inputs .flowchart-operator-connector-label {
+    margin-left: 14px;
+    max-width: 290px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ai-panel-flowchart .flowchart-operator-outputs .flowchart-operator-connector-label {
+    text-align: right;
+    margin-right: 5px;
+    max-width: 290px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ai-panel-flowchart .flowchart-operator-connector-arrow {
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgb(204, 204, 204);
+    position: absolute;
+    top: 0px;
+    background: none;
+    border-right: none;
+
+}
+
+.ai-panel-flowchart .flowchart-operator-connector-small-arrow {
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent; /*rgb(100, 100, 100);*/
+    position: absolute;
+    top: 5px;
+    pointer-events: none;
+}
+
+.ai-panel-flowchart .flowchart-operator-connector:hover .flowchart-operator-connector-arrow {
+    border-left: 10px solid rgb(153, 153, 153);
+}
+
+.ai-panel-flowchart .flowchart-operator-inputs .flowchart-operator-connector-arrow {
+    left: -1px;
+    top:10.7px;
+}
+
+.ai-panel-flowchart .flowchart-operator-outputs .flowchart-operator-connector-arrow {
+    right: -10px;
+    top:6px;
+}
+
+.ai-panel-flowchart .flowchart-operator-inputs .flowchart-operator-connector-small-arrow {
+    right: 16px;
+    top: 13px;
+    left:0;
+}
+
+.ai-panel-flowchart .flowchart-operator-outputs .flowchart-operator-connector-small-arrow {
+    right: -6px;
+    top: 13.7px;
+}
+
+.ai-panel-flowchart .unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Default Operator */
+
+.ai-panel-flowchart .flowchart-operator {
+    position: absolute;
+    width: 140px;
+    border: 1px solid #CCCCCC;
+    background: #FAFAFA;
+    pointer-events: auto;
+}
+
+.ai-panel-flowchart .flowchart-operator.hover {
+    border-color: #999;
+}
+
+.ai-panel-flowchart .flowchart-operator.selected {
+    border-color: #555;
+}
+
+
+
+.ai-panel-flowchart .flowchart-operator .flowchart-operator-title {
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-bottom: 1px solid #DDDDDD;
+    background: #F0F0F0;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: move;
+}
+
+.ai-panel-flowchart .flowchart-operator .flowchart-operator-inputs-outputs {
+    display: table;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ai-panel-flowchart .flowchart-operator .flowchart-operator-inputs, .flowchart-default-operator .flowchart-operator-outputs {
+    display: table-cell;
+    width: 50%;
+}
+
+/*
+ * flowchart-vertical
+ */
+
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-inputs,
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-outputs {
+    position: relative;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-connector-set {
+    display: table-cell;
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-connector {
+    position: relative;
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-connector-label {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-inputs .flowchart-operator-connector-label {
+    margin-left: auto;
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-connector-arrow {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ccc;
+    left: calc(50% - 10px);
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-connector:hover .flowchart-operator-connector-arrow {
+    border-left-color: transparent;
+    border-top-color: #999;
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-connector-small-arrow {
+    border-right: 5px solid transparent;
+    top: 2px;
+    left: calc(50% - 5px);
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-connector-arrow {
+    top: 0px;
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-outputs .flowchart-operator-connector-arrow {
+    bottom: -20px;
+    top: auto;
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-operator-outputs .flowchart-operator-connector-small-arrow {
+    left: calc(50% - 5px);
+    bottom: -12px;
+    top: auto;
+}
+.ai-panel-flowchart .flowchart-vertical .flowchart-link rect {
+    display: none;
+}
+
+/*
+ * flowchart-operator-body
+ */
+.ai-panel-flowchart .flowchart-operator-body {
+    padding: 5px;
+    cursor: move;
+}
+
+
+/* EM - Work bench mapping arrow changes start here 12-02-26 Muni */
+.multipleMappingsFlowChartWrapper .ai-panel-flowchart .flowchart-operator-inputs .flowchart-operator-connector-arrow,
+.multipleMappingsFlowChartProceed  .ai-panel-flowchart .flowchart-operator-inputs .flowchart-operator-connector-arrow{
+    top: 7px;
+}
+.multipleMappingsFlowChartWrapper .ai-panel-flowchart .flowchart-operator-outputs .flowchart-operator-connector-small-arrow{
+    top: 11.7px;
+}
+.multipleMappingsFlowChartProceed  .ai-panel-flowchart .flowchart-operator-outputs .flowchart-operator-connector-small-arrow {
+    top: 10.7px;
+}
+.multipleMappingsFlowChartProceed .ai-panel-flowchart .flowchart-operator-inputs .flowchart-operator-connector-small-arrow {
+    top: 12px;
+}
+.multipleMappingsFlowChartWrapper .ai-panel-flowchart.multipleMappingsFlowChart .flowchart-container,
+.multipleMappingsFlowChartProceed  .ai-panel-flowchart.multipleMappingsFlowChart .flowchart-container{
+    overflow:hidden;
+}
+
+.multipleMappingsFlowChartWrapper .ai-panel-flowchart .flowchart-operator-inputs .flowchart-operator-connector-small-arrow {
+    top: 11.5px
+}
+
+.multipleMappingsFlowChartWrapper .ai-panel-flowchart .flowchart-operator-outputs .flowchart-operator-connector-arrow {
+    top: 7px;
+}
+
+/* EM - Work bench mapping arrow changes end here 12-02-26 Muni */

@@ -1,0 +1,4556 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 Jan, 2024, 5:30:18 PM
+    Author     : KiranRaj
+*/
+
+.OpenAisection .overlay {
+    /*height: calc(100vh - 50px - 0px);*/ 
+    width: 0;
+    position: fixed;
+    z-index: 1800;
+    top: 50px;
+    right:0;
+    border-radius: 10px;
+    display: flex;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.OpenAisection .overlay-content {
+    position: relative;
+    width: 100%;
+    /*margin-top: 30px;*/
+    padding: 4px;
+}
+
+
+
+/*.openAiButton{
+    position: absolute;
+    top: 50px;
+    right: 2px;
+    z-index: 999;
+
+}*/
+.openAiButton span{
+    font-size: 18px !important;
+}
+.pannelAIwrapper{
+    border: 1px solid #f1f1f1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
+}
+.closeAibutton{
+    padding: 10px;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #fcfcfc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.closeAibutton a{
+    font-size: 18px;
+    color: #0b4a99;
+    padding: 0px 8px;
+    font-weight: 600;
+    border: 1px solid #0b4a99;
+    border-radius: 5px;
+}
+.OpenAisection .overlay-content .searchAiBarDiv input{
+    border-radius: 20px;
+}
+.aiWelcometext ul{
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #0b4a99;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.aiWelcometext .ailensicon img{
+    width: 30px;
+}
+.aiWelcometext .ailensTitle{
+    font-size: 16px;
+}
+.aicontentArea{
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.aicontentArea::-webkit-scrollbar{
+    width: 7px !important;
+    height: 5px; 
+}
+.aicontentArea::-webkit-scrollbar-thumb{
+    background: #0b4a99 !important;
+    border: 1px solid #ddd !important;
+    height: 30px !important;
+}
+
+/*.userAIInputText{
+    position: sticky;
+    bottom: 10px;  
+    width: 80%;
+}*/
+.userAIInputText img{
+    position: absolute;
+    width: 28px;
+    right: 0px;
+    top: 1px;
+    padding: 9px 5px;
+    background: #ebebeb;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    filter: opacity(0.4);
+}
+
+.userAIInputText input{
+    border: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/*.ainotification{
+    position: absolute;
+    top: 10px;
+    right: 60px; 
+}*/
+/*.userAIInputBottomWidget{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}*/
+.userAIInputBottomWidget .moreaiOptions ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content:end;
+    /*gap: 10px;*/
+}
+.userAIInputBottomWidget .moreaiOptions ul li {
+    margin: 4px;
+    position: relative;
+}
+.userAIInputBottomWidget .moreaiOptions ul li img{
+    width: 20px;
+    cursor: pointer;
+}
+.aigridrow{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    column-gap: 4px;
+    row-gap: 3px;
+    /*justify-content: center;*/
+}
+
+.aigridrow > .aigridcolumn{
+    padding: 8px;
+    border-radius: 4px;
+    min-height: 60px;
+}
+
+.aigridcolumn{
+    float: left;
+    width: 100%;
+    display: none; 
+}
+
+.aigridrow:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.aigridcolumn{
+    background-color: white;
+    padding: 10px;
+}
+
+.aishow {
+    display: block;
+    /*border: 1px solid #f1f1f1;*/
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
+    margin: 3px 2px;
+}
+.aidiscovermorePopup{
+    z-index: 9999 !important;
+}
+.aidiscovermorePopup .modal-dialog{
+    margin: 0 auto;
+}
+.aiButtongroup button{
+    border: 1px solid #0b4a99;
+    color: #0b4a99;
+    font-weight: 600 !important;
+    border-radius: 20px;
+}
+.aiButtongroup button:focus{
+    box-shadow: none;
+}
+.aiButtongroup .btn.active{
+    /*background-color: #0b4a99;*/
+    background-image: linear-gradient(to right, #ffffff, #6a82fb);
+    border: 1px solid #0b4a99;
+    /*color: #fff;*/
+    color: #0b4a99;
+}
+.aigridcolumn .content h4{
+    font-size: 14px;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+.aigridcolumn .content p{
+    margin-bottom: 0;
+    display: -webkit-box;
+    width: 98%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.aitabscontainerClass{
+    box-shadow: inherit !important;
+    margin-top: 10px;
+    font-family: segeo-ui,-apple-system,Roboto,Helvetica Neue,sans-serif;
+}
+.aitabscontainerClass .ui-widget.ui-widget-content{
+    box-shadow: inherit !important;
+}
+.aitabscontainerClass .ui-widget-content .ui-state-default, .aitabscontainerClass .ui-widget-header .ui-state-default{
+    border: 1px solid #0b4a99!important;
+    color: inherit !important;
+    border-radius: inherit !important;
+    background: #fff !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    border-bottom: none!important;
+}
+.aitabscontainerClass .ui-widget-header{
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid #0b4a99;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-bottom: 0px;
+    position: sticky;
+    top: 0;
+    padding-left: 0;
+}
+.aitabscontainerClass .ui-state-active a, .aitabscontainerClass .ui-state-active a:link, .aitabscontainerClass .ui-state-active a:visited{
+    color: #fff;
+    background-color: #0b4a99;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.aitabscontainerClass .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+    padding: 4px 8px !important;
+}
+.aitabscontainerClass .ui-tabs-anchor{
+    font-weight: 600 !important; 
+}
+
+.aiButtongroup{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.aiButtongroup button{
+    margin: 3px 3px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.aigridcolumn .content img{
+    width: 22px;
+}
+.aipanelRightIconsDiv ul {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: inherit !important;
+}
+.dragLeftArrowDiv{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+.dragRightArrowDiv{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+.listItemsText{
+    /*    font-weight: bold;
+        font-size: 20px;*/
+}
+
+.aiLensImageDataClass{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 4px;
+    border-top: 1px solid #f1f1f1;
+}
+/*.aiChatgptResponseContainer{
+    margin-top: 15px;
+}*/
+.aiLensMainResultBoxClass{
+    padding: 7px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.aiChatgptResponseContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+}
+.aiChatgptResponseContainer .aiAppendSenderDataClass{
+    align-self: flex-end;
+    padding: 5px 10px;
+    background-color: #0b4a99;     
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px 0px 0;
+    position: relative;  
+}
+.aiChatgptResponseContainer .airesponseWrapperDiv{
+    align-self: flex-start;
+    width: 100%;
+}
+
+/* search bar ai code start */
+.overlay-content .searchAiBarDiv{
+    position: relative;
+    width: 100%;
+    margin-bottom: 4px;
+    padding: 4px;
+}
+.overlay-content .searchAiBarDiv .aiSearh-input{
+    padding-left: 30px;
+}
+.overlay-content .searchAiBarDiv .aiSearchIconMainDiv{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*.aiSearchClearBtn{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}*/
+.aiUserNotif{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b4a99;
+    word-spacing: 1px;
+}
+/* search bar ai code end */
+
+/*24-01-2024 start*/
+.threeDotsLoader img{
+    width: 50px; 
+} 
+
+.aibottomMessageContainer{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap:3px;
+}
+.aibottomMessageContainer .stopresponding{
+    margin-bottom:5px;
+    position: absolute;
+    top: -36px;
+    left: 35%;
+    text-align: center;
+    z-index: 9;
+}
+.aibottomMessageContainer .userAIInputBottomWidget{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+/*.aibottomMessageContainer .userAIInputBottomWidget .userAIInputText{
+    position: relative;
+    width: 90%;
+    bottom: inherit;
+}*/
+.stopresponding .btn-primary{
+    border: 1px solid #0b4a99 !important;   
+}
+.stopresponding .btn-primary:hover{
+    border: 1px solid #0b4a99 !important;   
+}
+.stopresponding .stopIcon i{
+    color: #0b4a99 ;   
+}
+.stopresponding .stopText{
+    color: #0b4a99;
+}
+/*24-01-2024 end*/
+
+.OpenAisection .overlay .aiPromtDataDiv{
+    position: relative;
+    color: #0b4a99;
+    width:250px;
+    padding: 10px;
+    border-right: 1px solid #f1f1f1;
+}
+.OpenAisection .overlay .aiPromtDataDiv .isNewChatBtn{ 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 10px 0px;
+    background-color:#fff; 
+}
+.OpenAisection .overlay .aiPromtDataDiv .isNewChatBtn span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.OpenAisection .overlay .defultShowAIDiv{
+    width: 100%;
+}   
+.aiPromtDataDiv .aiRecentSearchList ul{
+    margin-bottom: 0;
+}
+.aiPromtDataDiv .aiRecentSearchList ul li{
+    padding: 4px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.aiPromtDataDiv .aiRecentSearchList{
+    margin: 5px 0px;
+}
+
+.aiPromtDataDiv .recntTitle{
+    background: #0b4a99;
+    padding: 4px;
+    border-radius: 5px;
+    color: #98c6ff;
+    text-align: center;
+}
+.aiPromtDataDiv .aiRecentSearchList ul li .aimessageIcon img{
+    width: 14px !important;
+}
+.aiPromtDataDiv .aiRecentSearchList ul li .aimessageText{
+    font-weight: 600;
+}
+.dxpDictPropetyDetailsClass .carousel-item.dictonaryCarouselitem img {
+    width: 168px;
+    display: flex;
+}
+.dictonaryCarouselitemImg{
+    height: 195px !important; 
+}
+.aiButtongroup button:last-child{
+    border: 1px solid transparent;
+}
+.aiButtongroup button:last-child:hover{
+    border: 1px solid #0b4a99; 
+}
+.AILensRefApiDataClass .AILensRefTableClass tbody{
+    font-size: 13px;
+    font-weight: 500;
+}
+.AILensRefApiDataClass .AILensRefTableClass tr{
+    border-bottom: 1px solid #ddd;
+}
+.AILensRefApiDataClass .AILensRefTableClass{
+    border-collapse: separate;
+    border-spacing: 20px 6px;
+}
+.successmsg{
+    color: #0b4a99;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.showAILensUpdatedTableClass{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2em;
+    height: 100px;
+    overflow-y: auto;
+}
+.showAILensUpdatedTableClass table thead tr th{
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 4px;
+    color: #0b4a99;
+}
+/*.visionParamSearchCover .param_td:hover{
+    cursor:url('../images/AIlensMouseHover.png'), auto !important;     
+}
+.dxpDictPropetyDetailsClass .card .card-body{
+    cursor:url('../images/AIlensMouseHover.png'), auto !important; 
+}
+.tg-wrap .visionDictionaryTable tr:hover{
+    cursor:url('../images/AIHover.png'), auto !important;  
+}*/
+.overlay-content .introGuiderAi{
+    margin: 6px 0 0;
+    padding: 0 4px;
+    /*text-align: center;*/ 
+}
+.overlay-content .introGuiderAi p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b4a99;
+}
+.overlay-content .introGuiderAi .navigateBtn button{
+    border: none;
+    color: #0b4a99;
+    width: 60px;
+    height: 30px;
+    border-radius: 4px;
+
+}
+.overlay-content .introGuiderAi .navigateBtn button:hover{
+    border: 1px solid #0b4a99; 
+    cursor: pointer;
+}
+.alLensConfiramtionMessage{
+    margin-left: 111px;    
+}
+/*.statuspopupMessage{
+    font-weight: 600;
+    font-size: 14px;
+}*/
+.alLensConfSubSpanYesClass, .alLensConfSubSpanNoClass{
+
+}
+.yes-button,
+.no-button,
+.viewDataButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b4a99;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15%;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+.yes-button:hover,.viewDataButton:hover,
+.no-button:hover {
+    background-color: #45a049;
+}
+.confmsg{
+    margin-left: 20%;
+}
+.confSuccessmsg{
+    margin-left: 70%;
+}
+
+.overlay-content .aiToggleBtn{
+    position: absolute;
+    left: 0;
+    top: 55%;
+    z-index: 1;
+    cursor: pointer;
+    background-image: linear-gradient(#005a8f 0%, #f6f7fd 100%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px;
+    width: 40px;
+    font: normal normal 6px Arial;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    border: 2px solid #0093E9;
+    border-radius: 50px;
+    transition: all .2s ease-in-out;
+}
+.overlay-content .aiToggleBtn:hover{
+    transform: scale(1);
+    transition: width 1s;  
+    width: 40%;
+}
+.overlay-content .aiToggleBtn .aiTextHint{
+    color: #fff !important;
+    text-align: center;
+    cursor: pointer;
+    display:none;
+}
+.overlay-content .aiToggleBtn:hover .aiTextHint{
+    display: block;
+}
+.overlay-content .aiToggleBtn .aiTextHint .aiBrand{
+    background: linear-gradient(50deg, #CB1614, #0b4a99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+/*AI lens Spend Analysis view start 21-02-2024*/
+.listItemsViews {
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    list-style-type: none;
+}
+
+.listItemsViews li {
+    width: 100%;
+    padding: 4px;
+    font-size: 14px;
+    border-bottom: 1px solid #fcfcfc;
+    color : #0b4a99;
+}
+
+/*.listItemsViews li .textContent {
+    white-space: nowrap;
+        width: 330px; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    color: #0b4a99;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}*/
+
+.aiLensResultDataClass {
+    width: 100% !important;
+    padding: 7px;
+    color: #0b4a99;
+    /*display: flex;*/
+    font-size: 14px;
+    /*white-space: nowrap;*/
+    border-bottom: 1px solid #fcfcfc;
+    overflow:auto;
+} 
+.aiLensResultDataClass tbody tr td{
+    color: #0b4a99;
+    font-size: 14px;
+} 
+/*.aiLensResultDataClass h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b4a99;
+}*/
+
+
+
+.listItemsViews li .textContent .titleIcon img{
+    width: 18px;
+}
+.listItemsViews li .textContent .titleTextmsg{
+    font-weight: 600;
+}
+
+/*.listItemsViews li .viewData {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+}*/
+
+.listItemsViews li .viewData {
+    display: flex;
+    align-items: center; 
+    padding-top: 5px;
+    flex-wrap: wrap;
+    column-gap:  10px;
+    row-gap: 10px;
+    /*justify-content: space-around;*/
+}
+
+.listItemsViews li .viewData .viewButton, .listItemsViews li .viewData .viewAnalyticsbutton{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid transparent;
+    padding: 2px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #0b4a99;
+}
+
+.listItemsViews li .viewButton:hover, .listItemsViews li .viewAnalyticsbutton:hover{
+    /*border: 1px solid #0b4a99;*/
+    color : #0b4a99;
+}
+
+.listItemsViews li .viewData .viewIcon img,
+.viewData .viewButton .viewIcon img{
+    width: 20px;
+}
+
+.aiAnalyticsBasedOnAnalysis.aiAnalyticsAuditAnalysis{
+    position: relative;
+    height:calc(100vh - 140px);
+    overflow-y: auto;
+}
+.aiAnalyticsBasedOnAnalysis{
+    position: relative;
+    height:265px;
+    overflow-y: auto;
+}
+.aiAnalyticsBasedOnAnalysis table{
+    text-align: center;
+    font-size: 12px;
+}
+.aiAnalyticsBasedOnAnalysis table thead{
+    position: sticky;
+    top: 0;
+    background-color: #fcfcfc;
+}
+.aiAnalyticsAuditAnalysisCls{
+    position: relative;
+    height:261px;
+    overflow-y: auto;
+}
+
+
+
+/*AI lens Spend Analysis view end 21-02-2024*/
+
+/*22-02-2024 Anlytics related Css starts Here */
+.viewAnalysticsPopup{
+    z-index: 9999 !important;
+    padding-top: 0 !important;
+}
+.viewAnalysticsPopup .modal-dialog{
+    margin: 20px auto !important;
+}
+.viewAnalysticsPopup .modal-dialog .modal-body{
+    height: 450px;
+    overflow-y: auto;
+}
+.viewAnalysticsPopup .modal-dialog .aigraphContainer{
+    border: 1px solid #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 20px;
+}
+.AILensCellRendererImgClass{
+    text-align: center;
+}
+.AILensCellRendererImgClass:hover .AILensRecordHoverImgClass{
+    display:block !important;
+}
+/*22-02-2024 Anlytics related Css Ends Here */
+
+
+/*04-03-2024 TIMLINE related Css STARTS Here */
+/* TIMELINE
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.timeline ul {
+    background: #fff;
+    /* padding: 50px 0; */
+
+}
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 2.5px;
+    margin: 0 auto;
+    /* padding-top: 50px; */
+    background: #0b4a99;
+}
+
+.timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: inherit;
+    z-index: 1;
+}
+
+.timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 200px;
+    padding: 6px;
+    font-size: 12px;
+}
+
+/*.timeline ul li div::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}*/
+
+.timeline ul li:nth-child(odd) div {
+    left: 20px;
+    top: 5px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -12px;
+    width: 0px;
+    height: 0px;
+    border-width: 0px 16px 12px 0px;
+    border-color: transparent #f3e3e2 transparent transparent;
+    border-style: dashed;
+    transform: rotate(15deg);
+}
+
+.timeline ul li:nth-child(even) div {
+    left: -120px;
+    top: 5px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -18px;
+    width: 0px;
+    height: 0px;
+    border-width: 0px 3px 14px 20px;
+    border-color: transparent transparent transparent #dae6f5;
+    border-style: dashed;
+    transform: rotate(-15deg);
+
+} 
+
+.aiAnalyticsBasedOnAnalysis time {
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+
+}
+
+
+
+/* EFFECTS
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+.timeline ul li::after {
+    transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view:nth-child(odd)::after {
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+.timeline ul li.in-view:nth-child(even)::after {
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+
+.timeline ul li:nth-child(even) div {
+    transform: translate3d(-100px, 0, 0) !important;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+    background-color: #ddd;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+
+/* GENERAL MEDIA QUERIES
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+
+@media screen and (max-width: 900px) {
+    .timeline ul li div {
+        width: 250px;
+    }
+    .timeline ul li:nth-child(even) div {
+        left: -289px;
+        /*250+45-6*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline ul li {
+        margin-left: 20px;
+    }
+    .timeline ul li div {
+        width: calc(100vw - 91px);
+    }
+    .timeline ul li:nth-child(even) div {
+        left: 45px;
+    }
+    /*    .timeline ul li:nth-child(even) div::before {
+            left: -15px;
+            border-width: 8px 16px 8px 0;
+             border-color: transparent #f45b69 transparent transparent; 
+        }*/
+}
+
+
+/* EXTRA/CLIP PATH STYLES
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.timeline-clippy ul li::after {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.timeline-rhombus ul li::after {     
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.timeline-rhombus ul li div::before {
+    bottom: 12px;
+}
+
+.timeline-star ul li::after {
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+        );
+}
+
+.timeline-heptagon ul li::after {
+    clip-path: polygon(
+        50% 0%,
+        90% 20%,
+        100% 60%,
+        75% 100%,
+        25% 100%,
+        0% 60%,
+        10% 20%
+        );
+}
+
+.timeline-infinite ul li::after {
+    animation: scaleAnimation 2s infinite;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        transform: translateX(-50%) scale(1.25);
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+}
+.viewTimeLineData{
+    z-index: 9999!important;
+}
+
+/*04-03-2024 TIMLINE related Css ENDS Here */
+
+/*05-03-2024 Css Starts Here */
+.viewTimeLineData .customClassForTimeline{
+    margin: 25px auto !important;
+}
+/*05-03-2024 Css Ends Here */
+/*.AILensDateOptspendAnalysis{
+    padding: 4px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    margin: 10px 8px;
+}*/
+/*05-03-2024 Css Ends Here */
+
+/*07-03-2024 Css Starts Here */
+.AILensDateOptspendAnalysis , .AILensDateOptpurchasingHist , .AILensDateOptInventoryVis , .AILensDateOptsourcingLoc , .AILensDateOptequipmentLink{
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px auto;
+    /*background-color: #f1f1f1;*/
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+.AIlensOptionsData{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+}
+.viewData .active{
+    border: 1px solid transparent !important;
+    background-color: #f1f1f1;
+}
+.viewData .viewText{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*07-03-2024 Css Ends Here */
+
+
+/*011-03-2024 Css Starts Here */
+.aiLensImageDataClass span{
+    position: relative;
+}
+.copiedTooltip{
+    background: #A1D6B2;  
+    text-align: center;
+    position: absolute;
+    top: 32px;
+    left: 18%; 
+    padding:2px 12px;
+    color: #000000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.downloadedTooltip{
+    background: #A1D6B2; 
+    text-align: center;
+    position: absolute;
+    top: 32px;
+    left: 30%; 
+    padding:2px 12px;
+    color: #000000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+/*011-03-2024 Css Ends Here */
+
+.checkDuplicatesPopUpClass .successmsg {
+    color: #0b4a99;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding: 4px;
+    background-color: aliceblue;
+}
+
+.checkDuplicatesPopUpClass .showAILensUpdatedTableClass {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2em;
+    height: auto;
+    overflow-y: auto;
+}
+.checkDuplicatesPopUpClass .showAILensUpdatedTableClass .table-bordered{
+    width: 100%;
+}
+
+.aiSearchTypeEnterResults{
+    border: 1px solid #f1f1f1;
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.aiSearchTypeEnterResults ul {
+    list-style-type: none;
+    margin-bottom: inherit;
+    padding-left: 0;
+}
+
+.aiSearchTypeEnterResults ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #f1f1f1;
+    gap:5px;
+}
+.aiSearchTypeEnterResults .text-description-count {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b4a99;
+}
+.aiSearchTypeEnterResults ul li:last-child{
+    border-bottom: none; 
+}
+
+.aiSearchTypeEnterResults ul li .text-description {
+    width: 86%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #0b4a99;
+}
+.relaventDivResults{
+    padding: 4px;
+    margin: 5px 0px; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.aiSearchTypeEnterResults .aiLensRecordCntCls img, .aiLensProcessCntCls img, .aiLensERPCntCls img{
+    width: 16px;
+}
+.aiSearchTypeEnterResults .aiLensRecordInfoCls img, .aiLensProcessInfoCls img, .aiLensERPInfoCls img{
+    width: 16px;
+}
+.relaventDivResults li {
+    display: flex;
+    align-items: center;
+    /* gap: 50px; */
+    /* justify-content: space-evenly; */
+    border-bottom: 1px solid #f1f1f1;
+    padding: 6px;
+}
+.relaventDivResults li:last-child{
+    border-bottom: none;
+}
+.relaventDivResults li .text-description{
+    width: 35%;
+    color: #0b4a99;
+}
+
+.relaventDivResults .relaventtxt, .relaventDivResults .aiLensRelevantImgCls{
+    width: 60%;
+}
+.relaventDivResults .aiLensRelevantImgCls img{
+    border-radius: 8px;
+} 
+
+.aiLensRelevantCardCls .card-header, .aiLensRelevantCardCls .card-body{
+    padding: 6px;
+}
+.aiLensRelevantCardCls .card-body ul li{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #f1f1f1;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 5px; 
+}
+.aiLensRelevantCardCls .card-body ul li:last-child{
+    border-bottom: none; 
+}
+
+.aiLensRelevantCardCls .card-body ul li .aiLensRelevantClassContent{
+    /*width: 60%;*/
+    text-align: right;
+}
+.aiLensRelevantCardCls .card-header h6{
+    color: #0b4a99;
+    font-size: 14px;
+}
+.aiLensRelevantCardCls .card-body .aiLensRelevantClassContent img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: 2px solid #0b4a99;
+    padding: 2px;
+}
+.aiLensRelevantInfoCls img{
+    width: 22px !important;
+}
+.aiLensRelevantcreationTxtCls{
+    width: 60%;
+}
+.visionPersonalizationSaveDialog{
+    z-index: 99999 !important;
+}
+.visionPersonalizationSaveDialog .ui-dialog-content{
+    padding: 4px;
+    padding-top: 0px;
+}
+.visionPersonalizationSaveDialog .infoTable{
+    max-height: 100%;
+}
+.visionPersonalizationSaveDialog .infoTable table{
+    width: 100%;
+}
+.visionPersonalizationSaveDialog .infoTable table thead{
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+}
+.visionPersonalizationSaveDialog .infoTable table thead th{
+    color: #0b4a99;
+    font-size: 14px;
+}
+.cursor{
+    height: 24px;
+    width: 28px;
+    /* background-color: white; */
+    /* mix-blend-mode: difference; */
+    /* border-radius: 50%; */
+    position: absolute;
+    /* transition: all linear 0.1s; */
+    background-image: url('../images/AIlensMouseHover.png') !important;   
+    background-repeat: no-repeat;
+
+}
+
+.listItemsViews li .textContent .viewText{
+    width: 90%;
+}
+/*.listItemsViews li .textContent .aiLensDetailWithCount{
+    align-content: end;
+}*/
+
+/* YesButton Response Css */
+
+.YesButtonClickResponse .listItemsViews{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 13px;
+}
+.YesButtonClickResponse .listItemsViews li{
+    width: auto;
+    padding: 4px;
+    font-size: 12px;
+    border: 1px solid #0b4a99;
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    color: #0b4a99;
+}
+.YesButtonClickResponse .listItemsViews li:hover {
+    -webkit-transform: scale(1.8) rotate(0.01deg);
+    transform: scale(1.1) rotate(0.01deg);
+    cursor: pointer;
+}
+.YesButtonClickResponse .listItemsViews li .viewButton{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.YesButtonClickResponse .listItemsViews li .viewButton:hover{
+    border: none;
+}
+/* YesButton Response Css */
+
+
+
+.aiLensMainResultBoxClass::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/aieyeLensclick.png);
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border: 1px solid #f1f1f1;*/
+    border-radius: 50%;
+    background-color: #fff;
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+    top: -26px;
+    left: 2px;
+    height: 30px;
+    width: 30px;
+    z-index: -1;
+
+}
+/*.aiAppendSenderDataClass::after {
+   content: "";
+    position: absolute;
+    top: -22px;
+    right: 0;
+    background-image: url(../images/aiLensMgr.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+}*/
+.aiAppendSenderDataClass::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    right: -1px;
+    background-image: url(../images/aiLensMgr.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25px;
+    width: 25px;
+    /* border: 1px solid #f1f1f1; */
+    /* border-radius: 50%; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+/* AILens timeline code starts */
+.aimainPopupContentWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5px;
+}
+
+.aimainPopupContentWrapper .aileftcontentview {
+    width: 20%;
+    padding: 4px;
+    border-right: 1px solid #f1f1f1;
+}
+
+.aimainPopupContentWrapper .ailefttitle,
+.aimainPopupContentWrapper .airighttitle {
+    padding: 5px;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+}
+
+.aimainPopupContentWrapper .airightcontentview {
+    width: 80%;
+    padding: 4px;
+}
+
+.aimainPopupContentWrapper .aiinnerleftcontentarea ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.aimainPopupContentWrapper .aiinnerleftcontentarea ul li {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fcfcfc;
+    color: #0b4a99;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    position: relative;
+    z-index: 0;
+    background-color: #f1f1f1;
+    background-image: linear-gradient(#c3dbff, #bcd6ff);
+    margin: 4px 0px;
+    cursor: pointer;
+
+}
+.aimainPopupContentWrapper .aiinnerleftcontentarea ul li:last-child{
+    border-bottom: none;
+    color: #0b4a99;
+    margin-bottom: inherit;
+}
+
+.aimainPopupContentWrapper .aiinnerleftcontentarea ul li.activeLink {   
+    padding: 4px;
+    border-bottom: 1px solid #fcfcfc;
+    border: 1px solid #0b4a99;
+    border-radius: 5px;
+}
+.aimainPopupContentWrapper .aiinnerleftcontentarea, .aimainPopupContentWrapper .airightcontentarea{
+    height: calc(100vh - 182px);
+    overflow-y: auto;
+}
+/* AILens timeline code end */
+
+/* New Css 09-04-2024 */
+.aiLensMainResultBoxClass .listItemsText .listItemsViews li div.viewButton{
+    /*display: flex;*/
+    align-items: center;
+    /*justify-content: space-between;*/
+}
+.timelinepopup{
+    z-index: 9999 !important;
+}
+.ailefttitle h5, .airighttitle h5 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0b4a99;
+    margin-bottom: 0;
+}
+.timelinepopup .ui-dialog-content{
+    padding: 4px;
+}
+.aimainPopupContentWrapper .aiinnerleftcontentarea ul li:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: 50%;
+    z-index: -1;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+}
+@media screen and (min-width: 1600px) {
+    .aimainPopupContentWrapper .aiinnerleftcontentarea, .aimainPopupContentWrapper .airightcontentarea{
+        height: calc(100vh - 278px);
+        overflow-y: auto; 
+    }
+}
+/* 09-04-2024 */
+
+.aiLensReceiverImgClass{
+    margin: 10px 0px; 
+}
+
+.aiLensReceiverImgClass .aiLensMainResultBoxClass .listItemsText .AILensRefApiDataClass .AILensRefTableClass tbody tr td{
+    word-break: break-word;
+}
+.listItemsViews li:last-child{
+    border-bottom: none;
+}
+.searchrightInnerContainer{
+    bottom: 5px;
+    position: absolute;
+    right: 6px;
+    background-color: #fff;
+    width: 25%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.searchrightInnerContainer i{
+    font-size: 20px;  
+    font-weight: bold;
+    color: #0b4a99;
+} 
+
+
+.aIHistoryContainerClass {
+    display: flex;
+    gap: 2px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.aIHistoryContainerClass .aIHistorycategoryClass{
+    width: 20%;
+    border-right: 1px solid #F1F1F1;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+.aIHistoryContainerClass .aIHistorycategoryClass .aIHistoryCategory{
+    padding: 6px;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+.aIHistoryContainerClass .aIHistorycategoryClass .aIHistoryCategory.active{
+    background-color: #f1f1f1f1;
+    color: #0b4a99;
+    font-weight: 600;
+
+}
+.aIHistoryContainerClass .aIHistorycategoryClass .aIHistoryCategory:last-child{
+    border-bottom: none;
+}
+
+
+.aIHistoryContainerClass #aIHistoryContent{
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.aIHistoryContainerClass #aIHistoryContent ol li{
+    list-style-type: none; 
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:20px;
+}
+.aIHistoryContainerClass #aIHistoryContent ol li:last-child{
+    border-bottom: none;
+}
+.showAIPromptsHistroy{
+    z-index: 99999 !important;
+}
+.aIHistoryContainerClass .aISearchHistorycustomRangeClass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aIHistoryContainerClass .aISearchHistorycustomRangeClass label{
+    top:inherit;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.aIHistoryContainerClass .aISearchHistorycustomRangeClass input[type=date] , .aIHistoryContainerClass .aISearchHistorycustomRangeClass .dateSubmitClass button{
+    border: 1px solid #ddd;
+    padding: 4px 16px;
+    border-radius: 6px;
+    height: 28px;
+}
+.aIHistoryContainerClass .aISearchHistorycustomRangeClass .dateSubmitClass buttonHover{
+    border-color: #0b4a99;
+}
+.aIHistoryContainerClass #aIHistoryContent ol li::before {
+    content: '\f1da';
+    font-family: 'FontAwesome';
+    left:0;
+    font-size: 13px;
+    position: absolute;
+}
+.aIHistoryContainerClass #aIHistoryContent ol li .countHistoryData::before{
+    content: '\f002';
+    font-family: 'FontAwesome';
+    font-size: 13px;
+    padding: 0 10px;
+}
+.aIHistoryContainerClass #aIHistoryContent ol li.noDataFoundDiv::before{
+    /*content: '\f119';*/
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    font-size: 52px;
+    color: #000;
+    opacity: 0.7;
+    font-weight: 100;
+} 
+.aIHistoryContainerClass #aIHistoryContent ol li.noDataFoundDiv{ 
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0.7;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 45%;
+}
+/*ai lens Attachedment file start*/
+
+/*.aiAttachedment {
+    position: absolute;
+    top: 1px;
+    right: 29px;
+    width: 29px;
+    height: 37px;
+    cursor: pointer; 
+}*/
+.aiAttachedment input{
+    display: none;
+}
+.aiAttachedment  label{
+    position: inherit !important;
+    top: inherit !important;
+    margin-top: inherit !important;
+    margin-bottom: inherit !important;
+}
+.aiAttachedment  label:before{
+    content: "";
+    background-image: url("../images/fileAttachment.png");
+    background-size: cover;
+    display: inline-block;
+    width: 20px;           
+    height: 20px;        
+    cursor: pointer;
+}
+.aiLensAttachedmentFileNameDiv{
+    border: 1px solid #0b4a99;
+    width: fit-content;
+    padding: 4px 12px;
+    margin: 4px;
+    background: #fff;
+    /*background-image: linear-gradient(to right, #ffffff, #6a82fb);*/
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-radius: 6px;
+    position: absolute;
+    right: 0px;
+    top: -32px;
+}
+.aiLensAttachedmentFileNameDiv .aiLensAttachedmentCrossIcon{
+    font-size: 12px;   
+}
+.messageSendElement{
+    margin-left: 5px;
+    border-left: 1px solid #ddd;
+    padding-left: 5px;
+}
+.userAIInputBottomWidget .userAIInputText input:focus{
+    border:none;
+    box-shadow:none;
+} 
+
+.aIHistoryContainerClass .aISearchHistorycustomRangeClass .dateSelectorWrapper{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+/*ai lens Attachedment file end*/
+/*al lens image Attachment start*/
+.aiImageAttachedment {
+    /*height: 25px;*/
+    cursor: pointer;
+    /*width: 25px;*/
+}
+.aiImageAttachedment input{
+    display: none;
+}
+
+.aiImageAttachedment  label{
+    position: inherit !important;
+    top: inherit !important;
+    margin-top: inherit !important;
+    margin-bottom: inherit !important;
+}
+.aiImageAttachedment  label:before{
+    content: "";
+    background-image: url("../images/imageAttach.png");
+    background-size: cover;
+    display: inline-block;
+    width: 20px;           
+    height: 20px;        
+    cursor: pointer;
+}
+.aiChatgptResponseContainer .aiAppendSenderDataClass.aiAppendImageUploadDataClass{
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    background-color: inherit;
+}
+.aiChatgptResponseContainer .aiAppendSenderDataClass.aiAppendImageUploadDataClass img{
+    width: 48px;
+}
+.userAIInputBottomWidget .userAIInputText .form-control:disabled, .userAIInputBottomWidget .userAIInputText .form-control[readonly]{
+    background-color: inherit;
+}
+.aIHistorycategoryClass .aIHistoryCategory::before{ 
+    content: "";
+    background-image: url("../images/aiHistoryCalendar.png");
+    background-size: cover;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    transform: translate(0, 4px);
+    margin-right: 6px;
+}
+/*al lens image Attachment end*/
+.aibottomMessageContainer .newChatDivs {
+    border: 1px solid #ddd;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background: #0b4a99;
+    border-radius: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0px 3px;
+    transition: width 0.3s ease; 
+    display: flex;
+    align-items: center;
+    gap:4px;
+}
+
+.aibottomMessageContainer .newChatDivs:hover {
+    width: 120px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 2px 4px;
+    transition: width 0.3s ease, color 0s; 
+    cursor: pointer;
+}
+.aibottomMessageContainer .newChatDivs:hover span {
+    display: inline;
+}
+.aibottomMessageContainer .newChatDivs span {
+    display: none;
+}
+.aiAppendSenderDataClass .edit-mode-main{
+    display: flex;
+    flex-direction: column;
+    gap:12px;   
+}
+.aiLensPencilIconClass::before {
+    content: "";
+    display:inline-block;
+    width: 18px; 
+    height: 18px;
+    background-image: url("../images/aiEditPrompt.png"); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* Edit the Option Css Starts Here*/
+.aiAppendSenderDataClass.editTextparentClass{ 
+    width: 100%; 
+    background-color: transparent !important;
+}
+.aiAppendSenderDataClass .editTextContainerWrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.aiAppendSenderDataClass.EditContent{
+    width: 70%;
+    display: block;  
+    background-color: #f1f1f1;
+}
+
+.aiAppendSenderDataClass.EditContent .appendTextClass{
+    background-color: #f1f1f1 !important;
+    color: #333 !important; 
+    border: 1px solid #f1f1f1 !important;
+}
+.aiAppendSenderDataClass .edit-mode-buttons{
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+    padding: 4px;
+    justify-content: flex-end;
+}
+.aiAppendSenderDataClass .editButtonoptionsDivclass {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end;
+    padding: 4px;
+}
+.aiAppendSenderDataClass .editButtonoptionsDivclass span button{
+    margin: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-weight: 600 !important;
+}
+.aiAppendSenderDataClass .editButtonoptionsDivclass .aieditcancelbutton button{
+    background-color: #fff;
+    color: #0b4a99;
+    border: 1px solid #0b4a99;
+}
+.aiAppendSenderDataClass .editButtonoptionsDivclass .aieditsendbutton button{
+    background-color: #0b4a99;
+    color: #fff;
+    border: 1px solid #0b4a99;
+}
+.aiAppendSenderDataClass .appendTextClass.textBgcolor{
+    background-color: #f1f1f1 !important;
+    color: #333 !important;
+    border: none !important;
+} 
+.aiChatgptResponseContainer .aiAppendSenderDataClass.userSelectedOption{
+    align-self: flex-end;
+    padding: 5px 10px;
+    background-color: #0b4a99;
+    color: #fff;
+    border-radius: 10px;
+}
+.aILensManualMappingMain {
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+/*Ailens Drag and drop start*/
+.OpenAisection .overlay {
+    height: calc(100vh - 50px - 0px);
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 50px;
+    right:0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.userAIInputBottomWidget.overlayDragContainer:after{
+    content: 'Drop Files Here';
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f190; 
+    z-index: 9999999;
+    border: 2px dashed #0b4a99;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0b4a99;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+
+
+.fileDragViewContainerClass{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.fileDragViewContainerClass img{
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+}
+
+.imgDragDrop {
+    position: relative;
+    display: inline-block;
+    order: 1; 
+    width: fit-content;
+}
+
+.dragDropImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    filter: brightness(0.8);
+    float: left;
+}
+
+.userAIInputText {
+    order: 2;
+}
+
+.moreaiOptions {
+    order: 3;
+}
+
+.imgDragDrop {
+    order: 1;
+}
+
+.removeButtonImage {
+    position: absolute;
+    top: -5px;
+    left: 85%;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 14px;
+    line-height: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+fileContainer {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: auto;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    filter: brightness(0.8);
+    float: left;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.fileIcon {
+    height: 35px;
+    margin-right: 5px;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.fileName {
+    font-weight: normal;
+    /*margin-bottom: 10px;*/
+}
+
+.aicontentArea.overLoaderAiLensBody {
+    height: calc(100vh - 230px);
+}
+
+.fileContainer {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.aiLensAttachedmentCrossIcon::before {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    font-weight: 400;
+    margin-right: 5px;
+}
+.removeButton {
+    position: absolute;
+    top: -10px;
+    left: 95%;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 14px;
+    line-height: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.aibottomMessageContainer .userAIInputBottomWidget{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+}
+/*Ailens Drag and drop stop*/
+.fiorithemeClass .aiLensResultDataClass button{
+    color:#0b4a99 !important;
+    font-size: 14px !important;
+    border: none;
+}
+.fiorithemeClass .aiLensResultDataClass button:hover , .fiorithemeClass .aiLensResultDataClass button:focus{
+    border:none !important;
+    outline: none !important;
+}
+.fiorithemeClass .urlInputContainerClass .sendUrlDataButtonClass{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background-color: #0b4a99;
+    color: #fff;
+}   
+.fiorithemeClass .urlInputContainerClass .dataUrlInputClass{
+    color: #0b4a99;
+    letter-spacing: 1px;
+    border: 1px solid #ddd;
+    width: 70%;
+    padding: 4px 6px;
+    border-radius: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}  
+.ui-dialog.editPromptResultsClass .ui-dialog-buttonset button{
+    font-size: 12px !important;
+    background-position-x: -20px;
+    background-repeat: no-repeat;
+    background-size: 15px !important;
+    background-origin: content-box;
+    background-position-y: center;
+    padding-left: 23px !important;
+    text-align: right;
+}
+.ui-dialog.editPromptResultsClass .ui-dialog-buttonset button:first-child{
+    background-image: url(../images/Create-white-icon.svg);           
+}
+.ui-dialog.editPromptResultsClass .ui-dialog-buttonset button:last-child{
+    background-image: url(../images/Refresh_White_Icon-01.png);
+
+}
+.aiLensMainResultBoxClass .listItemsText span{
+    color: #0b4a99;
+    font-size: 14px;
+}
+.aiLensMainResultBoxClass .listItemsText button{
+    color: #0b4a99;
+    font-size: 13px !important;
+    background: #fff;
+    border: 1px solid #ddd !important;
+    border-radius: 6px;
+    /*margin-left: 1rem;*/
+    padding: 3px 8px;  
+}
+.aiLensMainResultBoxClass .listItemsText button:hover , .aiLensMainResultBoxClass .listItemsText button:focus{
+    border: none;
+    outline: none;
+}
+.fiorisinglecard .submenuImg > span:first-child {
+    flex: 10%;
+}
+
+.fiorisinglecard .submenuImg > span:nth-child(2) {
+    flex: 80%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+/*.fiorisinglecard .submenuImg > span:last-child {
+    flex: 58%;
+}*/
+/*new style starts here for file import dialog */
+
+.importFileClassids .visionTreeDMFileUploadclass {
+    /* width: 96%; */
+    height: 226px;
+}
+.importFileClassids .visionTreeDMFileUploadclass .imageDivClass {
+    background: #badaba;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px dotted #0b4a99;
+}
+.importFileClassids .visionTreeDMFileUploadclass .VisionDMUploadFileContent {
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.importFileClassids .visionTreeDMFileUploadclass .VisionDMUploadFileContent h5 {
+    margin:0;
+    padding:0;
+}
+.importFileClassids .visionTreeDMFileUploadclass .VisionDMUploadFileContent h5 img{
+    margin-right: 4px;
+    width: 48px;
+}
+.importFileClassids .visionTreeDMFileUploadclass .VisionDMUploadFileContent h5 span {
+    font-size: 16px;
+    font-weight: 600;
+    /* text-transform: lowercase; */
+    /* display: none; */
+    /* font-family: 'segeo-ui' !important; */
+}
+.importFileClassids #visionShowFileUploadMsg {
+    margin:0;
+}
+.importFileClassids .ui-dialog-content {
+    padding: 1em;
+    height: auto !important;
+}
+.prompTextariaClassid .ui-dialog-content,
+.editPromptResultsClass .ui-dialog-content{
+    height:auto !important
+}
+.prompTextariaClassid .ui-dialog-buttonpane button {
+    padding: 1px 8px !important;
+    font-size: 14px !important;
+}
+
+/*new style ends here for file import dialog */
+.threeDotsLoader{
+    padding: 7px;
+    /* margin-bottom: 8px; */
+    padding-left: 35px;
+    padding-bottom: 0; 
+}
+.threeDotsLoader .ailoaderText{
+    color: #0b4a99;
+    font-size: 11px;
+}
+/*New style starts for for papover design*/
+
+.popover.fade.show .popover-body.helpIconPopOverclass{
+    display:block;
+}
+.popover.fade.show .popover-body.helpIconPopOverclass ul{
+    margin:0;
+}
+.popover.fade.show .popover-body.helpIconPopOverclass ul li{
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+.popover.fade.show .popover-body.helpIconPopOverclass ul li img{
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.popover.fade.show .popover-body.helpIconPopOverclass ul li span{
+    font-size: 13px;
+    color: #4d4d4d;
+}
+.mappingiconwrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    border-top: 1px solid #d3d3d3;
+    padding: 4px;
+}
+.mappingiconwrapper span img{
+    width:18px;
+}
+
+/*New style ends for for papover design*/
+
+/*New style starts for for ai agent design in Ai panel*/
+.aiLensRobotDataClass{
+    padding: 7px;
+    /* border: 1px solid #183dd5; */
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        background-color: #03A9F4;
+    }
+    50% {
+        background-color: #0b4a99;
+    }
+} 
+.aiLensRobotDataClass ,
+.listItemsText .aiLensResultDataClass .ai-btn{
+    display:flex;
+    align-items:center;
+}
+.aiLensRobotDataClass label,
+.listItemsText .aiLensResultDataClass .ai-btn label{
+    /* color: #ffffff; */
+    /*animation: blink 2s linear infinite;*/
+    background-color: #0b4a99;
+    line-height:1.5;
+    padding:8px;
+    border-radius:8px;
+    width:100%;
+    margin:0;
+    font-size:12px;
+    /*text-transform:capitalize;*/ 
+    display: ruby;
+
+}
+.aiLensRobotDataClass label span,
+.listItemsText .aiLensResultDataClass .ai-btn label span{
+    color: #ffffff !important; 
+    box-shadow:none;
+    display:inline;
+    width:100%;
+}
+.aiLensRobotDataClass span, .listItemsText .aiLensResultDataClass .ai-btn span {
+    /* box-shadow: 0 0 3px 1px #09397e; */
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex
+        ;
+    align-items: center;
+    justify-content: center;
+}
+.listItemsText .aiLensResultDataClass .ai-btn {
+    padding:2px;
+}
+
+/*New style ends for for ai agent design in Ai panel*/
+
+/* SANK Css Start here 05-03-2025 */
+.aiLensResultDataClass .queryanswerTitle{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.aiLensResultDataClass .queryanswerTitle .table th, .aiLensResultDataClass .queryanswerTitle .table td{
+    font-size: 14px;
+}
+
+/* SANK Css Start here 05-03-2025 */
+
+
+/* new style here for mutiplue ai-agents  */
+.assisstAiAgentCard {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    /* width: 465px; */
+    box-shadow: 0 0 6px 0 #ccc;
+    border-radius: 6px;
+}
+.assisstAiAgentCard ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex ;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 6px;
+    overflow-y: auto;
+    height: 75px;
+    padding-right: 8px;
+}
+.assisstAiAgentCard ul li {
+    color: #0b4a99;
+    /* background-color: #fff; */
+    padding: 5px;
+    /* margin: 4px 0 0; */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 48%;
+    text-align: center;
+}
+.assisstAiAgentCard ul::-webkit-scrollbar {
+    width: 6px;
+}
+.assisstAiAgentCard ul::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 20px;
+}
+.assisstAiAgentCard ul::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.assisstAiAgentCard ul li.aiAngentBusy {
+    box-shadow: 0 0 2px 0px #f44336;
+    border: 1px solid #f44336;
+}
+.assisstAiAgentCard ul li.aiAgentReadyToAssist {
+    box-shadow: 0 0 2px 0px #4CAF50;
+    border: 1px solid #4CAF50;
+}
+.aiLensReceiverImgClass .aiLensMainResultBoxClass .listItemsText .aiLensResultDataClass h5{
+    font-size:14px;
+}
+.showMoreContentClass{
+    display: none !important;
+}  
+
+/* new style ends here for mutiplue ai-agents  */
+/*new styles starts here by Muni - access URL permistion search box design -*/
+.urlInputContainerClass {
+    padding: 7px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.urlInputContainerClass input {
+    width: 100%;
+    border: 1px solid #aabcd2;
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+.urlInputContainerClass .sendUrlDataButtonClass {
+    border:1px solid #ccc;
+    padding: 7px 8px;
+    border-radius: 4px;
+    background: #0b4a99;
+    color: #fff;
+}
+.urlInputContainerClass input::placeholder {
+    color:#0b4a99;
+    font-weight:500;
+}
+.aibottomMessageContainer .stopresponding .btn {
+    text-wrap:nowrap;
+}
+.ai-panel-flowchart .flowchart-operator.margeTableTitlesClass .flowchart-operator-title{
+    height: 70px !important;
+    border-radius: 10px 10px 0 0;
+}
+/*new styles starts here by Muni - access URL permistion search box design -*/
+/*QC Validation added sank 07-03-2025 start*/
+.validationList ul li{
+    padding: 4px;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 14px;
+    color: #0b4a99;
+}
+.validationList ul li:last-child{
+    border-bottom: 0;
+}
+.validationList ul li:before{
+    font-family: FontAwesome;
+    content: "\f0a4"; /* Unicode for fa-hand-o-right */
+    margin-right: 10px;
+    color: #0b4a99;
+    font-size: 14px;
+}
+
+.validationTitle.text-center { 
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 4px;
+    background-color: #0b4a99;
+    color: #fff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; 
+}
+.validationWrapperDiv table{
+    margin-bottom: 0;
+}
+.validationWrapperDiv table th,.validationWrapperDiv table td{
+    font-size: 14px;
+    color: #0b4a99; 
+}
+
+/*QC Validation added sank 07-03-2025 end*/
+/*new styles starts here for flowcharts design by Muni 07-03-25*/
+.ai-panel-flowchart .flowchart-operator.margeTableTitlesClass {
+    width: 35% !important;
+    height: auto !important;
+}
+.ai-panel-flowchart .flowchart-operator.margeTableTitlesClass .flowchart-operator-connector-label {
+    width:auto !important;
+}
+.ai-panel-flowchart .flowchart-operator.margeTableTitlesClass:last-child .flowchart-operator-inputs-outputs .flowchart-operator-outputs {
+    display: none;
+}
+
+.aiLensReceiverImgClass .listItemsText .showMoreToggleBtn{
+    text-align:right;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    padding-right: 3px;
+}
+.aiLensMainResultBoxClass .listItemsText .showMoreToggleBtn span.showMoreToggle{
+    padding: 4px 10px 5px;
+    background:#235284;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    /*text-transform: capitalize;*/
+    cursor: pointer;
+}
+.aiLensRobotDataClass.aiAgentAnimationRemoveClass label{
+    animation: none;
+    background:#f1f1f1;
+}
+.aiLensRobotDataClass.aiAgentAnimationRemoveClass label span{
+    color: #0b4a99 !important;
+}
+.aiLensRobotDataClass span img {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+}
+/*new styles ends here for flowcharts design by Muni */
+.mainAiLensIspirFormClass{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.mainAiLensIspirFormClass div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+.mainAiLensIspirFormClass select{
+    font-size: 12px;
+    font-weight:600;
+    color: #0b4a99;
+}
+.mainAiLensIspirFormClass{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.mainAiLensIspirFormClass div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+.mainAiLensIspirFormClass select{
+    font-size: 12px;
+    font-weight:600;
+    color: #0b4a99;
+}
+/* Multiple flowChart Css Start Here */
+.ai-panel-flowchart.multipleMappingsFlowChart .flowchart-container{
+    height: 400px;
+    scrollbar-width: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: auto;
+
+}
+.aiLensRobotDataClass table.validationrecordInfo{
+    color: #fff; 
+}
+.aiAgentAiLensPromptMainClass{
+    display:flex;
+    align-items: center;
+}
+
+
+/*workflow css start*/
+
+
+.workflowDesignMainClass .worflowDesignResourcesClass .workflowDesignResourceDataClass .workflowListItemDesignClass .workflowItemDesignClass .workflowItemHeaderClass{
+    font-size: 14px;
+    padding: 8px;
+    margin: 8px 5px;
+    color: #1d2d3e;
+    border-radius: 0.5rem;
+}
+.workflowDesignMainClass .worflowDesignResourcesClass .workflowDesignResourceDataClass .workflowListItemDesignClass .workflowItemDesignClass .workflowItemHeaderClass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.workflowDesignMainClass .worflowDesignResourcesClass .workflowDesignResourceDataClass .workflowListItemDesignClass .workflowItemDesignClass:hover .workflowItemHeaderClass,
+.workflowDesignMainClass .worflowDesignResourcesClass .workflowDesignResourceDataClass .workflowListItemDesignClass .workflowItemDesignClass .workflowSubItemDesignClass ul li:hover{
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    outline:1px solid #007bff;
+}
+
+.workflowDesignMainClass .worflowDesignResourcesClass .workflowDesignResourceDataClass .workflowListItemDesignClass .workflowItemDesignClass .workflowSubItemDesignClass ul{
+    padding-left:20px
+}
+.workflowDesignMainClass .worflowDesignResourcesClass .workflowDesignResourceDataClass .workflowListItemDesignClass .workflowItemDesignClass .workflowSubItemDesignClass ul li{
+    font-size: 14px;
+    padding: 8px;
+    margin: 8px 5px;
+    color: #1d2d3e;
+    border-radius: 0.5rem; 
+}
+.worflowDesignOperationsClass  .worflowDesignOperationsHeaderClass {
+    padding:8px;
+    /* box-shadow:0 0 2px #000; */
+    display:flex;
+    justify-content:flex-end;
+}
+
+.worflowDesignOperationsClass .worflowDesignOperationsHeaderClass .worflowOperationsHeaderClass{
+    font-weight:600;
+}
+
+.worflowDesignOperationsClass .worflowDesignOperationsHeaderClass button{
+    padding:2px 6px;
+    border:0;
+    background-color: inherit;
+    border-radius:4px;
+    margin: 0;
+}
+.worflowDesignOperationsClass .worflowDesignOperationsHeaderClass button img{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.worflowOperationsHeaderRolesClass {
+    width: 150px;
+    box-shadow: 0 0 0 .0625rem rgba(34, 53, 72, 0.48), 0 .625rem 1.875rem 0 rgba(34, 53, 72, 0.25) !important;
+    position: absolute;
+    top: 37%;
+    right: 38px;
+    z-index: 999;
+    background: #fff;
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+.worflowOperationsHeaderRolesClass div{
+    padding:6px 8px;
+}
+.worflowOperationsHeaderRolesClass div:hover {
+    outline: 1px solid #007bff;
+    border-radius: 0.25rem;
+}
+.worflowOperationsHeaderRolesClass div {
+    padding: 6px 8px;
+    font-size: 14px;
+}
+.worflowDesignOperationsDataClass
+{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.worflowDesignOperationsDataClass .operation, .worflowDesignOperationsDataNewClass .operation {
+    width: 180px;
+    height: 80px;
+    /*background: #e6f7ff;*/
+    border: 2px solid #007bff;
+    position: absolute;
+    text-align: center;
+    border-radius: 8px;
+    cursor: move;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.worflowDesignOperationsDataClass .condition {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.condition::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background: #ffcccc;*/
+    border: 2px solid #007bff;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+}
+
+.condition .label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.condition .dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #1890ff;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.condition .dot.top {
+    top: -17px;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+
+.condition .dot.right {
+    top: 50%;
+    left: 105px;
+    transform: translate(50%, -50%);
+}
+
+.condition .dot.bottom {
+    top:107px;
+    left: 46%;
+    transform: translate(-50%, 50%);
+}
+
+.condition .dot.left {
+    top: 50%;
+    left: -20px;
+    transform: translate(-50%, -50%);
+}
+
+.condition .label, .operation .label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.operation .label {
+    transform: none;
+}
+
+.worflowDesignOperationsDataClass .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #1890ff;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+/* / Operation: 4 side dots / */
+.dot.left {
+    left: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dot.right {
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dot.top {
+    top: -6px;
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+.dot.bottom {
+    bottom: -6px;
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+.delete-icon {
+    display: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: red;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    z-index: 1000;
+}
+
+.jtk-connector:hover .delete-icon {
+    display: block;
+}
+
+.connection-label {
+    color: black;
+    font-size: 12px;
+    padding: 2px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.worflowDesignOperationsDataClass .dot{
+    animation: none;
+    background-color: #c5c5c5; 
+    width: 8px;
+    height: 8px;
+}
+.label{
+    color: #1d2d3e;
+    font-size: 14px;
+}
+.condition .dot{
+    animation: none;
+    background-color: #007bff;
+}
+.condition .label{
+    color: #1d2d3e;
+    font-size: 14px;
+}
+
+.worflowOperationsHeaderConditionsClass {
+    width: 150px;
+    box-shadow: 0 0 0 .0625rem rgba(34, 53, 72, 0.48), 0 .625rem 1.875rem 0 rgba(34, 53, 72, 0.25) !important;
+    position: absolute;
+    top: 12%;
+    right: 8px;
+    z-index: 999;
+    background: #fff;
+    padding: 8px; 
+    border-radius: 0.25rem;
+}
+.worflowOperationsHeaderConditionsClass div{
+    padding:6px 8px;
+}
+.worflowOperationsHeaderConditionsClass div:hover {
+    outline: 1px solid #007bff;
+    border-radius: 0.25rem;
+}
+.worflowOperationsHeaderConditionsClass div {
+    padding: 6px 8px;
+    font-size: 14px;
+}
+
+.workflowDesignMainClass .worflowDesignResourcesClass .workflowDesignResourceDataClass{
+    /* padding:12px 12px 0; */
+}
+.worflowDesignOperationsMainDataClass {
+    width: 96%;
+    gap:1px;
+}
+.workflowDesignMainClass .worflowDesignOperationsClass{
+    /*padding:0 12px 12px;*/
+    display: flex;
+    background: #fff;
+    box-shadow: none;
+    border-top: 1px solid #cccccc;
+    border-radius: 0 0 0.5rem 0.5rem;
+    height: calc(100vh - 105px);
+    overflow: auto;
+}
+.workflowDesignMainClass .worflowDesignOperationsClass .worflowDesignOperationsMainDataClass .worflowDesignOperationsDataClass{
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+    /*background-color: #f5f6f8;*/
+}
+.workflowDesignMainClass .worflowDesignOperationsClass .worflowDesignOperationsMainDataClass .worflowDesignOperationsDataEditDivClass {
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+.workflowDesignMainClass .worflowDesignOperationsClass .worflowDesignOperationsHeaderClass{
+    width: 4%;
+    border-left: 1px solid #cccccc;
+}
+
+.worflowDesignOperationsClass .worflowDesignOperationsHeaderClass .worflowDesignOperationsbtnwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+
+.worflowDesignOperationsClass {
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+    border: 1px solid #ddd;
+}
+.worflowDesignOperationsClass .lebelLink{
+    z-index: 999;
+}
+
+.worflowDesignOperationsClass .node,.worflowDesignOperationsDataNewClass .node {
+    position: absolute;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: move;
+}
+.worflowDesignOperationsClass .rect-node,.worflowDesignOperationsDataNewClass .rect-node {
+    /*width: 200px; changed by me*/
+    width: 150px;
+    background: #fff;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.worflowDesignOperationsClass .empty-circle-node,.worflowDesignOperationsDataNewClass .empty-circle-node {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    background: #fff; 
+    color: #c5c5c5; 
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.worflowDesignOperationsClass .empty-circle-node-deleted ,.worflowDesignOperationsDataNewClass .empty-circle-node-deleted {
+    width: 1px;
+    height: 1px;
+    border: 2px solid #c62828;
+    border-radius: 50%;
+    background: transparent;
+    color: #c62828;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+#node1 { top: 50px; left: 40%; }
+#node3 { top: 325px; left: 0px; }
+#node5 { top: 200px; right: 5%;}
+#node4 { top: 168px; left: 80%; }
+#approver1 { top: 250px; left: 20%; }
+#approver2 { top: 250px; left: 40%; }
+#approver3 { top: 250px; left: 60%; }
+#steward { top: 500px; left: 40%; }
+#manager { top: 700px; left: 40%; }
+#sap { top: 900px; left: 40%; }*/
+
+#node1 { top: 250px; left: 5%; }
+#node3 { top: 600px; left: 37%; }
+#node5 { top: 10px; left: 20%;}
+#node4 { top: 550px; left: 25%; }
+#approver1 { top: 100px; left: 25%; }
+#approver2 { top: 250px; left: 25%; }
+#approver3 { top: 400px; left: 25%; }
+#steward { top: 250px; left: 48%; }
+#manager { top: 250px; left: 68%; }
+#sap { top: 250px; left: 88%; }
+
+
+.worflowDesignOperationsClass .label-approve {
+    background-color: #ddd;
+    color: #1d2d3e;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;						  
+}
+.worflowDesignOperationsClass .label-reject {
+    background-color: #ffcdd2;
+    color: #c62828;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;					  
+}
+.worflowDesignOperationsClass .label-branch {
+    background-color: #d0f0ff;
+    color: #0277bd;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+
+.worflowDesignOperationsClass .treeLinkEditDiv{
+    position: fixed;
+    right: 2%;
+}
+.worflowDesignOperationsClass .treeLinkEditDiv .treeLinkEditBTN{
+    position: absolute;
+    right: 1%;
+}
+
+.worflowDesignOperationsClass .treeLinkEditBTN{
+
+    background-color: #007bff !important;
+    color: #fff;
+    border: none;
+    padding: 6px 8px !important;
+    border-radius: 0.5rem !important;
+    cursor: pointer;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+.workflowConditionMainBoxDiv {
+    background: #fff;
+    width: 380px;
+    height: 433px;
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+    box-shadow: 0 0 16px 3px #bdbdbd;
+    border-radius: 1rem 0 0 1rem;
+    z-index: 9999;
+    border: 1px solid #b3b3b3;
+    color: #000;
+}
+.workflowConditionMainBoxDiv .workflowConditionHeader {
+    padding: 8px;
+    text-align: right;
+    background: #e4e6e7;
+    border-radius: 1rem 0 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.workflowConditionMainBoxDiv .workflowConditionHeader i {
+    font-size:16px;
+    font-weight:400 !important;
+    cursor:pointer;
+}
+.workflowConditionMainBoxDiv .worflowOperations {
+    padding:15px;
+}
+
+.worflowDesignOperationsClass .plus-icon {
+    display: inline-block;
+    font-size: 18px;
+    color: #007bff;
+    background: #d0f0ff;
+    border: 1px solid #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    text-align: center; 
+    transition: background 0.3s ease;
+}
+
+.worflowDesignOperationsClass .plus-icon:hover {
+    background: #c6f1d6;
+}
+.worflowDesignOperationsClass .rect-node .label {
+    color: #1d2d3e !important;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* Edit Workflow Css Starts Here */
+.worflowDesignOperationsClass{
+    position: relative;
+}
+.worflowDesignOperationsClass.expandEditParentWorkflowMappingDataClass{
+    position: inherit !important;
+}
+/*.worflowDesignOperationsDataClass.worflowDesignOperationsDataEditDivClass{
+    width: 100px !important;
+    height: 100px;
+    overflow: auto;
+    scrollbar-width: thin;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    background-color: #fff; 
+    padding: 1rem;
+    border: 1px solid transparent;
+    box-shadow: 0 0 .125rem 0 rgba(34, 53, 72, 0.2), 0 .125rem .25rem 0 rgba(34, 53, 72, 0.2);
+    border-radius: 1rem; 
+    z-index:1000; 
+}*/
+.worflowDesignOperationsDataClass.worflowDesignOperationsDataEditDivClass.expandOriginalWorkflowMappingDataClass{
+    width: 1300px !important;
+    height: 500px !important;
+    overflow: auto;
+    scrollbar-width: thin;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    background-color: #fff; 
+    padding: 1rem;
+    border: 1px solid transparent;
+    box-shadow: 0 0 .125rem 0 rgba(34, 53, 72, 0.2), 0 .125rem .25rem 0 rgba(34, 53, 72, 0.2);
+    border-radius: 1rem; 
+    z-index:1000; 
+}
+
+
+/*.worflowDesignOperationsDataEditDivClass  #node3 { top: 325px; left: 0px; }
+.worflowDesignOperationsDataEditDivClass  #node5 { top: 200px; right: -765px;}
+.worflowDesignOperationsDataEditDivClass  #node4 { top: 168px; left: 850px; }
+.worflowDesignOperationsDataEditDivClass  #approver1 { top: 250px; left: 245px; } 
+.worflowDesignOperationsDataEditDivClass  #approver2 { top: 250px; left: 485px; }
+.worflowDesignOperationsDataEditDivClass  #approver3 { top: 250px; left: 730px; }
+.worflowDesignOperationsDataEditDivClass  #steward { top: 500px; left: 485px; }
+.worflowDesignOperationsDataEditDivClass  #manager { top: 700px; left: 485px; }
+.worflowDesignOperationsDataEditDivClass  #sap { top: 900px; left: 485px; }*/
+
+
+/*#copynode1 { top: 50px; left: 40%; }
+#copynode3 { top: 325px; left: 0px; }
+#copynode5 { top: 200px; right: 5%;}
+#copynode4 { top: 168px; left: 80%; }
+#copyapprover1 { top: 250px; left: 20%; }
+#copyapprover2 { top: 250px; left: 40%; }
+#copyapprover3 { top: 250px; left: 60%; }
+#copysteward { top: 500px; left: 40%; }
+#copymanager { top: 700px; left: 40%; }
+#copysap { top: 900px; left: 40%; }*/
+
+
+#copynode1 { top: 250px; left: 5%; }
+#copynode3 { top: 600px; left: 37%; }
+#copynode5 { top: 10px; left: 20%;}
+#copynode4 { top: 550px; left: 25%; }
+#copyapprover1 { top: 100px; left: 25%; }
+#copyapprover2 { top: 250px; left: 25%; }
+#copyapprover3 { top: 400px; left: 25%; }
+#copysteward { top: 250px; left: 48%; }
+#copymanager { top: 250px; left: 68%; }
+#copysap { top: 250px; left: 88%; }
+
+.worflowDesignOperationsDataNewClass .dot{
+    animation: none;
+    background-color: #445566;
+    width: 10px;
+    height: 10px;
+}
+
+.worflowDesignOperationsDataNewClass .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.workflowDesignMainClass .worflowDesignOperationsClass .worflowDesignOperationsMainDataClass:not(.worflowDesignOperationsDataEditDivClass){
+    /*scrollbar-color: #fff #fff;*/
+}
+
+/* 28-04-2025 Css Starts by Santhosh*/
+.linkDialogBox li.list-group-item{
+    padding: 6px;
+}
+.worflowOperations .worflowConditionHeaderOperations label{
+    font-weight: bold;
+}
+.worflowOperations .worflowConditionHeaderOperations{
+    margin-bottom: 10px;
+}
+.worflowOperations .worflowConditionHeaderOperations .form-control{
+    height: 27px;
+    padding: 4px;
+    font-size: 12px;
+}
+.worflowOperations .worflowConditionHeaderOperations .form-control:focus{
+    box-shadow: none;
+}
+.worflowOperations .worflowConditionBodyOperations label{
+    font-weight: bold;
+}
+.worflowOperations .worflowConditionBodyOperations{
+    margin-bottom: 10px;
+}
+.worflowOperations .worflowConditionBodyOperations .form-control{
+    height: 27px;
+    padding: 4px;
+    font-size: 12px;
+}
+.worflowOperations .worflowConditionBodyOperations .form-control:focus{
+    box-shadow: none;
+}
+.worflowOperations .defaultroleDivClass label{
+    font-weight: bold;
+}
+.worflowOperations .defaultroleDivClass .form-control{
+    height: 27px;
+    padding: 4px;
+    font-size: 12px;
+}
+.worflowOperations .defaultroleDivClass .form-control:focus{
+    box-shadow: none;
+}
+.worflowOperations button.worflowDesigConditionSaveBtn{
+    background-color: #007bff !important;
+    border: none;
+    border-radius: 0.5rem !important;
+    padding: 4px 6px;
+    cursor: pointer;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin: 0px;
+    color: #fff !important;
+}
+.worflowOperations button.worflowDesigConditionSaveBtn:hover{
+    background-color: #007bff !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    padding: 4px 6px;
+    cursor: pointer;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin: 0px;
+    color: #fff !important;
+}
+.worflowOperations .errorMsgDisplay{
+    margin: 5px 0px;
+}
+.conditionDialogBox .selectConMainDivClass{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.conditionDialogBox .selectConMainDivClass .feildItem{
+    flex: 0 0 31%;
+}
+.conditionDialogBox .selectConMainDivClass .feildItem label{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.conditionDialogBox .selectConMainDivClass .feildItem input, .conditionDialogBox .selectConMainDivClass .feildItem select{
+    width: 100%;
+    height: 27px;
+    padding: 4px;
+    font-size: 12px;
+}
+.conditionDialogBox .selectConMainDivClass .feildItem input:focus, .conditionDialogBox .selectConMainDivClass .feildItem select:focus{
+    box-shadow: none;
+}
+.conditionDialogBox .workflowconditionNewColumnButtonClass{
+    margin-top: 10px;
+}
+.conditionDialogBox .workflowconditionNewColumnButtonClass button{
+    padding: 4px  6px;
+    border-radius: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold; 
+    border: none;
+}
+.worflowConditionOperations a{
+    font-size: 14px;
+    color: #007bff;
+}
+.selectConditionRoleClass {
+    width: 33%;
+    margin-top: 5px;
+}
+.selectConditionRoleClass label{
+    font-weight: 600;
+}
+.selectConditionRoleClass select{
+    width: 100%;
+}
+.workflowconditionNewColumnButtonClass{
+    margin-top: 5px;
+}
+.workflowconditionNewColumnButtonClass button{
+    margin: 0;
+    pading: 4px 6px;
+    border-radius: 0.5rem !important;
+    background-color: #007bff !important;
+    color: #fff !important;
+    border: none;
+}
+.workflowconditionNewColumnButtonClass button:hover{
+    margin: 0;
+    pading: 4px 6px;
+    border-radius: 0.5rem !important;
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+
+.removeMessageClass {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+.removeMessageClass table tr th {
+    font-size: 12px;
+    padding:4px;
+}
+.removeMessageClass table tr td {
+    padding:4px;
+    font-size: 12px;
+}
+.worflowDesignOperationsbtnwrapper .treeLinkActivateBTN {
+    font-weight: bold !important;
+    padding: 0 !important;
+    color: #007bff !important; 
+    font-size: 10px;
+}
+
+.workflowMinMaxClass{
+    padding: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;     
+}
+.workflowMinMaxClass span img{
+    cursor: pointer;   
+}
+.worflowDesignOperationsDataClass.ui-droppable.workflowMaxSize{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100 !important;
+    z-index: 999;
+    background-color: #f5f6f8 !important;
+}
+.worflowDesignOperationsClass.parentMaximize{
+    position: inherit !important;
+}
+.label-rework{
+    color: green;
+    background: #e0f7e9;
+    /*border: 1px solid green;*/
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+/*workflow css end*/
+/*new styles for worflow design start here */
+.worflowDesignOperationsClass .rect-node#approver1,
+.worflowDesignOperationsClass .rect-node#copyapprover1{
+    border:2px solid #3243a0;
+}
+
+.worflowDesignOperationsClass .rect-node#approver2,
+.worflowDesignOperationsClass .rect-node#copyapprover2{
+    border:2px solid #ff0094;
+}
+.worflowDesignOperationsClass .rect-node#approver3,
+.worflowDesignOperationsClass .rect-node#copyapprover3{
+    border:2px solid #474747;
+}
+.worflowDesignOperationsClass .rect-node#node1,
+.worflowDesignOperationsClass .rect-node#copynode1{
+    border:2px solid #ffa956;
+}
+.worflowDesignOperationsClass .rect-node#steward,
+.worflowDesignOperationsClass .rect-node#copysteward{
+    border:2px solid #4CAF50;
+}
+.worflowDesignOperationsClass .rect-node#manager,
+.worflowDesignOperationsClass .rect-node#copymanager{
+    border:2px solid #00e3ff;
+}
+.worflowDesignOperationsClass .rect-node#sap,
+.worflowDesignOperationsClass .rect-node#copysap{
+    border:2px solid #FF5722;
+}
+/*new styles for worflow design end here */
+
+.aiLensReceiverImgClass .aiLensMainResultBoxClass .listItemsText .AILensRefApiDataClass .AILensRefTableClass {
+    overflow-x:auto;
+}
+.aiLensReceiverImgClass .aiLensMainResultBoxClass .listItemsText .AILensRefApiDataClass .AILensRefTableClass tr th {
+    font-weight:500 !important;
+    color:#006bb8;
+    text-wrap:nowrap
+}
+.aiLensReceiverImgClass .aiLensMainResultBoxClass .listItemsText .AILensRefApiDataClass .AILensRefTableClass tr td {
+    font-weight:400 !important;
+    color:#006bb8;
+}
+
+/*new changes to show the gird information in right side panel style start here
+
+.dxpContentWrapper .idxpGridRowOverviewWrapper {
+    overflow-y:auto;
+    scrollbar-width:thin;
+    padding:10px;
+    background-color: #eff1f2;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section:not(:last-child) {
+    margin-bottom: 8px;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-header {
+    width:100%;
+    background: #d6dfe3;
+    border-radius: 2px;
+    color: #000000;
+    font-weight: 400;
+    padding:6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition:0.3s all ease-in-out;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-header i{
+    transition:0.3s all ease-in-out;
+    font-weight: 400;
+    font-size: 11px;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-header.active i.fa-chevron-right{
+    transform:rotate(90deg);
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-header div span {
+    font-size:13px;
+    padding-left: 8px;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-section {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body {
+    display: none;
+    padding: 10px;
+    background-color: #fbfbfb;
+    border: 1px solid #ccc;
+    border-radius: 0 0 4px 4px;
+    max-height: 210px;
+     min-height: 210px; 
+    overflow-y: auto;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .rowInfoDataWrapper ul {
+    margin:0;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .rowInfoDataWrapper ul li {
+    display: flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:3px;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .rowInfoDataWrapper ul li span {
+    width:40%;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .rowInfoDataWrapper ul li span:first-child {
+    text-align: right;
+    width: 100px;
+    display: inline-block;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .rowInfoDataWrapper ul li span:last-child {
+    text-align: left;
+    display: inline-block;
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight:500;
+    color:#000;
+    font-size:12px
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .rowInfoDataWrapper  {
+    width:90%;
+    text-align: center;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .rowinfoImg  {
+    text-align: center;
+    display: flex;
+    border-radius: 5px;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .rowinfoImg img {
+    width: 140px;
+    height: 120px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.accrCharFrmGridClass table {
+    width:100%;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .accrCharFrmGridClass table thead tr,
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .accrCharFrmGridClass table thead tr th{
+    position:sticky;
+    top:0;
+    background:#fff;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .accrCharFrmGridClass table tbody {
+    background-color:#f2f2f2;
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .accrCharFrmGridClass table tbody tr td {
+    padding:4px;
+    font-weight:500
+}
+.idxpGridRowOverviewWrapper .custom-accordion .accordion-section .accordion-body .accrCharFrmGridClass {
+    max-height: 188px;
+    overflow-y:auto;
+}
+
+
+new changes to show the gird information in right side panel style end here*/
+
+
+.popover-body:has(.pdftypeClass) {
+    display: block;
+    padding:0px !important;
+    box-shadow:0 0 15px 0 #00000038;
+    border:0;
+}
+.popover-body .pdftypeClass div label{
+    font-size: 13px;
+    font-weight:400;
+    width:100%;
+    margin-bottom:0px;
+    border: 1px solid #b4b4b4;
+    padding:4px;
+    cursor:pointer;
+    margin-bottom:4px;
+    border-radius:6px;
+}
+.popover-body .pdftypeClass div label:last-child{
+    /* border-bottom:0 */
+}
+.kdsx-sidebar {
+    position: fixed;
+    top: 93px;
+    left: 33px;
+    width: 260px;
+    height: calc(100vh - 95px);
+    background: #ffffff;
+    border-right: 1px solid #e2e6ef;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0 0 .125rem 0 rgba(34, 53, 72, .2), 0 .125rem .25rem 0 rgba(34, 53, 72, .2);
+    z-index:999;
+}
+
+.kdsx-sidebar h6 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #004990;
+    padding: 15px 20px 5px;
+}
+
+.kdsx-menu {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+
+}
+
+.kdsx-menu-item {
+    position: relative;
+}
+
+.kdsx-menu-link {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #1c2d45;
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s;
+    border-radius: .375rem;
+}
+
+.kdsx-menu-link:hover {
+    background: #eaf2fe;
+    color: #0057d9;
+}
+
+.kdsx-menu-item.expand>.kdsx-menu-link,
+.kdsx-menu-item>.kdsx-menu-link.active {
+    background: #f2f7ff;
+    color: #0057d9;
+    font-weight: 600;
+    border-radius: .375rem;
+}
+
+.kdsx-menu-icon {
+    width: 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #004990;
+    font-size: 16px;
+}
+
+.kdsx-menu-caret {
+    margin-left: auto;
+    color: #666;
+}
+
+.kdsx-menu-item.expand .kdsx-menu-caret i {
+    transform: rotate(90deg);
+}
+
+.kdsx-menu-submenu {
+    display: none;
+    background: #f9fbff;
+}
+
+.kdsx-menu-item .kdsx-menu-submenu .kdsx-menu-link {
+    padding-left: 43px;
+}
+
+.kdsx-menu-item.expand>.kdsx-menu-submenu {
+    display: block;
+}
+
+/* Nested submenu (2nd level) */
+.kdsx-menu-submenu .kdsx-menu-item .kdsx-menu-submenu .kdsx-menu-link {
+    padding-left: 65px;
+    font-size: 13px;
+}
+
+/* ===== CONTENT ===== */
+.kdsx-content {
+    margin-left: 260px;
+    background: #f5f6f7;
+    min-height: calc(100vh - 95px);
+    margin-top: 1px;
+
+}
+
+.kdsx-details-header h5 {
+    font-weight: 600;
+    color: #004990;
+}
+
+.kdsx-details-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.kdsx-form-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    /*margin-top: 20px;*/
+    box-shadow: none;
+}
+
+.kdsx-before {
+    position: relative;
+}
+
+.kdsx-before::after,
+.kdsx-before::before {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    top: 50%;
+    height: 0.0625rem;
+    background-image: linear-gradient(to left, #a2a2a2, transparent);
+}
+
+.kdsx-before::before {
+    left: 50%;
+    background-image: linear-gradient(to right, #a2a2a2, transparent);
+}
+
+.kdsx-before::after {
+    right: 50%;
+}
+
+.kdsx-before button {
+    border: 1px solid #ddd;
+    padding: 0px 6px;
+    border-radius: .5rem;
+    background-color: #fff;
+    color: #0064d9;
+    box-shadow: 0 0 .125rem 0 rgba(34, 53, 72, 0.2), 0 .125rem .25rem 0 rgba(34, 53, 72, 0.2);
+    position: relative;
+    z-index: 9;
+
+}
+
+.kdsx-form-wrapper input,
+.kdsx-form-wrapper select {
+    width: 100%;
+    box-shadow: 0 0 0 .0625rem rgba(85, 107, 129, .25);
+    border: none;
+    border-radius: .25rem;
+    font-size: .875rem;
+    font-weight: 400;
+    padding: 4px 10px;
+}
+
+.kdsx-search-icon {
+    position: absolute;
+    top: 3px;
+    right: 26px;
+    font-size: 15px;
+    display: block;
+    color: #004990;
+}
+
+.btn-kdsx-primary {
+     background-color: #0070f2;
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    width: fit-content !important;
+    font-size: 12px;  
+    font-weight: 500;
+
+}
+
+.btn-kdsx-primary:hover {
+     background-color: #0075d2;
+    opacity: 0.4;
+    color:#fff;
+    box-shadow : 0px 8px 16px 0px #0057d233,0px 0px 2px 0px #0057d233;
+}
+
+.btn-kdsx-toggle,
+.btn-kdsx-sticky {
+    margin: 0 4px;
+}
+.kdsx-content .kdsx-contentWrapper {
+    background-color:#fff;
+    box-shadow: 0 0 3px #cfcfcf;
+    padding: 0 8px 15px;
+}
+
+.kdsx-form-wrapper input, .kdsx-form-wrapper select {
+    width: 100%;
+    box-shadow: 0 0 0 .0625rem rgba(85, 107, 129, .25);
+    border: .0625rem none #556b81;
+    background: 0 100% / 100% .0625rem no-repeat linear-gradient(0deg, #556b81, #556b81) border-box;
+    border-radius: .25rem;
+    font-size: .875rem;
+    font-weight: 400;
+    height: auto !important;
+    padding: 4.5px;
+}
+
+.kdsx-menu-item.expand .kdsx-menu-submenu .kdsx-menu-item .kdsx-menu-caret i {
+    transform: initial;
+    transition: all 0.3s ease-in-out;
+}
+
+.kdsx-menu-item.expand .kdsx-menu-caret i, .kdsx-menu-item.expand .kdsx-menu-submenu .kdsx-menu-item.expand .kdsx-menu-caret i {
+    transform: rotate(90deg);
+}
+
+.kdsx-menu-item.expand>.kdsx-menu-link, .kdsx-menu-item>.kdsx-menu-link.active {
+    color: #0057d9;
+    font-weight: 600;
+    background: 0 100% / 0.188rem 100% no-repeat linear-gradient(0deg, #0064d9, #0064d9), #ebf8ff;
+    border-radius: .375rem;
+}
+
+/*.kdsx-form-wrapper .row div {
+    padding: 0 8px;
+}*/
+
+.kdsx-before button i {
+    margin:0;
+}
+.kdsx-menu .kdsx-menu-item .kdsx-menu-link {
+    margin-bottom:4px
+}
+
+/* KDS WB New Code end*/
+
+/* 🌤 SAP Fiori Horizon Light (KDS Look & Feel) */
+.kdsNewtype-body {
+    font-family: "72", "Segoe UI", Arial, sans-serif;
+    background-color: #f5f6f7;
+    color: #32363a;
+    padding: 40px;
+}
+
+.kdsNewtype-container {
+    background-color: #ffffff;
+    border: 1px solid #d4d8db;
+    border-radius: 10px;
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.kdsNewtype-header {
+    font-size: 20px;
+    color: #0a6ed1;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.kdsNewtype-label {
+    font-size: 14px;
+    color: #32363a;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.kdsNewtype-dropdown {
+    width: 100%;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #d0d3d6;
+    background-color: #fff;
+    color: #32363a;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kdsNewtype-dropdown:hover,
+.kdsNewtype-dropdown:focus-within {
+    border-color: #0a6ed1;
+    box-shadow: 0 0 0 2px rgba(10, 110, 209, 0.1);
+}
+
+.kdsNewtype-input {
+    width: 100%;
+    height: 36px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #d0d3d6;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #32363a;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kdsNewtype-input:focus {
+    border-color: #0a6ed1;
+    box-shadow: 0 0 0 2px rgba(10, 110, 209, 0.15);
+    outline: none;
+}
+
+.kdsNewtype-input.drag-over {
+    border: 2px dashed #0a6ed1;
+    background-color: #ebf5fc;
+}
+
+.kdsNewtype-link-text {
+    color: #0a6ed1;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 6px;
+    transition: color 0.2s ease;
+}
+
+.kdsNewtype-link-text:hover {
+    text-decoration: underline;
+    color: #085caf;
+}
+
+.kdsNewtype-add-section {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.kdsNewtype-input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.kdsNewtype-input-row input {
+    flex: 1;
+    height: 36px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #d0d3d6;
+    border-radius: 6px;
+    background: #fff;
+    color: #32363a;
+    transition: border-color 0.2s ease;
+}
+
+.kdsNewtype-input-row input:focus {
+    border-color: #0a6ed1;
+    box-shadow: 0 0 0 2px rgba(10, 110, 209, 0.1);
+}
+
+.kdsNewtype-action-btn {
+    background-color: #0a6ed1;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    width: 34px;
+    height: 34px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.kdsNewtype-action-btn:hover {
+    background-color: #085caf;
+}
+
+.kdsNewtype-delete-btn {
+    background-color: #d9534f;
+}
+
+.kdsNewtype-delete-btn:hover {
+    background-color: #c9302c;
+}
+
+.kdsNewtype-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.kdsNewtype-col {
+    /*flex: 1;*/
+    width: 48%;
+}
+
+/* ✅ Right aligned submit */
+.kdsNewtype-submit-section {
+    text-align: right;
+    margin-top: 25px;
+}
+
+.kdsNewtype-submit-btn {
+    background-color: #0a6ed1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.kdsNewtype-submit-btn:hover {
+    background-color: #085caf;
+}
+
+@media (max-width: 600px) {
+    .kdsNewtype-body {
+        padding: 20px;
+    }
+
+    .kdsNewtype-container { 
+        padding: 20px;
+    }
+
+    .kdsNewtype-submit-section {
+        text-align: center;
+    }
+}
+
+
+
+.kdsInlinePopup {
+  margin-top: 15px;
+  background: #ffffff;
+  border: 1px solid #d0d3d6;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  padding: 8px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeSlideIn 0.3s ease-in;
+  width: 100%;
+}
+
+.kdsInlinePopup-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kdsInlinePopup-gif {
+  width: 18px;
+  height: 18px;
+  opacity: 0.9;
+}
+
+.kdsInlinePopup-text {
+  font-size: 13px;
+  color: #32363a;
+  line-height: 1.3;
+}
+
+.kdsInlinePopup-text strong {
+  color: #0a6ed1;
+  font-weight: 600;
+}
+
+.kdsInlinePopup-msg {
+  font-size: 12px;
+  color: #6b6b6b;
+  margin-top: 2px;
+}
+
+.kdsInlinePopup-final {
+  border-left: 4px solid #107e3e;
+  background: #f6fffa;
+}
+
+.kdsInlinePopup-final .kdsInlinePopup-gif {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+
+.kdsInlinePopup-final .kdsInlinePopup-msg {
+  font-size: 13px;
+  color: #107e3e;
+  line-height: 1.4;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* 🌤 SAP Fiori Horizon Light (KDS Look & Feel) */
+
+.aiLensResultDataClass > div > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.aiLensResultDataClass > div > ul > li { 
+    flex: 1 1 100%; 
+    max-width: 100%;
+}
+.ai-col-2 > li {
+    flex: 1 1 calc(50% - 10px) !important;
+}
+
+.ai-col-3 > li {
+    flex: 1 1 calc(33.33% - 10px)!important;
+}
+
+.onSubEnableAILensClass {
+    /*background: #e8f3ff;                  light blue background */
+    border-left: 5px solid #0A6ED1;      /* blue left border */
+    padding: 16px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 650px;
+    margin: 10px 0;
+}
+
+.onSubEnableAILensClass .visionGenericTabStatusDialog {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.onSubEnableAILensClass .error-title {
+    color: #0A6ED1;          /* same blue as your screenshot */
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.onSubEnableAILensClass .error-list {
+    margin-top: 8px;
+    padding-left: 0;
+}
+
+.onSubEnableAILensClass .error-list li {
+    list-style: none;
+    margin: 6px 0;
+    color: #0A6ED1;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+}
+
+.onSubEnableAILensClass .error-list li .arrow {
+    font-size: 16px;
+    margin-right: 6px;
+    color: #0A6ED1; /* SAP-style blue */
+    line-height: 1;
+}
+.importFileColumnMappingMain .flowchart-operator-connector-arrow{
+    top:12px !important;
+}
+
+/*AILens new Item Creation*/
+.aiLensCreateNewItem .aiLensResultDataClass {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  color: #0056b3;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.aiLensCreateNewItem .aiLensLoader {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #c7dbf2;
+  border-top-color: #0056b3;
+  border-radius: 50%;
+  display: inline-block;
+  animation: aiLensSpin 1s linear infinite;
+}
+
+@keyframes aiLensSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.aiLensCreateNewItem .aiLensYesNoContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.aiLensCreateNewItem .aiLensYesBtn,
+.aiLensCreateNewItem .aiLensNoBtn {
+  border: 1px solid #c7dbf2;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  width: 100px;
+}
+
+.aiLensCreateNewItem .aiLensYesBtn {
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+}
+
+.aiLensCreateNewItem .aiLensYesBtn:hover {
+  background-color: #004494;
+}
+
+.aiLensCreateNewItem .aiLensNoBtn {
+  background-color: #ffffff;
+  color: #0056b3;
+}
+
+.aiLensCreateNewItem .aiLensNoBtn:hover {
+  background-color: #eaf3ff;
+}
+
+/*AILens new Item Creation*/
+
+/* AIlens Chat New Look and feel Start  */
+.moreaiOptions .aiLensDropup .dropdown-toggle svg {
+    color: #0b4a99;
+    fill:#0b4a99;
+}
+
+.moreaiOptions .aiLensDropup .dropdown-toggle {
+    background-color:#fff;
+    padding: 0;
+    border: 0;
+    color:#f00;
+}
+.moreaiOptions .aiLensDropup .dropdown-toggle:focus {
+    border: 0;
+    box-shadow: none;
+    outline:none;
+}
+.moreaiOptions .aiLensDropup .dropdown-toggle::after {
+    display: none;
+}
+.moreaiOptions .aiLensDropup .aiLensDropdown  {
+    left: auto !important;
+    right: -4px;
+    /*padding: 15px;*/
+    height: 190px !important;
+    width: 180px !important;
+    top: auto !important;
+    bottom: 26px;
+    border-radius: 1rem;
+    box-shadow: 0 0 1px #ffffff;
+    transform: none !important;
+}
+.moreaiOptions .aiLensDropup .aiLensDropdown .idxpDropMenuWrapper {
+    display: flex;
+    flex-direction: column;
+    /*gap: 4px;*/
+    position: relative;
+}
+.moreaiOptions .aiLensDropup .aiLensDropdown .idxpDropMenuWrapper .dropdown-divider {
+    margin:0;
+}
+.moreaiOptions .aiLensDropup .aiLensDropdown .idxpDropMenuWrapper li #idxpAiLensMoreOption {
+    position: absolute;
+    left: -146px;
+    bottom: 0;
+    border: 1px solid #d9d9d9;
+    width: 150px;
+    padding: 8px 2px;
+    border-radius: 1rem;
+}
+.moreaiOptions .aiLensDropup .aiLensDropdown li {
+    font-size: 12px;
+    padding: 0 4px;
+    margin: -1px 0;
+}
+.moreaiOptions .aiLensDropup .aiLensDropdown li .aiImageAttachedment,
+.moreaiOptions .aiLensDropup .aiLensDropdown li .aiAttachedment{
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.moreaiOptions .aiLensDropup .aiLensDropdown li:hover .aiImageAttachedment,
+.moreaiOptions .aiLensDropup .aiLensDropdown li:hover .aiAttachedment,
+.moreaiOptions .aiLensDropup .aiLensDropdown .idxpDropMenuWrapper li.idxpAiLensOpenMoreOption #idxpAiLensMoreOption ul li:hover .aiImageAttachedment{
+    background-color: #eff1f2;
+    border-radius: 0.5rem;
+}
+.moreaiOptions .aiLensDropup .aiLensDropdown .idxpDropMenuWrapper li.idxpAiLensOpenMoreOption:hover #idxpAiLensMoreOption,
+.moreaiOptions .aiLensDropup .aiLensDropdown .idxpDropMenuWrapper li #idxpAiLensMoreOption ul{
+    display: block !important;
+    background: #fff;
+    border-radius: 1rem;
+} 
+.moreaiOptions .aiLensDropup .aiLensDropdown .idxpDropMenuWrapper li #idxpAiLensMoreOption ul {
+    padding: 1px;
+}
+.moreaiOptions .aiLensDropup .aiLensDropdown .idxpDropMenuWrapper li.idxpAiLensOpenMoreOption #idxpAiLensMoreOption ul li .aiImageAttachedment {
+    background: transparent;
+}
+
+.moreaiOptions .aiLensDropup .aiLensDropdown .idxpDropMenuWrapper .aiAttachedment label,
+.moreaiOptions .aiLensDropup .aiLensDropdown .idxpDropMenuWrapper .aiImageAttachedment label{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width:100%;
+}
+
+/* AIlens Chat New Look and feel end  */
+
+
+ .aiLensCreateNewItem {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #0056b3;
+  font-size: 14px;
+}
+
+.aiLensCreateNewItem .container {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 2px 18px;
+  margin-top: 10px;
+}
+
+.aiLensCreateNewItem .header {
+  font-weight: 600;
+  font-size: 14px;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.aiLensCreateNewItem .textarea {
+  width: 100%;
+  border: 1.5px solid #0056b3;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+  color: #003a75;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.aiLensCreateNewItem .textarea:focus {
+  border-color: #004494;
+  box-shadow: 0 0 4px rgba(0, 86, 179, 0.25);
+}
+
+.aiLensCreateNewItem .error {
+  color: red;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.aiLensCreateNewItem .btn {
+  background: #0056b3;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 12px !important;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 86, 179, 0.2);
+        margin-left: 0rem;
+}
+
+.aiLensCreateNewItem .btn:hover {
+  background: #004494;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.aiLensCreateNewItem .btn:active {
+  background: #003a85;
+  transform: translateY(0);
+}
+
+.aiLensCreateNewItem .table-container {
+  border: 1px solid #c7dbf2;
+  border-radius: 8px;
+  background: #ffffff;
+  margin-top: 12px;
+  padding: 12px 16px;
+}
+
+.aiLensCreateNewItem .table-container h4 {
+  color: #0056b3;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.aiLensCreateNewItem .table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #004085;
+}
+
+.aiLensCreateNewItem .table th {
+  background: #eaf3ff;
+  color: #0056b3;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-bottom: 1px solid #d2e3f5;
+  text-align: left;
+}
+
+.aiLensCreateNewItem .table td {
+  padding: 5px 8px;
+  border-bottom: 1px solid #edf3ff;
+}
+
+.aiLensCreateNewItem .followup {
+  padding: 12px 16px;
+}
+
+.aiLensCreateNewItem .followup p {
+  color: #0056b3;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.aiLensCreateNewItem .followup button {
+  border: 1px solid #c7dbf2;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-weight: 500;
+  color: #0056b3;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.aiLensCreateNewItem .followup button:first-child {
+  background: #0056b3;
+  color: #fff;
+  border: none;
+}
+
+.aiLensCreateNewItem .followup button:first-child:hover {
+  background: #004494;
+}
+
+.aiLensCreateNewItem .followup button:last-child:hover {
+  background: #eaf3ff;
+}
+
+.aiLensMainResultBoxClass .listItemsText {
+    overflow-y:auto;
+    scrollbar-width:thin;
+}
+.aiLensMainResultBoxClass .listItemsText table tr th{
+    font-size: 14px;
+    text-wrap:nowrap;
+    position:sticky;
+    top:0;
+    padding:4px;
+    color: #0b4a99;
+}
+.aiLensMainResultBoxClass .listItemsText table tr td{
+    font-size:13px;
+    padding:0 6px;
+}
+
+
+/*AI feedback look and feel start*/
+.aiPopup {
+    background: #fff;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.aiPopup h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.feedbackText textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin-top: 14px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.actions button {
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.actions button:first-child {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+}
+
+.actions button:last-child {
+    background: #eee;
+    border: 1px solid #ccc;
+}
+
+
+.aiFeedbackPopupWrapper .ui-dialog-titlebar span{
+    font-size:14px   
+}
+.aiFeedbackPopupWrapper .ui-dialog-content .ai-popup-overlay .aiPopup{
+    padding:0 10px;
+}
+.aiFeedbackPopupWrapper .ui-dialog-content .ai-popup-overlay .aiPopup h3{
+    font-size:22px;
+    color:#0158d2
+}
+.aiFeedbackPopupWrapper .ui-dialog-content .ai-popup-overlay .aiPopup .feedbackReason {
+        text-align: center;
+}
+.aiFeedbackPopupWrapper .ui-dialog-content .ai-popup-overlay .aiPopup .feedbackReason select{
+    padding:8px;
+    border-radius:6px;
+    width:60%;
+}
+.aiFeedbackPopupWrapper .ui-dialog-content .ai-popup-overlay .aiPopup .analytics .mainRating .rating span{
+    line-height: 1;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 2.5rem;
+}
+.endUserMessage{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    flex-wrap: wrap;
+    padding: 2px 12px;
+    margin-top: 8px;
+}
+.endUserMessage .ratingInfo{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+.endUserMessage .ratingInfo span{
+    font-size: 1rem;
+}
+
+.aiFeedbackPopupWrapper .ui-dialog-buttonpane button:last-child{
+    background-color: transparent !important;
+    font-size: 14px !important;
+    background: #fff !important;
+    border: 0 !important;
+    color: #1d2d3e !important;
+    border-radius: 0.5rem !important;
+    padding: 4px 8px !important;
+}
+.aiFeedbackPopupWrapper .ui-dialog-buttonpane button:last-child:hover {
+    box-shadow: 0px 0px 2px 1px #ddd;
+}
+.ratingBarWrapper {
+    margin: 15px 0;
+}
+
+#ratingBar {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#ratingPercent{
+    font-size: 22px;
+}
+
+.ratingValue {
+    margin-top: 8px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+.ai-like-icon,
+.ai-dislike-icon {
+    cursor: pointer;
+    color: #6b7280;
+    transition: all 0.2s ease;
+}
+
+.ai-like-icon:hover,
+.ai-dislike-icon:hover {
+    color: #0a6ed1;
+}
+
+.ai-icon-selected {
+    color: #0a6ed1 !important; /* SAP Fiori blue */
+    transform: scale(1.1);
+}
+/*AI feedback look and feel stop*/
+
+/*AILens Input change and add image start 11-02-2026*/
+.createFunActiveWrapper {
+    background-color: #eff1f2 !important;
+    border-radius: 0.3rem !important;
+    color: #fff !important;
+    font-size: 10px;
+    padding: 3px 5px;
+    display: flex;
+    align-items:center;
+    gap:6px;
+    position: absolute;
+    left: 6px;
+    bottom: 5px;
+    border: 1px solid #dddddd;
+}
+.createFunActiveWrapper button {
+    padding: 0;
+    background-color: #eff1f2 !important;
+    border: 0;
+    font-size: 10px;
+}
+.searchFooterClass {
+    display: flex;
+    align-items: center;
+}
+li.idxpAiLensOpenMoreOption:hover #idxpAiLensMoreOption {
+    display: block !important;
+}
+li.idxpAiLensOpenMoreOption #idxpAiLensMoreOption {
+    border:1px solid #ddd;
+    position:absolute;
+    bottom:0;
+    left:-100px;
+    background:#fff;
+    border-radius:0.75rem;
+    width: 150px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(217, 217, 217);
+    border-image: initial;
+    padding: 8px 2px;
+}
+li.idxpAiLensOpenMoreOption #idxpAiLensMoreOption ul{
+    display:block !important;
+}
+li.idxpAiLensOpenMoreOption #idxpAiLensMoreOption ul li .aiImageAttachedment {
+    background-color:#fff !important;
+}
+li.idxpAiLensOpenMoreOption #idxpAiLensMoreOption ul li:hover .aiImageAttachedment {
+    background-color:#eff1f2 !important;
+}
+.createFunActiveWrapper span {
+    line-height: 0;
+}
+.createFunActiveWrapper span img {
+    width: 8px;
+    filter: hue-rotate(75deg);
+}
+.createFunActiveWrapper button:focus,
+.createFunActiveWrapper button:hover{
+    border:0 !important;
+    box-shadow: none;
+    outline: 0;
+}
+.aiLensMainResultBoxClass .listItemsText table.validationrecordInfo tr th {
+    color: #fff;
+}
+#aiTypedValue {
+  resize: none;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border: 0;
+  scrollbar-width: thin;
+  border-radius: 0.5rem;
+  height: calc(1.5em + .75rem + 4px);
+}
+#aiTypedValue:focus,
+#aiTypedValue:hover{
+    border:0;
+    box-shadow:none;
+    outline:none;
+}
+/*AILens Input change and add image end 11-02-2026*/
+
+
+

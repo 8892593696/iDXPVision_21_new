@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>barcode-scan</title>
+	<defs>
+		<image  width="454" height="454" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcYAAAHGAQMAAADUrLlqAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAHS0+UNLOqAAAAAJ0Uk5TAP9bkSK1AAACRUlEQVR4nO3dXVLCMBDA8awwg0/iDehN4GbgydSDOGNvgD7BDFpL60ebbSTZ6pQy/31hiPsbpbaZIdkk4uZb14jHlQuEnyeuaP38bRqSfp5MDu0ECUCVJ7Ndu+Vu0y1VnrT//PAHVXmyeG635Fm3VHmyfGi3vNx2S5XXQ6437Zb9dbdUeSOThZcRuv1U3lnI2M85dhl73/6lzLNu6T+fWsb2CVrG9kNaxvZ9ShZXASnvJ2To0qqLW8k8C2WHorzQSCQSiUQikUgkEolEIpHIy5KNV1ePaR3Hr75eP0dKj2KKRCLT5Hpjk/t+shoOT5LzbS+5fLDJar6sGoJPkrNdKcs31RB8kiybcplv6yH4JCnv7lFmu3rmKEmWWXcyOdRzMWlyvRFxRQUS5eJpKu7m1aVLuV99T22kSdeYFEEikUgkEolEIpFIJBKJRI5a+gXEcbG/Fr/GNTKKK7WCIDb0CoLY0CsIYiPvIf066djQKwhiQ1fzn7csbLCjhvu85bj+K3Zpv+OHeD7tvYm9B7P3mvae2vQbj4FEIpFIJBL5j3Ik35aRSCQSiUQiL0Paq0uLCiTKY0WrvYrWXrlrrxYu30iynBzqOQBjVbS9EnuIuvEh6uMbIkmObe0BEjm8TAokEolEIpFIJBKJRCKRSOQlyWak7WzdDPtu2j+TH17UY1q/Sfuu4fadyvOsW5aX84QcYi/3ce12b5ff82FeqLxB5LhOhrDLIc7r8J+7POuWKq/HiSZ+/xJ/iorfp8X2fdLjtBjzCTUfqELL7iT9/eEAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="29" y="29"/>
+</svg>

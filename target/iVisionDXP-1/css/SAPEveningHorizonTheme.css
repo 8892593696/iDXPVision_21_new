@@ -1,0 +1,1692 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 Apr, 2025, 10:43:14 AM
+    Author     : N.Munikumar
+*/
+
+.fiorithemeClass.fiorithemeClassDark .dxpHeader, .fiorithemeClass.fiorithemeClassDark .dxpLoginHeader{
+    background: #1d232a !important;
+    border-bottom: 1px solid #1d232a !important;
+}
+.fiorithemeClass.fiorithemeClassDark .homeTabsContentlistwrapper{
+    background: #1d232a;
+    box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.8), inset 0 -0.0625rem 0 0 rgba(255, 255, 255, 0.2);
+}
+.fiorithemeClass.fiorithemeClassDark .dxpLoginHeader .navbar-brand span.logoText,
+.fiorithemeClass.fiorithemeClassDark .rightChevronDown:before,
+.fiorithemeClass.fiorithemeClassDark .fiorisinglecard .submenuText p,
+body.fiorithemeClass.fiorithemeClassDark h4,
+.fiorithemeClass.fiorithemeClassDark .homeTabsContentlistwrapper ul li a,
+.fiorithemeClass.fiorithemeClassDark .pilogFioriBackBtnDiv:before,
+.fiorithemeClass.fiorithemeClassDark .fiorithemeSettingPopOver .innerPopoverContentWrapper .leftulList ul li span.createText,
+.fiorithemeClass.fiorithemeClassDark .fiorithemeSettingPopOver .innerPopoverContentWrapper .showdomainPopeverCards .popOverSubMenuListData .menuTitleRightSide h5,
+.fiorithemeClass.fiorithemeClassDark .listofSettingDiv.userAccountDetails .userDataClass ul li span,
+.fiorithemeClass.fiorithemeClassDark .settingsClassID .ui-dialog-titlebar .ui-dialog-title,
+.fiorithemeClass.fiorithemeClassDark .ui-dialog .ui-dialog-titlebar-close,
+.fiorithemeClass.fiorithemeClassDark .settingsClassID .settingPannelInnerWrapper .listofSettingDiv ul li a,
+.fiorithemeClass.fiorithemeClassDark .settingsClassID .settingPannelInnerWrapper .listofSettingDiv ul li a .mobileTitle,
+.fiorithemeClass.fiorithemeClassDark .changeLanguageClass .modal-body .visionLanguageFormTable tbody tr td.visionLanguageFormData span.visionLanguageFormLabel ,
+.fiorithemeClass.fiorithemeClassDark .updatepasswordClass .changepassword label ,
+.fiorithemeClass.fiorithemeClassDark  .ui-dialog .ui-dialog-title,
+.fiorithemeClass.fiorithemeClassDark .event-Open_feedBack-Dialog .mainFormClass .feedBack-form label,
+.fiorithemeClass.fiorithemeClassDark .event-Open_feedBack-Dialog .chartViewClass .selectChartTypes .selectLabeltext, 
+.fiorithemeClass.fiorithemeClassDark .modal .modal-dialog .modal-content .modal-header h4, 
+.fiorithemeClass.fiorithemeClassDark .modal .modal-dialog .modal-content .modal-header .close span{
+    color: #eaecee !important;
+} 
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form .ui5gridfilter-item label{
+    color: #8396a8 !important;
+} 
+.fiorithemeClass.fiorithemeClassDark .popover.fiorithemeSettingPopOver .popOverheader .popoverTitle .popover-header{
+    color: #eaecee;
+    border:0;
+}
+.fiorithemeClass.fiorithemeClassDark .homeTabsContentlistwrapper ul li.active a{
+    border-bottom: 2px solid #4db1ff;
+    color: #4db1ff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .searchResultCardViewMainSection {
+    background-color: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .sapfioriwrappsubmenu .fioriMenuSingleItem {
+    box-shadow: 0 0 .125rem 0 rgba(255, 255, 255, 0.6), 0 .125rem .5rem 0 rgba(0, 0, 0, 0.2);
+    background: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .sapfioriwrappsubmenu .fioriMenuSingleItem:hover,
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem:hover{
+    box-shadow: 0 0 0 .0625rem rgba(255, 255, 255, 0.35), 0 .625rem 1.875rem 0 rgba(0, 0, 0, 0.6) !important;
+    background: #222b35 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .dxpLoginHeader #collapsibleNavbar .globalSearchBar .headerSearchIcon img {
+    width: 22px;
+    filter: brightness(0) invert(1) !important;
+}
+.fiorithemeClass.fiorithemeClassDark .page-body-content .jqx-splitter {
+    border:0; 
+    height:100% !important;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-splitter-splitbar-horizontal, .fiorithemeClass.fiorithemeClassDark .jqx-splitter-splitbar-vertical {
+    border-color: #1d232a !important;
+}
+.fiorithemeClass.fiorithemeClassDark .dxpSplitterTabsContent .searchResultCardViewMainSection {
+    border-bottom: 0px solid #12171c;
+    height:100%;
+}
+.fiorithemeClass.fiorithemeClassDark:not(.searchResultCardViewMainSection) {
+    scrollbar-color: #647891 #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .dxpSplitterTabsContent {
+    height:100%;
+}
+.fiorithemeClass.fiorithemeClassDark .popover.fiorithemeSettingPopOver {
+    background-color: #1d232a;    
+    box-shadow: 0 0 0 .0625rem rgba(255, 255, 255, 0.35), 0 .625rem 1.875rem 0 rgba(0, 0, 0, 0.6);
+}
+.fiorithemeClass.fiorithemeClassDark .popover.fiorithemeSettingPopOver .popover-body {
+    background-color: #1d232a;
+    margin: 0;
+    padding: 0.0625rem;
+    border: 0;
+    box-shadow: 0px 0 3px 0px rgb(2 17 32 / 42%);
+    border-top: 1px solid #323c48 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .popover.fiorithemeSettingPopOver .popover-body .searchResultCardPopeverViewMainSection,
+.fiorithemeClass.fiorithemeClassDark .dxpTabsMenus {
+    background-color: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .fiorithemeSettingPopOver .innerPopoverContentWrapper .leftulList {
+    background-color: #12171c;
+    border-right: 2px solid #2e3742;
+}
+.fiorithemeClass.fiorithemeClassDark .fiorithemeSettingPopOver .innerPopoverContentWrapper .leftulList ul li {
+    background: #1d232a;
+    border-bottom: 1px solid #2e3742;
+}
+.fiorithemeClass.fiorithemeClassDark .fiorithemeSettingPopOver .firorPopOverSubItmsClass .fioriMenuPopverSingleItem {
+    color: #4db1ff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .bs-popover-auto[x-placement^=bottom]>.arrow::after, .bs-popover-bottom>.arrow::after {
+    border-bottom-color: #696c70;
+}
+.fiorithemeClass.fiorithemeClassDark .fiorithemeSettingPopOver .innerPopoverContentWrapper .leftulList ul li.activePopoverClass {
+    outline: .125rem solid #9ad3ff;
+    outline-offset: calc(-0.125rem - 0.0625rem);
+    border-bottom: 2px solid #9ad3ff !important;
+    background: #1d2d3e !important;
+}
+.fiorithemeClass.fiorithemeClassDark .fiorithemeSettingPopOver .innerPopoverContentWrapper .leftulList ul li:hover{
+    background: #222b35;
+}
+.fiorithemeClass.fiorithemeClassDark .rightPannelSettings {
+    background: #1d232a;
+    border: none;
+    box-shadow: 0 0 0 .0625rem rgba(0, 0, 0, 0.42), 0 .625rem 1.875rem 0 rgba(0, 0, 0, 0.3);
+    border-radius: .5rem;
+}
+.fiorithemeClass.fiorithemeClassDark .listofSettingDiv.userAccountDetails .media {
+    border-bottom: 1px solid #34373b;
+}
+.fiorithemeClass.fiorithemeClassDark .listofSettingDiv.userAccountDetails .userDataClass ul li:last-child {
+    border-top: 1px solid #34373b !important;
+}
+.fiorithemeClass.fiorithemeClassDark .ui-dialog, 
+.fiorithemeClass.fiorithemeClassDark .modal .modal-dialog {
+    box-shadow: 0 0 0 .0625rem rgba(255, 255, 255, 0.35), 0 1.25rem 5rem 0 rgba(0, 0, 0, 0.6) !important;
+}
+.fiorithemeClass.fiorithemeClassDark .ui-dialog .ui-dialog-titlebar, 
+.fiorithemeClass.fiorithemeClassDark .modal .modal-dialog .modal-content .modal-header {
+    background: #1d232a;
+    box-shadow: none;
+    border-bottom: 1px solid #2e3742 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .settingsClassID .settingPannelInnerWrapper .listofSettingDiv ul li {
+    border-bottom: 1px solid #34373c;
+    background: #212830;
+}
+.fiorithemeClass.fiorithemeClassDark .ui-dialog .ui-dialog-buttonpane, 
+.fiorithemeClass.fiorithemeClassDark .modal .modal-dialog .modal-content .modal-footer {
+    background-color: #1d232a;
+    border-top: 1px solid #2e3742;
+    margin-top: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .ui-dialog .ui-dialog-buttonpane button:nth-child(2), 
+.fiorithemeClass.fiorithemeClassDark .modal .modal-dialog .modal-content .modal-footer button:nth-child(2){
+    background-color: transparent !important;
+    color: #eaecee !important;
+    border-radius: 0.5rem !important;
+}
+.fiorithemeClass.fiorithemeClassDark .settingsClassID .fontSizeIcon .dropdown-menu, 
+.fiorithemeClass.fiorithemeClassDark .settingsClassID .fontChangeIcon .dropdown-menu,
+.fiorithemeClass.fiorithemeClassDark .settingsClassID .themeSettingIcon .dropdown-menu{
+    border: 0px solid rgb(255 255 255 / 15%) !important;
+    box-shadow: 0 0 0 .0625rem rgba(255, 255, 255, 0.35), 0 1.25rem 5rem 0 rgba(0, 0, 0, 0.6) !important;
+}
+.fiorithemeClass.fiorithemeClassDark .ui-dialog .ui-dialog-buttonpane button:nth-child(2):hover ,
+.fiorithemeClass.fiorithemeClassDark .modal .modal-dialog .modal-content .modal-footer button:nth-child(2):hover{
+    box-shadow: none;
+    outline: 1px solid #3a4a5a !important;
+}
+.fiorithemeClass.fiorithemeClassDark .ui-dialog .ui-dialog-content{
+    background: #1d232a;
+    color: #eaecee;
+    /*border-radius: 0 0 0.75rem 0.75rem;*/
+}
+.fiorithemeClass.fiorithemeClassDark .ui-dialog #showPdfFormData.ui-dialog-content{
+    color: #000;
+}
+.fiorithemeClass.fiorithemeClassDark .ui-dialog.event-Open_feedBack-Dialog .ui-dialog-content{
+    border-radius:0 0 0.75rem 0.75rem !important;
+}
+
+.fiorithemeClass.fiorithemeClassDark .mainFormClass .chartViewClass img {
+    filter: brightness(0) invert(1) !important;
+}
+
+.fiorithemeClass.fiorithemeClassDark .event-Open_feedBack-Dialog .chartViewClass #chartViewId .js-plotly-plot .plotly .user-select-none svg {
+    background: transparent !important;
+}
+.fiorithemeClass.fiorithemeClassDark .mainFormClass .chartViewClass {
+    border-left: 2px solid #686b6f;
+}
+.fiorithemeClass.fiorithemeClassDark .event-Open_feedBack-Dialog .action-Buttons .submit-action button {
+    background: transparent !important;
+    border: 0;
+    color: #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .event-Open_feedBack-Dialog .action-Buttons .submit-action button:hover {
+    border: 0;
+    box-shadow: none;
+    outline: 1px solid #3a4a5a !important;
+}
+.fiorithemeClass.fiorithemeClassDark .userProfileImgDiv .avatar-upload .avatar-edit input + label:after,
+.fiorithemeClass.fiorithemeClassDark .newEventMainDiv .newEventSpan, 
+.fiorithemeClass.fiorithemeClassDark .scheduledCalendarMainWrapper #month-name, 
+.fiorithemeClass.fiorithemeClassDark .scheduledCalendarMainWrapper #todayDayName, 
+.fiorithemeClass.fiorithemeClassDark .scheduledCalendarMainWrapper .currentdate .prev-button, 
+.fiorithemeClass.fiorithemeClassDark .scheduledCalendarMainWrapper .currentdate .next-button, 
+.fiorithemeClass.fiorithemeClassDark .notificationNewPanel .notificationnNewPanelInner .notificationPanelBody .notificationPanelInnerBody .notificationBanner_dxp .notification_message .notificationSenderTextMsg,
+.fiorithemeClass.fiorithemeClassDark .calendar-content .prev-button i, .fiorithemeClass.fiorithemeClassDark .calendar-content .next-button i {
+    color: #4db1ff;
+}
+.fiorithemeClass.fiorithemeClassDark .newEventMainDiv .newEventName, 
+.fiorithemeClass.fiorithemeClassDark .scheduledCalendarMainWrapper .sidebar-title h5, 
+.fiorithemeClass.fiorithemeClassDark .scheduledCalendarMainWrapper .empty-message, 
+.fiorithemeClass.fiorithemeClassDark .scheduledCalendarMainWrapper .calendar-content .calendar-cells .row .col-1, 
+.fiorithemeClass.fiorithemeClassDark .notificationNewPanel .notificationBanner_dxp .ago_Time, 
+.fiorithemeClass.fiorithemeClassDark .notificationNewPanel .notificationnNewPanelInner .notificationPanelBody .notificationPanelInnerBody .notificationBanner_dxp .notification_message .notificationSenderText, 
+.fiorithemeClass.fiorithemeClassDark .rightPannelSettings .listofSettingDiv ul li a .mobileTitle, 
+.fiorithemeClass.fiorithemeClassDark .rightPannelSettings .listofSettingDiv ul .ThemesIcon .moreThemesShowDiv, 
+.fiorithemeClass.fiorithemeClassDark .rightPannelSettings .listofSettingDiv ul .ThemesIcon .moreThemesHideDiv,
+.fiorithemeClass.fiorithemeClassDark .currentDateDetails span,
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialMainWrapper .visionEnclosureTable td, 
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialMainWrapper .visionEnclosureTable th{
+    color: #eaecee !important;
+}
+
+.fiorithemeClass.fiorithemeClassDark .scheduledCalendarMainWrapper .blue.lighten-3,
+.fiorithemeClass.fiorithemeClassDark .rightPannelSettings .listofSettingDiv ul li.fontChangeIcon.dropdown ul li:hover, 
+.fiorithemeClass.fiorithemeClassDark .rightPannelSettings .listofSettingDiv ul li.fontSizeIcon.dropdown ul li:hover, 
+.fiorithemeClass.fiorithemeClassDark .rightPannelSettings .scheduledCalendarMainWrapper .grayEventMarkClass{
+    background: #4db1ff;
+    background-color: #4db1ff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .rightPannelSettings .pannelTitle,
+.fiorithemeClass.fiorithemeClassDark .notificationNewPanel .notificationnNewPanelInner .NotificationPanelheader{
+    background: #1d232a !important;
+    box-shadow: 0 0 0 .0625rem rgba(255, 255, 255, 0.35), 0 1.25rem 5rem 0 rgba(0, 0, 0, 0.6) !important;
+}
+.fiorithemeClass.fiorithemeClassDark .appendDayWiseDetails ul li,
+.fiorithemeClass.fiorithemeClassDark .rightPannelSettings .pannelTitle span.spanTitle{
+    color:#4db1ff;
+}
+.fiorithemeClass.fiorithemeClassDark .appendDayWiseDetails ul li img{
+    filter: brightness(0) invert(1);
+}
+.fiorithemeClass.fiorithemeClassDark div[aria-describedby="logoutDailog"] .ui-dialog-content {
+    color:#eaecee !important;
+    height:auto !important;
+}
+.fiorithemeClass.fiorithemeClassDark div[aria-describedby="logoutDailog"] .ui-dialog-buttonpane {
+    margin:0;
+}
+.fiorithemeClass.fiorithemeClassDark .mainBookMark .flex-container .active p {
+    background-color: #0070f2;
+    /*border: 1px solid #0070f2;*/
+}
+.fiorithemeClass.fiorithemeClassDark .visionFormTitleName .fioriTopRightcontrolsdivWrapper .fioriFormButtongroup b input[type="button"],
+.fiorithemeClass.fiorithemeClassDark .notificationNewPanel .notificationnNewPanelInner .NotificationPanelheader p{
+    color: #4db1ff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionFormTitleName .fioriTopRightcontrolsdivWrapper .fioriFormButtongroup b:nth-child(1) input {
+    background-color: #0070f2 !important;
+    color: #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .notificationNewPanel .notificationnNewPanelInner .notificationPanelBody,
+.fiorithemeClass.fiorithemeClassDark .notificationNewPanel{
+    background: #12171c;
+    background-color: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .notificationNewPanel {
+    box-shadow: 0 0 0 .0625rem rgb(255 255 255 / 42%), 0rem .625rem 1.5rem 0 rgb(0 0 0 / 60%);
+}
+.fiorithemeClass.fiorithemeClassDark .notificationNewPanel .notificationnNewPanelInner .notificationPanelBody .notificationPanelInnerBody .notificationBanner_dxp {
+    background-color: #1d232a;
+    border:0;
+    box-shadow: 0 0 0 .0625rem rgba(255, 255, 255, 0.35), 0 1.25rem 5rem 0 rgba(0, 0, 0, 0.6) !important;
+}
+.fiorithemeClass.fiorithemeClassDark .rightPannelSettings .listofSettingDiv ul li {
+    border-bottom: 1px solid #33373b;
+    background: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .userProfileImgDiv .avatar-upload .avatar-edit {
+    top: 62px;
+}
+.fiorithemeClass.fiorithemeClassDark .userProfileImgDiv .avatar-upload .avatar-edit input + label {
+    background: transparent;
+    box-shadow: none;
+}
+.fiorithemeClass.fiorithemeClassDark .userProfileImgDiv .avatar-upload .avatar-edit input + label:after{
+    color: #576e81; 
+}
+.fiorithemeClass.fiorithemeClassDark .dxpSplitterTabsContent .fioriSearchComponent {
+    background-color: #12171c !important;
+}
+.fiorithemeClass.fiorithemeClassDark .dxp2FioriTabsWithGridContent,
+.fiorithemeClass.fiorithemeClassDark .visionVisualizationDataSourcesCLass .jqx-widget-content{
+    background-color: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .visionVisualizationDataSourcesCLass .VisualizationSourcesCLass.jqx-widget-content {
+    height: 100% !important;
+}
+.fiorithemeClass.fiorithemeClassDark .dxp2FioriTabsWithGridContent .firstLevelMenuSection .fioriPendingContainer .row .col-12{
+    padding:0;
+    background: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .nav-pills .nav-link.active {
+    border-bottom: 2px solid #4db1ff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .nav-pills .nav-link.active span {
+    color: #4db1ff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .nav-pills .nav-link span{
+    color:#eaecee !important
+}
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .card .card-header {
+    background-color: #1d232a;
+    box-shadow: inset 0 -0.0625rem #2e3742, 0 .125rem .25rem 0 rgba(0, 0, 0, 0.075);
+    border-radius: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .tab-content {
+    background: #1d232a;
+    padding: 8px !important;
+    margin-top:0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .tab-content .ui5gridfilter-container-form{
+    border-radius: 5px 5px 0 0;
+} 
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .innerCardWrapper{
+    padding: 15px 15px 2px;
+}
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem.active {
+    color: #4db1ff;
+    outline: .125rem solid #4db1ff;
+}
+.fiorithemeClass.fiorithemeClassDark .innerCardDetailsitem .titleDescription div:nth-child(1),
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-cell-selected-energyblue{
+    color: #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem.active .count {
+    color: #4db1ff;
+}
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form button.ui5gridgo-btn.adopt-filters-btn {
+    color: #4db1ff;
+}
+.fiorithemeClass.fiorithemeClassDark .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem {
+    box-shadow: 0 0 .125rem 0 rgba(255, 255, 255, 0.6), 0 .125rem .5rem 0 rgba(0, 0, 0, 0.2);
+    background: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .gridareaSection .card,
+.fiorithemeClass.fiorithemeClassDark .gridareaSection .card-header,
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form,
+.fiorithemeClass.fiorithemeClassDark .visionGenericTabContainer .d-flex.align-items-center,
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-cell-sort-alt-energyblue, 
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-cell-filter-alt-energyblue, 
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-cell-pinned-energyblue, 
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-cell-alt-energyblue, 
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-cell-sort-energyblue,
+.fiorithemeClass.fiorithemeClassDark .jqx-grid .jqx-grid-content div>[role="row"]:nth-child(odd),
+.fiorithemeClass.fiorithemeClassDark .jqx-grid .jqx-grid-content div>[role="row"]:nth-child(even),
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-cell-selected-energyblue{
+    background: #1d232a !important
+}
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form {
+    padding: 0 20px 10px;
+    border-bottom: 1px solid #2e3742;
+    border-radius: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .show_detail,
+.fiorithemeClass.fiorithemeClassDark .show_detail:hover{
+    background: #1c2229  url(../images/pdficon.png) no-repeat center !important;
+    background-size: 20px !important;
+}
+.fiorithemeClass.fiorithemeClassDark  input, 
+.fiorithemeClass.fiorithemeClassDark  text-area, 
+.fiorithemeClass.fiorithemeClassDark  select{
+    color: #eaecee;
+    background:#12171c !important;
+    border-radius: 0.25rem !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0 !important;
+    border-bottom:1px solid #eaecee !important;
+    padding:2px;
+}
+.fiorithemeClass.fiorithemeClassDark .changeLanguageClass .modal-body .visionLanguageFormTable tbody tr td.visionLanguageFormData select {
+    color: #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionGenericTabSubmit  select {
+    color: #eaecee;
+    background-color: #161c22 !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+    border-radius: 0.25rem;
+    border-bottom: 1px solid #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form .ui5gridfilter-inputFeildDiv{
+    color: #eaecee;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+    padding-left: 1px;
+    padding-right: 1px;
+    background: #161c22;
+    /*background: 0 100% / 100% 0.0625rem no-repeat linear-gradient(0deg, #a9b4be, #a9b4be) border-box;*/
+    border-bottom: 1px solid #a9b4be;
+}
+/*.fiorithemeClass.fiorithemeClassDark .dxp2FioriTabsWithGridContent {
+    height: auto;
+}*/
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-column-header.jqx-grid-column-header-energyblue.jqx-widget-header.jqx-widget-header-energyblue,
+.fiorithemeClass.fiorithemeClassDark .girdFooterPagerclass{
+    background-color: #212830 !important;
+}
+body.fiorithemeClass.fiorithemeClassDark ul, 
+body.fiorithemeClass.fiorithemeClassDark h1, 
+body.fiorithemeClass.fiorithemeClassDark h2, 
+body.fiorithemeClass.fiorithemeClassDark h3, 
+body.fiorithemeClass.fiorithemeClassDark h4, 
+body.fiorithemeClass.fiorithemeClassDark h5, 
+body.fiorithemeClass.fiorithemeClassDark h6, 
+body.fiorithemeClass.fiorithemeClassDark li,
+body.fiorithemeClass.fiorithemeClassDark code, 
+body.fiorithemeClass.fiorithemeClassDark kbd, 
+body.fiorithemeClass.fiorithemeClassDark pre, 
+body.fiorithemeClass.fiorithemeClassDark samp,
+body.fiorithemeClass.fiorithemeClassDark .ui-widget,
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-content,
+.fiorithemeClass.fiorithemeClassDark .visionTabMenuCharacteristicsFormData .sticky-wrap .sticky-enabled table thead th,
+.fiorithemeClass.fiorithemeClassDark .jqx-tabs-headerWrapper .jqx-item,
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialMainWrapper .attachHeader th{
+    color: #eaecee !important;
+}
+/*.fiorithemeClass.fiorithemeClassDark .gridareaSection .card,
+.fiorithemeClass.fiorithemeClassDark .gridareaSection .card-header{
+    border-radius: 0.5rem !important;
+}*/
+.fiorithemeClass.fiorithemeClassDark .visionGenericTabsOpeartions .d-flex.align-items-center {
+    border-bottom: solid .0625rem #758ea5;
+    padding: 0;
+    background: #212830 !important;
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+.fiorithemeClass.fiorithemeClassDark .visionGenericTabsOpeartions .d-flex.align-items-center .materialBasketClass,
+.fiorithemeClass.fiorithemeClassDark .visionGenericTabsOpeartions .d-flex.align-items-center .fiorirightgridControls{
+    padding: 10px;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-scrollbar-state-normal-energyblue, 
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-bottomright-energyblue, 
+.fiorithemeClass.fiorithemeClassDark .jqx-panel-bottomright-energyblue, 
+.fiorithemeClass.fiorithemeClassDark .jqx-listbox-bottomright-energyblue {
+    background-color: #1d232a;
+    border: 1px solid #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form .ui5gridfilter-inputFeildDiv .ui5gridinputFeildSpan:first-child {
+    width: 89%;
+}
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form .ui5gridfilter-inputFeildDiv .ui5gridinputFeildSpanselect {
+    width: 10%;
+}
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form .ui5gridfilter-item select {
+    padding: 3px 4px;
+    border-radius: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form .ui5gridfilter-inputFeildDiv .ui5gridsearch-icon {
+    height: 88%;
+    display: flex;
+    align-items: center;
+    background: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-fill-state-hover-energyblue{
+    background: transparent !important;
+    color: #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-grid .jqx-grid-content div>[role="row"]:hover{ 
+    background: #222b35 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-content .jqx-grid-header,
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-content div[role="row"]{
+    border-bottom: 1px solid #2e3742 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .cellValuePopup .ui-dialog-buttonpane {
+    margin-top:0
+}
+.fiorithemeClass.fiorithemeClassDark .gridareaSection .gridareaContainer-section .visionGenericTabsOpeartions .d-flex.align-items-center .fiorirightgridControls .visionGenericTabSubmit select,
+.fiorithemeClass.fiorithemeClassDark .visionGenericTabExport select{
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+    border-radius:0.25rem;
+    border-bottom:1px solid #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .se-pre-con {
+    background: url(images/PiLog_Gif.gif) center no-repeat #f8f9f900 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-pager ,
+.fiorithemeClass.fiorithemeClassDark .jqx-background-reset,
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-content{
+    background:#212830 !important;
+    border-color: #758ea5;
+}
+.fiorithemeClass.fiorithemeClassDark .dxpSplitterTabsContent,
+.fiorithemeClass.fiorithemeClassDark .page-body-content #dxpContent,
+.fiorithemeClass.fiorithemeClassDark .dxpclusterFormDataClass{
+    background:#12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .allTabListMainWrapper .visionRegisterGenericForm,
+.fiorithemeClass.fiorithemeClassDark .infoBox .genInfoInnerDataCard,
+.fiorithemeClass.fiorithemeClassDark .visionFormTitleName,
+.fiorithemeClass.fiorithemeClassDark .dxpSplitterTabsContent  .sortGerericDxpFormMianDiv,
+.fiorithemeClass.fiorithemeClassDark .fioriformTabMainDiv,
+.fiorithemeClass.fiorithemeClassDark .allTabListMainWrapper .iconMenuNavPrev, 
+.fiorithemeClass.fiorithemeClassDark .allTabListMainWrapper .iconMenuNavNext,
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialTableTab, 
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialTabsTable,
+.fiorithemeClass.fiorithemeClassDark .visionTabMenuFormData .tg-wrap .tg .sticky-header tr,
+.fiorithemeClass.fiorithemeClassDark .tg-wrap .tg .tg-vro8,
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-content .jqx-tabs-content,
+.fiorithemeClass.fiorithemeClassDark .jqx-fill-state-normal-energyblue, 
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-header-energyblue,
+.fiorithemeClass.fiorithemeClassDark .fioriTimeLinecontainer{
+    background: #1d232a !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionTabMenuFormData .tg-wrap .tg .sticky-header tr,
+.fiorithemeClass.fiorithemeClassDark .tg-wrap .tg .tg-vro8{
+    border: 1px solid #2e3742 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .infoBox .cardTitle {
+    font-size: 14px;
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .visionTabMenuCharacteristicsFormData .sticky-wrap .sticky-enabled table tbody td {
+    color: #eaecee;
+    background: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .tg-wrap .tg td input {
+    border-radius: 0.25rem !important;
+    background: 0 100% / 100% 0.0625rem no-repeat linear-gradient(0deg, #a9b4be, #a9b4be) border-box;
+    background-color: #161c22 !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0 !important;
+    padding: 4px;
+    border-bottom: 1px solid #fff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .idxpUI5InputIconMergeClass {
+    background: #12171c;
+    border-radius: 0.25rem !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0 !important;
+    border-bottom: 1px solid #eaecee !important;
+    padding: 2px 1px;
+}
+.fiorithemeClass.fiorithemeClassDark .idxpUI5InputIconMergeClass .idxpUI5IconsClass img,
+.fiorithemeClass.fiorithemeClassDark .visionFormCharactristicsImg img,
+.fiorithemeClass.fiorithemeClassDark .visionFormCharactristicsImgUOM img,
+.fiorithemeClass.fiorithemeClassDark .visionGridDataAlignImage img,
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialTableTab .tabsFieldsTable .visionFormDataInputImage,
+.fiorithemeClass.fiorithemeClassDark img[title="Clear"],
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form .ui5gridfilter-inputFeildDiv .ui5gridsearch-icon img, 
+.fiorithemeClass.fiorithemeClassDark .visionGenericTabsOpeartions .visionGenericTabSubmit img[title="Refresh"]{
+    filter: brightness(0) invert(1);
+}
+.fiorithemeClass.fiorithemeClassDark .fioriformTabUlListclass {
+    border-bottom: 0px;
+}
+.fiorithemeClass.fiorithemeClassDark .fioriformTabMainDiv {
+    box-shadow: inset 0 -0.0625rem #2e3742, 0 .125rem .25rem 0 rgba(0, 0, 0, 0.075);
+    margin: 0;
+    padding: 0 8px;
+    width:100%;
+}
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialTableTab .jqx-tabs, 
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialTableTab .jqx-grid,
+.fiorithemeClass.fiorithemeClassDark .jqx-tabs-headerWrapper{
+    background: #1d232a !important;
+    border-radius: 0;
+    border: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-tabs-headerWrapper {
+    box-shadow: inset 0 -0.0625rem #2e3742, 0 .125rem .25rem 0 rgba(0, 0, 0, 0.075);
+}
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialTableTab .jqx-tabs, 
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialTableTab .jqx-grid {
+    border:0;
+    margin:0;
+    width:100% !important;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-listbox-container .jqx-popup-show-energyblue {
+    background: #212830;
+    border: 1px solid #dddddd !important;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-listbox-container .jqx-popup-show-energyblue .jqx-listitem-state-selected{
+    background: #161c22;
+    border: 1px solid #ccc !important;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-header .jqx-dropdownlist .jqx-dropdownlist-content{
+    color:#eaecee !Important;
+}
+body.fiorithemeClass.fiorithemeClassDark .jqx-menu-ul li.jqx-item {
+    color:#1d232a !important;
+}
+body.fiorithemeClass.fiorithemeClassDark .jqx-grid-pager-input {
+    border:1px solid #cacacb !important; 
+    border-radius:3px;
+}
+/*.fiorithemeClass.fiorithemeClassDark .jqx-checkbox-check-checked {
+    background: #eaecee url(images/check_black.png) center center no-repeat !important;
+}*/
+.fiorithemeClass.fiorithemeClassDark .idxpUI5InputIconMergeClass:has(> input[type="checkbox"]) {
+    background: transparent !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialTabsTable th sup {
+    color: #f00 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionRegisterMaterialFormTable th textarea, 
+.fiorithemeClass.fiorithemeClassDark .responsiveTable th textarea {
+    background: #161c22 !important;
+    color: #eaecee;
+}
+
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-header-energyblue input[type="button"] {
+    background: transparent !important;
+    box-shadow: none;
+    line-height: 1;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-header-energyblue input[type="button"]:hover {
+    outline:.0625rem solid #3a4a5a;
+}
+.fiorithemeClass.fiorithemeClassDark .visionSearchDDDWDialog center input:first-child[type="button"], 
+.fiorithemeClass.fiorithemeClassDark .visionSearchDDDWDialog center input:first-child[type="button"]:hover {
+    background-color: #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionSearchDDDWDialog center {
+    padding:1px;
+}
+.fiorithemeClass.fiorithemeClassDark .searchMainWrap .has-search input.form-control ,
+.fiorithemeClass.fiorithemeClassDark .searchMainWrap .replacedSearchButton,
+.fiorithemeClass.fiorithemeClassDark .searchMainWrap .backbutton,
+.fiorithemeClass.fiorithemeClassDark .searchMainWrap .selectDropDown,
+.fiorithemeClass.fiorithemeClassDark .searchMainWrap .selectDropDown #selectFilter{
+    background-color: #161c22 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .searchMainWrap .selectDropDown {
+    border-radius: 20px;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-listbox-container .jqx-listbox {
+    background: #161c22;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-listbox-container .jqx-scrollbar,
+.fiorithemeClass.fiorithemeClassDark .jqx-listbox-container .jqx-listbox-bottomright{
+    background: #161c22;
+    border: 1px solid #35383d;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-listbox-container .jqx-listitem-element .jqx-fill-state-hover {
+    background: #35383d; 
+    border:0
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-listbox-container .jqx-listitem-element .jqx-fill-state-pressed {
+    background: #35383d; 
+}
+.fiorithemeClass.fiorithemeClassDark input::placeholder {
+    color:#eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .fioriManageButtongroup button  {
+    background-color: #161c22 !important;
+    border: none !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    color: #eaecee !important;
+    border-bottom: 2px solid #a9b4be !important;
+    padding: 3px 10px;
+}
+.fiorithemeClass.fiorithemeClassDark .fioriCoreBtnGroup .fioriManageButtongroup .fioriManageBtnInnerContainer {
+    background-color: #161c22 !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+}
+.fiorithemeClass.fiorithemeClassDark .fioriCoreBtnGroup .fioriManageButtongroup .fioriManageBtnInnerContainer .fioriManageBtnList:hover {
+    background-color: #232a32 !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border-radius: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .dxpDecomposeTreeExportDiv .settingsopenbtn{
+    background-color: #161c22;
+    border: none;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border-bottom: 2px solid #fff;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .popupSettingsSidePanel .card {
+    background: #1c2229;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .popupSettingsSidePanel .card  .card-header{
+    background: #161c22;
+    color:#eaecee !important;
+    text-align:left;
+    width: 167px;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .popupSettingsSidePanel .card  .card-header a{
+    color:#eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .popupSettingsSidePanel .card .card-body .dropdown-content .colorselectMainForm .colorselectDiv .innerColorSelect,
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .popupSettingsSidePanel .card .card-body{
+    border:1px solid #404750;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .popupSettingsSidePanel .card .card-body .dropdown-content .colorselectMainForm .colorselectDiv .innerColorSelect .colorLevelSelect input{
+    border:1px solid #404750;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .popupSettingsSidePanel .card .card-body .dropdown-content .colorselectMainForm .applyBtn {
+    text-align:right;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .popupSettingsSidePanel .card .card-body .dropdown-content .colorselectMainForm .applyBtn button{
+    background:#007bff !important;
+    border:0;
+    color:#eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .popupSettingsSidePanel .card .card-body .dropdown-content .colorselectMainForm .applyBtn button:hover{
+    background:#007bff !important;
+    border: 0 !important;
+    color:#eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .mainFlexExport .typeExport {
+    border: 1px solid #404750;
+    background-color: #161c22;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .mainFlexExport .typeExport p,
+.fiorithemeClass.fiorithemeClassDark .sidebarContentWrapper .dataprofilesideMainMenu .dataprofilesidesubMenu span i{
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark  .popPupSettingPanelCloseDiv {
+    position: absolute;
+    top: -8px;
+    right: 10px;
+}
+.fiorithemeClass.fiorithemeClassDark .decompositionBoxTreeSection .popPupSettingPanelCloseDiv .closebtn {
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-cell-filter {
+    background-color: #212830;
+}
+.fiorithemeClass.fiorithemeClassDark .fioriSearchComponent .searchDiv .dxpAdavanceSearchClass .floatingdxpAdavanceSearchOptions,
+.fiorithemeClass.fiorithemeClassDark .visionMasterDetailPanelTop .jqx-tabs .jqx-tabs-headerWrapper {
+    background: #12171c !important;
+}
+.fiorithemeClass.fiorithemeClassDark .fioriSearchComponent .searchbarDivClass .searchDiv input {
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .fioriSearchComponent .smartsearchinnerclass {
+    border: 1px solid #8a8d91;
+    background: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .fioriSearchComponent .ac-items {
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .searchtempleteClass .searchDiv .clear-icon i {
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .searchDiv .clear-icon {
+    background: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .pannelAIwrapper {
+    background: #1d232a;
+    box-shadow: 0 0 .125rem 0 rgba(255, 255, 255, 2.6), 0 .125rem .5rem 0 rgba(0, 0, 0, 5.2);
+    background: #1d232a;
+    border: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .aiLensMainResultBoxClass {
+    box-shadow: 0 0 .125rem 0 rgba(255, 255, 255, 2.6), 0 .125rem .5rem 0 rgba(0, 0, 0, 5.2);
+    background: #1d232a;
+    border: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .closeAibutton {
+    background: #12171c;
+    border-bottom: 1px solid #525559;
+}
+.fiorithemeClass.fiorithemeClassDark .overlay-content .introGuiderAi p {
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .aiButtongroup button:nth-child(1) .aitabTitle{
+    color: #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .aiLensMainResultBoxClass .listItemsText span, 
+.fiorithemeClass.fiorithemeClassDark .listItemsViews li .textContent, 
+.fiorithemeClass.fiorithemeClassDark .listItemsViews li {
+    color: #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .aibottomMessageContainer .userAIInputBottomWidget,
+.fiorithemeClass.fiorithemeClassDark .aibottomMessageContainer .userAIInputBottomWidget .userAIInputText input{
+    background: #12171c !important;
+    border-radius: 8px;
+}
+.fiorithemeClass.fiorithemeClassDark .aiLensMainResultBoxClass::before {
+    background-color: transparent;
+}
+.fiorithemeClass.fiorithemeClassDark .aibottomMessageContainer .userAIInputBottomWidget {
+    border: 1px solid #525559;
+}
+.fiorithemeClass.fiorithemeClassDark .aibottomMessageContainer .stopresponding .btn {
+    text-wrap: nowrap;
+    background: #12171c !important;
+    border: 1px solid #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .aibottomMessageContainer .stopresponding .btn .stopIcon i{
+    color: #0070f2;
+}
+.fiorithemeClass.fiorithemeClassDark .aiLensMainResultBoxClass .listItemsText .listItemsViews li{
+    border-bottom:0;
+}
+.fiorithemeClass.fiorithemeClassDark .aiButtongroup .btn.active {
+    background-image: linear-gradient(to right, #1d232a, #50657a);
+    border: 1px solid #0070f2;
+    color: #0070f2;
+}
+.fiorithemeClass.fiorithemeClassDark .aiButtongroup button:first-child {
+    background-color: #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .aiButtongroup button ,
+.fiorithemeClass.fiorithemeClassDark .aiButtongroup button .aitabTitle{
+    color: #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .aibottomMessageContainer .newChatDivs,
+.fiorithemeClass.fiorithemeClassDark .aiChatgptResponseContainer .aiAppendSenderDataClass.userSelectedOption {
+    background: #0070f2;
+}
+.fiorithemeClass.fiorithemeClassDark .personalize_tbl thead th {
+    background: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .personalize_tbl td {
+    border: 1px solid #212830;
+    background: #212830;
+}
+.fiorithemeClass.fiorithemeClassDark .personalize_tbl {
+    border: solid #65686b 1px;
+}
+.fiorithemeClass.fiorithemeClassDark .dialogGridPersonlizationTable .persHeight {
+    background-color: #0070f2 !important;
+    border: 0;
+    line-height: 21px;
+}
+.fiorithemeClass.fiorithemeClassDark .dialogGridPersonlizationTable .savedPersTextSelect .savedpersddw ,
+.dialogGridPersonlizationTable .savedrowHeightDiv input[type="number"],
+.fiorithemeClass.fiorithemeClassDark .dialogGridPersonlizationTable .personalize .pers_content .visionSearchPersonalise .visionPersonaliseSticky .personalize_tbl tr td input{
+    background: 0 100% / 100% 0.0625rem no-repeat linear-gradient(0deg, #a9b4be, #a9b4be) border-box;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+    border-radius:0.25rem;;
+    border-bottom: 1px solid #a9b4be !important;
+    padding:3px;
+}
+.fiorithemeClass.fiorithemeClassDark .materialBasketClass,
+.fiorithemeClass.fiorithemeClassDark .fioriformTabUlListclass li.fioriHighlightTab,
+.fiorithemeClass.fiorithemeClassDark .jqx-tabs-headerWrapper .jqx-item.jqx-tabs-title-selected-top,
+.fiorithemeClass.fiorithemeClassDark .jqx-tabs-headerWrapper .jqx-item.jqx-tabs-title-selected-top .jqx-tabs-titleContentWrapper span{
+    border-bottom: 2px solid #4db1ff !important;
+    color: #4db1ff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .fioriformTabUlListclass > li.fioriHighlightTab span,
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form button.ui5gridgo-btn.import-btn,
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form button.ui5gridgo-btn.reset-btn{
+    color: #4db1ff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .ui-datepicker {
+    background:#12171c;
+    box-shadow: 0 0 .125rem 0 rgba(255, 255, 255, 2.6), 0 .125rem .5rem 0 rgba(0, 0, 0, 5.2);
+}
+.fiorithemeClass.fiorithemeClassDark .ui-datepicker .ui-datepicker-calendar .ui-state-default {
+    background: #12171c !important;
+    color: #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .ui-datepicker .ui-datepicker-calendar .ui-state-default.ui-state-active {
+    border: .0625rem solid #0070f2;
+    color: #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark  .ui-datepicker .ui-datepicker-calendar .ui-state-default.ui-state-active:after {
+    border: 0.125rem solid #0070f2;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-grid .jqx-widget-header .visionSearchExportDiv select {
+    background: 0 100% / 100% 0.0625rem no-repeat linear-gradient(0deg, #a9b4be, #a9b4be) border-box;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+    border-radius: 4px;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-widget .jqx-grid-column-menubutton, 
+.fiorithemeClass.fiorithemeClassDark .jqx-widget .jqx-grid-column-sortascbutton, 
+.fiorithemeClass.fiorithemeClassDark .jqx-widget .jqx-grid-column-sortdescbutton, 
+.fiorithemeClass.fiorithemeClassDark .jqx-widget .jqx-grid-column-filterbutton {
+    background-color: #212830 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .ui-dialog .ui-dialog-buttonpane button:nth-child(1), 
+.fiorithemeClass.fiorithemeClassDark .modal .modal-dialog .modal-content .modal-footer button:nth-child(1) {
+    background: #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark #importfiltergridcriteria .visionImportErrorMsg {
+    color: #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionChangePasswordButton, 
+.fiorithemeClass.fiorithemeClassDark .visionChangePasswordButton:hover, 
+.fiorithemeClass.fiorithemeClassDark .visionLoginFieldButton, 
+.fiorithemeClass.fiorithemeClassDark .dialogno, 
+.fiorithemeClass.fiorithemeClassDark .dialogno:hover, 
+.fiorithemeClass.fiorithemeClassDark .visionMasterDetailGroupImport, 
+.fiorithemeClass.fiorithemeClassDark .visionMasterDetailGroupImport:hover, 
+.fiorithemeClass.fiorithemeClassDark .visionSRSRegister, 
+.fiorithemeClass.fiorithemeClassDark .visionSRSRegister:hover {
+    border: 1px solid #0070f2;
+}
+.fiorithemeClass.fiorithemeClassDark  #showPdfFormData.ui-dialog-content {
+    background: #fff;
+}
+/*.fiorithemeClass.fiorithemeClassDark #showPdfFormData.ui-dialog-content .pdfDataSheetExport div{
+    background: #212830 !important;
+}*/
+/*.fiorithemeClass.fiorithemeClassDark #showPdfFormData.ui-dialog-content .pdfDataSheetExport div[style="width: 30%;padding:2px;float:left"] span[style="width:100%;padding:2px;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;font-size:13px;color:#333;line-height:23px;"],
+body.fiorithemeClass.fiorithemeClassDark #showPdfFormData.ui-dialog-content .pdfDataSheetExport span{
+    color: #333 !important;
+}*/
+.fiorithemeClass.fiorithemeClassDark #showPdfFormData.ui-dialog-content .pdfDataSheetExport div#BasicInformation,
+.fiorithemeClass.fiorithemeClassDark .validationTitle.text-center{
+    background-color: #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark  .validationList ul li:before {
+    color: #0070f2;
+}
+.fiorithemeClass.fiorithemeClassDark .aiLensMainResultBoxClass .listItemsText label span {
+    color:#eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .aiLensReceiverImgClass .aiLensMainResultBoxClass .listItemsText table tr td{
+    color:#eaecee !important;
+    font-weight:200;
+    font-size:14px;
+}
+.fiorithemeClass.fiorithemeClassDark .aiLensReceiverImgClass .aiLensMainResultBoxClass .listItemsText table tr th{
+    color:#eaecee !important;
+    font-size:14px
+}
+.fiorithemeClass.fiorithemeClassDark .aiLensReceiverImgClass .aiLensMainResultBoxClass .listItemsText .validationList ul li:not(:last-child) {
+    border-bottom: 1px solid #525559;
+}
+.fiorithemeClass.fiorithemeClassDark .aIHistoryContainerClass .aIHistorycategoryClass .aIHistoryCategory.active {
+    background-color: #11161a;
+    color: #007bff;
+    border-bottom: 1px solid #686b6f;
+}
+.fiorithemeClass.fiorithemeClassDark .aIHistoryContainerClass .aIHistorycategoryClass {
+    border-right: 1px solid #686b6f;
+}
+.fiorithemeClass.fiorithemeClassDark .aIHistoryContainerClass .aISearchHistorycustomRangeClass input[type=date]::-webkit-calendar-picker-indicator {
+    filter: invert(100%) brightness(95%) ; 
+    cursor: pointer;
+}
+.fiorithemeClass.fiorithemeClassDark .aipanelRightIconsDiv ul li img,
+.fiorithemeClass.fiorithemeClassDark .timelineRightMainWrapper .titleAndFilter div img[alt="filterImg"],
+.fiorithemeClass.fiorithemeClassDark #Fields .imageSpanCLass img,
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeChartTableClass img{
+    filter: brightness(0) invert(1);
+}
+.fiorithemeClass.fiorithemeClassDark .closeAibutton a {
+    color:#fff;
+    border:1px solid #fff
+}
+.fiorithemeClass.fiorithemeClassDark .chart-container,
+.fiorithemeClass.fiorithemeClassDark .timelineDataMainWrapper .timelineDataInnerWrapper li.timelineList .timelineRightData,
+.fiorithemeClass.fiorithemeClassDark .iconIndecation img{
+    background-color: #161c22;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .iconIndecation::after {
+    background-color: #0070f2;
+}
+.fiorithemeClass.fiorithemeClassDark .showDetailsPopupWrapper table thead th {
+    background: #161c22;
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .showDetailsPopupWrapper table tr td {
+    color:#fff
+}
+.fiorithemeClass.fiorithemeClassDark .visionEnclosureTable .visionFileUpload:hover {
+    background-color: transparent !important;
+}
+.fiorithemeClass.fiorithemeClassDark .timelineDataMainWrapper .timelineDataInnerWrapper li.timelineList .timelineRightData::before {
+    border-right: 14px solid #161c22;
+}
+.fiorithemeClass.fiorithemeClassDark .visionDialogAlignCommon .ui-dialog-buttonpane .ui-dialog-buttonset button, 
+.fiorithemeClass.fiorithemeClassDark .visionDialogAlignCommon .ui-dialog-buttonpane .ui-dialog-buttonset button:hover {
+    padding: 4px 10px !important; 
+}
+
+.fiorithemeClass.fiorithemeClassDark .jqx-checkbox-check-checked {
+    background: transparent url(./../images/evening_check_icon.png) center center no-repeat;
+    background-size: 11px;
+    border-radius: 4px;
+}
+.fiorithemeClass.fiorithemeClassDark .formDxpDuplicates {
+    background-color: #1d232a;
+    box-shadow: 0 0 2px .0625rem rgba(169, 180, 190, 0.5);
+    border: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .formDxpDuplicates .form-tab thead th {
+    border-bottom:1px solid #636b74 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .formDxpDuplicates table tr th {
+    background-color: #161c22;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-cell input {
+    border-top: 0px solid #ddd;
+    border-left: 0px solid #ddd;
+    border-right: 0px solid #ddd;
+    border-bottom: 0px solid #ddd;
+    background: #1d232a !important;
+}
+.fiorithemeClass.fiorithemeClassDark .timeLineDivcontent .svg-container text {
+    fill: #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .dxpclusterFormDataClass #clusterSplitter .visionMasterDetailPanelTop .jqx-tabs, 
+.fiorithemeClass.fiorithemeClassDark .dxpclusterFormDataClass #clusterSplitter .visionMasterDetailPanelBottom .jqx-tabs {
+    border: 1px solid #72767a;
+    background: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .dxpclusterFormDataClass #clusterSplitter .visionMasterDetailPanelTop .jqx-tabs-headerWrapper .jqx-item.jqx-tabs-title-selected-top .jqx-tabs-titleContentWrapper span, 
+.fiorithemeClass.fiorithemeClassDark .dxpclusterFormDataClass #clusterSplitter .visionMasterDetailPanelBottom .jqx-tabs-headerWrapper .jqx-item.jqx-tabs-title-selected-top .jqx-tabs-titleContentWrapper span {
+    border:0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .gridareaSection .container-fluid .row .col-12 {
+    padding:0;
+}
+.fiorithemeClass.fiorithemeClassDark .gridareaSection .card-body {
+    padding: 0 15px;
+    background: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .gridareaSection .card-body .dynamicGridID{
+    border-radius: 0 0 0.25rem 0.25rem; 
+}
+.fiorithemeClass.fiorithemeClassDark .gridareaSection .card-header {
+    padding: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .visionGenericTabContainer {
+    background:#12171c;
+    padding:15px 15px 0;
+}
+.fiorithemeClass.fiorithemeClassDark .gridareaContainer-section #dxpFioriGridContent {
+    padding-top: 0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .materialBasketClass {
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-fill-state-normal-energyblue, 
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-header-energyblue {
+    border-color: #2e3742;
+}
+.fiorithemeClass.fiorithemeClassDark .pvtAxisContainer, 
+.fiorithemeClass.fiorithemeClassDark .pvtVals {
+    border: 1px solid #686b6f !important;
+    background: #1f262d !important;
+}
+.fiorithemeClass.fiorithemeClassDark .pvtAxisContainer li span {
+    background: #1f262d !important;
+    color: #4db1ff !important;
+    border: 1px solid #686b6f !important;
+}
+.fiorithemeClass.fiorithemeClassDark .pvtAxisContainer li span span{
+    border: 0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .pvtFilterBox {
+    border: 1px solid #686b6f !important;
+    background-color: #212830 !important;
+    box-shadow: 0 0 8px #2e2e2e;
+    border-radius: 0.5rem;
+}
+.fiorithemeClass.fiorithemeClassDark .pvtFilterBox p button {
+    background:#007bff;
+    color:#fff;
+    border:0;
+    padding:4px 8px;
+    border-radius:0.25rem;
+    margin:4px 4px 0 4px;
+}
+.fiorithemeClass.fiorithemeClassDark table.pvtTable tbody tr td {
+    color: #fff;
+    background-color: #212830 !important;
+    border: 1px solid #686b6f !important;
+}
+.fiorithemeClass.fiorithemeClassDark table.pvtTable tbody tr th {
+    background-color: #212830 !important;
+    border: 1px solid #686b6f !important;
+    color: #fff;
+}
+.fiorithemeClass.fiorithemeClassDark .visionMasterDetailPanelTop .jqx-tabs .jqx-tabs-headerWrapper .jqx-tabs-arrow-background {
+    background-color: #12171c !important;
+}
+.fiorithemeClass.fiorithemeClassDark .modal .modal-dialog .modal-content .modal-body {
+    background-color: #1d232a;
+    color:#eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark #modalDailogDiv .opacity-animate3 .batchSelectColumn .batchSelectColumntableView input {
+    background-color: #161c22 !important;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-pager, 
+.fiorithemeClass.fiorithemeClassDark .jqx-background-reset, 
+.fiorithemeClass.fiorithemeClassDark .jqx-grid-content {
+    background-color: #212830 !important
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-content{
+    background: #1c2229;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-content.PilogresearchSearch{
+    background: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-splitter.jqx-widget-content {
+    background: #12171c !important;
+}
+body.fiorithemeClass.fiorithemeClassDark span.jqx-listitem-state-selected {
+    background:#12171c !important;
+    border:1px solid #2e3742
+}
+.fiorithemeClass.fiorithemeClassDark .pvtUiCell .pvtRenderer ,
+.fiorithemeClass.fiorithemeClassDark .pvtUiCell .pvtAggregator{
+    background:#12171c !important;
+    border-radius: 0.25rem !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+    border-bottom:1px solid #686b6f !important;
+    padding:2px;
+}
+.fiorithemeClass.fiorithemeClassDark .dxpSplitterTabsContent {
+    padding-top:0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .aiLensResultDataClass {
+    color: #007bff;
+}
+.fiorithemeClass.fiorithemeClassDark .allTabListMainWrapper .visionRegisterGenericForm .idxpUI5InputIconMergeClass.idxpUI5InputIconMergeDatePicker {
+    background:#1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-calendar-container .jqx-calendar{
+    border: 1px solid #72767a !important
+        padding: 4px;
+    padding-bottom: 0;
+    border-radius: 0.25rem;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-calendar-container .jqx-calendar-cell-today {
+    color: #eaecee;
+    background-color: #72767a;
+    border: 1px solid #0070f2;
+    margin: 0 0 0 0;
+    cursor: pointer;
+}
+.fiorithemeClass.fiorithemeClassDark #analysisDialog .testbox .colums .item label {
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark table.pvtTable thead tr th {
+    background-color: #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionFilterGrid th {
+    background: #161c22;
+    color: #eaecee;
+    border-top: 0;
+}
+.fiorithemeClass.fiorithemeClassDark input[type="button"] {
+    box-shadow: none;
+    border: 0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .paramSearchbtn input[type="button"] {
+    border:0 !important;
+    background-color:transparent !important;
+    border-radius: 0.5rem !important;
+    box-shadow: none;
+}
+.fiorithemeClass.fiorithemeClassDark .paramSearchbtn input[type="button"]:hover {
+    border:0 !important;
+    border-radius: 0.5rem !important;
+}
+.fiorithemeClass.fiorithemeClassDark .paramSearchbtn input[type="button"]:nth-child(1){
+    background-color: #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .paramSearchbtn input[value="Search"]{
+    background-image: url(../images/iDXPUI5Search.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 18px !important;
+    background-position: 4px !important;
+}
+.fiorithemeClass.fiorithemeClassDark .paramSearchbtn input[value="Reset"]{
+    background-image: url(../images/iDXPUI5Reset.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 18px !important;
+    background-position: 4px !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionGenericTabsOpeartions .visionGenericTabSubmit input[value="Process"] {
+    background: url(./../images/generate_description_icon2_white.png) 5px center no-repeat rgb(0, 123, 255) !important;
+}
+
+.fiorithemeClass.fiorithemeClassDark  .visionFlterGridColumn .jqx-widget-content input {
+    padding: 4px !important;
+    background: #12171c !important;
+    border-radius: 0.25rem 0 0 0.25rem!important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+    border-bottom:1px solid #686b6f !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+}
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form .ui5gridfilter-item input, 
+.fiorithemeClass.fiorithemeClassDark .ui5gridfilter-container-form .ui5gridfilter-item select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionFlterGridColumn .jqx-combobox-arrow-normal{
+    background:#12171c !important;
+    border:0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-widget-content.visionFlterGridColumn,
+.fiorithemeClass.fiorithemeClassDark  .formDxpDuplicates table{
+    border:0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionFilterGrid th,
+.fiorithemeClass.fiorithemeClassDark .visionFilterGrid {
+    border: 1px solid #65676b !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionFilterGrid td{
+    border: 1px solid #65676b !important;
+    border-left: 0px !important;
+    border-bottom: 0px !important;
+    border-top: 0px !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionSearchImportDialog select,
+.fiorithemeClass.fiorithemeClassDark .visionSearchImportDialog input {
+    border:1px solid #6f7275;
+}
+.fiorithemeClass.fiorithemeClassDark .allTabListMainWrapper .visionRegisterGenericForm table tr td input ,
+.fiorithemeClass.fiorithemeClassDark .sortGerericDxpFormMianDiv .sortGerericDxpFormParentDiv input,
+.fiorithemeClass.fiorithemeClassDark .jqx-grid .jqx-clear .jqx-grid-cell input,
+.fiorithemeClass.fiorithemeClassDark .idxpUI5InputIconMergeClass input,
+.fiorithemeClass.fiorithemeClassDark .idxpUI5InputIconMergeClass .idxpUI5InputIconMergeClass,
+.fiorithemeClass.fiorithemeClassDark .floatingfilterDownArrowIcon .dxpAdavanceSearchClass select,
+.fiorithemeClass.fiorithemeClassDark .idxpUI5InputIconMergeClass textarea,
+.fiorithemeClass.fiorithemeClassDark .idxpUI5InputIconMergeClass select,
+.fiorithemeClass.fiorithemeClassDark .idxpUI5InputIconMergeClass:has(> input[type="checkbox"]){
+    box-shadow:none !important;
+    border:0 !Important;
+}
+.fiorithemeClass.fiorithemeClassDark .sortGerericDxpFormMianDiv .sortGerericDxpFormParentDiv .idxpUI5InputIconMergeClass {
+    background:#12171c
+}
+.fiorithemeClass.fiorithemeClassDark .sortGerericDxpFormMianDiv .sortGerericDxpFormParentDiv{
+    background-color: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .visionFormVMDuplicateHeader {
+    border: 0;
+    border-bottom: 1px solid #616365;
+    background: #11161b;
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .visionFormVMDuplicateMain .visionFormVMDuplicateMainInner .visionFormVMDuplicateTable tr td{
+    color:#eaecee
+}
+.fiorithemeClass.fiorithemeClassDark .visionSearchImportmain .visionSearchImportButton input[value="Upload"] {
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+    border-bottom:1px solid #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .dxphmlTree .treemenu li button {
+    background-color: #1d232a !important;
+    color: #eaecee;
+    font-weight: 600;
+    border:0 !important;
+    border-radius: 0.25rem;
+}
+.fiorithemeClass.fiorithemeClassDark .dxphmlTree .treemenu li button.active,
+.fiorithemeClass.fiorithemeClassDark .sidebarContentWrapper .dataprofilesideMainMenu li .dataProfileMenuItem i{
+    color: #007bff;
+}
+.fiorithemeClass.fiorithemeClassDark .dxphtmlTreeDescription {
+    background-color: #3d4145;
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .dxphmlTree {
+    background-color: #1c2229;
+}
+.fiorithemeClass.fiorithemeClassDark .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions,
+.fiorithemeClass.fiorithemeClassDark .searchMainWrap .has-search input.form-control{
+    background:#161c22 !important;
+    border:0 !important;
+    box-shadow:none;
+    border-left:1px solid #6c7277 !important;
+    border-right:1px solid #eaecee !important;
+    border-radius:0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-calendar-month-container.jqx-widget-content-energyblue{
+    border:1px solid #fff !Important;
+    border-radius:0.25rem !important
+}
+.fiorithemeClass.fiorithemeClassDark .dxphtmlTreeSearchResults .TreesearchButton .dxpTreesearchbutton {
+    border:0 !important;
+    box-shadow:none;
+    background: #161c22 url(./../images/iDXPUI5Search.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 18px !important;
+    background-position: 6px !important;
+    color: #eaecee;
+    border-radius: 0.25rem !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0 !important;
+    border-bottom: 1px solid #eaecee !important;
+    height:32px
+}
+.fiorithemeClass.fiorithemeClassDark .visionSearchImport {
+    background-image: url(./../images/export_as_xls_icon_blue.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 16px !important;
+    background-position: 4px !important;
+}
+.fiorithemeClass.fiorithemeClassDark .saveSrchButton {
+    background-image: url(./../images/iDXPUI5SaveSearch.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 16px !important;
+    background-position: 4px !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionVisualizationDataSourcesCLass {
+    height: calc(100vh - 82px) !important;
+    padding: 4px;
+}
+.fiorithemeClass.fiorithemeClassDark  .dBConnectionClass{
+    margin:0;
+}
+.fiorithemeClass.fiorithemeClassDark  .dBConnectionClass ul {
+    margin:0;
+    border-bottom:1px solid #6c7277;
+}
+.fiorithemeClass.fiorithemeClassDark .leftFileUploads {
+    border-right:1px solid #6c7277;
+    padding: 5px 0;
+    background-color: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark #visionVisualizationDmFileUpload {
+    height: auto;
+    position: relative;
+}
+.fiorithemeClass.fiorithemeClassDark .imageDivClass {
+    background: #11161b;
+    border-radius: 0.5rem;
+    height: 290px;
+}
+.fiorithemeClass.fiorithemeClassDark .VisionVisualizationUploadFileContent {
+    margin: 0;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fiorithemeClass.fiorithemeClassDark #Fields {
+    border-right: 1px solid #6c7277;
+    height: calc(100vh - 51px);
+}
+.fiorithemeClass.fiorithemeClassDark .gridareaSection .gridareaContainer-section.container-fluid .row {
+    margin-top: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .rightPaneldataprofilingClass {
+    background: transparent;
+}
+.fiorithemeClass.fiorithemeClassDark .sidebarContentWrapper {
+    background-color: #12171c;
+    padding: 1px 2px 0 1px;
+}
+.fiorithemeClass.fiorithemeClassDark .dataProfilingMainWrapper .innerMainLeftWrapper {
+    border-right: 2px solid #6c7277;
+}
+.fiorithemeClass.fiorithemeClassDark .sidebarContentWrapper .dataprofilesideMainMenu .dataprofilesideMainMenuItems:hover {
+    background-color: #1d232a;
+    outline-bottom: 1px solid #6c7277;
+}
+.fiorithemeClass.fiorithemeClassDark .sidebarContentWrapper .dataprofilesideMainMenu .dataprofilesideMainMenuItems:has(.dataProfileMenuItem.active),
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeChartFiltersFieldsClass,
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeChartFiltersFieldOperator{
+    background-color: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .sidebarContentWrapper .dataprofilesideMainMenu li .dataprofilesidesubMenu.opened {
+    background-color: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .visionHeaderMain {
+    border-radius: 0.75rem !important;
+    overflow: hidden;
+}
+.fiorithemeClass.fiorithemeClassDark .sidebarContentWrapper .dataprofilesidesubMenu li .dataProfileMenuItem span img {
+    filter: hue-rotate(130deg);
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-menu-wrapper .jqx-menu-vertical .jqx-menu-ul {
+    background-color: #12171c !important;
+    color: #fff !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0;
+    background: #161c22;
+    border-radius: 0.25rem;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-menu-wrapper .jqx-menu-vertical .jqx-menu-ul li {
+    color: #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .treeContainerViewDataClass .jqx-tree-item {
+    border: 1px solid #0070f2;
+    border-left: 5px solid #0070f2;
+    background: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .treeContainerViewDataClass ,
+.fiorithemeClass.fiorithemeClassDark .treeContainerViewDataClass .jqx-widget-content {
+    background: #12171c;
+}
+.fiorithemeClass.fiorithemeClassDark .treeContainerViewDataClass .jqx-tree-item.jqx-fill-state-hover.jqx-fill-state-hover-energyblue{
+    border: 1px solid #0070f2 !important; 
+    border-left: 5px solid #0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .dxpPageWrapper .dxpPageContent {
+    width: 100%;
+}
+.fiorithemeClass.fiorithemeClassDark .aibottomMessageContainer .userAIInputBottomWidget .userAIInputText input {
+    border:0 !important;
+    box-shadow:none;
+    border-radius:8px !important
+}
+.fiorithemeClass.fiorithemeClassDark .visionFormTitleName .fioriTopRightcontrolsdivWrapper .fioriFormButtongroup b input[type="button"] {
+    border-radius:0.5rem !important
+}
+.fiorithemeClass.fiorithemeClassDark .visionParamSearchCover {
+    background: #1c2229;
+}
+.fiorithemeClass.fiorithemeClassDark .visionParamSearchCover th {
+    background: #12171c;
+    border-bottom: 1px solid;
+}
+.fiorithemeClass.fiorithemeClassDark .homeChartWrapDiv .homeChartParentDiv {
+    background: #1d232a;
+    border:2px solid #0070f2;
+}
+.fiorithemeClass.fiorithemeClassDark .homeChartWrapDiv .js-plotly-plot .plotly .main-svg,
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeHomePageExpandChart .js-plotly-plot .plotly .main-svg{
+    background: transparent !important;
+}
+.fiorithemeClass.fiorithemeClassDark .js-plotly-plot .plotly .modebar.vertical .modebar-group .modebar-btn,
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeHomePageCharts .homeChartWrapDiv .iconsDiv ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #6c7277;
+}
+.fiorithemeClass.fiorithemeClassDark .visualizationDashboardView .js-plotly-plot .plotly .modebar.vertical ,
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeHomePageCharts .homeChartWrapDiv .iconsDiv {
+    background: #272e36 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .visionCardViewClass {
+    border-bottom: 1px solid transparent;
+}
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeChartTableToggleClass .visionVisualizationDragColumns li {
+    border-bottom: 1px solid #6c7277;
+    border-left: 1px solid #6c7277;
+}
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeChartTableClass {
+    border-bottom: 1px solid #696e73;
+}
+.fiorithemeClass.fiorithemeClassDark .filterPopUp .FilterColumndataClass #VisualizeBIFilterColumns {
+    border-right: 1px solid #696e73;
+}
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeChartFiltersFieldDivClass {
+    border: 1px solid #696e73
+}.fiorithemeClass.fiorithemeClassDark .visualizationDashboardView .js-plotly-plot .plotly .modebar.vertical
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeChartFiltersFieldClass {
+    border: 1px dashed #d4d6d8;
+    background-color: #12171c;
+    display: flex;
+    align-items: center;
+}
+.fiorithemeClass.fiorithemeClassDark .filterPopUp .visionVisualizeChartFiltersFieldSpanClass {
+    position: static;
+}
+.fiorithemeClass.fiorithemeClassDark .filterPopUp #visualizeChartConfigFiltersData {
+    padding-top: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .homeChartParentDiv .chartMain .g-gtitle .gtitle, 
+.fiorithemeClass.fiorithemeClassDark .extendedChartView .gtitle {
+    fill: #007bff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .homeChartParentDiv .chartMain .xaxislayer-above .xtick text, 
+.fiorithemeClass.fiorithemeClassDark .homeChartParentDiv .chartMain .yaxislayer-above .ytick text,
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeHomePageExpandChart .xaxislayer-above .xtick text,
+.fiorithemeClass.fiorithemeClassDark .visionVisualizeHomePageExpandChart .yaxislayer-above .ytick text{
+    fill: #ffffff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .extendedChartView .js-plotly-plot .plotly .modebar.vertical {
+    background: #272e36 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .colorPalletePopOver .popOverheader {
+    background-color: #1d232a;
+    border-bottom: 1px solid #696e73;
+}
+.fiorithemeClass.fiorithemeClassDark .popover-body {
+    border: 0px solid #f1f1f1;
+    background-color: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .colorPallatteMainDiv .themeBtnsContainer .themeBtnsGroup {
+    border: 2px solid #696e73;
+}
+.fiorithemeClass.fiorithemeClassDark .colorPallatteMainDiv .themeBtnsContainer {
+    border-bottom: 1px solid #696e73;
+}
+.fiorithemeClass.fiorithemeClassDark .colorPalletePopOver{
+    box-shadow: 0 0 0 .0625rem rgba(255, 255, 255, 0.35), 0 1.25rem 5rem 0 rgba(0, 0, 0, 0.6) !important;
+    border:0 !important
+}
+.fiorithemeClass.fiorithemeClassDark  .colorPalletePopOver .popOverheader .closecolorPalletePopover {
+    filter: brightness(0) invert(1);
+}
+.fiorithemeClass.fiorithemeClassDark .bs-popover-auto[x-placement^=right]>.arrow::after, 
+.fiorithemeClass.fiorithemeClassDark .bs-popover-right>.arrow::after {
+    border-right-color: #9aa4ad;
+}
+.fiorithemeClass.fiorithemeClassDark .allTabListMainWrapper .iconMenuNavPrev i, 
+.fiorithemeClass.fiorithemeClassDark .allTabListMainWrapper .iconMenuNavNext i {
+    color: #686c71;
+}
+.fiorithemeClass.fiorithemeClassDark .personaliseoption .layoutoptions .ui-accordion-header1 {
+    background: #12171c !important;
+    border-radius: 0.25rem !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0 !important;
+    border-bottom: 1px solid #eaecee !important;
+}
+.fiorithemeClass.fiorithemeClassDark .personaliseoption .ui-accordion .ui-accordion-header1 .ui-icon1 {
+    filter: invert(0);
+}
+.fiorithemeClass.fiorithemeClassDark .personaliseoption .search_settings_panel {
+    border: 1px solid #696e73;
+    background: #212830;
+}
+.fiorithemeClass.fiorithemeClassDark .visionSearchPersonalise .sticky-wrap th {
+    color: #eaecee;
+    border-color: #696e73;
+}
+.fiorithemeClass.fiorithemeClassDark .duplicateCheckFormPopup .visionRegisterMaterialTableTab .visionRegisterMaterialAccordians .visionPDRFormTable table tbody tr th, 
+.fiorithemeClass.fiorithemeClassDark .duplicateCheckFormPopup .visionRegisterMaterialTableTab .visionRegisterMaterialAccordians .visionPDRFormTable table tbody tr td,
+.fiorithemeClass.fiorithemeClassDark .duplicateCheckFormPopup .visionRegisterMaterialTableTab .visionRegisterMaterialAccordians .visionPDRFormTable table tbody tr td select,
+.fiorithemeClass.fiorithemeClassDark .visionPaginationCount ,
+.fiorithemeClass.fiorithemeClassDark .Considerationondataanalysis table tr th,
+.fiorithemeClass.fiorithemeClassDark .Considerationondataanalysis table tr td{ 
+    color: #eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .Considerationondataanalysis .js-plotly-plot .plot-container .svg-container .main-svg {
+    background-color: transparent !important;
+}
+.fiorithemeClass.fiorithemeClassDark  .Considerationondataanalysis .js-plotly-plot .plot-container .svg-container .main-svg .xaxislayer-above .xtick text,
+.fiorithemeClass.fiorithemeClassDark  .Considerationondataanalysis .js-plotly-plot .plot-container .svg-container .main-svg .yaxislayer-above .ytick text{
+    fill:#eaecee !important
+}
+.fiorithemeClass.fiorithemeClassDark #Datahealthandqualityanalysis .row table tr th,
+.fiorithemeClass.fiorithemeClassDark #Datahealthandqualityanalysis .row table tr td,
+.fiorithemeClass.fiorithemeClassDark .businessRules table tr td,
+.fiorithemeClass.fiorithemeClassDark .businessRules table tr th{
+    border:1px solid #696e73 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .businessRules table tr td:first-child{
+    background-color:#12171c !important;
+}
+.fiorithemeClass.fiorithemeClassDark .dmaReportsClass {
+    border: 0;
+}
+.fiorithemeClass.fiorithemeClassDark .dmaReportsClass section {
+    border-left: 0px;
+    border-right: 0px; 
+    border-bottom: 0px; 
+}
+.fiorithemeClass.fiorithemeClassDark .keyrecomendations h6 ,
+.fiorithemeClass.fiorithemeClassDark .dataTableMainClass thead {
+    background-color:#0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .chartSelectionsDropDown .visionVisualizeHomePageDropdown .jqx-dropdownlist,
+.fiorithemeClass.fiorithemeClassDark .visualizationDashboardView .visionDashBoardHomeFilterClass .FilterColumnTitle .surveyFeildsSelection .FilterColumnIdClass{
+    border-radius: 0.25rem !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0 !important;
+    border-bottom: 1px solid #eaecee !important;
+    color:#fff;
+}
+.fiorithemeClass.fiorithemeClassDark .applyBtndiv button {
+    color: #fff !important;
+}
+.fiorithemeClass.fiorithemeClassDark .applyBtndiv button span img{
+    filter: invert(0) brightness(1);
+}
+.fiorithemeClass.fiorithemeClassDark .visionSearchSaveDialog.wbconfigWrapper .ui-dialog-content .dmaFormClass .mainWrapperClass h6{
+    color:#0070f2;   
+}
+.fiorithemeClass.fiorithemeClassDark .visionSearchSaveDialog.wbconfigWrapper .ui-dialog-content .dmaFormClass .mainWrapperClass .subcategory-container .dropdown-wrapper .dropdown-row .dropdown-container {
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0 !important;
+    border-bottom: 1px solid #eaecee !important;
+    color:#fff;
+}
+.fiorithemeClass.fiorithemeClassDark .visionSearchSaveDialog.wbconfigWrapper .ui-dialog-content .dmaFormClass .mainWrapperClass .subcategory-container .dropdown-row .dropdown-container .jqx-dropdownlist-content {
+    height: auto !important;
+    margin: 0 !important;
+    padding: 6px;
+}
+.fiorithemeClass.fiorithemeClassDark .dmaReportsClass .visionRegisterMaterialMainWrapper section ,
+.fiorithemeClass.fiorithemeClassDark .dBConnectionClass ul li.Vtabactive{
+    background: #1d232a;
+}
+.fiorithemeClass.fiorithemeClassDark .popover.fiorithemeSettingPopOver .popOverheader .popoverTitle .popover-header:before {
+    display:none;
+}
+.fiorithemeClass.fiorithemeClassDark input[title="Download"] {
+    background: #12171c url(../images/iDXPUI5Download.svg) !important;
+    background-position: 6px center !important;
+    background-repeat: no-repeat !important;
+    background-size: 25px 25px !important;
+    box-shadow: inset 0 0 0 .0625rem rgba(169, 180, 190, 0.25);
+    border: 0 !important;
+    border-bottom: 2px solid #fff!important;
+}
+.fiorithemeClass.fiorithemeClassDark input[title="Email"] {
+    background:#171c22 !important;
+}
+/*.fiorithemeClass.fiorithemeClassDark .pdfDataSheetExport table {
+    box-shadow: 0px 0px 4px 0px #9a9a9a !important;
+    border-radius:5px;
+    border:0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .pdfDataSheetExport table tr th {
+    border:1px solid #686b6f !important;
+    background:#0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .pdfDataSheetExport table tr td {
+    background:#212830;
+    border:1px solid #686b6f !important;
+    border-radius:0 !important
+}
+.fiorithemeClass.fiorithemeClassDark .pdfDataSheetExport table tr:nth-child(odd) td {
+    background: #36424b !important;
+}
+.fiorithemeClass.fiorithemeClassDark .pdfDataSheetExport div[style="width:100%;"] span {
+    background:#0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark #showPdfFormData.ui-dialog-content .pdfDataSheetExport div[style="width:100%;height:30px;background:#0071c5;margin: 0;border-bottom: 2px solid #ededed;"]{
+    background:#0070f2 !important;
+    border-radius:4px;
+    border-color:#0070f2 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .pdfDataSheetExport div[style="width:100%; margin:0px"] span {
+    background:#212830 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .pdfDataSheetExport div[style="width:90%;display: flex;margin:0px auto;"] div[style="width:25%;background:#0071c5;float:left;min-height:22px;max-height:32px;margin: 20px 0;text-align: center;padding:6px;border-top-left-radius:6px;border-bottom-left-radius:6px;box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);"]  {
+    background:#0070f2 !important;
+    padding: 0 !important;
+}
+.fiorithemeClass.fiorithemeClassDark .pdfDataSheetExport div[style="width:75%;background:#ededed;float:left;margin: 20px 0;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);"] p {
+    background: #2c3642  !important;
+    border-radius: 0 6px 6px;
+    color: #eaecee  !important;
+}
+.fiorithemeClass.fiorithemeClassDark .pdfDataSheetExport div[style="width:90%;display: flex;margin:0px auto;"] div[style="width:25%;background:#0071c5;float:left;min-height:22px;max-height:32px;margin: 20px 0;text-align: center;padding:6px;border-top-left-radius:6px;border-bottom-left-radius:6px;box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);"] span {
+    display:block;
+    padding:5px;
+    border-radius:6px 0 0 6px
+}
+.fiorithemeClass.fiorithemeClassDark #showPdfFormData.ui-dialog-content .pdfDataSheetExport div[style="width:48%;float:left;padding: 0 2%;"] table tr td {
+    background: #eaecee  !important;
+}
+.fiorithemeClass.fiorithemeClassDark #showPdfFormData.ui-dialog-content 
+.pdfDataSheetExport div[style="width:48%;float:left;padding: 0 2%;"] 
+table tr td:nth-child(1) {
+    background: #d2e8f8 !important;
+}*/
+
+.fiorithemeClass.fiorithemeClassDark #dropdownlistContentselectFilter,
+.fiorithemeClass.fiorithemeClassDark .fioriSearchComponent .searchResultCountView {
+    color:#eaecee;
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-scrollbar-thumb-state-normal-horizontal,
+.fiorithemeClass.fiorithemeClassDark .jqx-scrollbar-thumb-state-normal{
+    background:#647891 !important;
+    border-color: #647891;
+}
+
+/*new style in SAPEveningHorizonTheme.css*/
+body.fiorithemeClass.fiorithemeClassDark ul.fioriformTabUlListclass li span{
+    color:#eaecee
+}
+.fiorithemeClass.fiorithemeClassDark .jqx-tabs-headerWrapper .jqx-tabs-arrow-background span.jqx-tabs-arrow-left-ui-redmond:after ,
+.fiorithemeClass.fiorithemeClassDark .jqx-tabs-headerWrapper .jqx-tabs-arrow-background span.jqx-tabs-arrow-right-ui-redmond:after {
+    color: #686c71;
+}

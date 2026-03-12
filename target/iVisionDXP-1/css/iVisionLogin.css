@@ -1,0 +1,2737 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #fff;
+}
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.content {
+    padding: 7rem 0;
+}
+
+
+
+
+.smartBILoginMain .smartBIrow{
+    /* align-items: center;
+    height: calc(100vh - 40px); */
+}
+.smartBIrow marquee{
+    margin-top: 10px;
+    color: #044cbc;
+    font-size: 30px;
+}
+
+
+
+@media (max-width: 991.98px) {
+    .half .bg {
+        height: 200px;
+    }
+}
+
+/* .half .contents {
+  background: #abc9e5; 
+} */
+
+.half .bg {
+    width: 60%;
+}
+.half .contents{
+    width: 40%;
+}
+
+@media (max-width: 1199.98px) {
+
+    .half .contents,
+    .half .bg {
+        width: 100%;
+    }
+}
+
+.half .contents .form-control,
+.half .bg .form-control {
+    border: none;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    height: 54px;
+    background: #fff;
+}
+
+.half .contents .form-control:active,
+.half .contents .form-control:focus,
+.half .bg .form-control:active,
+.half .bg .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.half .bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.half a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.half .btn {
+    height: 54px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.half .forgot-pass {
+    position: relative;
+    top: 2px;
+    font-size: 14px;
+}
+
+.control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.control .caption {
+    position: relative;
+    top: .2rem;
+    color: #333;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.control--radio .control__indicator {
+    border-radius: 50%;
+}
+
+.control:hover input~.control__indicator,
+.control input:focus~.control__indicator {
+    background: #fff;
+    border: 1px solid #333;
+}
+
+.control input:checked~.control__indicator {
+    background: #f48f8f;
+}
+
+.control:hover input:not([disabled]):checked~.control__indicator,
+.control input:checked:focus~.control__indicator {
+    background: #f48f8f;
+}
+
+.control input:disabled~.control__indicator {
+    background: #fff;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.control__indicator:after {
+    font-family: 'icomoon';
+    content: '\e5ca';
+    position: absolute;
+    display: none;
+    font-size: 16px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.control input:checked~.control__indicator:after {
+    display: block;
+    color: #fff;
+}
+
+.control--checkbox .control__indicator:after {
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.control--checkbox input:disabled~.control__indicator:after {
+    border-color: #7b7b7b;
+}
+
+.control--checkbox input:disabled:checked~.control__indicator {
+    background-color: #7e0cf5;
+    opacity: .2;
+}
+
+
+.left-img-gird .card {
+    margin-bottom: 10px;
+    border: none;
+}
+
+.left-img-gird .card img {
+    width: 100%;
+}
+
+.contents input[type="submit"] {
+    color: #fff;
+    background-color: #f48f8f;
+    border-color: #f48f8f;
+}
+
+.contents input[type="submit"]:hover {
+    color: #fff;
+    background-color: #f48f8f;
+    border-color: #f48f8f;
+}
+/* .form-container{
+  padding: 15px;
+  background-color: #fff;
+} */
+.integral-logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-pr-0{
+    padding-right:0;
+}
+
+
+
+/* Twitter Login Model Css Starts Here */
+
+
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px -1px #0c4a99;
+    padding: 8px;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+.wrapper .form-field{
+    margin-bottom: 10px;
+}
+.wrapper .form-field input{
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.wrapper .form-field input:focus{
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: #044cbc;
+    color: #fff;
+    border-radius: 25px;
+    /* box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff; */
+    letter-spacing: 1.3px;
+    margin-bottom:0;
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5;
+}
+
+.wrapper a {                
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #044cbc;
+    font-weight: bold;
+}
+
+.wrapper a:hover {   
+    color: #044cbc;
+    font-weight: bold; 
+}
+.loaderWait{
+    width: 100px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%, -45%);
+
+}
+
+.loaderWait img{
+    width: 100px;
+}
+.loaderwait .loader-ring img{
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.justify-content-center{
+    justify-content: right !important;
+}
+
+
+
+
+/* Twitter Login Model Css Starts Here */
+
+#verifyLoginSecurity .captchaRefreshBtn {
+    display: flex;
+    /*padding-left: 5px;*/
+    margin-bottom: 18px;
+    align-items: center; 
+}
+
+.captchaRefreshBtn .CaptchaTxtField {
+    width: 100%;
+    margin-right: 7px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    /* border: 1px solid #ddd; */
+    border-radius: 22px;
+}
+.captchaRefreshBtn .CaptchaTxtField .capcode{
+    padding: 10px;
+    font-size: 1.2rem;
+    /*    font-size: 15px;
+        background-color: #a2c0ed;
+        border: 1px solid #a2c0ed;*/
+    border-radius: 4px;
+    /*text-align: center;*/
+    padding-left: 12px;
+}
+
+.captchaRefreshBtn .ReloadBtn {
+    width: 23px;
+}
+
+.enterTextCaptcha .CaptchaTxtField {
+    padding: 10px;
+    font-size: 1.2rem;    
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    width: 100%;
+    border-radius: 24px;
+    padding-left: 13px;
+
+}
+.enterTextCaptcha {
+    padding-bottom: 13px;
+}
+.loginSecurity .CaptchaOtpField {
+    padding: 10px;
+    font-size: 1.2rem;    
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    width: 100%;
+    border-radius: 24px;
+    padding-left: 13px;
+}
+
+/*.loginSecurity {
+    padding-bottom: 18px;
+}*/
+.timeSession{
+    width:100%;
+    text-align:center;
+
+}
+
+#resenddiv{
+    margin-top:10px;
+}
+#carouselExampleIndicators {
+    /*margin-top:14px !important;*/
+    box-shadow: 0px 0px 3px -1px #0c4a99;
+    /*padding: 48.5px 0;*/
+    border-radius: 4px;
+}
+#carouselExampleIndicators .carousel-item{
+    text-align: center;
+}
+#carouselExampleIndicators .carousel-item img{
+    margin: 0 auto;
+    width: 95%;
+    /*min-height: 230px;*/
+}
+#carouselExampleIndicators .carousel-control-prev-icon,
+#carouselExampleIndicators .carousel-control-next-icon{
+    filter: invert(0.5);
+}
+
+#carouselExampleIndicators .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 1.5px solid #211e8b;
+    opacity: 1;
+}
+#carouselExampleIndicators .carousel-indicators li.active{
+    background-color: #211e8b;
+}
+
+.settingPannel, .scrollToBottom, .scrollToTop {
+    display: none;
+}
+
+.loaderwait #Layer1{
+    display: none;
+}
+
+
+
+/* chatBot css by Abhishek*/
+
+
+.bubble, 
+.row.chatBotHeaderTop .leftBotIcon  p,
+.row.chatBotHeaderTop .leftBotIcon  span p {
+    font-size: 14px;
+}
+.row.chatBotHeaderTop .leftBotIcon  p,
+.row.chatBotHeaderTop .leftBotIcon  span p {
+    font-weight: 400;
+}
+
+.row.chatBotHeaderTop .leftBotIcon  span:nth-child(2){
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.row.chatBotHeaderTop .leftBotIcon > p{
+    padding-bottom:0;
+    margin-top: 0;
+
+}
+.bubble, .bubble-button{
+    text-transform: capitalize;
+}
+
+.mainHeader{
+    display: block;
+    position: relative;
+    height: auto;
+    line-height: 12px;
+}
+.leftBotIcon{
+    display: flex;
+    align-items: center;
+}
+.leftBotIcon > span:nth-child(1){
+    flex-shrink: 0;
+    width: 10px;
+}
+.leftBotIcon > .chatbotMetaHeader{
+    flex-grow: 1;
+
+}
+.chatbotMetaHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.chatbotMetaHeader > span{
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+.row.chatBotHeaderTop .leftBotIcon p, .row.chatBotHeaderTop .leftBotIcon span p{
+    font-weight: 600;
+}
+.chatbotShrinked .chatbotMetaHeader{
+    display: none;
+}
+.mainHeader .rightIcons{
+    top: 15px;
+}
+
+
+*, select, inputs {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+.fluidWidth{
+    margin-left: inherit !important;  
+}
+
+.chatBoxLargeSpaced{
+    bottom: 70px !important;
+    min-width: 450px !important;
+    min-height: 550px !important;
+}
+.chatbotShrinked{
+    bottom: 70px !important;
+    min-width: 300px !important;
+    min-height: 350px !important;
+}
+.chatbotShrinked .bubble-wrap, .chatbotShrinked .input-wrap{
+    display: none;
+}
+.chatbotShrinked{
+    min-height: auto !important;
+    max-width: 100px !important;
+    min-width: auto !important;
+}
+
+.chatbotShrinked .leftBotIcon > span:nth-child(2), .chatbotShrinked .leftBotIcon > p{
+    display: none;
+}
+
+
+/* chatBot css by Abhishek*/
+
+
+.wrapper .visionLoginpageInner{
+    padding: 10px 0px 0;
+}
+
+
+/* Login Page Cards Design Css  */
+
+.login-custom-card .card-title{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    /*border-top: 1px solid #f1f1f1;*/
+    font-size: 12px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+login-custom-card .title {
+    color: #0b4a99;
+    text-transform: uppercase;
+    margin: 35px 0;
+    white-space: nowrap;
+}
+
+.login-custom-card .custom-card {
+    box-shadow: inherit;
+    border: 1px solid #ddd;
+    margin:3px;
+    min-height:134px;
+}
+
+.custom-card .card-body {
+    padding: 7px;
+}
+.login-custom-card .custom-card .card-cover {
+    position: relative;
+    background: none no-repeat center center/cover;
+}
+
+.login-custom-card .custom-card .circle-image{
+    text-align: center;
+}
+.circle-image img{
+    min-width: 55px;
+    max-width: 55px;
+    padding: 4px;
+    border-radius: 6px;
+    margin: 0 auto;
+    min-height: 55px;
+}
+
+.dxpPageWrapper .dxpPageContent, .dxpPageWrapper{
+    display: none !important;
+}
+
+
+.dialogFactsAndStatsDiv{
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid #0b4a99 !important;
+}
+.dialogFactsAndStatsDiv.ui-dialog .ui-dialog-titlebar{
+    font-weight: bold;
+    background: #fff;
+    color: #0b4a99;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.dialogFactsAndStatsDiv .ui-dialog-titlebar-close {
+    background-color: inherit;
+    border: none;
+
+}
+.dialogFactsAndStatsDiv .ui-dialog-titlebar-close:focus{
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+.dialogFactsAndStatsDiv .ui-dialog-titlebar-close:after {
+    content: "\00d7";
+    color: #0b4a99;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+
+/* New Login Page Css Starts Here */ 
+.login-header{
+    display: flex;
+    align-items: center;
+    border-color: #e7e7e7 !important;
+    padding: 2px 15px;
+    box-shadow: 4px 2px 20px 0 rgba(199,199,199,0.5);
+    justify-content: space-between;
+}
+.login-header .visionlogo img{
+    width: 40px;
+}
+.login-header .pilog-logo{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.login-header .pilog-logo img{ 
+    width: 20px;
+}
+.login-header .languageSelect span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #0b4a99;
+    padding: 0 6px;
+    cursor: pointer;
+}
+.login-header .languageSelect span:hover {
+    border-bottom: 2px solid #00ab67;
+}
+.beforeloginPagebody .carousel-inner img{
+    height: inherit !important;
+}
+.login-body-content{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+.login-body-content .wrapper .logo{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border-left: 4px solid #0b4a99;
+    margin-left: -8px;
+    padding: 16px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1;
+}
+.login-body-content .wrapper .logo img{
+    width: 22px;
+    margin-left: 6px;
+}
+.login-body-content .wrapper  .login-text{
+    font-size: 12px;
+    font-weight: bold;
+    color: #0b4a99
+}
+.login-body-content .wrapper .vendorOnBoardRegisterForm{
+    padding: 12px; 
+}
+.login-body-content .wrapper .signupClass a , .login-body-content .wrapper .vendorOnBoardRegisterForm {
+    display: flex;
+    align-items: center; 
+    gap:8px;
+}
+.login-body-content .signupClass{
+    padding: 16px 10px;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+.login-body-content  .login-custom-card {
+    animation: login-custom-card  800ms ease 300ms backwards;
+}
+@keyframes login-custom-card {
+    from { 
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Muni Css Starts Here */
+.login-body-content .login-custom-card,
+.pilog-announce{
+    box-shadow: 0px 0px 3px -1px #0c4a99;
+    border-radius: 4px;
+}
+.login-body-content .login-custom-card .service_header,
+.pilog-announce .service_header{
+    padding: 4px;
+    border-bottom:1px solid #eee;
+    background: #fff;
+    position: relative;
+    z-index:1;
+}
+.pilog-announce .announce-banner{
+    padding: 5px;
+    /* box-shadow: 4px 5px 6px 0 rgba(228,228,228,0.5); */
+    /*width: 20% !important;*/
+    margin: 0 auto;
+    display: block !important;
+}
+.pilog-announce .announce-banner img{
+    width: 100%;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 8%;
+}
+
+.login-body-content .login-custom-card .service_header h5,
+.pilog-announce .service_header h5{
+    margin:0;
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    color:#696969;
+}
+.login-body-content .login-custom-card .service_header h5 i,
+.pilog-announce .service_header h5 i{
+    font-size:24px;
+    margin-right:8px;
+    color:#0e4997;
+}
+.login-body-content .login-custom-card .service-statistics{
+    padding: 7px;
+    /*box-shadow: 4px 5px 6px 0 rgba(228,228,228,0.5);*/
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image {
+    display: flex;
+    align-items:center;
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image .card-title {
+    margin:0;
+    padding-top:0;
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image i{
+    font-size: 28px;
+    margin-right: 15px;
+    color: #0c4a99;
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image h5{
+    color: #0c4a99;
+    font-weight: bold;
+    font-size: 18px;
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card{
+    align-content: center;
+    justify-content: center;
+    box-shadow: none;
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card p{
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top:0;
+}
+.service-statistics .slick-prev {
+    left: 4px;
+    top: 50%;
+    transform: translate(-18%, -50%);
+    width:20px;
+    height:20px;
+}
+.service-statistics .slick-next {
+    top: 50%;
+    right: 7px;
+    transform: translate(7px, -50%);
+    width:20px;
+    height:20px;
+}
+.cartboard_file{
+    position: fixed;
+    bottom: 55px;
+    left: 55px;
+    width: 70px;
+    height: 70px;
+}
+.cartboard_file img{
+    width:100%;
+    height: 100%;
+}
+.pilog-announc{
+    border: 1px solid #efefef;
+    box-shadow: 4px 5px 6px 0 rgba(228,228,228,0.5);
+}
+.pilog-news-wrapper .pilog-date-news{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 3px #000;
+    border-radius: 4px;
+}
+.pilog-news-wrapper .pilog-date-news .pilog-date{
+    border-right: 0;
+}
+.pilog-news-wrapper .pilog-date-news .pilog-news{
+
+}
+.pilog-news-wrapper .pilog-date-news .pilog-news h6{
+    font-size: 12px;
+    font-weight: blod;
+
+}
+.pilog-news-wrapper .pilog-date-news .pilog-news p{
+    margin:0;
+    font-size: 11px;
+}
+/*.pilog-news-wrapper .pilog-date-news .pilog-news a{
+    font-weight: 500;
+    color:#0b4a99;
+    font-size: 12px;
+}*/
+/* Muni Css Ends Here */
+
+/* New Login Page Css  Here */ 
+
+.login-body-content .signupClass:last-child{
+    border-bottom:0;
+}
+.bubble-container .input-wrap textarea{
+    box-shadow: none;
+    border-top:1px solid #ddd;
+    border-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .login-custom-card .custom-card .card-cover {
+        background: none;
+    }
+    .login-custom-card .custom-card .circle-image {
+        position: relative;
+        bottom: inherit;
+        top: 20px;
+        left: 10px;
+        transform: none;
+    }
+    .login-custom-card .custom-card .circle-image:before {
+        box-shadow: none;
+    }
+    .login-custom-card{
+        margin-top: 10px;
+    }
+}
+.vendorOnBoardRegisterForm{
+    padding: 12px 15px;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    color: #044cbc !important;
+}
+/* Login Page Cards Design Css  */
+
+
+/*new styles*/ 
+
+.researchcontainer .pilog-news-wrapper{
+    height: 113px;
+    overflow-y: auto;
+}
+
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 3px 3px;
+    /*box-shadow: 4px 5px 6px 0 rgba(228,228,228,0.5);*/
+    flex-direction: column;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 6px -1px #d1d1d1;
+    padding: 5px 5px 5px 5px;
+    border-radius: 4px;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date{
+    padding: 0;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-news{
+    border-left:1px solid #ddd;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg{
+    position: relative;
+    background-image: url('./../images/state-calender.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 40px;
+    width: 40px;
+    margin:0 auto;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg span{
+    display: block;
+    position: absolute;
+    font-weight: bold;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg span:first-child{
+    top: 17px;
+    right: 14px;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg span:last-child{
+    bottom: -22px;
+    right: 8px;
+
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news:first-child{
+    margin-bottom: 5px !important;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-news h6{
+    color:#696969;
+    font-size: 12px;
+    font-weight: bold;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-news p{
+    /*color:#696969;*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 100%;
+    word-break: break-all;
+}
+/*.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-news a{
+    color:#0c4a99;
+    font-weight:bold;
+}*/
+/*new styles end here*/ 
+
+.login-body-content .visionLoginpageInner .input-group-prepend span{
+    background-color: transparent;
+    height: 38px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.arabic-body-app .wrapper .visionLoginpageInner .input-group-prepend span{
+    background-color: transparent;
+    height: 38px;
+
+}
+.login-body-content .visionLoginpageInner .input-group-prepend span{
+    background-color: transparent;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 8px;
+}
+.arabic-body-app .wrapper .visionLoginpageInner .input-group-prepend span{
+    background-color: transparent;
+    height: 38px;
+}
+.login-body-content .visionLoginpageInner .input-group-prepend span img{
+    width:20px;
+}
+
+.pilog-clients{
+    padding: 6px;
+}
+
+/* new styles here  */ 
+
+.arabic-body-app .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg{
+    background-image: url('./../greenimages/state-calender.png');
+}
+.arabic-body-app .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news {
+    flex-direction: row;
+}
+
+.pilog-appointments .card.custom-card, .pilog-clients .card.custom-card {
+    margin:5px !important;
+    /*text-align: center;*/
+    box-shadow: inherit;
+    border: 1px solid #ddd;
+}
+.pilog-appointments .card.custom-card .card-body .mainKsaimage img{
+    margin:0 auto;
+}
+/*.arabic-body-app .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-news a{
+    color: #00ab67
+}*/
+.pilog-clients .card.custom-card img{  
+    margin:0 auto;
+}
+.login-custom-card .custom-card{
+    transition: all 0.4s ease-in-out
+}
+/*.pilog-appointments .card.custom-card:hover, 
+.pilog-clients .card.custom-card:hover{
+    box-shadow: 0px 0px 4px 0px #8b96a3;
+    transform: scale(1.03); 
+}*/
+.pilog-clients .card.custom-card img{
+    width:100%;
+}
+.custom-card .allServicesClass{
+    position: relative !important;
+}
+.showMaterialpopUpBox{
+    display: none;
+    width: 250px;
+    /*height: 106px;*/
+    border: solid #ddd 1px;
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    z-index: 9999;
+    background-color: #f6f7ff;
+    border-radius: 12px;
+    padding: 5px;
+}
+.showMaterialpopUpBox .media .media-body{
+    text-align: left !important;
+}
+.showMaterialpopUpBox .media .media-body h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: inherit;  
+}
+.custom-card .allServicesClass:hover .showMaterialpopUpBox{ 
+    display: block;
+}
+
+.custom-card{
+    z-index: inherit;
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card{
+    box-shadow: inherit;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin:3px;
+    min-height: 60px;
+    /*min-width: 190px !important;*/
+    /*width: 97% !important;*/
+    display: flex !important; 
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    padding:8px;
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card:hover{
+    box-shadow: 0px 0px 4px 0px #8b96a3;
+    /*transform: scale(1.03);*/ 
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card img{
+    min-width: 45px;
+    max-width: 45px;
+    padding: 4px;
+    border-radius: 6px;
+    margin: 0;
+    min-height: 45px;
+    margin-right:8px;
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image h5{
+    text-align: left;
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body{
+    padding:8px;
+    display: flex;
+    align-items: center;
+}
+mainKsaimage h6{
+    font-size: 13px;
+}
+.login-custom-card .card-body{
+    position: relative;
+}
+.login-custom-card{
+    z-index: inherit;
+}
+.login-custom-card .card-body:hover .showMaterialpopUpBox{
+    display: block;
+    top: 0;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper h5{
+    padding-right: 15px;
+    margin:0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper span{
+    padding-left: 4px;
+}
+.custom-card .allServicesClass .card-icons-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:4px;
+}
+.custom-card .allServicesClass .card-icons-wrapper a{
+    margin:6px;
+    cursor: pointer;
+}
+.custom-card .allServicesClass .card-icons-wrapper a img{
+    width:20px;
+    height: 20px;
+}
+.pilog-appointments .card.custom-card
+{  
+    background: #fff; 
+    border-radius: 5px;
+}
+/*.pilog-appointments .card.custom-card:hover 
+{
+    box-shadow: 0px 0px 4px 0px #8b96a3;
+    border: 1px solid #0b4a99;
+    background: #f1f1f1;
+
+}*/
+
+.pilog-appointments .card.custom-card .mainKsaimage{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    color: #0b4a99;
+    justify-content:space-between;
+}
+.pilog-appointments .card.custom-card .mainKsaimage h6{
+    font-size: 12px;
+    /*font-weight: 600;*/ 
+    margin: 0;
+}
+.pilog-news-wrapper .pilog-date-news{
+    padding: 20px 22px;
+    border: 1px solid rgba(6,96,88,.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: inherit !important;
+}
+.login-body-content .login-custom-card.statis-counts .service-statistics .card p{
+    font-size:12px;
+    color:#212529;
+}
+
+.login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* box-shadow: 0 0 6px -1px #000; */
+    padding: 1px; 
+}
+.login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item{
+    width: 97% !important;
+    box-shadow: inherit;
+    border: 1px solid #ddd;
+    /* padding: 15px 8px; */
+    border-radius: 4px;
+    margin: 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+.login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper h5{
+    margin: 0;
+    font-weight: 600;
+    font-size: 13px;
+    font-weight: bold;
+    color: #696969;
+}
+.login-body-content .login-custom-card.statis-counts.feed-back .rating-feed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 4px 8px;
+}
+.login-body-content .login-custom-card.statis-counts.feed-back .rating-feed span {
+    border-radius: 50%;
+    /*background: #f2f2f2;*/
+    margin: 3px;
+    padding: 4px;
+    /*color: #fff !important;*/
+    cursor: pointer;
+    font-size: 13px;
+}
+.login-body-content .login-custom-card.statis-counts.feed-back .rating-feed span:hover{
+    transform: scale(1.01);
+}
+.login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item p{
+    margin:0;
+    /*font-weight: bold;*/
+    /*color: #5e5e5e;*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align:left;
+    padding:4px;
+}
+
+.login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .pilog-news-wrapper{
+    /*box-shadow: 0 0 6px -1px #000;*/
+    text-align: center;
+    justify-content: left;
+    border-radius: 4px;
+}
+
+.login-body-content .login-custom-card.statis-counts.feed-back .pilog-news-wrapper{
+    box-shadow: none;
+}
+.service-statistics .custom-card .allServicesClass:hover .showMaterialpopUpBox{
+    display: none !important;
+}
+
+
+
+
+/* New Css Starts Here for Login Changes by SANK*/
+.login-body-content .loginRowWrapper{
+    margin-right: -4px;
+    margin-left: -4px;
+}
+.leftColWrapper, .rightColWrapper, .centerColWrapper{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.piLog-awards{
+    min-height: 54px;
+}
+.eventCardMainDiv {
+    width: 97% !important; 
+    display: flex !important;
+    flex-direction: row;
+    margin: 5px auto;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #0b4a99 !important;
+}
+.eventCardMainDiv .evenTitleAnd_Date {
+    font-size: 16px;
+    font-weight: 600;
+    background: #0b4a99;
+    color: #fff;
+    width: 45%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.eventCardMainDiv .evenTitleAnd_Date .calIcon {
+    text-align: center;
+}
+.eventCardMainDiv .evenTitleAnd_Date .dateShow {
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+}
+.eventCardMainDiv .evenTitleAnd_Date .titleClass {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.eventCardMainDiv .eventDiscriptionDiv .bottomClass {
+    text-align: center;
+    color: #0b4a99;
+    position: absolute;
+    bottom: 15px;
+    font-weight: 600;
+}
+.eventDiscriptionDiv{
+    padding: 4px;
+}
+
+
+
+/*announcement event cards css stats here*/
+
+/*.announcementDivWrapper  {
+    min-height: 270px;
+}*/
+.announcementCardSlider{
+    width: 94% !important;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 12px;
+    /*padding: 13px;*/
+    margin: 4px 10px;
+    box-shadow: inherit !important;
+}  
+.announcementCardSlider .media{
+    border: none !important;
+    align-items: center;
+}
+.announcementCardSlider .media-body h6{
+    font-size: 12px;
+    margin-bottom:4px;
+    font-weight: 600;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 230px;
+}
+.announcementCardSlider .media-body p{
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.announcementCardSlider .media-body .eventDateClass {
+    font-size: 10px;
+}
+
+/*announcement event cards css ends here*/
+
+/* Modal Popup Unique Css by SANK*/
+
+.modal{
+    padding-top: 0 !important;
+}
+.modal .modal-header, .modal .modal-footer, .modal .modal-body{
+    padding: 6px !important;
+}
+.modal .modal-header{
+    background-color: #0b4a99;
+    border-radius: 0;
+}
+.modal .modal-header h4{
+    font-size: 16px;
+    color: #fff;
+}
+.modal .modal-header .close{
+    opacity: inherit !important;
+    color: #fff;
+    font-weight: 400;
+}
+.modal .modal-header .close:focus{
+    outline: inherit !important;
+}
+.modal-footer button{
+    width: inherit !important;
+    height: inherit !important;
+}
+.modal-footer button:hover{
+    background-color: #0b4a99 !important;
+    color: #fff;
+}
+.modal .modal-xl{
+    margin: 50px auto !important;
+}
+/* Modal Popup Unique Css by SANK*/
+
+
+.eventCardMainDiv .eventDiscriptionDiv h5{
+    font-size: 14px;
+    font-weight: 600;
+}
+/*.leftColWrapper{
+    max-width: 22% !important;
+}
+.rightColWrapper{
+    max-width: 28% !important;
+}*/
+.centerColWrapper .service_header{
+    padding: 6px;
+}
+
+/*Jumbotron footer css by sami */
+.beforeloginPagebody .vision-login-footer .footer-wrapper .vision-footer-aboutUs,
+.beforeloginPagebody .vision-login-footer .footer-wrapper  .vision-footer-contact,
+.beforeloginPagebody .vision-login-footer .footer-wrapper  .vision-footer-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.vision-footer-links li,.vision-footer-contact li,.vision-footer-aboutUs li {
+    font-size:13px;
+    padding: 2px 0px;
+    transition: all .2s ease-in-out;
+    color: #777;
+}
+
+
+
+.beforeloginPagebody .vision-login-footer .footer-wrapper .vision-footer-aboutUs > h6,
+.beforeloginPagebody .vision-login-footer .footer-wrapper  .vision-footer-contact > h6,
+.beforeloginPagebody .vision-login-footer .footer-wrapper  .vision-footer-links > h6{
+    color:#676767; 
+}
+
+/*.beforeloginPagebody .vision-login-footer  .vision-social-icons{
+    margin:10px 0px;
+}*/
+
+.vision-login-footer .vision-social-content .vision-social-icons .footer-social-icons {
+    margin: 9px 0px;
+}
+
+footer.vision-login-footer {
+    border-top: 1px solid #c7c7c7;
+    margin-top: 5px;
+    padding: 8px 0px;
+}
+.vision-login-footer .vision-social-content .vision-social-icons .footer-social-icons  li:first-child{
+    margin-left:0px;
+}
+.vision-login-footer .vision-social-content .vision-social-icons .footer-social-icons  li{
+    margin: 0px 4px;
+}
+
+.vision-footer-secondWrapper.container {
+    /* padding: 4px; */
+    border-top: 1px solid #f1f1f1;
+}
+
+.vision-social-content h6, .vision-footer-content h6{
+    color: #676767;
+    font-size: 14px;
+    font-weight: bold !important;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    font-family: inherit;
+
+}
+
+ul.vision-footer-links {
+    margin: 0px;
+    display: flex;
+}
+.feed-stars:last-child{
+    color: #ddd;
+}
+.vision-footer-secondWrapper .vision-footer-copyRights   > p {
+    margin-bottom:0;
+}
+.mt-1, .mt-2 {
+    margin-top: 20px !important;
+}
+.mb-2 {
+    margin-bottom: 20px !important;
+}
+/*Jumbotron footer css by sami ends*/
+
+.chatIcon{
+    position: absolute !important; 
+}
+
+.chatBox {
+    display: none;
+    position: fixed;
+    left: 4px;
+    bottom: 40px;
+    max-width: 22%;
+    z-index: 99999;
+}
+.bubble.say:not(.reply) {
+    position: relative;
+    /* border: 1px solid #A8A240; */
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+}
+.bubble-container{
+    height: 350px;
+}
+.bubble .bubble-content{
+    line-height: 22px;
+    letter-spacing: inherit;
+}
+.pilog-news-wrapper a.english-text {
+    font-size: 10px;
+}
+
+.card.eventCardMainDiv .card-body.eventDiscriptionDiv {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+.card.eventCardMainDiv .card-body.eventDiscriptionDiv h5 {
+    padding-bottom:10px;
+}
+.pilog-announce .announce-banner img:hover{
+    transform: scale(1.15);
+    transition: all 0.4s ease-in-out;
+}
+
+/* events card flip animation by sami starts 27-09-2023*/
+.pilog-event-wrapper .slick-slide{
+    transition: all 0.7s ease;
+    perspective:1000px;
+    position:relative;
+}
+
+
+.pilog-event-wrapper .slick-slide .card{
+    transition: all 2s ease;
+    transform:rotateX(-90deg);
+    perspective:8rem;
+    opacity:0;
+
+}
+
+.pilog-event-wrapper .slick-active .card{
+    transform:rotateX(0);
+    opacity:1;
+    /*z-index: 1080;*/ 
+}
+/* events card flip animation by sami ends 27-09-2023*/
+.pilog-appointments .card.custom-card .mainKsaimage a img{
+    width:18px !important;
+}
+.pilog-appointments .card.custom-card .mainKsaimage h6{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.announcementCardSlider .media .Announce_date {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.announcementCardSlider .media .Announce_date .eventDateClass{
+    font-weight: 600;
+    font-size: 11px;
+    text-wrap: nowrap;
+}
+.future_date{
+    color:#f00;
+}
+.previous_date{
+    color:#00ab67;
+}
+
+
+
+
+@media (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi){
+    .chatIcon {
+        bottom: 8%;
+    }
+     .login-body-content .signupClass{
+        padding: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 1920px){
+    .login-body-content .wrapper .logo {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        border-left: 4px solid #0b4a99;
+        margin-left: -8px;
+        padding: 24px; 
+        cursor: pointer;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .login-body-content .wrapper .login-text{
+        font-size: 14px;
+        font-weight: bold;
+        color: #0b4a99;
+    }
+    .login-body-content .service_header{
+        padding: 12px !important;
+    }
+    .login-body-content .service_header h5{
+        font-size: 18px !important;
+    }
+    .login-body-content .service_header h5 img{
+        width: 24px !important;
+    }
+    .login-body-content .service_header h5 span, .card-title span{ 
+        font-size: inherit;
+    }
+    .pilog-news-wrapper .pilog-date-news .pilog-news p{
+        font-size: 14px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-news h6 {
+        font-size: 18px;
+    }
+    .login-header .pilog-logo img {
+        width: 24px;
+    }
+    .login-header .visionlogo img {
+        width: 45px;
+    }
+    .login-header {
+        padding: 6px 15px;
+    }
+    .pilog-announce .announce-banner {
+        width: 23% !important;
+    }
+    .login-body-content .wrapper .logo img{
+        width: 24px;
+    }
+    .signupClass a img, .login-icon a img{
+        width: 24px !important;
+    }
+    .login-icon{
+        width: inherit !important;
+    }
+    .circle-image img {
+        min-width: 65px !important;
+        max-width: 65px !important;
+    }
+    .login-custom-card .card-title {
+        text-align: center;
+        padding-top: 10px;
+        font-weight: bold;
+        /*border-top: 1px solid #f1f1f1;*/ 
+        font-size: 18px;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .login-body-content .visionLoginpageInner .input-group-prepend span img {
+        width: 24px;
+    }
+    span{
+        font-size: inherit;
+    }
+    .wrapper .btn{
+        font-size: 14px !important;
+    }
+    .pilog-clients .card.custom-card img {
+        width: 100% !important;
+    }
+    .pilog-appointments .card.custom-card .mainKsaimage h6 {
+        font-size: 14px;
+        margin: 0;
+    }
+    .mt-1, .mt-2{
+        margin-top: 18px !important;
+    }
+    .mb-2{
+        margin-bottom: 18px !important;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card{
+        display: inherit !important;
+        /*width: 95% !important;*/
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image{
+        display: block;
+        width: 100%;
+    }
+    .custom-card .allServicesClass .card-icons-wrapper a img{
+        height: inherit;
+        width: 24px;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image h5 {
+        text-align: center;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card p{
+        font-size: 18px !important;
+        text-align: center;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card img {
+        min-height: inherit;
+        margin-right: inherit;
+        margin: 0 auto;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image h5 {
+        font-size: 30px;
+    }
+    #carouselExampleIndicators .carousel-item img {
+        margin: 0 auto;
+        width: 100%; /*11092023*/
+    }
+    .eventCardMainDiv {
+        width: 98%;
+        height: 125px;
+    }
+    .eventCardMainDiv .evenTitleAnd_Date {
+        font-size: 18px;
+    }
+    .eventCardMainDiv .evenTitleAnd_Date .dateShow {
+        text-align: center;
+        color: #fff;
+        padding: 20px 0;
+    }
+    .eventCardMainDiv .eventDiscriptionDiv h5 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    /*    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news {
+            padding: 7px !important;
+        }*/
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper {
+        padding: 22px;
+    }
+    footer.vision-login-footer {
+        margin-top: 5px;
+        padding: 6px 0px;
+    }
+    .vision-login-footer .container{
+        max-width: 1600px !important;
+    }
+    .pilog-appointments .card.custom-card{
+        margin:9px !important;
+    }
+
+    .login-body-content .signupClass{
+        padding:20px;
+    }
+
+    .pilog-clients.slick-initialized.slick-slider {
+        padding:25px;
+    }
+    .announcementCardSlider {
+        width: 94% !important;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 12px;
+        /*padding: 13px;*/
+        margin: 4px 10px;
+        box-shadow: inherit !important;
+    }
+
+}
+
+
+@media screen and (max-width: 1920px){
+    .login-body-content .wrapper .logo {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        border-left: 4px solid #0b4a99;
+        margin-left: -8px;
+        padding: 16px;
+        cursor: pointer;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .login-body-content .wrapper .login-text{
+        font-size: 12px;
+        font-weight: bold;
+        color: #0b4a99;
+    }
+    .login-body-content .service_header{
+        padding: 4px !important;
+    }
+    .login-body-content .service_header h5{
+        font-size: 12px !important;
+    }
+    .login-body-content .service_header h5 img{
+        width: 22px !important;
+    }
+    /*    .login-body-content .service_header h5 span, .card-title span{ 
+            font-size: inherit;
+        }*/
+    .pilog-news-wrapper .pilog-date-news .pilog-news p{
+        font-size: 12px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-news h6 {
+        font-size: 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        width: 100%;
+        word-break: break-all;
+    }
+    .login-header .pilog-logo img {
+        width: 24px;
+    }
+    .login-header .visionlogo img {
+        width: 45px;
+    }
+    .login-header {
+        padding: 6px 15px;
+    }
+    /*    .pilog-announce .announce-banner {
+            width: 18% !important;
+        }*/
+    .login-body-content .wrapper .logo img{
+        width: 24px;
+    }
+    .signupClass a img, .login-icon a img{
+        width: 24px !important;
+    }
+    .login-icon{
+        width: inherit !important;
+    }
+    .circle-image img {
+        min-width: 50px;
+        max-width: 50px;
+        padding: inherit;
+    }
+    .login-custom-card .card-title {
+        text-align: center;
+        padding-top: 7px;
+        font-weight: bold;
+        /*border-top: 1px solid #f1f1f1;*/
+        font-size: 12px;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .login-body-content .visionLoginpageInner .input-group-prepend span img {
+        width: 24px;
+    }
+    .wrapper .btn{
+        font-size: 14px !important;
+    }
+    .pilog-clients .card.custom-card img {
+        width: 100% !important;
+    }
+    .pilog-appointments .card.custom-card .mainKsaimage h6 {
+        font-size: 12px;
+        /*font-weight: 600;*/
+        margin: 0;
+    }
+    .mt-1, .mt-2{
+        margin-top: 18px !important;
+    }
+    .mb-2{
+        margin-bottom: 18px !important;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card{
+        display: inherit !important;
+        width: 97.5% !important;
+    }
+    .custom-card .allServicesClass .card-icons-wrapper a img{
+        height: inherit;
+        width: 20px;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image h5 {
+        text-align: center;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card p{
+        font-size: 12px !important;
+        text-align: center;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card img {
+        min-height: inherit;
+        margin-right: inherit;
+        margin: 0 auto;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #carouselExampleIndicators .carousel-item img {
+        margin: 0 auto;
+        width: 100%; /*11092023*/
+    }
+    .eventCardMainDiv {
+        width: 98%;
+        height: 84px;
+        margin: 2px auto;
+    }
+    .eventCardMainDiv .evenTitleAnd_Date .dateShow {
+        text-align: center;
+        color: #fff;
+        padding: 0px 0;
+    }
+    .eventCardMainDiv .eventDiscriptionDiv h5 {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news {
+        padding: 7px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper {
+        padding: 4px;
+        height: 85px;
+    }
+    footer.vision-login-footer {
+        margin-top: 5px;
+        padding: 6px 0px;
+    }
+    .vision-login-footer .container{
+        max-width: 1600px !important;
+    }
+    .pilog-appointments .card.custom-card{
+        margin:9px !important;
+    }
+
+    .login-body-content .signupClass{
+        padding: 16px;
+    }
+
+    .pilog-clients.slick-initialized.slick-slider {
+        padding: 3px;
+    }
+    .announcementCardSlider {
+        width: 94% !important;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 13px;
+        margin: 2px 10px;
+        box-shadow: inherit !important;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item .pilog-news-wrapper{
+        padding: 2px !important;
+        height: inherit;
+    }
+    .custom-card .allServicesClass .card-icons-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 4px; */
+    }
+
+    .custom-card .allServicesClass .card-icons-wrapper a {
+        margin: 6px;
+        cursor: pointer;
+        margin-bottom: 0;
+        margin-top:4px;
+    }
+    .login-body-content .login-custom-card .service-statistics {
+        padding: 9px;
+        /* box-shadow: 4px 5px 6px 0 rgba(228,228,228,0.5); */
+    }
+    .login-custom-card .custom-card {
+        box-shadow: inherit;
+        border: 1px solid #ddd;
+        margin: 3px;
+        min-height: auto;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg {
+        position: relative;
+        background-image: url(./../images/state-calender.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 30px;
+        width: 30px;
+        margin: 0 auto;
+        position: relative;
+        top:-7px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg span:first-child {
+        top: 12px;
+        right: 10px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg span:nth-child(2) {
+        top: 31px;
+        left: 0px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-news p {
+        /*color: #696969;*/
+        /*color:#8b8b8b;*/
+        font-size: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        width: 100%;
+        word-break: break-all;
+    }
+    .circle-image img{
+        min-height: inherit !important;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .rating-feed {
+        padding: 0px 8px;
+    }
+    .login-body-content .login-custom-card .service_header h5 i, .pilog-announce .service_header h5 i {
+        font-size: 22px;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper h5 {
+        font-size: 12px;
+    }
+    /*    .card.announcementCardSlider {
+            padding: 8px;
+        }
+        .card.announcementCardSlider img {
+            margin: 0 !important;
+             padding: 15px; 
+            margin-right: 15px !important;
+        }
+    
+        .announcementCardSlider .media-body .eventDateClass {
+            font-size: 10px;
+            position: absolute;
+            top: 46px;
+            left: 10px;
+            font-weight: 600;
+        }*/
+    /*    #announcementCardSlidermainId{
+            overflow: hidden;
+        }
+        .announcements .slick-list  {
+           margin-top: -15px;
+         }*/
+    .pilog-announce .announce-banner {
+        width: 84% !important;
+    }
+    .announcements .slick-list {
+        /*margin-top: -20px;*/
+        height: 273px !important;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item {
+        padding: 10px 8px;
+        width: 97% !important;
+        margin: 0 !important;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper {
+        padding: 21px 0px; 
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item p {
+        -webkit-line-clamp: 2;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image {
+        display: block;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1920px) and (resolution: 1.5dppx) {
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news:first-child{
+        padding:6px !important;
+    }
+    .login-body-content .login-custom-card .service-statistics{
+        padding:4px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-event-wrapper{
+        height:77px !important;
+    }
+    .login-body-content .wrapper .logo {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        border-left: 4px solid #0b4a99;
+        margin-left: -8px;
+        padding: 16px; 
+        cursor: pointer;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .login-body-content .wrapper .login-text{
+        font-size: 14px;
+        font-weight: bold;
+        color: #0b4a99;
+    }
+    .login-body-content .service_header{
+        padding: 4px !important;
+    }
+    .login-body-content .service_header h5{
+        font-size: 14px !important;
+    }
+    .login-body-content .service_header h5 img{
+        width: 22px !important;
+    }
+    /*    .login-body-content .service_header h5 span, .card-title span{ 
+            font-size: inherit;
+        }*/
+    .pilog-news-wrapper .pilog-date-news .pilog-news p{
+        font-size: 12px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-news h6 {
+        /*font-size: 14px;*/
+        margin-bottom:0;
+    }
+    .login-header .pilog-logo img {
+        width: 22px;
+    }
+    .login-header .visionlogo img {
+        width: 45px;
+    }
+    .login-header {
+        padding: 6px 15px;
+    }
+    /*    .pilog-announce .announce-banner {
+            width: 18% !important;
+        }*/
+    .login-body-content .wrapper .logo img{
+        width: 22px;
+    }
+    .signupClass a img, .login-icon a img{
+        width: 22px !important;
+    }
+    .login-icon{
+        width: inherit !important;
+    }
+    /*    .circle-image img {
+            min-width: 65px !important;
+            max-width: 65px !important;
+        }*/
+    .login-custom-card .card-title {
+        text-align: center;
+        padding-top: 5px !important;
+        font-weight: bold;
+        /*border-top: 1px solid #f1f1f1;*/ 
+        /*font-size: 18px;*/
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .login-body-content .visionLoginpageInner .input-group-prepend span img {
+        width: 22px;
+    }
+    /*    .wrapper .btn{
+            font-size: 12px !important;
+        }*/
+    .pilog-clients .card.custom-card img {
+        width: 100% !important;
+    }
+    .pilog-appointments .card.custom-card .mainKsaimage h6 {
+        font-size: 12px;
+        /*font-weight: 600;*/
+        margin: 0;
+    }
+    .mt-1, .mt-2{
+        margin-top: 18px !important;
+    }
+    .mb-2{
+        margin-bottom: 18px !important;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card{
+        display: inherit !important;
+        width: 95% !important;
+    }
+    /*    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image{
+            display: block !important;
+            width: 100%;
+        }*/
+    /*    .custom-card .allServicesClass .card-icons-wrapper a img{
+            height: inherit;
+            width: 24px;
+        }*/
+
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image h5 {
+        text-align: center;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card p{
+        font-size: 12px !important;
+        text-align: center;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card img {
+        min-height: inherit;
+        margin-right: inherit;
+        margin: 0 auto;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body {
+        padding: 0px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image h5 {
+        font-size: 14px;
+    }
+    #carouselExampleIndicators .carousel-item img {
+        width: 92% !important; /*11092023*/
+    }
+    /*    .eventCardMainDiv {
+            width: 98%;
+            height: 130px;
+        }*/
+    .eventCardMainDiv .evenTitleAnd_Date {
+        font-size: 14px;
+    }
+    /*    .eventCardMainDiv .evenTitleAnd_Date .dateShow {
+            text-align: center;
+            color: #fff;
+            padding: 20px 0;
+        }*/
+    .eventCardMainDiv .eventDiscriptionDiv h5 {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom:15px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news {
+        padding: 7px !important;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper {
+        height:77px !important;
+    }
+    footer.vision-login-footer {
+        margin-top: 5px;
+        padding: 6px 0px;
+    }
+    .vision-login-footer .container{
+        max-width: 1600px !important;
+    }
+    .pilog-appointments .card.custom-card{
+        margin:9px !important;
+    }
+
+    .login-body-content .signupClass{
+        padding:12.5px !important;
+    }
+
+    /*    .pilog-clients.slick-initialized.slick-slider {
+            padding:25px;
+        }*/
+    .announcementCardSlider {
+        width: 94% !important;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 13px;
+        margin: 4px 10px;
+        box-shadow: inherit !important;
+    }
+    .researchcontainer .pilog-news-wrapper {
+        height: 146px;
+        overflow-y: auto;
+    }
+    /*    .pilog-event-wrapper {
+            min-height: 143px;
+        }*/
+/*    .announcements .slick-list {
+        margin-top: -20px;
+        height: 233px !important;
+    }*/
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item p{
+        -webkit-line-clamp: 2 !important;
+        padding:0px;
+        line-height: 15px;
+    }
+
+    .pilog-announce .piLog-awards .announce-banner {
+        width: 62% !important;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .rating-feed span{
+        padding:2px !important;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .rating-feed{
+        padding:1px 5px !important;
+    }
+    .announcementCardSlider .media .media-body{
+        line-height: 16px;
+    }
+    .announcementCardSlider{
+        margin:5px 6px 0px !important;
+        padding:6px 6px 7px !important;
+
+    }
+    .wrapper{
+        padding-bottom:0 !important;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper {
+        padding: 5px 0px 0 !important;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item{
+        height:73px;
+    }
+}
+
+@media (max-width: 1920px) and (resolution: 1.25dppx){
+
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image{
+        display: block !important;
+    }
+    /*.login-body-content .login-custom-card.statis-counts .pilog-news-wrapper {
+        height: 85px !important;
+    }*/
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item {
+        padding: 10px 8px;
+        width:100% !important;
+        margin:0 !important;
+    }
+    .announcements .slick-list {
+        height: 270px !important;
+    }
+    .pilog-announce .announce-banner {
+        width: 75% !important;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper {
+        padding: 6px; 
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item p {
+        -webkit-line-clamp: 3;
+    }
+    .circle-image img {
+        min-width: 45px;
+        max-width: 45px;
+        padding: inherit;
+    }
+    .centerColWrapper .login-custom-card .service-statistics .card.custom-card .card-body.allServicesClass{
+        padding:15px;
+    }
+    #carouselExampleIndicators .carousel-item img {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body{
+        padding:2.5px;
+    }
+    .announcements .slick-list{
+        margin-top:-8px;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card{
+        padding:15px;
+    }
+    .eventCardMainDiv {
+        height: 75px;
+        margin: 5px auto;
+    }
+    .login-body-content .signupClass{
+        padding:15px;
+    }
+}
+
+@media(max-width:1366px)and (resolution: 1dppx){
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card{
+        padding:15px !important;
+    }
+}
+@media(max-width:1366px){
+    .login-body-content .wrapper .logo {
+        padding: 13px;
+    }
+    .announcements .slick-list {
+        margin-top: -7px;
+    }
+    #announcementCardSlidermainId{
+        overflow: hidden;
+    }
+    .pilog-announce .announce-banner {
+        width: 71% !important;
+    }
+    .login-custom-card .card-title {
+        padding-top: 10px;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body {
+        padding: 0px;
+    }
+    .login-body-content .login-custom-card .service-statistics {
+        padding: 6px; 
+    }
+    .login-body-content .signupClass {
+        padding: 12px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper {
+        padding: 5px;
+        height: 85px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-event-wrapper{
+        height: 85px;
+        padding: 2px 0;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item p {
+        -webkit-line-clamp: 3;
+        line-height: 16.8px;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item {
+        width: 97% !important;
+        box-shadow: inherit;
+        border: 1px solid #ddd;
+        /* padding: 15px 8px; */
+        border-radius: 4px;
+        padding: 0px;
+        margin:0 auto;
+        transition: all 0.4s ease-in-out;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper div{
+        padding:1px;
+    }
+
+    .pilog-appointments .card.custom-card {
+        margin: 0px 4px 8px 4px !important;
+    } 
+    .leftColWrapper .pilog-announce.mt-1 .pilog-appointments{
+        padding:8px 0;
+    }
+    .announcementCardSlider {
+        width: 96.5% !important;
+        padding: 6px;
+        margin: 4px 6px 0px;
+    }
+    .circle-image img {
+        min-width: 40px;
+        max-width: 40px;
+    }
+    #carouselExampleIndicators .carousel-item img {
+        margin: 0 auto;
+        width: 91.5%; /*11092023*/
+    }
+    .announcements .slick-list {
+        margin-top: -20px;
+        height: 244px !important;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper {
+        padding: 1px; 
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image {
+        display: flex;
+        align-items: center;
+    }
+    .login-body-content .signupClass{
+        padding: 10px;
+    }
+    .announcements .slick-list {
+        margin-top: -7px;
+    }
+    .eventCardMainDiv {
+        height: 75px;
+    }
+}
+
+@media (max-width: 1920px) and (resolution: 1.5dppx) {
+    .announcements .slick-list {
+        margin-top: -20px;
+        height: 233px !important;
+    }
+}
+
+@media(max-width:768px){
+    .announcementCardSlider .media img.mr-3{
+        margin-right:0.5rem !important;
+    }
+}
+
+@media screen and (min-width: 991px){
+    ul.vision-footer-links {
+        margin: 0px;
+        display: flex;
+    }
+}
+@media screen and (max-width: 990px){
+    ul.vision-footer-links {
+        margin: 0px;
+        display: block;
+    }
+}
+
+/* Ipad Device */
+@media screen and (min-width: 768px) and (max-width:991px){
+    .login-custom-card {
+        margin-top: inherit;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .rating-feed {
+        display: block;
+    }
+    .pilog-announce .announce-banner {
+        width: 70% !important;
+    }
+    .chatBox {
+        display: none;
+        position: fixed;
+        left: 4px;
+        bottom: 40px;
+        max-width: 480px;
+        z-index: 99999;
+    }
+    .chatIcon {
+        bottom: 2%; 
+    }
+    .login-body-content {
+        padding-left: 15px; 
+        padding-right: 15px; 
+    }
+    .leftColWrapper, .rightColWrapper, .centerColWrapper {
+        padding-left: 15px; 
+        padding-right: 15px; 
+    }
+    .login-body-content .loginRowWrapper {
+        margin-right: -15px; 
+        margin-left: -15px; 
+    }
+}
+
+/* Medium Device  upto 1024px*/
+@media screen and (min-width: 992px) and (max-width: 1024px){
+    .announcements.slick-vertical.slick-initialized.slick-slider {
+        height: inherit;
+    }
+    .pilog-announce .announce-banner {
+        width: 53% !important;
+    }
+    .login-custom-card .card-title {
+        padding-top: 10px;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body {
+        padding: 0;
+    }
+    .login-body-content .login-custom-card .service-statistics {
+        padding: 6px; 
+    }
+    .login-body-content .signupClass {
+        padding: 12px;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .rating-feed {
+        display: block;
+    }
+    .login-body-content .login-custom-card.statis-counts.feed-back .feedback-wrapper .feedback-item p {
+        -webkit-line-clamp: 1;
+        line-height: 16.8px;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card {
+        min-height: 76px;
+    }
+    .announcements .slick-list {
+        margin-top: -20px;
+        height: 333px !important;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1224px){
+    .announcements .slick-list {
+        margin-top: -17px;
+        height: auto !important;
+    }
+    .announcements.slick-vertical.slick-initialized.slick-slider{
+        height:289px;
+    }
+    .announcements.slick-slider .slick-track{
+        transform: translate3d(0px, -282px, 0px) !important;
+    }
+    .announcementCardSlider .media-body h6 {
+        width: 175px;
+        max-width: 100%;
+    }
+    .announcementCardSlider {
+        padding: 9px;
+        margin: 13px 6px 0px;
+    }
+    .pilog-announce .announce-banner {
+        width: 24% !important;
+    }
+    .login-custom-card .card-title {
+        padding-top: 10px;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body {
+        padding: 15px;
+    }
+    .login-body-content .login-custom-card .service-statistics {
+        padding: 6px; 
+    }
+    .login-body-content .signupClass {
+        padding: 12px;
+    }
+    #carouselExampleIndicators .carousel-item img {
+        width: 98.5% !important;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .leftColWrapper{
+        max-width:100% !important;
+    }
+    .rightColWrapper{
+        max-width:100% !important;
+    }
+    .login-custom-card .card-title{
+        margin-top:10px !important;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper {
+        display: block;
+        align-items: center;
+        padding: 3px 3px;
+        box-shadow: 4px 5px 6px 0 rgba(228,228,228,0.5);
+        height: auto;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news {
+        display: block;
+        align-items: center;
+        box-shadow: 0 0 6px -1px #d1d1d1;
+        padding: 5px 5px 5px 5px;
+        border-radius: 4px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg {
+        margin: 3px auto;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg {
+        height: 50px;
+        width: 50px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg span:first-child {
+        top: 17px;
+        right: 16px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg span:nth-child(2) {
+        top: 29px;
+        left: 9px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news:first-child {
+        margin-bottom: 10px !important;
+    }
+    .leftColWrapper, .rightColWrapper, .centerColWrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .col-pr-0 {
+        padding-right: 15px;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card {
+        display: inherit !important;
+        width: 98% !important;
+    }
+    .vision-social-content h6, .vision-footer-content h6 {
+        text-align: center;
+    }
+    .vision-social-content h6, .vision-footer-content ul{
+        text-align: center;
+    }
+    .footer-social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bubble-container {
+        height: 350px;
+        width: 98%;
+        max-width: 100%;
+    }
+    ul.vision-footer-links {
+        margin: 0px;
+        display: block;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:767px){
+    .leftColWrapper{
+        max-width:100% !important;
+    }
+    .rightColWrapper{
+        max-width:100% !important;
+    }
+    .login-custom-card .card-title{
+        margin-top:10px !important;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper {
+        display: block;
+        align-items: center;
+        padding: 3px 3px;
+        box-shadow: 4px 5px 6px 0 rgba(228,228,228,0.5);
+        height: auto;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news {
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 6px -1px #d1d1d1;
+        padding: 5px 5px 5px 5px;
+        border-radius: 4px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg {
+        margin: 3px auto;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg {
+        height: 50px;
+        width: 50px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg span:first-child {
+        top: 17px;
+        right: 16px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news .pilog-date .clander_bg span:nth-child(2) {
+        top: 29px;
+        left: 9px;
+    }
+    .login-body-content .login-custom-card.statis-counts .pilog-news-wrapper .pilog-date-news:first-child {
+        margin-bottom: 10px !important;
+    }
+    .leftColWrapper, .rightColWrapper, .centerColWrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .col-pr-0 {
+        padding-right: 15px;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card .card-body .circle-image {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .login-body-content .login-custom-card.statis-counts .service-statistics .card {
+        display: inherit !important;
+        width: 98% !important;
+    }
+    .vision-social-content h6, .vision-footer-content h6 {
+        text-align: center;
+    }
+    .vision-social-content h6, .vision-footer-content ul{
+        text-align: center;
+    }
+    .footer-social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bubble-container {
+        height: 350px;
+        width: 98%;
+        max-width: 100%;
+    }
+    .announcementCardSlider {
+        width: 97% !important;
+    }
+    ul.vision-footer-links {
+        margin: 0px;
+        display: block;
+    }
+}

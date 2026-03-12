@@ -1,0 +1,1772 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Apr, 2025, 3:51:16 PM
+    Author     : PiLog
+*/
+
+
+
+/*fiori Theme start 24-09-2024*/
+.fiorithemeClass.quartzLiteThemeClass .sapfioriwrappsubmenu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fiorithemeClass.quartzLiteThemeClass .sapfioriwrappsubmenu .fioriMenuSingleItem{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    position: relative;
+    padding:1rem;
+    outline: none;
+    box-sizing: border-box;
+    background-position: 0px;
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 .0625rem rgba(0, 0, 0, 0.1), 0 .125rem .5rem 0 rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+.fiorithemeClass.quartzLiteThemeClass .sapfioriwrappsubmenu .fioriMenuSingleItem:hover{
+    background: #f5f5f5;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) !important;   
+    transition: background 0.2s;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .mediaCard {
+    display: flex;
+    gap: 6px;
+    padding:10px; 
+    height: 110px;
+
+}
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .mediaCard .submenudescription{
+    display: -webkit-box;
+    max-width: 100%;
+    font-size: 12px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    letter-spacing: .4px;
+    font-weight: 500;
+    /* line-height: 12px; */
+}
+
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .submenuImg {
+    margin: 15px 0px;
+}
+.fiorithemeClass.quartzLiteThemeClass .fiorithemeClass.quartzLiteThemeClass.fiorisinglecard .menudescription .submenudescription{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .submenuImg img {
+    width: 35px;  
+}
+
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .submenuText {
+    height: 3.625rem;
+
+}
+.fiorithemeClass.quartzLiteThemeClass .fioriBreadCrum{
+    padding: 15px;
+}
+.fiorithemeClass.quartzLiteThemeClass .fioriBreadCrum ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    width: 100%;
+}
+.fiorithemeClass.quartzLiteThemeClass .fioriBreadCrum ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    width: 100%;
+}
+.fiorithemeClass.quartzLiteThemeClass .fioriBreadCrum ul li{
+    font-size: 14px;
+}
+.fiorithemeClass.quartzLiteThemeClass .fioriBreadCrum ul li:before {
+    content: "/\00a0";
+    color: #32363a;  
+}
+
+
+
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .submenuText p {  
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #32363a;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .submenudescIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #fafafa;
+    padding: 8px 4px; 
+    display: none;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .submenudescIcon img {
+    width: 20px;
+}
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .showInnerMenus img{ 
+    width: 18px;
+    cursor: pointer;
+}
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .showInnerMenus{
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    text-align: right;
+}
+.fiorithemeClass.quartzLiteThemeClass .disableDomainTitleClass .cardInnerImage{
+    height: 65px;
+}
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .submenudescIcon .submenudescinnerIcon{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/*fiori Theme end 24-09-2024*/
+
+
+/* Fiori Css Starts Here */
+
+.fiorithemeClass.quartzLiteThemeClass .filterButtonrow > .col-12{
+    scrollbar-width: none;
+}
+.fiorithemeClass.quartzLiteThemeClass .menutabClass{
+    /*    border-radius: none;
+        border: none;
+        background-color: inherit; */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    transition: 0.1s allease;
+    background-color: #FFF;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .disableDomainTitleClass .cardInnerImage{
+    height: inherit;
+    display:flex;
+    align-items:center  
+}
+
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .showGridHeight{
+    height: inherit;
+}
+/* DXP Fiori Search Tabs Css Starts Here */
+.fiorithemeClass.quartzLiteThemeClass .searchTabsSection{
+    padding: 4px;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchTabsSection .card{
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .searchTabsSection .card .card-header{
+    background-color: #fff;
+    padding: 8px;
+    padding-bottom: 0;				  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchTabsSection .searchTabListClass ul{
+    padding-left: inherit;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchTabsSection .searchTabListClass ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding-bottom: 8px; 					 
+}
+.fiorithemeClass.quartzLiteThemeClass .searchTabsSection .searchTabListClass ul li span.tabIcon img{
+    width: 18px !important;
+    height: inherit !important;						   
+}
+
+.fiorithemeClass.quartzLiteThemeClass .searchTabsSection .searchTabListClass ul li span{
+    font-size: 14px;
+    font-weight: 500; 
+    color: #32363a;
+    margin-top: inherit;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchTabsSection .searchTabListClass ul li.active{
+    color: #0b4a99;
+    border-bottom: 2px solid #0b4a99;
+    background-color: inherit;
+    border-radius: inherit;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchTabsSection .searchTabListClass ul li.active .tabText{
+    color: #0b4a99;
+    background-color: inherit;
+    border-radius: inherit;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchTabsSection .searchTabContent{
+    padding: 4px;
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+} 
+/* DXP Fiori Search Tabs Css Starts Here */  
+
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .card .card-header {
+    height: 2.75rem;
+    border: none;
+}
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .tab-content {
+    padding: 4px;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .innerCardWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
+    gap: 1rem;
+    grid-auto-flow: row; 				   
+
+}
+
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem { 
+    color: #32363a;
+    background: #fff;
+}
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem.active{
+    border: .0625rem dotted #89919a;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem .titleIcon img {
+    width: 25px !important;
+} 
+
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem .count {
+    color: #556b82;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem .cardtitlename {
+    font-size: 14px;
+    width: 20%;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem:hover,
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem.active:hover{
+    background: #ededed !important;
+    box-shadow: 0 0 0 .0625rem #b3b3b3; 
+}
+
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem.active .count{
+    color: #32363a;
+    font-size: 14px;
+}
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem{
+    border-radius: .25rem;
+    border: none;
+    outline:none;
+    box-shadow: 0 0 0 .0625rem rgba(0, 0, 0, 0.1), 0 .125rem .5rem 0 rgba(0, 0, 0, 0.1);
+    overflow: unset;
+    width: 100%;
+    padding: 1rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionEnclosureTable .visionFileUpload {
+    background: transparent;
+}
+.fiorithemeClass.quartzLiteThemeClass .idxpUI5InputIconMergeClass:has(> input[type="checkbox"]) {
+    border: none;
+    width: fit-content;
+    height:1rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpSplitterTabsContent {
+    background: #eff1f2;
+    overflow: auto;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpSplitterTabsContent.dxpFormSplitterTabsContent {
+    height:100%;
+}
+/* Energy Blue theme for Fiori Theme enabled */
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-content-energyblue{
+    border-color: #a4bed4;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-fill-state-normal-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-header-energyblue{
+    border-color:#a4bed4;
+    background-color:#fff;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .jqx-fill-state-hover-energyblue{
+    border-color:#a4bed4;
+    background-color:#cfdde9;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-fill-state-pressed-energyblue{
+    border-color:#5e8cb3;
+    background-color:#cfdde9;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-fill-state-focus-energyblue {
+    border-color: #477396;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-scrollbar-state-normal-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-bottomright-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-panel-bottomright-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-listbox-bottomright-energyblue{
+    background-color:#e0e9f5;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-energyblue .jqx-grid-column-header-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-energyblue .jqx-grid-cell-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-energyblue .jqx-grid-group-cell-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-group-cell-energyblue{
+    border-color:#a4bed4;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-title-selected-bottom-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-selection-tracker-bottom-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-title-selected-top-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-selection-tracker-top-energyblue{
+    border-color:#a4bed4;
+    border-bottom:1px solid #fff;
+    background:#fff;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-sort-alt-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-filter-alt-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-pinned-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-alt-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-sort-energyblue{
+    background-color:#e7eef8;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-selected-energyblue{
+    background-color:#cfdde9 !important;
+    color:#2b465e !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-hover-energyblue{
+    background-color:#cfdde9 !important;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .jqx-menu-vertical-energyblue{
+    background: #e0e9f5;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-layout-energyblue
+{
+    background-color: #a4bed4;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid .jqx-grid-content div>[role="row"]:nth-child(odd){
+    background-color: inherit;
+    background-color: inherit;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid .jqx-grid-content div>[role="row"]:nth-child(even){
+    background-color: inherit; 
+}
+/* Fiori Fonts and colour css start here */
+
+body.fiorithemeClass.quartzLiteThemeClass{
+    color: #32363a; 
+}
+
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-content{
+    color: #32363a !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .outerWidthcol .menutabClass .filterButtonTitle{
+    color: #777;
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .submenuText p{
+    color: #32363a;
+    font-weight: normal;
+}
+.fiorithemeClass.quartzLiteThemeClass .fiorisinglecard .mediaCard .submenudescription{
+    color: #777; 
+}
+.fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container > div p b{
+    font-weight: normal;
+}
+.fiorithemeClass.quartzLiteThemeClass .sidebar-wrapper .sidebar-menu ul li a{
+    color: #777;
+}
+
+/* JQX tabs into fiori tabs */
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-headerWrapper{
+    background-color: #fff !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-headerWrapper .jqx-item{
+    font-size: .875rem;
+    font-weight: normal;
+    border: none !important;
+    background: none !important;
+    color: #32363a !important;
+    text-transform: uppercase;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-headerWrapper .jqx-item.jqx-tabs-title-selected-top{
+    border: none !important;
+    background: none !important;
+    border-bottom: 2px solid #0854a0 !important;
+    color: #0854a0 !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-headerWrapper .jqx-item.jqx-tabs-title-selected-top .jqx-tabs-titleContentWrapper span{
+    color: #007bff !important;
+    font-weight: 600 !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-headerWrapper .jqx-tabs-title-selected-top-ui-redmond{
+    border: none !important;
+    background: none !important;
+    border-bottom: 2px solid #0b4a99 !important;
+    color: #0b4a99 !important;
+}
+body.fiorithemeClass.quartzLiteThemeClass{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+body.fiorithemeClass.quartzLiteThemeClass ul,
+body.fiorithemeClass.quartzLiteThemeClass h1,
+body.fiorithemeClass.quartzLiteThemeClass h2,
+body.fiorithemeClass.quartzLiteThemeClass h3,
+body.fiorithemeClass.quartzLiteThemeClass h4,
+body.fiorithemeClass.quartzLiteThemeClass h5,
+body.fiorithemeClass.quartzLiteThemeClass h6,
+body.fiorithemeClass.quartzLiteThemeClass li,
+body.fiorithemeClass.quartzLiteThemeClass span{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection{
+    background-color: #eff1f2;
+    height: calc(100vh - 54px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow .listFiltersul{
+    gap: 1rem;
+    align-items: flex-start;
+    height: 100%;
+}
+.fiorithemeClass.quartzLiteThemeClass .outerWidthcol.disableDomainTitleClass {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .cardInnerImage .cardInnerImageClass {
+    width: 22px;
+}
+/*.fiorithemeClass.quartzLiteThemeClass .menutabClass{
+    margin-top: inherit;
+    position: inherit;
+    padding: 0;
+}*/
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow{
+
+    padding: 5px;
+    padding-bottom: 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.fiorithemeClass.quartzLiteThemeClass .expendInOutDivClass{ 
+    display: none;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .listFiltersul .highlightCard{
+    background-color: inherit;
+    border-radius: 0; 
+    color: #006BB8;
+    border: none;
+    border-bottom: 2px solid #006BB8; 
+}
+
+.fiorithemeClass.quartzLiteThemeClass .listFiltersul .highlightCard .menutabClass{
+    background-color: inherit;
+    color: inherit; 
+    padding-bottom: 0;
+    border: 1px dotted #32363a;
+    border-radius: inherit;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .outerWidthcol.highlightCard .filterButtonTitle{
+    color: #006BB8;
+    font-weight: 600;
+}
+.fiorithemeClass.quartzLiteThemeClass .fa-angle-double-left:before{
+    content: '\f104';
+}
+.fiorithemeClass.quartzLiteThemeClass .fa-angle-double-right:before{
+    content: "\f105";
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow .iconMenuNavPrev, .fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow .iconMenuNavNext{
+    width: 15px;
+    box-shadow: inherit;
+    border-radius: inherit;
+    opacity: inherit;
+    background: inherit;
+    font-size: 30px;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow .iconMenuNavPrev i, .fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow .iconMenuNavNext i{
+    color: #777;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow{
+    margin-top: 20px;
+}
+.fiorithemeClass.quartzLiteThemeClass .firsthtmlDxpSplitterTree{
+    height: 99% !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .mainhtmlDxpSplitter{
+    height: 99% !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .firstDxpSplitterData{
+    background-color: #fafafa;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphtmlTreeDescription{
+    background-color: #354a5f;
+    color: #fff;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree{
+    /*height: 100vh !important;*/
+    padding: 10px;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li button{
+    padding: 5px !important;
+    margin: 0 !important; 
+    color: #777;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li button:before{
+    display: none;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li button[data-level="1"]:before, 
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li button[data-level="2"]:before, 
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li button[data-level="3"]:before {
+   content: "\f054"; 
+    font-family: "FontAwesome";
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-weight: 400;
+    font-size: inherit;
+    color: inherit; 
+
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li button.active{
+    /*background-color: #fafafa !important;*/
+    color: #007bff;
+    font-weight: 600;
+    border: 1px solid #f1f1f1 !important;
+
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li button.active:before{
+    transform: rotate(90deg);
+}
+.fiorithemeClass.quartzLiteThemeClass .smartsearchtb{
+    width: 90% 
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphtmlTreeSearchResults{
+    margin-left: inherit; 
+    padding: 10px;
+    padding-bottom: 0;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li ul li button span{
+    font-size: 10px !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li ul li button.active{
+    border: none !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li ul li button span b{
+    font-weight: 400 !important;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .dxphmlTree .treemenu li ul li button.active span b{
+    font-weight: 600 !important;
+}
+.fiorithemeClass.quartzLiteThemeClass select, .fiorithemeClass.quartzLiteThemeClass input, .fiorithemeClass.quartzLiteThemeClass text-area, .fiorithemeClass.quartzLiteThemeClass form label{
+    color: #777; 
+}
+
+/* Grey Family Grid Layout*/
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-content-energyblue{
+    border-color: #ddd;
+}
+.fiorithemeClass.quartzLiteThemeClass .show_detail{
+    background: #fff url(../images/pdficon.png) no-repeat center !important;
+    background-size: 18px 18px !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid{
+    border-style: inherit !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-fill-state-normal-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-header-energyblue{
+    border-color:#ddd;
+    background-color:#fff;  
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-column-header.jqx-grid-column-header-energyblue.jqx-widget-header.jqx-widget-header-energyblue{
+    background-color: #f7f7f7 !important;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .jqx-fill-state-hover-energyblue{
+    border-color:#ddd;
+    background-color:#f7f7f7; 
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-fill-state-pressed-energyblue{
+    border-color:#5e8cb3;
+    background-color:#cfdde9;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-fill-state-focus-energyblue {
+    border-color: #ddd;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-scrollbar-state-normal-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-bottomright-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-panel-bottomright-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-listbox-bottomright-energyblue{
+    background-color:#fff;
+    border: 1px solid #f7f7f7;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-energyblue .jqx-grid-column-header-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-energyblue .jqx-grid-cell-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-widget-energyblue .jqx-grid-group-cell-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-group-cell-energyblue{
+    border-color:#ddd;
+    border-width: 0;
+    border-style: inherit;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-title-selected-bottom-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-selection-tracker-bottom-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-title-selected-top-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-selection-tracker-top-energyblue{
+    border-color:#ddd;
+    border-bottom:1px solid #fff;
+    background:#fff;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-sort-alt-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-filter-alt-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-pinned-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-alt-energyblue,
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-sort-energyblue{
+    background-color:#fff;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-selected-energyblue{
+    background-color:#f7f7f7 !important;
+    color:#007BFF !important;  
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid-cell-hover-energyblue{
+    background-color:#f7f7f7 !important;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .jqx-menu-vertical-energyblue{
+    background: #f7f7f7; 
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-layout-energyblue
+{
+    background-color: #fafafa;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid .jqx-grid-content div>[role="row"]:nth-child(odd){
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid .jqx-grid-content div>[role="row"]:nth-child(even){
+    background-color: #fff; 
+    border-bottom: 1px solid #e5e5e5;
+} 
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid .jqx-grid-content div>[role="row"]:nth-child{
+    border-bottom: inherit;
+} 
+.fiorithemeClass.quartzLiteThemeClass .jqx-tabs-headerWrapper{
+    background-color: #fff !important;
+    border-bottom: none;
+    padding-bottom: .5rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .jqx-checkbox-default{
+    border-radius: 4px !important;
+} 
+.fiorithemeClass.quartzLiteThemeClass .jqx-grid .jqx-widget-header > div span{
+    font-size: 14px !important; 
+    font-weight: 600 !important;
+}
+
+/* Grey Family Grid Layout*/ 
+.fiorithemeClass.quartzLiteThemeClass .sapfioriMainwrappsubmenu .fioriTabTitleDiv h4{
+    font-size: 1.125rem;
+    font-weight: normal;
+    text-shadow: 0 0 .125rem #fff;  
+    color: #32363a; 
+}   
+/*Fiori form tamp tabs layout changes starts here */ 
+
+/*ui-dialog Muni design changed as OPEN UI 5*/
+
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog,
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog {
+    border-radius:0.25rem;
+    border: 0;
+    box-shadow: 0 0 0 .0625rem rgba(34, 53, 72, 0.48), 0 1.25rem 5rem 0 rgba(34, 53, 72, 0.25) !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .ui-dialog-titlebar,
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog .modal-content .modal-header{
+    border-radius: 0.25rem 0.25rem 0 0 !important;
+    background: #fff;
+    color: #32363a;
+    border: 0;   
+    box-shadow: 0 1px 4px #ddd;
+    padding: 8px;
+    font-weight:600;
+}
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog .modal-content .modal-header h4,
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog .modal-content .modal-header .close{
+    color: #32363a;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog .modal-content {
+    border-radius: 0.25rem 0.25rem !important;
+    border:0;
+    /*padding: 1rem;*/
+}
+
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog .modal-content .modal-footer {
+    border-radius: 0 0 0.25rem 0.25rem  !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog .modal-content .modal-footer button{
+    margin:0;
+    color:#fff !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .ui-dialog-buttonpane,
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog .modal-content .modal-footer{
+    border-radius: 0 0 0.25rem 0.25rem;
+    text-align: right;
+    gap:8px;
+}
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .ui-dialog-buttonpane button:nth-child(1),
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog .modal-content .modal-footer button:nth-child(1){
+    font-size: 14px !important;
+    border-radius: 0.25rem !important; 
+    padding: 4px 8px !important;
+    background: #006BB8 !important;
+    border:1px solid #006BB8 !important; 
+}
+
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .ui-dialog-buttonpane button:nth-child(2),
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog .modal-content .modal-footer button:nth-child(2){
+    font-size:13px !important;
+    background:#fff !important;
+    border:0 !important;
+    color:#32363a !important;
+    border-radius: 0.5rem;
+    padding: 6px !important;  
+}
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .ui-dialog-buttonpane button:nth-child(2):hover{
+    box-shadow:0px 0px 2px 1px #ddd;
+    /* border:1px solid #006BB8 !important; */
+}
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .ui-dialog-buttonpane button:nth-child(2):focus{
+    border: 1px solid #0b4a99 !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .ui-dialog-buttonpane button:nth-child(1):hover{
+    border:1px solid #006BB8 !important;  
+}
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog.ui-dialog-dragging .ui-dialog-titlebar{
+    margin:1px;
+    box-shadow: 0 0 0 1.8px #006BB8;
+}
+.fiorithemeClass.quartzLiteThemeClass .visualizeChartConfigColumnsClass, 
+.fiorithemeClass.quartzLiteThemeClass .visualizeChartConfigPropertiesClass, 
+.fiorithemeClass.quartzLiteThemeClass .visualizeChartConfigFiltersClass, 
+.fiorithemeClass.quartzLiteThemeClass .visualizeChartConfigJoinsClass {
+    scrollbar-width: thin !important;  
+}
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .ui-dialog-titlebar-close {
+    color:#32363a !important;
+    font-size:18px !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .modal .modal-dialog .modal-content .modal-body{
+    max-height: 450px;
+    overflow-y: auto;
+}
+/*ui-dialog design changed as OPEN UI 5*/ 
+
+/* Fiori form Template Css Start Here By Santhosh */
+
+.fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialMainWrapper{
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*background-color: #f5f5f5;*/
+}
+
+.fiorithemeClass.quartzLiteThemeClass .visionFormTitleName{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 6px 0 6px;
+    background: #fff;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .fioriTopRightcontrolsdivWrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 4px;
+}
+/*.fiorithemeClass.quartzLiteThemeClass .allTabListMainWrapper{
+    margin-top: 10px;
+}*/
+.fiorithemeClass.quartzLiteThemeClass .allTabListMainWrapper .fioriFormButtongroup{
+    padding: 4px;
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    justify-content: flex-end;
+}
+.fiorithemeClass.quartzLiteThemeClass .allTabListMainWrapper .fioriFormButtongroup input{
+    border: 1px solid #ddd;
+    background-color: inherit;
+    padding: 5px 22px;
+    background-repeat: no-repeat; 
+    background-size: 16px 16px;
+    background-position: 3px 5px;
+    /* width: 100px; */
+    border-radius: 5px;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialFormTable img, .visionRegisterMaterialImagePanel img{
+    margin-left: 0 !important;
+}
+/* Fiori form Template Css Ends Here By Santhosh */
+
+/* Open ui changes for home page tiles 24-03-2025 start*/
+.fiorithemeClass.quartzLiteThemeClass .iconMenuNavNext ,
+.fiorithemeClass.quartzLiteThemeClass .iconMenuNavPrev{
+    display: none;
+}
+.fiorithemeClass.quartzLiteThemeClass .disableDomainTitleClass .cardInnerImage {
+    height: auto;
+    position: absolute;
+    bottom: 40px;
+    z-index: 1;
+}
+.fiorithemeClass.quartzLiteThemeClass .outerWidthcol.disableDomainTitleClass{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    position: relative;
+    padding:1rem;
+    outline: none;
+    box-sizing: border-box;
+    background-position: 0px;
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 .0625rem rgba(0, 0, 0, 0.1), 0 .125rem .5rem 0 rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow .listFiltersul {
+    flex-wrap: wrap;
+    padding: 15px;  
+    overflow-y: auto;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow .col-12{
+    padding:0; 
+}
+/*.fiorithemeClass.quartzLiteThemeClass .menutabClass {
+    height: 80px;
+    display: block;
+}*/
+
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .outerWidthcol .menutabClass .filterButtonTitle {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #32363a;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    font-weight: normal;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .cardInnerImage .cardInnerImageClass {
+    width: 35px;
+}
+.fiorithemeClass.quartzLiteThemeClass .fioriBreadCrum ul li:first-child:before {
+    display: none;
+}
+.fiorithemeClass.quartzLiteThemeClass .subscriptionMesgPop .close span {
+    color: #32363a;
+}
+.fiorithemeClass.quartzLiteThemeClass .disableDomainTitleClass .cardInnerImage span{
+    font-size:18px;
+    margin-left:8px;
+    font-weight:400;
+    color:#32363a;
+}
+.fiorithemeClass.quartzLiteThemeClass .disableDomainTitleClass .cardInnerImage span {
+    display: block;
+}
+body:not(.fiorithemeClass.quartzLiteThemeClass) .disableDomainTitleClass .cardInnerImage span {
+    display: none;
+}
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow .col-12 {
+    padding: 0;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpSplitterTabsContent .searchResultCardViewMainSection{
+    padding-top:0;
+}
+.fiorithemeClass.quartzLiteThemeClass .listFiltersul .menutabClass:hover {
+    background: #f5f5f5;
+    /*box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);*/
+    transition: background 0.2s;
+    border-radius: 1rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpSplitterTabsContent .searchResultCardViewMainSection .container-fluid,
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow .col-12{
+    height: 100%;
+}
+.fiorithemeClass.quartzLiteThemeClass #allContentMainDiv,
+.fiorithemeClass.quartzLiteThemeClass .searchResultCardViewMainSection .filterButtonrow{
+    margin-top: 0;
+    height: 100%;
+}
+/* Open ui changes for home page tiles 24-03-2025 end*/    
+
+
+.fiorithemeClass.quartzLiteThemeClass .visionFormTitleName .fioriTopRightcontrolsdivWrapper .fioriFormButtongroup b  input[type="button"]{
+    position: relative;
+    background-color: #fff;
+    border: .0625rem solid transparent !important;
+    border-radius: 0.2rem;
+    color: #0854a0;
+    width: auto;
+    font-weight: normal;
+    padding: 6px;
+    margin:.0625rem; 
+}
+.fiorithemeClass.quartzLiteThemeClass .visionFormTitleName .fioriTopRightcontrolsdivWrapper .fioriFormButtongroup b  input[type="button"]:hover{
+    background-color: #f7f7f7 !important;
+    border: .0625rem solid #0854a0 !important;
+    transition: 0.2s;   
+}
+.fiorithemeClass.quartzLiteThemeClass .visionFormTitleName .fioriTopRightcontrolsdivWrapper .fioriFormButtongroup b:nth-child(1)  input{
+    background-color: #0a6ed1 !important;
+    color: #fff !important; 
+    font-weight: 600;
+} 
+.fiorithemeClass.quartzLiteThemeClass .visionFormTitleName .fioriTopRightcontrolsdivWrapper .fioriFormButtongroup b input[type="button"][value="Save"]:hover{
+    background-color: #0a6ed1 !important;
+    color: #fff; 
+}
+
+.fiorithemeClass.quartzLiteThemeClass .button_Validation {
+    background-image: none !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .button_Save {
+    background-image:none !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .button_Duplicate_Check {
+    background-image: none;
+}
+.fiorithemeClass.quartzLiteThemeClass .button_Delete {
+    background-image:none;
+}
+.fiorithemeClass.quartzLiteThemeClass .button_Submit {
+    background-image:none;
+}
+.fiorithemeClass.quartzLiteThemeClass .button_Copy {
+    background-image:none;
+}
+.fiorithemeClass.quartzLiteThemeClass .button_Transfer_to_SAP{
+    background-image:none;
+}
+.fiorithemeClass.quartzLiteThemeClass .listFiltersul .outerWidthcol:hover .menutabClass  {
+    background: #f5f5f5;
+}
+.fiorithemeClass.quartzLiteThemeClass .listFiltersul .outerWidthcol:hover  {   /* update the class */
+    background: #eaecee;
+    box-shadow: 0 0 0 .0625rem rgba(34, 53, 72, 0.48), 0 .625rem 1.875rem 0 rgba(34, 53, 72, 0.25) !important;
+    transition: background 0.2s;
+}
+.fiorithemeClass.quartzLiteThemeClass .sapfioriwrappsubmenu {
+    background-color:transparent;
+    gap:1rem;						 
+}
+
+
+
+.fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialFormTable th input[type="text"],.fiorithemeClass.quartzLiteThemeClass .responsiveTable th input[type="text"],.fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialFormTable th select,.fiorithemeClass.quartzLiteThemeClass .responsiveTable th select,.fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialFormTable th textarea,.fiorithemeClass.quartzLiteThemeClass .responsiveTable th textarea
+{
+    -moz-box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: 10px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    padding: 2px;
+}
+.fiorithemeClass.quartzLiteThemeClass .registrationgeneric .sortGerericDxpFormMianDiv{
+    padding: 14px;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionTabMenuCharacteristicsFormData.visionTabMenuFormData {
+    width: 100%;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionTabMenuFormData .tg-wrap .tg .sticky-header tr{
+    background-color: #fff !important;
+    height: 45px;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionFormCharactristicsInput input{
+    border-left: 1px solid #aaa !important;
+    border-top: 1px solid #aaa !important;
+    border-bottom: 1px solid #aaa !important;
+    border-right: 1px solid #aaa !important; 
+    border-radius: 2px !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .generalMoreInfoDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    height: auto;
+}
+.fiorithemeClass.quartzLiteThemeClass .generalMoreInfoDiv .generalMoreInfoBtn{
+    padding:8px;
+    border-bottom:2px solid #006BB8;
+    width:fit-content;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#006BB8;
+}
+.fiorithemeClass.quartzLiteThemeClass .generalInfoContainer{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    width:100%;
+    height:100%;
+    padding:12px;
+    overflow: hidden;
+}
+.fiorithemeClass.quartzLiteThemeClass .infoBox{  
+    width: 100%;    
+}
+
+
+.fiorithemeClass.quartzLiteThemeClass .infoBox .genInfoInnerDataCard p{
+    margin-bottom: 0;  
+}												
+
+.fiorithemeClass.quartzLiteThemeClass .fioriManageButtongroup button{
+    background-color: #fff !important;
+    color: #1d2d3e !important;
+    text-align: justify;
+    border: none;
+    margin: inherit;
+    outline: none !important;
+    font-size: .875rem;
+    font-weight: bold;
+}
+.fiorithemeClass.quartzLiteThemeClass .fioriManageButtongroup button:focus{
+    box-shadow: inherit !important;
+}
+
+/* .fiorithemeClass.quartzLiteThemeClass .fioriManageButtongroup button.dropdown-toggle::after{
+    display: inline-block;
+    vertical-align: 0.255em;
+    content: "";
+    margin-top: 4%;
+    border-top: .4em solid;
+    border-right: .4em solid transparent;
+    border-bottom: 0;
+    border-left: .4em solid transparent;
+    float: right;
+} */
+.fiorithemeClass.quartzLiteThemeClass .fioriManageButtongroup .fioriManageBtnInnerContainer {
+    padding: 2px;
+    border: 1px solid #a9a9a9;
+    margin: 0;
+    border-radius: 2px;
+}   
+.fiorithemeClass.quartzLiteThemeClass .fioriManageButtongroup .fioriManageBtnInnerContainer .fioriManageBtnList{
+    display: flex;
+    align-items: center;
+    padding: 4px; 
+    gap: 0.5rem;
+    border-radius: 0.2rem;
+} 
+.fiorithemeClass.quartzLiteThemeClass .fioriManageButtongroup .fioriManageBtnInnerContainer .fioriManageBtnList:last-child{
+    border-bottom: none;
+}
+.fiorithemeClass.quartzLiteThemeClass .fioriManageButtongroup .fioriManageBtnInnerContainer .fioriManageBtnList:hover{
+    background-color: #fff !important;
+    cursor: pointer;
+} 
+.fiorithemeClass.quartzLiteThemeClass .visionFormTitleName .fioriCoreBtnGroup{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .fioriCoreBtnGroup .fioriManageButtongroup{
+    padding-bottom: 4px;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .tg-wrap .tg .tg-vro8{
+    background-color: #f7f7f7;
+    color: #32363a;
+}
+.fiorithemeClass.quartzLiteThemeClass .idxpTypeView{
+    background-color:#006BB8; 
+}
+.fiorithemeClass.quartzLiteThemeClass .visionGenericTabsOpeartions{
+    display: flex;
+    align-items: center;  
+    gap: 1rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionGenericTabExport, .fiorithemeClass.quartzLiteThemeClass .visionReportandDashboardExportDropdown{
+    width:inherit !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionGenericTabsOpeartions select, .fiorithemeClass.quartzLiteThemeClass .visionReportandDashboardExport select,.fiorithemeClass.quartzLiteThemeClass .visionSearchExport select,.fiorithemeClass.quartzLiteThemeClass .visionGenericClusterOpeartions select{
+    height: 23px;
+    background-color: #fff;
+    margin-right: 0;
+}  
+.fiorithemeClass.quartzLiteThemeClass .dataTable .dt-column-order{
+    display: none;				 
+}
+.fiorithemeClass.quartzLiteThemeClass .dataTable th {
+    font-weight: 600;								  
+}
+.fiorithemeClass.quartzLiteThemeClass .dataTable td {
+    box-shadow: inherit !important;
+    background-color: #fff;
+    padding: inherit;
+    vertical-align: middle;
+    height: 50px;
+    padding: 6px 10px;
+}
+.fiorithemeClass.quartzLiteThemeClass .dataTable td span{				  
+    font-size: 14px;					
+}
+.fiorithemeClass.quartzLiteThemeClass .firstLevelMenuSection .tabbable{
+    margin-left: 0px;							
+}
+/* 01-04-2025*/   
+.fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container .active p{
+    background-image: inherit;
+    background-color: #006BB8;
+    color: #fff;
+    border: 1px solid #006BB8;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpSplitterTabs .dxpSplitterTabsCrossSpan img {
+    position: relative;
+    top: 3px;
+    right: 3px;
+    /*filter: invert(100);*/
+}
+/*new styles here add in dxptheme.css */
+.fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container .viewClassDiv p:hover, .fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container .dxpTabRed p:hover{
+    background-color: #0064d9 !important;
+    color: #fff !important;   
+    cursor: pointer;   
+}
+.fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container .active p{
+    box-shadow: none;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpSplitterTabs.active .dxpSplitterTabsCrossSpan img ,
+.fiorithemeClass.quartzLiteThemeClass .dxpSplitterTabs:hover .dxpSplitterTabsCrossSpan img{
+    filter: invert(100);
+}
+.fiorithemeClass.quartzLiteThemeClass .footer{ 
+    width: 100%;
+}
+.fiorithemeClass.quartzLiteThemeClass .innerCardDetailsitem .titleDescription div:nth-child(1){
+    white-space: nowrap;  
+    max-width: 98%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #32363a;
+    font-weight: normal; 
+    margin-bottom: 2px;
+    font-size: 15px;			
+}
+.firstLevelMenuSection .innerCardWrapper .innerCardDetailsitem .titleDescription{
+    width: 88%;
+}
+.fiorithemeClass.quartzLiteThemeClass .generalMoreInfoDiv .generalInfoContainer ul li{
+    padding:8px;
+}
+.fiorithemeClass.quartzLiteThemeClass .generalMoreInfoDiv .generalInfoContainer ul{
+    height:100%;
+    overflow-y:auto
+}
+.fiorithemeClass.quartzLiteThemeClass .generalMoreInfoDiv .generalInfoContainer ul:active{  
+    border: .0625rem dotted #89919a;
+}
+.fiorithemeClass.quartzLiteThemeClass .notificationIcon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fiorithemeClass.quartzLiteThemeClass .notificationIcon .notificationDot{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #0b4a99;
+    top: -11px;
+    right: 8px;
+    display: inline-block;
+}
+.fiorithemeClass.quartzLiteThemeClass .notificationIcon span img{
+    margin-right: 0 !important;
+}
+/*27-03-2025 Santhosh end Css*/
+
+.fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container > div{
+    border-radius: 0.25rem;
+}  
+
+/*new styles in dxptheme.css  for fuiri muni 28-03-25 */
+
+.fiorithemeClass.quartzLiteThemeClass .rightPannelSettings {
+    border-left: 4px solid #006BB8;
+}
+.fiorithemeClass.quartzLiteThemeClass .rightPannelSettings .userAccountDetails .closeSettings {
+    border: 1px solid #006BB8;
+    background: #006BB8;
+}
+.fiorithemeClass.quartzLiteThemeClass .userProfileImgDiv .avatar-upload .avatar-edit input + label:after,
+.fiorithemeClass.quartzLiteThemeClass .newEventMainDiv .newEventSpan,
+.fiorithemeClass.quartzLiteThemeClass .scheduledCalendarMainWrapper #month-name, 
+.fiorithemeClass.quartzLiteThemeClass .scheduledCalendarMainWrapper #todayDayName, 
+.fiorithemeClass.quartzLiteThemeClass .scheduledCalendarMainWrapper .currentdate .prev-button, 
+.fiorithemeClass.quartzLiteThemeClass .scheduledCalendarMainWrapper .currentdate .next-button,
+.fiorithemeClass.quartzLiteThemeClass .notificationNewPanel .notificationnNewPanelInner .notificationPanelBody .notificationPanelInnerBody .notificationBanner_dxp .notification_message .notificationSenderTextMsg,
+.fiorithemeClass.quartzLiteThemeClass .calendar-content .prev-button i, 
+.fiorithemeClass.quartzLiteThemeClass .calendar-content .next-button i{
+    color: #556b82;
+}
+.fiorithemeClass.quartzLiteThemeClass .userProfileImgDiv .avatar-upload .avatar-preview{
+    border-color:#006BB8;
+}
+.fiorithemeClass.quartzLiteThemeClass .rightPannelSettings .pannelTitle,
+.fiorithemeClass.quartzLiteThemeClass .scheduledCalendarMainWrapper .blue.lighten-3,
+.fiorithemeClass.quartzLiteThemeClass .notificationNewPanel .notificationnNewPanelInner .NotificationPanelheader,
+.fiorithemeClass.quartzLiteThemeClass .rightPannelSettings .pannelTitle,
+.fiorithemeClass.quartzLiteThemeClass .rightPannelSettings .listofSettingDiv ul li.fontChangeIcon.dropdown ul li:hover, 
+.fiorithemeClass.quartzLiteThemeClass .rightPannelSettings .listofSettingDiv ul li.fontSizeIcon.dropdown ul li:hover,
+.fiorithemeClass.quartzLiteThemeClass .rightPannelSettings .pannelTitle{
+    background: #006BB8;
+    background-color: #006BB8 !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .newEventMainDiv .newEventName,
+.fiorithemeClass.quartzLiteThemeClass  .scheduledCalendarMainWrapper .sidebar-title h5,
+.fiorithemeClass.quartzLiteThemeClass .scheduledCalendarMainWrapper .empty-message,
+.fiorithemeClass.quartzLiteThemeClass .scheduledCalendarMainWrapper .calendar-content .calendar-cells .row .col-1,
+.fiorithemeClass.quartzLiteThemeClass .notificationNewPanel .notificationBanner_dxp .ago_Time,
+.fiorithemeClass.quartzLiteThemeClass .notificationNewPanel .notificationnNewPanelInner .notificationPanelBody .notificationPanelInnerBody .notificationBanner_dxp .notification_message .notificationSenderText,
+.fiorithemeClass.quartzLiteThemeClass .rightPannelSettings .listofSettingDiv ul li a .mobileTitle,
+.fiorithemeClass.quartzLiteThemeClass .rightPannelSettings .listofSettingDiv ul .ThemesIcon .moreThemesShowDiv,
+.fiorithemeClass.quartzLiteThemeClass .rightPannelSettings .listofSettingDiv ul .ThemesIcon .moreThemesHideDiv{
+    color:#32363a;
+}
+.fiorithemeClass.quartzLiteThemeClass .scheduledCalendarMainWrapper .sidebar-events{
+    height: inherit; 
+}
+.fiorithemeClass.quartzLiteThemeClass .currentDateDetails{
+    padding: 4px 0px;
+    border-bottom: 1px solid #f1f1f1;
+    text-align: center;
+    color: #0b4a99;
+}
+.fiorithemeClass.quartzLiteThemeClass .currentDateDetails span{
+    font-size: 14px;
+    font-weight: 600;
+}
+/* Santhosh Cluster Fiori Design Changes */
+
+.fiorithemeClass.quartzLiteThemeClass .dxpclusterFormDataClass{
+    background-color: #e8eaeb;
+    padding: 8px;
+    scrollbar-width: thin;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpclusterFormDataClass #clusterSplitter{
+    display: flex;
+    gap: 10px;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpclusterFormDataClass #clusterSplitter .visionMasterDetailPanelTop, .fiorithemeClass.quartzLiteThemeClass .dxpclusterFormDataClass #clusterSplitter .visionMasterDetailPanelBottom{
+    width: 50%;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpclusterFormDataClass #clusterSplitter .visionCompDiv{
+    height: calc(100vh - 110px); 
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpclusterFormDataClass #clusterSplitter .visionCompDiv .jqx-grid{
+    height: 100% !important;  
+}
+/* Santhosh Cluster Fiori Design Changes */
+
+.fiorithemeClass.quartzLiteThemeClass .paramSearchbtn input[type="button"]:hover{
+    border: 1px solid #006BB8;
+}
+.fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container > div p{
+    border-radius: 0.25rem;
+}
+/* Prk Css Changes */
+.fiorithemeClass.quartzLiteThemeClass .fioriformTabMainDiv .fioriformTabUlListclass li img {
+    width:18px !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .sortGerericDxpFormMianDiv .sortGerericDxpFormParentDiv input{
+    margin: inherit;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .visionRegisterGenericTable .visionRegisterMaterialImagePanel{
+    border-color:#aaa !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .button_Return {
+    background-image: url(../images/return_icon_white.png);
+}
+
+.fiorithemeClass.quartzLiteThemeClass .button_Approve{
+    background-image: url(../images/approve_icon2_white.png);
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpLoginHeader .navbar-brand span.logoText{
+    font-size: 16px;
+    color: #1d2d3e;
+    font-weight: 600;
+    position: relative;
+}
+.fiorithemeClass.quartzLiteThemeClass .infoBox{  
+    width: 100%;    
+}
+.fiorithemeClass.quartzLiteThemeClass .infoBox .cardTitle {
+    font-size: 1rem;
+    color: #32363a;
+    padding-bottom: 0.5rem;
+    line-height: normal;
+    font-weight: 600;
+}
+.fiorithemeClass.quartzLiteThemeClass .infoBox .genInfoInnerDataCard {
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: .25rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .rightChevronDown:before{
+    font-family: "SAP-icons";
+    content: attr(data-sapIconright);
+    color: #1d2d3e;
+}
+.fiorithemeClass.quartzLiteThemeClass .pilogFioriBackBtnDiv:before{
+    font-family: "SAP-icons";
+    content: attr(data-sapiconbackIcon);
+    color: #1d2d3e;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionFormTitleName .fioriTopRightcontrolsdivWrapper .fioriFormButtongroup b  input[type="button"]{
+    background-image: none !important;
+    background-color: #0a6ed1;
+    border-color: #0a6ed1;
+    color: #fff;
+}
+.fiorithemeClass.quartzLiteThemeClass .infoBox .cardTitle {
+    font-size: 12px;
+    color: #32363a;
+    padding-bottom: 0.5rem;
+    line-height: normal;
+    font-weight: 600;
+}	
+.fiorithemeClass.quartzLiteThemeClass .dxp2FioriTabsWithGridContent{
+
+    background-color: #eff1f2;
+    height: calc(100vh - 58px);
+    overflow-y: auto;
+} 
+.fiorithemeClass.quartzLiteThemeClass .gridareaContainer-section #dxpFioriGridContent{
+    height: calc(100vh - 260px);
+    /*overflow-y: auto;*/
+}
+
+.fiorithemeClass.quartzLiteThemeClass .visionFormTitleName .materialBasketClass{
+    border-bottom: 2px solid #006BB8;
+    color: #006BB8;
+    padding: 8px;
+    font-weight:600;
+    letter-spacing:0.5px
+}
+.idxpUI5InputIconMergeClass input[type="text"].visionColSpan3Class{
+    width: 99% !important;  
+}
+.fiorithemeClass.quartzLiteThemeClass .visionFormCharactristics, .fiorithemeClass.quartzLiteThemeClass .visionFormCharactristicsUOM{
+    position: relative;
+
+}
+.fiorithemeClass.quartzLiteThemeClass .visionFormCharactristics .visionFormCharactristicsImg{
+    position: absolute;
+    right: 0;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionDrpDownUomClose{
+    right: 20px !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionFormCharactristicsImgUOM {
+    position: absolute;
+    right: 2px !important;
+    top: 0;
+}
+.fiorithemeClass.quartzLiteThemeClass .cardTitle.relevantVendorsHeader{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.fiorithemeClass.quartzLiteThemeClass #img_td.visionRegisterMaterialImage{
+    position: relative;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpAddNewImageClass{ 
+    display: none;
+}
+.fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container .viewClassDiv p, 
+.fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container .dxpTabRed p,
+.fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container .defaultDiv p, 
+.fiorithemeClass.quartzLiteThemeClass .mainBookMark .flex-container .dxpTabBlue p{
+    border: transparent;
+}
+.fiorithemeSettingPopOver .innerPopoverContentWrapper .leftulList ul li span.createText {
+    color:#32363a;
+}
+.fiorithemeSettingPopOver .firorPopOverSubItmsClass .fioriMenuPopverSingleItem {
+    color: #0064d9;
+    font-size: 14px;
+}
+.fiorithemeClass.quartzLiteThemeClass .allTabListMainWrapper .visionRegisterGenericForm  , .fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialTableTab, .fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialTabsTable{
+
+    background: #fff;
+    border-radius: .25rem;
+    margin: 0 auto 15px;
+    width: 98%;
+}
+.fiorithemeClass.quartzLiteThemeClass .allTabListMainWrapper .visionRegisterGenericForm .visionRegisterMaterialImage {
+    padding-right: 0px; 
+    padding-left: 5px;
+}
+.fiorithemeClass.quartzLiteThemeClass .dialogGridPersonlizationTable .savedPersText span
+{
+    font-weight: 600;
+}    
+
+
+.fiorithemeClass.quartzLiteThemeClass .idxpUI5InputIconMergeClass select{
+    border: none !important;
+    width: 100% !important; 
+} 
+
+.fiorithemeClass.quartzLiteThemeClass .tg-wrap .tg td input{
+    border-radius: 0.25rem;
+}
+
+
+
+/*feedback model styles new start*/
+
+.fiorithemeClass.quartzLiteThemeClass .event-Open_feedBack-Dialog .action-Buttons {
+    text-align:right !important
+        margin-top: 8px !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .event-Open_feedBack-Dialog .action-Buttons .submit-action button {
+    font-size: 14px !important;
+    border-radius: 0.5rem !important;
+    padding: 4px 8px !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .event-Open_feedBack-Dialog .action-Buttons .submit-action:first-child button {
+    background: #006BB8 !important;
+    border: 1px solid #006BB8 !important;
+    color:#fff !important;
+}
+
+.fiorithemeClass.quartzLiteThemeClass .event-Open_feedBack-Dialog .mainFormClass .selectChartTypes,
+.fiorithemeClass.quartzLiteThemeClass .event-Open_feedBack-Dialog .mainFormClass .chartViewClass #chartViewId img{
+    background:transparent;
+}
+.event-Open_feedBack-Dialog .mainFormClass .feedBack-form label {
+    font-size: 14px;
+    color: #32363a;
+    font-weight:400
+}
+.fiorithemeClass.quartzLiteThemeClass .event-Open_feedBack-Dialog  .mainFormClass .feedBack-form input:focus, 
+.fiorithemeClass.quartzLiteThemeClass .event-Open_feedBack-Dialog  .mainFormClass .feedBack-form select:focus, 
+.fiorithemeClass.quartzLiteThemeClass .event-Open_feedBack-Dialog  .mainFormClass .feedBack-form textarea:focus{
+    border: 1px solid #ddd !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .dialogFactsAndStatsDiv .ui-dialog-titlebar-close{
+    background-color: transparent !Important;
+    border: #transparent;
+}
+
+/*feedback model styles new end */
+
+/* duplicate check dialog design changes SAPUI5 starts*/
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .visionRegisterMaterialTableTab .updateActionButton, 
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .visionRegisterMaterialTableTab .visionConsolidationResetButton, 
+.fiorithemeClass.quartzLiteThemeClass .ui-dialog .visionRegisterMaterialTableTab .visionConsolidationExportButton{
+    background-color: #006BB8 !important;
+    border-radius: 0.5rem;
+    height: 30px;
+    color: #fff !important;
+    font-weight: normal;
+    background-color: #fff; 
+    padding: 6px 6px 6px 28px;
+    width: auto;
+}
+.fiorithemeClass.quartzLiteThemeClass .duplicateCheckFormPopup .visionRegisterMaterialTableTab .visionRegisterMaterialAccordians .visionPDRFormTable table {
+    border:1px solid #a9a9a9 !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .duplicateCheckFormPopup .visionRegisterMaterialTableTab .visionRegisterMaterialAccordians .visionPDRFormTable table tbody tr {
+    border-bottom:1px solid #a9a9a9 !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .duplicateCheckFormPopup .visionRegisterMaterialTableTab .visionRegisterMaterialAccordians .visionPDRFormTable table tbody tr th {
+    border:0px !important;
+    border-bottom:1px solid #a9a9a9
+}
+.fiorithemeClass.quartzLiteThemeClass .duplicateCheckFormPopup .visionRegisterMaterialTableTab .visionRegisterMaterialAccordians .visionPDRFormTable table tbody tr td {
+    border:0;
+}
+.fiorithemeClass.quartzLiteThemeClass .duplicateCheckFormPopup .visionRegisterMaterialTableTab .visionRegisterMaterialAccordians .visionPDRFormTable table tbody tr th,
+.fiorithemeClass.quartzLiteThemeClass .duplicateCheckFormPopup .visionRegisterMaterialTableTab .visionRegisterMaterialAccordians .visionPDRFormTable table tbody tr td,
+.fiorithemeClass.quartzLiteThemeClass .visionPaginationCount{
+    color:#32363a;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionConsolidationSubTable tr th {
+    background: #f7f7f7;
+    color:#32363a; 
+}
+.fiorithemeClass.quartzLiteThemeClass .visionConsolidationSubTable tr th {
+    background: #f7f7f7;
+    color:#32363a; 
+}
+.fiorithemeClass.quartzLiteThemeClass .duplicateCheckFormPopup .visionRegisterMaterialTableTab .visionRegisterMaterialAccordians .visionPDRFormTable table tbody tr th img{
+    border-radius:6px
+}
+
+.fiorithemeClass.quartzLiteThemeClass .visionPaginationPage {
+    border: 1px solid #a9a9a9;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionPaginationPage:hover {
+    background-color: #006BB8;
+}
+/*new styles add in the duplicate check style */
+.fiorithemeClass.quartzLiteThemeClass .visionConsolidationExportButton {
+    background-image: url(../images/iDXPUI5ExportW.svg) !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionConsolidationResetButton {
+    background-image: url(../images/iDXPUI5ResetW.svg) !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .updateActionButton {
+    background-image: url(../images/iDXPUI5SaveW.svg) !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .mandateFeild{
+    color:red;
+}
+/* duplicate check dialog design changes SAPUI5 end*/
+
+
+/* attachment table changes SAPUI5 start*/
+.fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialTableTab.attachmentWrapper{
+    padding: 1rem;
+    background: #fff;
+    border-radius: .75rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialMainWrapper .visionEnclosureTable td, .fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialMainWrapper .visionEnclosureTable th{
+    border-color:#aaa !important;
+    text-align: inherit; 
+    color:#32363a;
+} 
+.fiorithemeClass.quartzLiteThemeClass .visionRegisterMaterialMainWrapper .attachHeader th{
+    width: inherit;
+    font-weight: normal;
+    color: #32363a; 
+} 
+/* attachment table changes SAPUI5 end*/
+
+
+.fiorithemeClass.quartzLiteThemeClass #selectFilter ,.fiorithemeClass.quartzLiteThemeClass .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions, .fiorithemeClass.quartzLiteThemeClass .searchMainWrap .backbutton , .fiorithemeClass.quartzLiteThemeClass .searchMainWrap .has-search input.form-control ,.fiorithemeClass.quartzLiteThemeClass .searchMainWrap .backbutton , .fiorithemeClass.quartzLiteThemeClass .searchMainWrap .replacedSearchButton{
+    background-color: transparent !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .dxpLoginHeader .searchMainWrap , .fiorithemeClass.quartzLiteThemeClass .searchMainWrap .has-search input.form-control , .fiorithemeClass.quartzLiteThemeClass .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions{
+    border-color: #7996b4 !important;   
+}   
+.fiorithemeClass.quartzLiteThemeClass .searchMainWrap .has-search input.form-control::placeholder{
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 1;
+}
+.fiorithemeClass.quartzLiteThemeClass .page-body-content #dxpContent{
+    background-color: #f7f7f7;   
+}
+.fiorithemeClass.quartzLiteThemeClass .homeTabsContentlistwrapper {
+    padding: 12px 8px;
+    background: #354a5f;
+    box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.08), inset 0 -0.0625rem 0 0 rgba(0, 0, 0, 0.18);  
+}
+.fiorithemeClass.quartzLiteThemeClass .homeTabsContentlistwrapper ul li a{
+    color: #fff;
+    font-weight:normal;
+    font-size: .875rem;
+    line-height: .875rem;
+    text-decoration: none;
+    padding-bottom: 8px;
+}
+.fiorithemeClass.quartzLiteThemeClass .homeTabsContentlistwrapper ul li.active a{
+    color: #d1e8ff;
+    font-weight:600;
+    border-bottom: 2px solid #d1e8ff;  
+
+}
+.fiorithemeClass.quartzLiteThemeClass .ui5gridfilter-container-form .ui5gridfilter-item {
+    flex-basis: 12rem;
+    max-width: 12rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .ui5gridfilter-container-form .ui5gridgo-btn{
+    position: relative;
+    background-color: #fff;
+    border: .0625rem solid transparent !important;
+    border-radius: 0.2rem;
+    color: #0854a0;
+    width: auto;
+    font-weight: normal;
+    padding: 6px;
+    margin: .0625rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .ui5gridfilter-container-form .ui5gridgo-btn:hover{
+    background-color: #f7f7f7 !important;
+    border: .0625rem solid #0854a0 !important;
+    transition: 0.2s;
+}
+.fiorithemeClass.quartzLiteThemeClass .ui5gridfilter-container-form .ui5gridgo-btn:first-child{
+    background-color: #0a6ed1 !important;
+    color: #fff !important;
+    font-weight: 600;
+} 
+.fiorithemeClass.quartzLiteThemeClass .ui5gridfilter-container-form button.ui5gridgo-btn.import-btn {
+    background-color: #fff !important;
+    color: #0854a0 !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .idxpUI5InputIconMergeClass , .fiorithemeClass.quartzLiteThemeClass .ui5gridfilter-container-form .ui5gridfilter-inputFeildDiv{
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    vertical-align: middle;
+    margin: 0;
+    background: none;
+    background-color: #fff;
+    border: .0625rem solid #89919a;
+    border-radius: .125rem;
+    height: 1.625rem;
+}
+.fiorithemeClass.quartzLiteThemeClass  .visionInputDisable{
+    background-color: transparent !important;    
+}  
+.fiorithemeClass.quartzLiteThemeClass .ui5gridfilter-container-form .ui5gridfilter-item:first-child{
+    min-width: 400px !important;
+}
+.fiorithemeClass.quartzLiteThemeClass #gridRefreshButton{
+    display: none;
+}
+
+/* general info map's custom css start here */
+
+.fiorithemeClass.quartzLiteThemeClass .vendorMapView .vendorMapDiv.vendor-map-loaded .gmnoprint button{
+    background-color: #fff !important;
+    color:#32363a !important;
+    height: 30px !important;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .vendorMapView .vendorMapDiv.vendor-map-loaded button[aria-label="Toggle fullscreen view"]{
+    width: 30px !important;
+    height: 30px !important; 
+}
+.fiorithemeClass.quartzLiteThemeClass .vendorMapView .vendorMapDiv.vendor-map-loaded .gm-style .gm-style-iw{
+    font-weight: bold !important;
+    font-size: 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+.fiorithemeClass.quartzLiteThemeClass .relaventVendorMainwrapper .vendorMapView{
+    border: .0625rem dotted #d9d9d9;
+    width: 48%;
+    padding: .25rem;
+    margin: 0 auto;
+    border-radius: 0.25rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .relaventVendorMainwrapper .vendorMapView .vendor-map-loaded {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+}
+/* general info map's custom css start here */
+.fiorithemeClass.quartzLiteThemeClass .settingsClassID .themeSettingIcon .dropdown-menu {
+    border-radius: .25rem;
+}
+.fiorithemeClass.quartzLiteThemeClass .ui5gridfilter-container-form .ui5gridfilter-item label{
+    font-weight: normal;
+}
+.fiorithemeClass.quartzLiteThemeClass .dialogGridPersonlizationTable .persHeight{
+    background-color: #006BB8;
+    border-radius: 0.25rem;  
+}
+
+/*DMA report css starts here*/
+
+
+.fiorithemeClass.quartzLiteThemeClass .dmaReportsClass .fioriformTabMainDiv{
+    background-color: #354a5f;
+    box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.08), inset 0 -0.0625rem 0 0 rgba(0, 0, 0, 0.18);  
+}
+.fiorithemeClass.quartzLiteThemeClass .dmaReportsClass .fioriformTabUlListclass > li span{
+    color:#fff;
+}
+.fiorithemeClass.quartzLiteThemeClass .dmaReportsClass .fioriformTabUlListclass > li.fioriHighlightTab span{
+    color: #d1e8ff !important;
+    font-weight: 600;
+
+}
+.fiorithemeClass.quartzLiteThemeClass .dmaReportsClass .fioriformTabUlListclass > li.fioriHighlightTab{
+       border-bottom: 2px solid #d1e8ff; 
+}
+.fiorithemeClass.quartzLiteThemeClass .dmaReportsClass .allTabListMainWrapper .iconMenuNavPrev, 
+.fiorithemeClass.quartzLiteThemeClass .dmaReportsClass .allTabListMainWrapper .iconMenuNavNext
+{
+    background-color:transparent;
+    top:5px;
+}
+.fiorithemeClass.quartzLiteThemeClass .dmaReportsClass .allTabListMainWrapper .iconMenuNavPrev i, 
+.fiorithemeClass.quartzLiteThemeClass .dmaReportsClass .allTabListMainWrapper .iconMenuNavNext i
+{
+    color:#d1e8ff; 
+}
+.fiorithemeClass.quartzLiteThemeClass .dmaReportsClass .visionRegisterMaterialMainWrapper section{
+    border:none;
+    border-radius:0.25rem;
+}
+/*DMA report css ends here*/

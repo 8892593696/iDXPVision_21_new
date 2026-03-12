@@ -1,0 +1,1205 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+ 
+    Created on : 1 Aug, 2024, 3:30:57 PM
+    Author     : PiLog
+
+
+
+
+
+/*Adjusted font-sizes for screens with min-width 1630px*/
+
+@media (min-width: 1530px) {
+
+
+    .visionRegisterMaterialTabsTable td img {
+        font-size: 1.55rem;
+    }
+
+    .visionRegisterMaterialTabsTable th img {
+        font-size: 1.5rem;
+    }
+
+    .visionRegisterMaterialAccordians  .erpdatatable img {
+        font-size: 1.5rem;
+    }
+
+    .visionRegisterMaterialAccordians  .erpdatatable img {
+        font-size: 1.5rem;
+    }
+
+    .card .card-header .card-header-right i {
+        font-size: 1em;
+    }
+
+    .card .card-header span {
+        font-size:1em;
+    }
+
+    .card .card-header h5 {
+        font-size: 1.25em;
+    }
+
+    .card .card-block .sub-title {
+        font-size: 1em;
+    }
+
+    .card .card-block a.dropdown-item {
+        font-size: 1em;
+    }
+
+    .page-header.card h5+span {
+        font-size: 1em;
+    }
+
+    .page-header.card .page-header-title img {
+        font-size: 1.5em;
+    }
+
+    .page-header.card .breadcrumb a {
+        font-size: 1em;
+    }
+
+    .page-header.card .page-block .breadcrumb a {
+        font-size: 1em;
+    }
+
+    .sub-title {
+        font-size: 1em;  
+    }
+
+    .ui-accordion-header-icon {
+        font-size: 1em;
+    }
+
+    .ie-warning p {
+        font-size: 1.25em;
+    }
+
+    .ie-warning .iew-download>li>a {
+        font-size: 1.25em;
+    }
+
+    .f-10 {
+        font-size: 1em;
+    }
+
+    .f-12 {
+        font-size:1em;
+    }
+
+    .f-14 {
+        font-size: 1em;
+    }
+
+    .f-16 {
+        font-size: 1.2em;
+    }
+
+    .f-18 {
+        font-size: 1.5em;
+    }
+
+    .f-20 {
+        font-size: 1.5em;
+    }
+
+    .f-22 {
+        font-size: 2em;
+    }
+
+    .f-24 {
+        font-size: 2em;
+    }
+
+    .f-26 {
+        font-size: 2em;
+    }
+
+    .f-28 {
+        font-size: 2.1em;
+    }
+
+    .f-30 {
+        font-size: 2.5em;
+    }
+
+    .f-32 {
+        font-size: 2.5em;
+    }
+
+    .f-34 {
+        font-size: 2.55em;
+    }
+
+    .f-36 {
+        font-size:3em;
+    }
+
+    .f-38 {
+        font-size:3em;
+    }
+
+    .f-40 {
+        font-size: 3em;
+    }
+
+    .f-42 {
+        font-size: 3.15em;
+    }
+
+    .f-44 {
+        font-size: 3em;
+    }
+
+    .f-46 {
+        font-size: 3.5em;
+    }
+
+    .f-48 {
+        font-size: 3.5em;
+    }
+
+    .f-50 {
+        font-size: 4em;
+    }
+
+    .main-menu .main-menu-header .user-details #more-details {
+        font-size: 1rem;
+    }
+
+    .main-menu .main-menu-header .user-details p {
+        font-size: 1.5rem;
+    }
+
+    .main-menu .main-menu-header .user-details span {
+        font-size: 1.25em;
+    }
+
+    .main-menu .main-menu-header .user-details span i {
+        font-size: 1em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .nav-left li>a {
+        font-size: 1.2em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .nav-right li>a {
+        font-size: 1.2em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .nav-right .user-profile i {
+        font-size: 1em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .header-notification .show-notification li:first-child h6 {
+        font-size: 1.5em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .header-notification .profile-notification li:first-child h6 {
+        font-size: 1.5em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .header-notification .show-notification .notification-user {
+        font-size: 1.25em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .header-notification .profile-notification .notification-user {
+        font-size: 1.25em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .header-notification .show-notification .notification-time {
+        font-size: 1em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .header-notification .profile-notification .notification-time {
+        font-size: 1em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .header-notification .profile-notification a {
+        font-size: 1em;
+    }
+
+    .header-navbar .navbar-wrapper .navbar-container .header-notification .profile-notification i {
+        font-size: 1.25em;
+    }
+
+    .selector-toggle>a:before {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        font-size: 1.25em;
+    }
+
+    .popover-body span.block {
+        font-size: 1em;
+    }
+
+    .btn-xlg {
+        font-size: 1.75em;
+    }
+
+    .btn-lg {
+        font-size: 1.5em;
+    }
+
+    .btn-md {
+        font-size: 1.25em;
+    }
+
+    .btn-sm {
+        font-size: 1em;
+    }
+
+    .btn-mini {
+        font-size: 0.75em;
+    }
+
+    .col-form-label {
+        font-size: 1em;
+    }
+
+    .form-group .form-control-lg {
+        font-size: 1.5em;
+    }
+
+    .form-control {
+        font-size: 1em;
+    }
+
+    .radio .helper {
+        font-size: 1.2rem;
+    }
+
+    .checkbox-fade .cr .cr-icon {
+        font-size: 0.96em;
+    }
+
+    .checkbox-zoom .cr .cr-icon {
+        font-size: 0.96em;
+    }
+
+    .checkbox-color label::after {
+        font-size: 0.825em;
+    }
+
+    .form-material .form-group.form-static-label .form-control ~ .float-label {
+        font-size: 0.825em;
+    }
+
+    .form-material .form-control {
+        font-size: 1.2em;
+    }
+
+    .form-material .float-label {
+        font-size: 1em;
+    }
+
+    .form-material .material-group .material-addone i {
+        font-size: 1.5em;
+    }
+
+    .form-material .material-group .material-addone span {
+        font-size: 1.5em;
+    }
+
+    .form-material .material-group.material-group-lg .material-addone i {
+        font-size: 1.8599999999999999rem;
+    }
+
+    .form-material .material-group.material-group-lg .material-addone span {
+        font-size: 1.8599999999999999rem;
+    }
+
+    .form-material .material-group.material-group-lg .form-control {
+        font-size: 1.5rem;
+    }
+
+    .form-material .material-group.material-group-lg .form-control:focus ~ .float-label {
+        font-size: 1em;
+    }
+
+    .form-material .material-group.material-group-lg .form-control:valid ~ .float-label {
+        font-size: 1em;
+    }
+
+    .form-material .material-group.material-group-lg .float-label {
+        font-size: 1.5rem;
+    }
+
+    .form-material .material-group.material-group-sm .material-addone i {
+        font-size: 0.9299999999999999rem;
+    }
+
+    .form-material .material-group.material-group-sm .material-addone span {
+        font-size: 0.9299999999999999rem;
+    }
+
+    .form-material .material-group.material-group-sm .form-control {
+        font-size: 1.05rem;
+    }
+
+    .form-material .material-group.material-group-sm .form-control:focus ~ .float-label {
+        font-size: 0.825em;
+    }
+
+    .form-material .material-group.material-group-sm .form-control:valid ~ .float-label {
+        font-size: 0.825em;
+    }
+
+    .form-material .material-group.material-group-sm .float-label {
+        font-size: 0.9299999999999999rem;
+    }
+
+    .form-material .form-control:focus ~ .float-label {
+        font-size: 1em;
+    }
+
+    .form-material .form-material .form-control:valid ~ .float-label {
+        font-size: 1em;
+    }
+
+    .form-material .form-control.fill ~ .float-label {
+        font-size: 0.825em;
+    }
+
+    .form-material .form-material .form-control.fill ~ .float-label {
+        font-size: 0.825em;
+    }
+
+    .md-input-file input[type=file] {
+        font-size: 1.5em;
+    }
+
+    .label {
+        font-size: 90%;
+    }
+
+    .badge-lg {
+        font-size: 1em;
+    }
+
+    .badge-md {
+        font-size: 1em;
+    }
+
+    .icofont.icofont-envelope {
+        font-size: 1.5em;
+    }
+
+    .back_chatBox i {
+        font-size: 1.5em;
+    }
+
+    .back_friendlist i {
+        font-size: 1.5em;
+    }
+
+    .users-main .media .chat-header {
+        font-size: 1em;
+    }
+
+    .users-main .media-body div+div {
+        font-size: 1em;
+    }
+
+    .visionProductLogos img {
+        font-size: 1.5em;
+    }
+
+    .comp-card .visionCardIconImg img {
+        font-size: 1.5em;
+    }
+
+    .footer-social-icons li a {
+        font-size: 0.825em;
+    }
+
+    .jqx-splitter-splitbar-horizontal {
+        font-size: 0.975em;
+    }
+
+    .jqx-splitter-splitbar-vertical {
+        font-size: 0.975em;
+    }
+
+    .cloudHTMLFormDiv {
+        font-size: 1.125em;
+    }
+
+    .mytooltip .tooltip-content {
+        font-size: 1em;
+    }
+
+    .mytooltip .tooltip-text {
+        font-size: 1em;
+    }
+
+    .error-font {
+        font-size: 7.5em;
+    }
+
+    .tab-payment button {
+        font-size: 1.275em;
+    }
+
+    .mycount .count-item {
+        font-size: 0.75em;
+    }
+
+    .mycount .count-content {
+        font-size: 0.75em;
+    }
+
+    .mycount .count-text {
+        font-size: 0.75em;
+    }
+
+    .subscription-select {
+        font-size: 0.84rem;
+    }
+
+    .ui-autocomplete .ui-menu-item table {
+        font-size: 1em;
+    }
+
+    .icon-search {
+        font-size: 1.575em;
+    }
+
+    .icon-maximize {
+        font-size: 1.425em;
+    }
+
+    .ui-accordion-header {
+        font-size: 1em;
+    }
+
+    .ui-accordion-content {
+        font-size: 1em;
+    }
+
+    .profile-wrapper .profile-form label {
+        font-size: 1em;
+    }
+
+    .profile-wrapper .profile-form label.error {
+        font-size: 1em;
+    }
+
+    .login-block .form-material .form-control {
+        font-size: 1.125em;
+    }
+
+    .form-material label.error {
+        font-size: 1em;
+    }
+
+    .right-main-content h3 {
+        font-size: 1.5em;
+    }
+
+    .right-main-content ul {
+        font-size: 1em;
+    }
+
+    .page-header.card .breadcrumb a {
+        font-size: 0.975em;
+    }
+
+    .right-main-content figcaption {
+        font-size: 1em;
+    }
+
+    .right-main-content h4 {
+        font-size: 1.2em;
+    }
+
+    .MDRM_MM_COURSE_TOPICS_2:before {
+        font-size: 1.275em;
+    }
+
+    .MDRM_MM_COURSE_HEADER {
+        font-size: 1.65em;
+    }
+
+    .MDRM_MM_COURSE_HEADER_2 {
+        font-size: 1.5em;
+    }
+
+    .MDRM_MM_COURSE_HEADER_1 {
+        font-size: 1.5em;
+    }
+
+    .scheduleContainer label {
+        font-size: 1em;
+    }
+
+    .table_main_div table tr th:first-child {
+        font-size: 1.5em;
+    }
+
+    .table_main_div table tr th .product-name {
+        font-size: 0.6749999999999999em;
+    }
+
+    .table_main_div table tr th .product-name {
+        font-size: 0.75em;
+    }
+
+    .table_main_div table tr th .tier {
+        font-size: 1.2em;
+    }
+
+    .table_main_div table tr th .price-block .price {
+        font-size: 1em;
+    }
+
+    .table_main_div table tr th .price-block .price span {
+        font-size: 1em;
+    }
+
+    .buy-button-comp-chart {
+        font-size: 1em;
+    }
+
+    .table_main_div table tr.inner-heading td {
+        font-size: 1em;
+    }
+
+    .table_main_div table tr td {
+        font-size: 1em;
+    }
+
+    .table_main_div table tr td .feature-title {
+        font-size: 1em;
+    }
+
+    .table_main_div table tr td .feature-details {
+        font-size: 1em;
+    }
+
+    .MDRM_SPIR_IMG_DIV .h2size {
+        font-size: 2.25em;
+    }
+
+    .searchMainWrap .dxpAdavanceSearchClass .dxpAdavanceSearchOptions {
+        font-size: 0.9em;
+    }
+
+    .searchMainWrap .has-search input.form-control {
+        font-size: 1em !important;
+    }
+    .searchMainWrap .selectDropDown .form-control {
+        font-size: 1em;
+    }
+
+    .searchMainWrap .has-search input.form-control::placeholder {
+        font-size: 1em;
+    }
+
+    .searchMainWrap .form-group .form-control::placeholder {
+        font-size: 1em;
+    }
+
+    .searchResultsDiv .ac-items {
+        font-size: 1em;
+    }
+
+    .DXPlLanguageSelectionClass {
+        font-size: 1em;
+    }
+
+    .ui-state-default {
+        font-size: 1em;
+    }
+
+    .ui-widget-content .ui-state-default {
+        font-size: 1em;
+    }
+
+    .ui-widget-header .ui-state-default {
+        font-size: 1em;
+    }
+
+    .visionfuzzyLabel {
+        font-size: 1em;
+    }
+
+    .searchedDxpFirstSearchResults .searchFirstResultsList:hover {
+        font-size: 1em;
+    }
+
+    .searchedDxpSearchResults .badge {
+        font-size: 1em;
+    }
+
+    .dxpMaterialListClass .badgeDgm {
+        font-size: 1em;
+    }
+
+    .secondDxpSplitterData .badgeDgs {
+        font-size: 1em;
+    }
+
+    .searchResultMaterial {
+        font-size: 1em;
+    }
+
+    .searchResultService {
+        font-size: 1em;
+    }
+
+    .searchResultAsset {
+        font-size: 1em;
+    }
+
+    .searchResultVendor {
+        font-size: 1em;
+    }
+
+    .searchResultCustomer {
+        font-size: 1em;
+    }
+
+    .searchResultMaterialResults {
+        font-size: 1em;
+    }
+
+    .visionRegisterGenericForm {
+        font-size: 1em;
+    }
+
+    .visionRegisterMaterialTabsTable td {
+        font-size: 1em;
+    }
+
+    .visionRegisterMaterialTabsTable th {
+        font-size: 1em;
+    }
+
+    .visionRegisterMaterialFormTable th input[type="text"] {
+        font-size: 0.75em;
+    }
+
+    .responsiveTable th input[type="text"] {
+        font-size: 0.75em;
+    }
+
+    .visionRegisterMaterialFormTable th select {
+        font-size: 0.75em;
+    }
+
+    .responsiveTable th select {
+        font-size: 0.75em;
+    }
+
+    .visionRegisterMaterialFormTable th textarea {
+        font-size: 0.75em;
+    }
+
+    .responsiveTable th textarea {
+        font-size: 0.75em;
+    }
+
+    .visionFormTitleValueName {
+        font-size: 1em;
+    }
+
+    .visionFormDataButtons .button_Register {
+        font-size: 1em;
+    }
+
+    .form-tab tr td {
+        font-size: 1em;
+    }
+
+    .searchsettingsSplitter .personaliseoption .ui-accordion-header1 {
+        font-size: 1em;
+    }
+
+    .personaliseoption .settings_panel {
+        font-size: 1em;
+    }
+
+    .personaliseoption .search_settings_panel {
+        font-size: 1em;
+    }
+
+    .visionParamSearchCover {
+        font-size: 1.1em;
+    }
+
+    .visionSearchImportMessage {
+        font-size: 1em;
+    }
+
+    .ui-autocomplete .ui-menu-item table {
+        font-size: 1em;
+    }
+
+    .tg-wrap .tg td input {
+        font-size: 1em;
+    }
+
+    .dxpDictionaryMainClass .media-body h4 {
+        font-size: 1em;
+    }
+
+    .dxpClassificationMainClass .media-body h4 {
+        font-size: 1em;
+    }
+
+    .dxpDictPropetyDetailsClass h4 {
+        font-size: 1em;
+    }
+
+    .discipline-content {
+        font-size: 1em;
+    }
+
+    .discipline-count {
+        font-size: 1em;
+    }
+
+    .discipline-content-image {
+        font-size: 1em;
+    }
+
+    .discipline-content-main {
+        font-size: 1em;
+    }
+
+    .discipline-count-image {
+        font-size: 1em;
+    }
+
+    .dxpDictionaryFormData .media-body h4 {
+        font-size: 1em;
+    }
+
+    .dxpDictionayClass {
+        font-size: 1em;
+    }
+
+    .visionGenericTabsOpeartions select {
+        font-size: 1em;
+    }
+
+    .visionReportandDashboardExport select {
+        font-size: 1em;
+    }
+
+    .visionSearchExport select {
+        font-size: 1em;
+    }
+
+    .visionGenericClusterOpeartions select {
+        font-size: 1em;
+    }
+
+    .visionDictionaryTable td {
+        font-size: 1em;
+    }
+
+    .visionTreeMainDiv .visionTreeSearchResults .smartsearchtb .clear_searchField {
+        font-size: 1em;
+    }
+
+    .visionTreeDescription {
+        font-size: 1em;
+    }
+
+    .dxpDictPropetyDetailsClass .card .card-body p {
+        font-size: 0.75em;
+    }
+
+    .dxpNextPageClassificationTree .card-header {
+        font-size: 1em;
+    }
+
+    .dxpNextPageClassificationTree .card-header h6 {
+        font-size: 1em;
+    }
+
+    .dxpDictPropetyDetailsClass .card-header h6 {
+        font-size: 1em;
+    }
+
+    .dxpRepoItemPurchaseName {
+        font-size: 1em;
+    }
+
+    .signOutpopUp .modal-header h5 {
+        font-size: 1.2em;
+    }
+
+    .signOutpopUp .modal-body p {
+        font-size: 1.08em;
+    }
+
+    .signOutpopUp .modal-body .signOutWarningMsg {
+        font-size: 2.25em;
+    }
+
+    .dragtable-sortable li {
+        font-size: 1.2em;
+    }
+
+    .visionPaginationPage {
+        font-size: 1em;
+    }
+
+    .nestedGridBorrowButton {
+        font-size: 1em;
+    }
+
+    .nestedGridBorrowButton:hover {
+        font-size: 1em;
+    }
+
+    .firstDxpSplitterData {
+        font-size: 1em;
+    }
+
+    .buttonsPopUps span {
+        font-size: 1em;
+    }
+
+    .dxpCustomizeTextClass .blink {
+        font-size: 2.25em;
+    }
+
+    .dxpGlobalLevelClass .dxpAddMorelevelsClass input {
+        font-size: 1.125em;
+    }
+
+    .visionKanbanTableToggleClass .visionKanbanDragColumns  li {
+        font-size: 1em;
+    }
+
+    .kanbangridColumsnPopup .visionKanbanTableClass span {
+        font-size: 0.825em;
+    }
+
+    .decompositionBoxTreeSection .settingBtnDiv button .btnTitle {
+        font-size: 1em;
+    }
+
+    .decompositionBoxTreeSection .dxpDecompositionLevels .levelCustomButtons button {
+        font-size: 0.975em;
+    }
+
+    .decompositionBoxTreeSection .settingsSidePanel .closebtn {
+        font-size: 2.8em;  
+    }
+
+    .searchResultCardViewMainSection .card .createText {
+        font-size: 1em;
+    }
+
+    .searchResultCardViewMainSection .filterButtonrow .listFiltersul li .filterButtonTitle {
+        font-size: 0.975em;
+    }
+
+    .showMaterialpopUpBox .media .media-body h4 {
+        font-size: 1em;
+    }
+
+    .searchResultCardViewMainSection .allAssesstRow .listFiltersul li .filterButtonTitle {
+        font-size: 0.975em;
+    }
+
+    .popoverMenuItem span {
+        font-size: 1em;
+    }
+
+    .searchDiv .dxpAdavanceSearchClass .floatingdxpAdavanceSearchOptions {
+        font-size: 1em;
+    }
+
+    .FuzzyClass .visionfuzzycontainer .visionfuzzyLabel {
+        font-size: 1em;
+    }
+
+    .searchResultCardViewMainSection .filterButtonrow .iconMenuNavPrev {
+        font-size: 1.5em;
+    }
+
+    .searchResultCardViewMainSection .filterButtonrow .iconMenuNavNext {
+        font-size: 1.5em;
+    }
+
+    .collapseview span {    
+        font-size: 0.975em;
+    }
+
+    .defaultShowCards .dridHomePageCards .card-header {
+        font-size: 1em;
+    }
+
+    .defaultShowCards .dridHomePageCards .card-header .cardMainHeader {
+        font-size: 0.975em;
+    }
+
+    .formDxpDuplicates {
+        font-size: 1em;
+    }
+
+    .form-tab tr td {
+        font-size: 1em;
+    }
+
+    .formDxpDuplicatesFullScreen {
+        font-size: 1em;
+    }
+
+    .userProfileImgDiv .avatar-upload .avatar-edit input + label:after {
+        font-size: 0.975em;
+    }
+
+    .accordion-trigger {
+        font-size: 1em;
+    }
+
+    .personaliseoption .layoutoptions .ui-accordion-header1 {
+        font-size: 1em;
+    }
+
+    .personaliseoption .settings_panel {
+        font-size: 1em;
+    }
+
+    .chosen-container {
+        font-size: 0.975em;
+    }
+
+    .chosen-container-single .chosen-single span {
+        font-size: 1em;
+    }
+
+    .chosen-container-single .chosen-single abbr {
+        font-size: 0.075em;
+    }
+
+    .chosen-container-single .chosen-search input[type="text"] {
+        font-size: 1.2em;
+    }
+
+    .chosen-container .chosen-results {
+        font-size: 1em;
+    }
+
+    .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+        font-size: 120%;
+    }
+
+    .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+        font-size: 0.075em;
+    }
+
+    .ui-dialog-buttonset button {
+        font-size: 1em;
+    }
+
+    .filterexpendInOutClass i {
+        font-size: 2.25em;
+    }
+
+    .showgridSlectedRowsCount p {
+        font-size: 0.825em;
+    }
+
+    .visionFileUpload input.upload {
+        font-size: 1.5em;
+    }
+
+    .visionFileUpload:hover input.upload {
+        font-size: 1.5em;
+    }
+
+    .visionFileUpload input.visionFormUpload {
+        font-size: 1.5em;
+    }
+
+    .visionFileUpload:hover input.visionFormUpload {
+        font-size: 1.5em;
+    }
+
+    .expendInOutDivClass {
+        font-size: 1.5em;
+    }
+
+    .clearicon i {
+        font-size: 1em;
+    }
+
+    .searchtempleteClass .searchDiv .clear-icon i {
+        font-size: 1em;
+    }
+
+    .VisionGridComparePanel button {
+        font-size: 1.08em;
+    }
+
+    .selectDropDown .form-group #dropdownlistWrapperselectFilter #dropdownlistContentselectFilter span {
+        font-size: 1em;
+    }
+
+    .jqx-listbox-container span {
+        font-size: 1em;
+    }
+
+    .visionSearchImportButton div#importreccount {
+        font-size: 1.275em;
+    }
+
+    .titlepasswordClass input {
+        font-size: 1em;
+    }
+
+    .changepassword .titlepasswordClass .all_errors {
+        font-size: 1em;
+    }
+
+    .updatepasswordClass .changepassword label {
+        font-size: 1em;
+    }
+
+    .updatepasswordClass  .col-md-8.form-group.eye_icon i {
+        font-size: 1.5em;
+    }
+
+    .materialBasketClass {
+        font-size: 1em;
+    }
+
+    .showHideDivClass {
+        font-size: 1.5em;
+    }
+
+    .clearicon i {
+        font-size: 1em;
+    }
+
+    .scbscriptionClass .RightContainer .formWrapper .processPaymentDivCLS button {
+        font-size: 1.2em;
+    }
+
+    .scbscriptionClass  .RightContainer .recommended .totalAmountCol {
+        font-size: 1.125em;
+    }
+
+    .leftSideContainer .planSection .textRecommendBreif {
+        font-size: 1em;
+    }
+
+    .RightContainer .rightContainerMainspan {
+        font-size: 1.5em;
+    }
+
+    .rightContainermainDiv .subscriptionPlansIncludes .totalPerDesCol {
+        font-size: 1.125em;
+    }
+
+    .rightContainermainDiv .subscriptionPlansIncludes .subFeatureAmountDis {
+        font-size: 1.125em;
+    }
+
+    .rightContainermainDiv .subscriptionPlansIncludes .subFeatureCurrencySpan {
+        font-size: 1.125em;
+    }
+
+    .subscriptionTotalAmount {
+        font-size: 1.125em;
+    }
+
+    .activeTabMainDiv .pre_nextButtonClass span {
+        font-size: 1em;
+    }
+
+    .main-info-form-Div .plansList li i {
+        font-size: 0.75em;
+    }
+
+    .activeTabMainDiv-content {
+        font-size: 1.2em;
+    }
+
+    .activeTabMainDiv .pre_nextButtonClass span {
+        font-size: 0.75em;
+    }
+
+    .subscription-right-info .sub-header-title {
+        font-size: 1em;
+    }
+
+    .modal .modal-header h4 {
+        font-size: 1.2em;
+    }
+
+    .modal .close span {
+        font-size: 1.5em;
+    }
+
+    .clicktoToggleProductDescription:after {
+        font-size: 1em;
+    }
+
+    .clicktoToggleProductDescription:after {
+        font-size: 1.5em;
+
+    }
+    .jqx-widget-content{
+        font-size: 0.95em !important;
+    }
+    .visionTabMenuFormData .ui-accordion-content{
+        font-size: 1.1em !important;
+    } 
+    span {
+        font-size:1em;
+    }
+    .jqx-grid-cell{
+        font-size:1.02em !important;
+    }
+    .jqx-grid .jqx-widget-header > div span{
+        font-size:1.04em !important;
+    }
+    .jqx-grid .jqx-widget-header .visionSearchExportDiv select, input{
+        font-size: 1.02em !important;
+    }
+    .visionRegisterMaterialAccordians .accordian span{
+        font-size: 1.1em;
+    } 
+    .visionRegisterMaterialFormTable th , .visionRegisterMaterialAccordians table, .visionRegisterMaterialSubAccordians table{
+        font: normal 1.1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    .rightPannelSettings .listofSettingDiv ul li a .mobileTitle{
+        font-size:1em !important;
+    }
+
+    .aiWelcometext .ailensTitle{
+        font-size:1.02em;
+    }
+    .overlay-content .introGuiderAi p{
+        font-size:1em !important;
+    }
+    .listItemsViews li{
+        font-size:1em !important;
+    }
+    .dxpTabsMenus .searchResultService{
+        font-size:1em; 
+    }
+    .aiLensResultDataClass{
+        font-size:1em !important; 
+    }
+
+}
+
+

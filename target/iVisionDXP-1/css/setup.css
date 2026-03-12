@@ -1,0 +1,169 @@
+/* setup container styles */
+
+.bubble-container {
+    background: rgb(249, 249, 249);
+    height: 350px;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 9px;
+    /* box-shadow: rgba(189, 195, 199, 0.25) 0px 14px 28px, rgba(189, 195, 199, 0.22) 0px 10px 10px; */
+    box-shadow: rgb(2 76 157 / 25%) 0px -8px 28px, rgb(2 76 157 / 22%) 0px 10px 10px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.bubble-wrap {
+    position: absolute;
+    top: 66px;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    padding: 5px calc(17px + 10px) 30px 10px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* optional page styles */
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 4em;
+    margin: .5em auto 0.15em;
+}
+
+.bubble-container .input-wrap textarea {
+    margin: 0;
+    width: calc(100% - 0px);
+}
+
+.chatBox {
+    display: none;
+    position: fixed;
+    left: 4px;
+    bottom: 40px;
+    max-width: 22%;
+    z-index: 99999;
+}
+
+.chatIcon {
+    position: fixed;
+    /*left: 15px;*/
+    bottom: 2%;
+    z-index: 9999;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 3px;*/
+    padding: 3px;
+    /*width: 42px;*/
+    /*font: normal normal 14px Arial;*/
+    transition: all .25s ease;
+    /*border: 1px solid #696969;*/
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.chatIcon img {
+    width: 35px;
+}
+
+.chatIcon .howmayhelp{
+    font-size: 14px;
+    font-weight: 400;  
+    color: #696969;
+    width: 0;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+.chatBotHeaderTop {
+    padding: 5px;
+}
+
+.chatBotHeaderTop .text-right {
+    padding-right: 0;
+}
+
+.chatBotHeaderTop .chatBotLogo img {
+    width: 80px;
+}
+
+.chatBotHeaderTop .minmaxIcon img {
+    width: 18px;
+    margin-right: 3px;
+}
+
+.chatBotHeaderTop .chatbotClose img {
+    width: 18px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.chatBotHeaderTop .leftBotIcon img {
+    width: 40px;
+    margin-left: -15px;
+}
+
+.chatBotHeaderTop .leftBotIcon p {
+    margin-bottom: 0;
+    margin-top: -7px;
+    margin-left: 28px;
+}
+
+.mainHeader .rightIcons {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.chatBotHeaderBottom {
+    /* background-color: #024c9d; */
+    color: #fff;
+    border-bottom: 1px solid #33BBFF;
+}
+
+.chatBotHeaderBottom h3 {
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+
+.chatBotHeaderBottom p {
+    margin-bottom: inherit;
+}
+
+.bubble.say:not(.reply) {
+    position: relative;
+    /* border: 1px solid #A8A240; */
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+.mainHeader {
+    border-radius: 10px 10px 0px 0px;
+    background: #fff; 
+    color: rgb(106, 106, 106);
+    position: relative;
+    border-radius: 9px 9px 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 10px 10px 6px;
+    /*    background: linear-gradient(
+            177deg, rgba(64,135,94,1) 0%, rgba(168,162,64,1) 100%);*/
+}
+
+.buttonRemove{
+    display: none !important;
+}
