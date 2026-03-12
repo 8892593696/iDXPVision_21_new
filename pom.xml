@@ -29,25 +29,11 @@
             <artifactId>iDXPCluster</artifactId>
             <version>1.0.0</version>
         </dependency>  
-     <!-- <dependency>
-            <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPCluster</artifactId>
-            <version>1.0.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/iDXPCluster-1.jar</systemPath>
-        </dependency>  -->
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPAILens</artifactId>
             <version>1.0.0</version>
         </dependency>
- <!--   <dependency>
-            <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPAILens</artifactId>
-            <version>1</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/iDXPAILens-1.jar</systemPath>
-        </dependency>  -->
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPDuplicateCheck</artifactId>
@@ -93,63 +79,50 @@
             <artifactId>oraclepki</artifactId>
             <version>21.9.0.0</version>
         </dependency>
-        <dependency>
-            <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPAnalyzer</artifactId>
-            <version>1.0.0</version>
-        </dependency>  
-       <!--<dependency>
-            <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPAnalyzer</artifactId>
-            <version>1</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/iDXPAnalyzer-1.jar</systemPath>
-        </dependency>   -->
-
-        <dependency>
+         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPSearch</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPWorkflow</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPMenu</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPPojos</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPConfig</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPLogin</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPGrid</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPBusinessLogic</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>iDXPDashboard</artifactId>
-            <version>1.0</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
     <properties>
