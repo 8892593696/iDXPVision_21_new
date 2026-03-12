@@ -119,6 +119,43 @@
             <artifactId>iDXPBusinessLogic</artifactId>
             <version>1.0.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.pilog.mdm.cloud</groupId>
+            <artifactId>iDXPDescriptionRenderer</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pilog.mdm.cloud</groupId>
+            <artifactId>iDXPSchedular</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+         <dependency>
+            <groupId>com.pilog.mdm.cloud</groupId>
+            <artifactId>iDXPNotification</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pilog.mdm.cloud</groupId>
+            <artifactId>iDXPPojos2</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+         <dependency>
+            <groupId>com.pilog.mdm.cloud</groupId>
+            <artifactId>iDXPAPIRepRepositorySearchWSClient</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pilog.mdm.cloud</groupId>
+            <artifactId>iDXPAPIRepTemplateFetchClient</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pilog.mdm.cloud</groupId>
+            <artifactId>iDXPServiceClient</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>iDXPDashboard</artifactId>
