@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.pilog.mdm.cloud</groupId>
     <artifactId>iVisionDXP</artifactId>
-    <version>1</version>
+    <version>1.0.0</version>
     <packaging>war</packaging>
     <name>iVisionDXP-1</name>
     <repositories>
@@ -22,24 +22,24 @@
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPAnalyzer</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPCluster</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>  
      <!-- <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPCluster</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/iDXPCluster-1.jar</systemPath>
         </dependency>  -->
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPAILens</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
  <!--   <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
@@ -51,27 +51,27 @@
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPDuplicateCheck</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPDropDown</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPSmartConsolidation</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPDeDuplication</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPTree</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>
         <!-- osdt_core -->
         <dependency>
@@ -96,7 +96,7 @@
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPAnalyzer</artifactId>
-            <version>1</version>
+            <version>1.0.0</version>
         </dependency>  
        <!--<dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
