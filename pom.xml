@@ -18,31 +18,31 @@
             <artifactId>iDXPAnalyzer</artifactId>
             <version>1</version>
         </dependency>
-     <!--   <dependency>
+        <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPCluster</artifactId>
             <version>1</version>
-        </dependency>  -->
-        <dependency>
+        </dependency>  
+     <!-- <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPCluster</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/iDXPCluster-1.jar</systemPath>
-        </dependency>
+        </dependency>  -->
 
-    <!--  <dependency>
+        <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPAILens</artifactId>
             <version>1</version>
-        </dependency>  -->
-        <dependency>
+        </dependency>
+     <!--   <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPAILens</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/iDXPAILens-1.jar</systemPath>
-        </dependency>
+        </dependency>  -->
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPDuplicateCheck</artifactId>
@@ -88,18 +88,18 @@
             <artifactId>oraclepki</artifactId>
             <version>21.9.0.0</version>
         </dependency>
-       <!-- <dependency>
+        <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPAnalyzer</artifactId>
             <version>1</version>
-        </dependency>   -->
-       <dependency>
+        </dependency>  
+       <!--<dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
             <artifactId>iDXPAnalyzer</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/iDXPAnalyzer-1.jar</systemPath>
-        </dependency>  
+        </dependency>   -->
 
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
