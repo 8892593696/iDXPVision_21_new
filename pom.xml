@@ -141,7 +141,7 @@
             <version>1.0.0</version>
         </dependency>
          <dependency>
-            <groupId>com.pilog.mdm.cloud</groupId>
+            <groupId>com.pilog.service</groupId>
             <artifactId>iDXPAPIRepRepositorySearchWSClient</artifactId>
             <version>1.0.0</version>
         </dependency>
