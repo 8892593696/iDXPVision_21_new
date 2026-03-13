@@ -7,10 +7,10 @@
     <packaging>war</packaging>
     <name>iVisionDXP-1</name>
     <repositories>
-    <repository>
-        <id>local-project-repo</id>
-        <url>file://${project.basedir}/src/main/libs</url>
-    </repository>
+        <repository>
+            <id>nexus</id>
+            <url>http://172.16.1.122:8081/repository/maven-releases/</url>
+        </repository>
     </repositories>
     <dependencies>
         <dependency>
@@ -21,42 +21,42 @@
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPAnalyzer</artifactId>
+            <artifactId>iDXPAnalyzer-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPCluster</artifactId>
+            <artifactId>iDXPCluster-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>  
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPAILens</artifactId>
+            <artifactId>iDXPAILens-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPDuplicateCheck</artifactId>
+            <artifactId>iDXPDuplicateCheck-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPDropDown</artifactId>
+            <artifactId>iDXPDropDown-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPSmartConsolidation</artifactId>
+            <artifactId>iDXPSmartConsolidation-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPDeDuplication</artifactId>
+            <artifactId>iDXPDeDuplication-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPTree</artifactId>
+            <artifactId>iDXPTree-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <!-- osdt_core -->
@@ -81,84 +81,84 @@
         </dependency>
          <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPSearch</artifactId>
+            <artifactId>iDXPSearch-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPWorkflow</artifactId>
+            <artifactId>iDXPWorkflow-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPMenu</artifactId>
+            <artifactId>iDXPMenu-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPPojos</artifactId>
+            <artifactId>iDXPPojos-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPConfig</artifactId>
+            <artifactId>iDXPConfig-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPLogin</artifactId>
+            <artifactId>iDXPLogin-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPGrid</artifactId>
+            <artifactId>iDXPGrid-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPBusinessLogic</artifactId>
+            <artifactId>iDXPBusinessLogic-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPDescriptionRenderer</artifactId>
+            <artifactId>iDXPDescriptionRenderer-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPSchedular</artifactId>
+            <artifactId>iDXPSchedular-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
          <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPNotification</artifactId>
+            <artifactId>iDXPNotification-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPPojos2</artifactId>
+            <artifactId>iDXPPojos2-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
          <dependency>
             <groupId>com.pilog.service</groupId>
-            <artifactId>iDXPAPIRepRepositorySearchWSClient</artifactId>
+            <artifactId>iDXPAPIRepRepositorySearchWSClient-1.0.0</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pilog.mdm.insert</groupId>
+            <artifactId>iDXPAPIRepTemplateFetchClient-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPAPIRepTemplateFetchClient</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.pilog.mdm.cloud</groupId>
-            <artifactId>iDXPServiceClient</artifactId>
+            <artifactId>iDXPServiceClient-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>iDXPDashboard</artifactId>
+            <artifactId>iDXPDashboard-1.0.0</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>
